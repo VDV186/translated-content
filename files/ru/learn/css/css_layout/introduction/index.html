@@ -7,17 +7,17 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 
 <div>{{NextMenu("Learn/CSS/CSS_layout/Normal_Flow", "Learn/CSS/CSS_layout")}}</div>
 
-<p class="summary">В этой статье мы рассмотрим некоторые функции макета CSS, которые мы затрагивали в предыдущих статьях, например различные значения свойства {{cssxref("display")}}, и разберём некоторые концепции, которые будут рассмотрены в этой статье. </p>
+<p class="summary">В этой статье мы рассмотрим некоторые функции макета CSS, которые мы затрагивали в предыдущих статьях, например различные значения свойства {{cssxref("display")}}, и разберём некоторые концепции, которые будут рассмотрены в этой статье. </p>
 
 <table class="learn-box standard-table">
  <tbody>
   <tr>
    <th scope="row">Требования:</th>
-   <td>Базовые знания HTML (изучите <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML">введение в HTML</a>), и понимание как работает CSS (изучите <a href="/en-US/docs/Learn/CSS/Introduction_to_CSS">введение в CSS</a>.)</td>
+   <td>Базовые знания HTML (изучите <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML">введение в HTML</a>), и понимание как работает CSS (изучите <a href="/en-US/docs/Learn/CSS/Introduction_to_CSS">введение в CSS</a>.)</td>
   </tr>
   <tr>
    <th scope="row">Цель:</th>
-   <td>Предоставить вам обзор методов компоновки страниц CSS. Каждый метод может быть изучен более подробно в последующих статьях. </td>
+   <td>Предоставить вам обзор методов компоновки страниц CSS. Каждый метод может быть изучен более подробно в последующих статьях. </td>
   </tr>
  </tbody>
 </table>
@@ -41,7 +41,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 
 <p>Нормальный поток (Normal flow) это то как ваш браузер отображает по умолчанию, когда вы не меняли расположение элементов на странице. Взглянем на пример:</p>
 
-<pre class="brush: html notranslate">&lt;p&gt;I love my cat.&lt;/p&gt;
+<pre class="brush: html">&lt;p&gt;I love my cat.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Buy cat food&lt;/li&gt;
@@ -55,47 +55,47 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 
 <p>{{ EmbedLiveSample('Normal_flow', '100%', 200) }}</p>
 
-<p>Заметьте, что HTML элементы здесь отображаются точно в таком порядке, как и в исходном коде — первый параграф, за ним неупорядоченный список, затем второй параграф.</p>
+<p>Заметьте, что HTML-элементы здесь отображаются точно в таком порядке, как и в исходном коде — первый параграф, за ним неупорядоченный список, затем второй параграф.</p>
 
-<p>Элементы, выводящиеся один <em>под</em> другим, называются <em>блочными</em>, в противоположность <em>строчным</em>, которые выводятся один <em>вслед</em> за другим, как отдельные слова в обычном абзаце текста.</p>
+<p>Элементы, выводящиеся один <em>под</em> другим, называются <em>блочными</em>, в противоположность <em>строчным</em>, которые выводятся один <em>вслед</em> за другим, как отдельные слова в обычном абзаце текста.</p>
 
 <div class="note">
-<p><strong>Примечание</strong>: Направление, в котором отображается содержимое блока, называется Block Direction. Block Direction вертикально в языках типа Английского, имеющих горизонтальное направление письма. В языках, типа Японского, имеющих вертикальное направление письма, Block Direction горизонтально. Соответствующее Inline Direction отвечает за  направление отображения строковых элементов (таких как предложение).</p>
+<p><strong>Примечание</strong>: Направление, в котором отображается содержимое блока, называется Block Direction. Block Direction вертикально в языках типа Английского, имеющих горизонтальное направление письма. В языках, типа Японского, имеющих вертикальное направление письма, Block Direction горизонтально. Соответствующее Inline Direction отвечает за  направление отображения строковых элементов (таких как предложение).</p>
 </div>
 
-<p>Когда вы используете CSS для создания разметки, вы двигаете элементы относительно их обычного расположения, но для многих элементов на вашей странице их обычное положение - это именно то, что вам подойдёт. Именно поэтому важно начинать вёрстку с создания правильно организованного HTML документа, для того, чтобы базовое расположение элементов впоследствии работало на вас.</p>
+<p>Когда вы используете CSS для создания разметки, вы двигаете элементы относительно их обычного расположения, но для многих элементов на вашей странице их обычное положение - это именно то, что вам подойдёт. Именно поэтому важно начинать вёрстку с создания правильно организованного HTML документа, для того, чтобы базовое расположение элементов впоследствии работало на вас.</p>
 
 <p>Методы CSS, которыми вы можете управлять разметкой элементов:</p>
 
 <ul>
- <li><strong>Свойство {{cssxref("display")}} </strong>— Стандартные значения  <code>block</code>, <code>inline</code> или <code>inline-block </code>могут изменять поведение элементов в обычном потоке (см.подробнее <a href="/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model#Types_of_CSS_boxes">Types of CSS boxes</a>). Также можно менять сами методы разметки такими значениями свойства <code>display</code>, как <a href="/en-US/docs/Learn/CSS/CSS_layout/Grids">CSS Grid</a> или <a href="/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a>.</li>
- <li><strong>Floats</strong> — Применение значения {{cssxref("float")}} типа <code>left</code> может заставить элемент блочного типа "прилепить" содержимое к одной стороне элемента, как иногда изображения обволакиваются текстом на газетных страницах.</li>
+ <li><strong>Свойство {{cssxref("display")}} </strong>— Стандартные значения  <code>block</code>, <code>inline</code> или <code>inline-block </code>могут изменять поведение элементов в обычном потоке (см.подробнее <a href="/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model#Types_of_CSS_boxes">Types of CSS boxes</a>). Также можно менять сами методы разметки такими значениями свойства <code>display</code>, как <a href="/en-US/docs/Learn/CSS/CSS_layout/Grids">CSS Grid</a> или <a href="/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a>.</li>
+ <li><strong>Floats</strong> — Применение значения {{cssxref("float")}} типа <code>left</code> может заставить элемент блочного типа "прилепить" содержимое к одной стороне элемента, как иногда изображения обволакиваются текстом на газетных страницах.</li>
  <li><strong>Свойство {{cssxref("position")}} </strong>— Позволяет точно контролировать положение блоков внутри других блоков. <code>static</code> позиционирование является стандартным, но также можно применять другие значения свойства, например фиксированное в углу экрана.</li>
- <li><strong>Макет Таблицы</strong> — свойства для разметки таблиц могут быть использованы и для нетабличных элементов, с помощью <code>display: table</code> и соответствующих свойств.</li>
- <li><strong>Multi-column layout</strong> — <a href="/en-US/docs/Web/CSS/CSS_Columns">Многоколоночный макет</a> поможет расположить содержимое столбцами, как в газетах.</li>
+ <li><strong>Макет Таблицы</strong> — свойства для разметки таблиц могут быть использованы и для нетабличных элементов, с помощью <code>display: table</code> и соответствующих свойств.</li>
+ <li><strong>Multi-column layout</strong> — <a href="/en-US/docs/Web/CSS/CSS_Columns">Многоколоночный макет</a> поможет расположить содержимое столбцами, как в газетах.</li>
 </ul>
 
-<h2 id="Свойство_display">Свойство display </h2>
+<h2 id="Свойство_display">Свойство display </h2>
 
-<p>Значения свойства <code>display</code> являются главными методами вёрстки разметки страницы в CSS. Это свойство позволяет нам менять то, как что-то отображается по умолчанию. Каждый элемент по умолчанию имеет свойство <code>display</code>, влияющее на то, как этот элемент отображается. Например, параграфы на английском располагаются один под другим только потому что они имеют по умолчанию свойство  <code>display: block</code>. Если же вы создадите ссылку внутри параграфа, эта ссылка будет отображаться в общем потоке с остальным текстом, без переноса на новую строку. Это потому что у элемента {{htmlelement("a")}} по умолчанию установлено свойство <code>display: inline</code>.</p>
+<p>Значения свойства <code>display</code> являются главными методами вёрстки разметки страницы в CSS. Это свойство позволяет нам менять то, как что-то отображается по умолчанию. Каждый элемент по умолчанию имеет свойство <code>display</code>, влияющее на то, как этот элемент отображается. Например, параграфы на английском располагаются один под другим только потому что они имеют по умолчанию свойство  <code>display: block</code>. Если же вы создадите ссылку внутри параграфа, эта ссылка будет отображаться в общем потоке с остальным текстом, без переноса на новую строку. Это потому что у элемента {{htmlelement("a")}} по умолчанию установлено свойство <code>display: inline</code>.</p>
 
-<p>Вы можете изменить дефолтное поведение display. К примеру,  {{htmlelement("li")}} отображается как <code>display: block</code> по умолчанию, это означает что элементы списка отображаются один за другим в нашем документе.Если мы изменим значение display на <code>inline</code> они будут отображаться друг за другом, как это делают слова в предложении. Тот факт, что вы можете изменить значение display для любого элемента означает, что вы можете выбирать HTML элементы по их семантическому значению, не беспокоясь о том как они будут выглядеть. То как они выглядят это то, что вы можете поменять.</p>
+<p>Вы можете изменить дефолтное поведение display. К примеру,  {{htmlelement("li")}} отображается как <code>display: block</code> по умолчанию, это означает что элементы списка отображаются один за другим в нашем документе.Если мы изменим значение display на <code>inline</code> они будут отображаться друг за другом, как это делают слова в предложении. Тот факт, что вы можете изменить значение display для любого элемента означает, что вы можете выбирать HTML-элементы по их семантическому значению, не беспокоясь о том как они будут выглядеть. То как они выглядят это то, что вы можете поменять.</p>
 
-<p><font face="Arial, x-locale-body, sans-serif"><span style="background-color: #ffffff;">В дополнение к возможности менять значение с </span></font><code><font face="Arial, x-locale-body, sans-serif"><span style="background-color: #ffffff;"> </span></font>block</code> на <code>inline</code> и обратно, есть и другие возможности вёрстки с другими значениями  <code>display</code>. Однако, в основном все они требуют использования дополнительных свойств. Двумя наиболее важными  для задач вёрстки страниц являются <code>display: flex</code> и <code>display: grid</code>.</p>
+<p><font face="Arial, x-locale-body, sans-serif"><span style="background-color: #ffffff;">В дополнение к возможности менять значение с </span></font><code><font face="Arial, x-locale-body, sans-serif"><span style="background-color: #ffffff;"> </span></font>block</code> на <code>inline</code> и обратно, есть и другие возможности вёрстки с другими значениями  <code>display</code>. Однако, в основном все они требуют использования дополнительных свойств. Двумя наиболее важными  для задач вёрстки страниц являются <code>display: flex</code> и <code>display: grid</code>.</p>
 
 <h2 id="Flexbox">Flexbox</h2>
 
-<p>Flexbox (сокращение от <a href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">Flexible Box Layout</a>) это модуль, разработанный для облегчения вёрстки в одном из измерений — как ряд или как колонка. Для использования, установите свойство <code>display: flex</code> для родительского элемента тех элементов, к которым хотите применить этот тип вёрстки; все его прямые потомки станут flex элементами. Рассмотрим это на простом примере.</p>
+<p>Flexbox (сокращение от <a href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">Flexible Box Layout</a>) это модуль, разработанный для облегчения вёрстки в одном из измерений — как ряд или как колонка. Для использования, установите свойство <code>display: flex</code> для родительского элемента тех элементов, к которым хотите применить этот тип вёрстки; все его прямые потомки станут flex элементами. Рассмотрим это на простом примере.</p>
 
-<p>Разметка HTML, представленная ниже, состоит из элемента <code>wrapper</code>, включающего в себя три {{htmlelement("div")}} элемента. По умолчанию все они будут изображаться как блочные, один под другим.</p>
+<p>Разметка HTML, представленная ниже, состоит из элемента <code>wrapper</code>, включающего в себя три {{htmlelement("div")}} элемента. По умолчанию все они будут изображаться как блочные, один под другим.</p>
 
-<p>Но если мы добавим свойство <code>display: flex</code> родительскому элементу, три дочерних сгруппируются в колонки. Всё это потому что они сами становятся элементами <em>flex </em>и наследуют некоторые свойства, установленные контейнеру, в котором они находятся. Они выстраиваются в строку, потому что начальное значение  {{cssxref("flex-direction")}} это <code>row</code>. Высота становится равной высоте самого высокого элемента, потому что начальное значение {{cssxref("align-items")}} установлено как <code>stretch</code>. Это значит, элементы вытягиваются по высоте контейнера, который в этом случае сам принимает высоту самого высокого элемента. Все они группируются в начале контейнера, оставляя пустое пространство в конце строки.</p>
+<p>Но если мы добавим свойство <code>display: flex</code> родительскому элементу, три дочерних сгруппируются в колонки. Всё это потому что они сами становятся элементами <em>flex </em>и наследуют некоторые свойства, установленные контейнеру, в котором они находятся. Они выстраиваются в строку, потому что начальное значение  {{cssxref("flex-direction")}} это <code>row</code>. Высота становится равной высоте самого высокого элемента, потому что начальное значение {{cssxref("align-items")}} установлено как <code>stretch</code>. Это значит, элементы вытягиваются по высоте контейнера, который в этом случае сам принимает высоту самого высокого элемента. Все они группируются в начале контейнера, оставляя пустое пространство в конце строки.</p>
 
 <div id="Flex_1">
 <div class="hidden">
 <h6 id="Flexbox_Example_1">Flexbox Example 1</h6>
 
-<pre class="brush: css notranslate">* {box-sizing: border-box;}
+<pre class="brush: css">* {box-sizing: border-box;}
 
 .wrapper &gt; div {
     border-radius: 5px;
@@ -105,12 +105,12 @@ translation_of: Learn/CSS/CSS_layout/Introduction
     </pre>
 </div>
 
-<pre class="brush: css notranslate">.wrapper {
+<pre class="brush: css">.wrapper {
   display: flex;
 }
 </pre>
 
-<pre class="brush: html notranslate">&lt;div class="wrapper"&gt;
+<pre class="brush: html">&lt;div class="wrapper"&gt;
   &lt;div class="box1"&gt;One&lt;/div&gt;
   &lt;div class="box2"&gt;Two&lt;/div&gt;
   &lt;div class="box3"&gt;Three&lt;/div&gt;
@@ -122,13 +122,13 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 
 <p>В дополнение к свойствам, применяемым к контейнеру, существуют свойства, применяемые ко вложенным элементам. Эти свойства помимо всего прочего, могут менять размеры элемента, растягивая его и заставляя занимать всё доступное место.</p>
 
-<p>В качестве простого примера, добавим свойство {{cssxref("flex")}}  ко всем дочерним элементам, со значением <code>1</code>. Это заставит все элементы растянуться и заполнить контейнер, не оставляя свободного места в конце строки. Если освободится дополнительное пространство, элементы растянутся; если доступное место убавится - элементы сожмутся. Также, если вы добавите дополнительный элемент, остальные элементы  станут меньше, для того, чтобы все они были одного размера.</p>
+<p>В качестве простого примера, добавим свойство {{cssxref("flex")}}  ко всем дочерним элементам, со значением <code>1</code>. Это заставит все элементы растянуться и заполнить контейнер, не оставляя свободного места в конце строки. Если освободится дополнительное пространство, элементы растянутся; если доступное место убавится - элементы сожмутся. Также, если вы добавите дополнительный элемент, остальные элементы  станут меньше, для того, чтобы все они были одного размера.</p>
 
 <div id="Flex_2">
 <div class="hidden">
 <h6 id="Flexbox_Example_2">Flexbox Example 2</h6>
 
-<pre class="brush: css notranslate">    * {box-sizing: border-box;}
+<pre class="brush: css">    * {box-sizing: border-box;}
 
     .wrapper &gt; div {
         border-radius: 5px;
@@ -138,7 +138,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
     </pre>
 </div>
 
-<pre class="brush: css notranslate">.wrapper {
+<pre class="brush: css">.wrapper {
     display: flex;
 }
 
@@ -147,7 +147,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 }
 </pre>
 
-<pre class="brush: html notranslate">&lt;div class="wrapper"&gt;
+<pre class="brush: html">&lt;div class="wrapper"&gt;
     &lt;div class="box1"&gt;One&lt;/div&gt;
     &lt;div class="box2"&gt;Two&lt;/div&gt;
     &lt;div class="box3"&gt;Three&lt;/div&gt;
@@ -171,7 +171,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 <div class="hidden">
 <h6 id="Grid_example_1">Grid example 1</h6>
 
-<pre class="brush: css notranslate">    * {box-sizing: border-box;}
+<pre class="brush: css">    * {box-sizing: border-box;}
 
     .wrapper &gt; div {
         border-radius: 5px;
@@ -181,7 +181,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
     </pre>
 </div>
 
-<pre class="brush: css notranslate">.wrapper {
+<pre class="brush: css">.wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
@@ -189,7 +189,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 }
 </pre>
 
-<pre class="brush: html notranslate">&lt;div class="wrapper"&gt;
+<pre class="brush: html">&lt;div class="wrapper"&gt;
     &lt;div class="box1"&gt;One&lt;/div&gt;
     &lt;div class="box2"&gt;Two&lt;/div&gt;
     &lt;div class="box3"&gt;Three&lt;/div&gt;
@@ -208,7 +208,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 <div class="hidden">
 <h6 id="Grid_example_2">Grid example 2</h6>
 
-<pre class="brush: css notranslate">    * {box-sizing: border-box;}
+<pre class="brush: css">    * {box-sizing: border-box;}
 
     .wrapper &gt; div {
         border-radius: 5px;
@@ -218,7 +218,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
     </pre>
 </div>
 
-<pre class="brush: css notranslate">.wrapper {
+<pre class="brush: css">.wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
@@ -241,7 +241,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 }
 </pre>
 
-<pre class="brush: html notranslate">&lt;div class="wrapper"&gt;
+<pre class="brush: html">&lt;div class="wrapper"&gt;
     &lt;div class="box1"&gt;One&lt;/div&gt;
     &lt;div class="box2"&gt;Two&lt;/div&gt;
     &lt;div class="box3"&gt;Three&lt;/div&gt;
@@ -255,7 +255,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 <p><strong>Примечание</strong>: Эти два примера всего лишь малая часть мощности Grid layout; чтобы узнать больше см. нашу статью <a href="/en-US/docs/Learn/CSS/CSS_layout/Grids">Grid Layout</a>.</p>
 </div>
 
-<p>Остальная часть этого руководства освещает другие методы разметок, которые менее важны для основной структуры разметки вашей страницы, но всё равно могут помочь вам в достижении определённых задач. Понимая природу задачи каждой разметки, вы вскоре обнаружите, что, глядя на конкретный компонент вашего дизайна, часто будет ясно какой тип разметки подходит лучше всего.</p>
+<p>Остальная часть этого руководства освещает другие методы разметок, которые менее важны для основной структуры разметки вашей страницы, но всё равно могут помочь вам в достижении определённых задач. Понимая природу задачи каждой разметки, вы вскоре обнаружите, что, глядя на конкретный компонент вашего дизайна, часто будет ясно какой тип разметки подходит лучше всего.</p>
 
 <h2 id="Floats">Floats</h2>
 
@@ -264,10 +264,10 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 <p>Свойство {{cssxref("float")}} имеет четыре возможных значения:</p>
 
 <ul>
- <li><code>left</code> — Элемент выравнивается слева и другие элементы обтекают его справа.</li>
- <li><code>right</code> — Элемент выравнивается справа и другие элементы обтекают его слева.</li>
- <li><code>none</code> — Не задаёт float совсем. Это значение по умолчанию.</li>
- <li><code>inherit</code> — Определяет, что значение свойства <code>float</code> должно быть унаследовано от родительского элемента.</li>
+ <li><code>left</code> — Элемент выравнивается слева и другие элементы обтекают его справа.</li>
+ <li><code>right</code> — Элемент выравнивается справа и другие элементы обтекают его слева.</li>
+ <li><code>none</code> — Не задаёт float совсем. Это значение по умолчанию.</li>
+ <li><code>inherit</code> — Определяет, что значение свойства <code>float</code> должно быть унаследовано от родительского элемента.</li>
 </ul>
 
 <p>В примере ниже мы задаём элементу <code>&lt;div&gt;</code> float - left и даём {{cssxref("margin")}} с правой стороны чтобы отталкивать текст от этого элемента. Это даёт нам эффект того, что текст оборачивает этот блок <span class="tlid-translation translation" lang="ru"><span title="">и является большей частью того, что вам нужно знать о float, используемых в современном веб-дизайне.</span></span></p>
@@ -276,7 +276,7 @@ translation_of: Learn/CSS/CSS_layout/Introduction
 <div class="hidden">
 <h6 id="Floats_example">Floats example</h6>
 
-<pre class="brush: css notranslate">body {
+<pre class="brush: css">body {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
@@ -296,7 +296,7 @@ p {
 </pre>
 </div>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Simple float example&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Simple float example&lt;/h1&gt;
 
 &lt;div class="box"&gt;Float&lt;/div&gt;
 
@@ -304,7 +304,7 @@ p {
 
 </pre>
 
-<pre class="brush: css notranslate">
+<pre class="brush: css">
 .box {
     float: left;
     width: 150px;
@@ -329,7 +329,7 @@ p {
 <p>Существует пять типов позиционирования о которых вам следует знать:</p>
 
 <ul>
- <li><strong>Static positioning (статическое позиционирование)</strong> — умолчание, которое получают все элементы — это всё лишь значит "поместить элемент в его нормальную позицию в разметке документа — тут нет ничего особенного на что посмотреть".</li>
+ <li><strong>Static positioning (статическое позиционирование)</strong> — умолчание, которое получают все элементы — это всё лишь значит "поместить элемент в его нормальную позицию в разметке документа — тут нет ничего особенного на что посмотреть".</li>
  <li><strong>Relative positioning (относительное позиционирование) </strong>позволяет вам менять положение элемента на странице, перемещая его относительно его положения в нормальном потоке — в том числе заставляя его перекрывать другие элементы на странице.</li>
  <li><strong>Absolute positioning (абсолютное позиционирование) </strong>полностью перемещает элемент из нормального потока разметки страницы так будто он находится на своём собственном отдельном слое. Оттуда вы можете исправлять его положение относительно краёв <code>&lt;html&gt;</code> элемента страницы (или его ближайшего позиционированного элемента предка). Это является полезным при создании сложных эффектов разметки такие как вкладки, <span class="tlid-translation translation" lang="ru"><span title=""> в которых различные панели содержимого располагаются друг над другом</span></span> и отображаются и/или скрываются по желанию или информационные панели, которые располагаются на экране по умолчанию, но могут скользить по экрану используя кнопки управления.</li>
  <li><strong>Fixed positioning (фиксированное позиционирование) </strong>очень похоже на абсолютное за исключением того, что он изменяет положение относительно окна просмотра браузера, а не другого элемента. Это полезно при создании эффектов таких как постоянное меню навигации, которое всегда остаётся в одном и том же месте на экране, в то время как другой контент прокручивается.</li>
@@ -340,7 +340,7 @@ p {
 
 <p>Для ознакомления с этими методами вёрстки, мы покажем вам пару быстрых примеров. Наши примеры будут иметь одинаковый HTML, который выглядит следующим образом:</p>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Positioning&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Positioning&lt;/h1&gt;
 
 &lt;p&gt;I am a basic block level element.&lt;/p&gt;
 &lt;p class="positioned"&gt;I am a basic block level element.&lt;/p&gt;
@@ -348,7 +348,7 @@ p {
 
 <p>Этот HTML по умолчанию будет стилизован, используя следующий CSS:</p>
 
-<pre class="brush: css notranslate">body {
+<pre class="brush: css">body {
   width: 500px;
   margin: 0 auto;
 }
@@ -370,7 +370,7 @@ p {
 
 <p>Относительное (Relative) позиционирование позволяет вам смещать элемент относительно положения, которое он бы имел по умолчанию в нормальном потоке. Это значит, что вы можете выполнить такую задачу как перемещение иконки немного вниз, так чтобы он был на одной линии с текстовой меткой. Чтобы сделать это, мы можем добавить следующее правило для добавления относительного позиционирования.</p>
 
-<pre class="brush: css notranslate">.positioned {
+<pre class="brush: css">.positioned {
   position: relative;
   top: 30px;
   left: 30px;
@@ -384,13 +384,13 @@ p {
 <div class="hidden">
 <h6 id="Relative_positioning_example">Relative positioning example</h6>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Relative positioning&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Relative positioning&lt;/h1&gt;
 
 &lt;p&gt;I am a basic block level element.&lt;/p&gt;
 &lt;p class="positioned"&gt;This is my relatively positioned element.&lt;/p&gt;
 &lt;p&gt;I am a basic block level element.&lt;/p&gt;</pre>
 
-<pre class="brush: css notranslate">body {
+<pre class="brush: css">body {
   width: 500px;
   margin: 0 auto;
 }
@@ -405,7 +405,7 @@ p {
 </pre>
 </div>
 
-<pre class="brush: css notranslate">.positioned {
+<pre class="brush: css">.positioned {
   position: relative;
   background: rgba(255,84,104,.3);
   border: 2px solid rgb(255,84,104);
@@ -420,9 +420,9 @@ p {
 
 <p>Абсолютное (Absolute) позиционирование используется чтобы полностью удалить элемент из нормального потока и разместить его, используя смещение от краёв содержащего блока.</p>
 
-<p>Возвращаясь к нашему примеру без позиционирования, мы можем добавить следующее CSS правило, чтобы реализовать абсолютное позиционирование:</p>
+<p>Возвращаясь к нашему примеру без позиционирования, мы можем добавить следующее CSS-правило, чтобы реализовать абсолютное позиционирование:</p>
 
-<pre class="brush: css notranslate">.positioned {
+<pre class="brush: css">.positioned {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -434,13 +434,13 @@ p {
 <div class="hidden">
 <h6 id="Absolute_positioning_example">Absolute positioning example</h6>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Absolute positioning&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Absolute positioning&lt;/h1&gt;
 
 &lt;p&gt;I am a basic block level element.&lt;/p&gt;
 &lt;p class="positioned"&gt;This is my absolutely positioned element.&lt;/p&gt;
 &lt;p&gt;I am a basic block level element.&lt;/p&gt;</pre>
 
-<pre class="brush: css notranslate">body {
+<pre class="brush: css">body {
   width: 500px;
   margin: 0 auto;
 }
@@ -455,7 +455,7 @@ p {
 </pre>
 </div>
 
-<pre class="brush: css notranslate">.positioned {
+<pre class="brush: css">.positioned {
     position: absolute;
     background: rgba(255,84,104,.3);
     border: 2px solid rgb(255,84,104);
@@ -466,7 +466,7 @@ p {
 
 <p>{{ EmbedLiveSample('Absolute_1', '100%', 300) }}</p>
 
-<p>Это совсем другое! Позиционированный элемент теперь совершенно отделен от разметки остальной страницы и располагается поверх него. Другие два параграфа теперь располагаются вместе так будто бы их позиционированный брат не существует. Свойства {{cssxref("top")}} и {{cssxref("left")}} имеют иной эффект на абсолютно позиционированные элементы, чем на относительно позиционированные элементы. В данном случае смещения были рассчитаны сверху и слева от страницы. Возможно изменить родительский элемент так что он становится контейнером, но мы рассмотрим это в уроке по <a href="/en-US/docs/Learn/CSS/CSS_layout/Positioning">позиционированию</a>.</p>
+<p>Это совсем другое! Позиционированный элемент теперь совершенно отделен от разметки остальной страницы и располагается поверх него. Другие два параграфа теперь располагаются вместе так будто бы их позиционированный брат не существует. Свойства {{cssxref("top")}} и {{cssxref("left")}} имеют иной эффект на абсолютно позиционированные элементы, чем на относительно позиционированные элементы. В данном случае смещения были рассчитаны сверху и слева от страницы. Возможно изменить родительский элемент так что он становится контейнером, но мы рассмотрим это в уроке по <a href="/en-US/docs/Learn/CSS/CSS_layout/Positioning">позиционированию</a>.</p>
 
 <h3 id="Fixed_positioning">Fixed positioning</h3>
 
@@ -474,7 +474,7 @@ p {
 
 <p>Для этого примера наш HTML это три параграфа текста для того, чтобы мы могли прокручивать страницу и блок, которому мы дадим <code>position: fixed</code>.</p>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Fixed positioning&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Fixed positioning&lt;/h1&gt;
 
 &lt;div class="positioned"&gt;Fixed&lt;/div&gt;
 
@@ -487,7 +487,7 @@ p {
 <div class="hidden">
 <h6 id="Fixed_positioning_example">Fixed positioning example</h6>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Fixed positioning&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Fixed positioning&lt;/h1&gt;
 
 &lt;div class="positioned"&gt;Fixed&lt;/div&gt;
 
@@ -499,7 +499,7 @@ p {
 
 </pre>
 
-<pre class="brush: css notranslate">body {
+<pre class="brush: css">body {
     width: 500px;
     margin: 0 auto;
 }
@@ -513,7 +513,7 @@ p {
 }</pre>
 </div>
 
-<pre class="brush: css notranslate">.positioned {
+<pre class="brush: css">.positioned {
     position: fixed;
     top: 30px;
     left: 30px;
@@ -524,13 +524,13 @@ p {
 
 <h3 id="Sticky_positioning">Sticky positioning</h3>
 
-<p>Липкое (Sticky) позиционирование — это последний тип позиционирования которой мы имеем в нашем распоряжении. Это микс дефолтного статического позиционирования с фиксированным позиционированием. когда элемент имеет <code>position: sticky</code> он будет прокручиваться в нормальном потоке пока не достигнет границы окна просмотра которую мы задали. С этого момента он (элемент) "прилипает", как если бы был применён <code>position: fixed</code>.</p>
+<p>Липкое (Sticky) позиционирование — это последний тип позиционирования которой мы имеем в нашем распоряжении. Это микс дефолтного статического позиционирования с фиксированным позиционированием. когда элемент имеет <code>position: sticky</code> он будет прокручиваться в нормальном потоке пока не достигнет границы окна просмотра которую мы задали. С этого момента он (элемент) "прилипает", как если бы был применён <code>position: fixed</code>.</p>
 
 <div id="Sticky_1">
 <div class="hidden">
 <h6 id="Sticky_positioning_example">Sticky positioning example</h6>
 
-<pre class="brush: html notranslate">&lt;h1&gt;Sticky positioning&lt;/h1&gt;
+<pre class="brush: html">&lt;h1&gt;Sticky positioning&lt;/h1&gt;
 
 &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.&lt;/p&gt;
 
@@ -540,7 +540,7 @@ p {
 
 &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.&lt;/p&gt;       </pre>
 
-<pre class="brush: css notranslate">body {
+<pre class="brush: css">body {
   width: 500px;
   margin: 0 auto;
 }
@@ -554,7 +554,7 @@ p {
 }</pre>
 </div>
 
-<pre class="brush: css notranslate">.positioned {
+<pre class="brush: css">.positioned {
   position: sticky;
   top: 30px;
   left: 30px;
@@ -569,7 +569,7 @@ p {
 
 <h2 id="Макет_таблицы">Макет таблицы</h2>
 
-<p>HTML таблицы хороши для отображения табличных данных, но много лет назад — до того, как даже <span class="tlid-translation translation" lang="ru"><span title="">базовый CSS</span></span> <span class="tlid-translation translation" lang="ru"><span title="">надёжно</span></span> поддерживался <span class="tlid-translation translation" lang="ru"><span title="">в браузерах </span></span>— веб-разработчики также использовали таблицы для разметки всей веб-страницы — размещая свои заголовки, нижние колонтитулы, различные колонки и т.д. в разных строках и столбцах таблиц. Это работало в то время, но оно имеет много проблем — разметка таблиц не гибкая, очень тяжёлая в вёрстке, сложна в отладке, и семантически не верная. (например, пользователи скринридеров имеют проблемы с навигацией в табличном макете).</p>
+<p>HTML таблицы хороши для отображения табличных данных, но много лет назад — до того, как даже <span class="tlid-translation translation" lang="ru"><span title="">базовый CSS</span></span> <span class="tlid-translation translation" lang="ru"><span title="">надёжно</span></span> поддерживался <span class="tlid-translation translation" lang="ru"><span title="">в браузерах </span></span>— веб-разработчики также использовали таблицы для разметки всей веб-страницы — размещая свои заголовки, нижние колонтитулы, различные колонки и т.д. в разных строках и столбцах таблиц. Это работало в то время, но оно имеет много проблем — разметка таблиц не гибкая, очень тяжёлая в вёрстке, сложна в отладке, и семантически не верная. (например, пользователи скринридеров имеют проблемы с навигацией в табличном макете).</p>
 
 <p><span class="tlid-translation translation" lang="ru"><span title="">То, как таблица выглядит на веб-странице при использовании разметки таблицы, обусловлено набором свойств CSS, которые определяют макет таблицы</span></span>. <span class="tlid-translation translation" lang="ru"><span title="">Эти свойства могут использоваться для размещения элементов, которые не являются таблицами, использование, которое иногда описывается как «использование CSS таблиц».</span></span></p>
 
@@ -577,7 +577,7 @@ p {
 
 <p>Давайте взглянем на пример. Во-первых, немного простой разметки, которая создаёт HTML форму. Каждый input элемент имеет label, и мы также заключили описание в параграф. каждая пара label/input обёрнута в {{htmlelement("div")}}, для целей вёрстки.</p>
 
-<pre class="brush: html notranslate">&lt;form&gt;
+<pre class="brush: html">&lt;form&gt;
   &lt;p&gt;First of all, tell us your name and age.&lt;/p&gt;
   &lt;div&gt;
     &lt;label for="fname"&gt;First name:&lt;/label&gt;
@@ -597,7 +597,7 @@ p {
 
 <p>Вы заметите, что параграфу с описанием дано <code>display: table-caption;</code> — что заставляет его вести себя как табличный {{htmlelement("caption")}} — а <code>caption-side: bottom;</code> для того чтобы указать описанию располагаться снизу таблицы в целях дизайна, не смотря на то что разметка находится до <code>&lt;input&gt;</code> элементов в источнике. Это обеспечивает гибкостью.</p>
 
-<pre class="brush: css notranslate">html {
+<pre class="brush: css">html {
   font-family: sans-serif;
 }
 
@@ -637,7 +637,7 @@ form p {
 
 <p>{{ EmbedLiveSample('Макет_таблицы', '100%', '170') }}</p>
 
-<p>Также вы можете посмотреть этот живой пример на <a href="https://mdn.github.io/learning-area/css/styling-boxes/box-model-recap/css-tables-example.html">css-tables-example.html</a> (смотрите также <a href="https://github.com/mdn/learning-area/blob/master/css/styling-boxes/box-model-recap/css-tables-example.html">исходный код</a>.)</p>
+<p>Также вы можете посмотреть этот живой пример на <a href="https://mdn.github.io/learning-area/css/styling-boxes/box-model-recap/css-tables-example.html">css-tables-example.html</a> (смотрите также <a href="https://github.com/mdn/learning-area/blob/master/css/styling-boxes/box-model-recap/css-tables-example.html">исходный код</a>.)</p>
 
 <h2 id="Многоколоночный_макет">Многоколоночный макет</h2>
 
@@ -647,7 +647,7 @@ form p {
 
 <p>В примере ниже мы начинаем с HTML блоком, который содержится в элементе <code>&lt;div&gt;</code> с классом <code>container</code>.</p>
 
-<pre class="brush: html notranslate">&lt;div class="container"&gt;
+<pre class="brush: html">&lt;div class="container"&gt;
     &lt;h1&gt;Multi-column layout&lt;/h1&gt;
 
     &lt;p&gt;Paragraph 1.&lt;/p&gt;
@@ -662,7 +662,7 @@ form p {
 <div class="hidden">
 <h6 id="Multicol_example">Multicol example</h6>
 
-<pre class="brush: html notranslate">    &lt;div class="container"&gt;
+<pre class="brush: html">    &lt;div class="container"&gt;
         &lt;h1&gt;Multi-column Layout&lt;/h1&gt;
 
         &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.&lt;/p&gt;
@@ -673,10 +673,10 @@ form p {
     &lt;/div&gt;
         </pre>
 
-<pre class="brush: css notranslate">body { max-width: 800px; margin: 0 auto; } </pre>
+<pre class="brush: css">body { max-width: 800px; margin: 0 auto; } </pre>
 </div>
 
-<pre class="brush: css notranslate">    .container {
+<pre class="brush: css">    .container {
         column-width: 200px;
     }</pre>
 </div>

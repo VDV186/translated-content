@@ -7,7 +7,7 @@ tags:
 translation_of: Web/SVG/Namespaces_Crash_Course
 ---
 <h3 id=".E5.B0.8E.E5.85.A5" name=".E5.B0.8E.E5.85.A5">導入</h3>
-<p><a href="ja/XML">XML</a> の派生言語として、 <a href="ja/SVG">SVG</a> は名前空間付けられています。もしあなたが SVG コンテンツを作成する予定なら名前空間の概念と使い方を理解することは重要です。 Firefox 1.5 リリースより前の幾つかのバージョンの SVG ビューワは残念ながら名前空間に対して十分な注意を払いませんが、 とても厳格でなくてならない <a href="ja/Gecko">Gecko</a> ベースのブラウザのようなユーザエージェントが複数の XML 派生言語をサポートするために不可欠です。今、名前空間を理解するためにいくらかの時間をとり、将来頭を悩ませる時間を節約しましょう。</p>
+<p><a href="/ja/docs/Glossary/XML">XML</a> の派生言語として、 <a href="/ja/docs/Web/SVG">SVG</a> は名前空間付けられています。もしあなたが SVG コンテンツを作成する予定なら名前空間の概念と使い方を理解することは重要です。 Firefox 1.5 リリースより前の幾つかのバージョンの SVG ビューワは残念ながら名前空間に対して十分な注意を払いませんが、 とても厳格でなくてならない <a href="/ja/docs/Glossary/Gecko">Gecko</a> ベースのブラウザのようなユーザエージェントが複数の XML 派生言語をサポートするために不可欠です。今、名前空間を理解するためにいくらかの時間をとり、将来頭を悩ませる時間を節約しましょう。</p>
 <h3 id=".E8.83.8C.E6.99.AF" name=".E8.83.8C.E6.99.AF">背景</h3>
 <p>異なった種類の XML ベースのコンテンツが同じ XML ファイルの中で一緒に混ざるのを可能にするのことは W3C の長年の目標です。 例えば、SVG と MathML は直接 XHTML ベースの科学ドキュメントに組み込まれるかもしれません。このようなコンテンツ タイプを混ぜることが可能にすることは、多くの利点がありますが、解決するために非常に大問題を要しました。</p>
 <p>当然、それぞれのXML 派生言語は仕様で述べたマークアップタグ名の意味を定義します。 1つの XML ドキュメントに異なった XML 派生言語のコンテンツを混ぜることによる問題は 別の派生言語が 1つの派生言語によって定義されたタグと同じ名前のタグを定義するかもしれないということです。 例えば、XHTMLとSVGの両方には、<code>&lt;title&gt;</code> タグがあります。 事実、ユーザエージェントはどうやって XML コンテンツが(あらかじめ)知っているものであるとき時に、単なる未知の任意のタグ名を含む無意味な XML ファイルでないと言えますか?</p>
@@ -22,7 +22,7 @@ translation_of: Web/SVG/Namespaces_Crash_Course
 <p>名前空間宣言は <code>xmlns</code> 属性によって提供されます。この属性は <code>&lt;svg&gt;</code> タグとその子供タグは名前空間名<span class="nowiki">'http://www.w3.org/2000/svg'</span>を持っている いずれかの XML 派生言語に属すると言っています。もちろん、それは SVG です。名前空間宣言はルート要素で一度のみ提供されることが必要なことに注意してください。その宣言は <i>標準</i>の名前空間を定義するので、ユーザエージェントは <code>&lt;svg&gt;</code> タグの全ての子孫タグが同じ名前空間に属することが分かります。ユーザエージェントはそのマークアップアップの処理方を知っているか確かめるために名前空間名をチェックします。</p>
 <p>名前空間名はただの文字列であることに注意してください。つまり SVG 名前空間名も URI のように見えますが重要ではありません。 URI は一意なので、一般的に使用されて、どこかに「リンク」する意志はありません。 (実際 URI が非常に頻繁に使用されるので、「名前空間 URI」という用語は「名前空間名」の代わりに一般的に使われます。)</p>
 <h4 id=".E3.83.87.E3.83.95.E3.82.A9.E3.83.AB.E3.83.88.E5.90.8D.E5.89.8D.E7.A9.BA.E9.96.93.E3.82.92.E5.86.8D.E5.AE.A3.E8.A8.80.E3.81.99.E3.82.8B" name=".E3.83.87.E3.83.95.E3.82.A9.E3.83.AB.E3.83.88.E5.90.8D.E5.89.8D.E7.A9.BA.E9.96.93.E3.82.92.E5.86.8D.E5.AE.A3.E8.A8.80.E3.81.99.E3.82.8B">デフォルト名前空間を再宣言する</h4>
-<p>もしルートタグの全ての子孫がデフォルト名前空間にあると定義されているなら、他の名前空間のコンテンツを混ぜるにはどうしたら良いのでしょう ? 簡単です。デフォルト名前空間を再定義するだけです。短い例があります</p>
+<p>もしルートタグの全ての子孫がデフォルト名前空間にあると定義されているなら、他の名前空間のコンテンツを混ぜるにはどうしたら良いのでしょう ? 簡単です。デフォルト名前空間を再定義するだけです。短い例があります</p>
 <pre>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
   &lt;body&gt;
     &lt;!-- ここに幾つか XHTML タグ --&gt;
@@ -113,7 +113,7 @@ translation_of: Web/SVG/Namespaces_Crash_Course
     </tr>
     <tr>
       <td><a class="external" href="http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html#method-setNamedItem">setNamedItem</a></td>
-      <td>[<a class="external" href="http://w" rel="freelink">http://w</a> ww.w3.org/TR/DOM-Level-2-Core/core.html#ID-setNamedItemNS setNamedItemNS]</td>
+      <td><a class="external" href="http://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-setNamedItemNS">setNamedItemNS</a></td>
     </tr>
   </tbody>
 </table>
@@ -148,4 +148,4 @@ image.setAttributeNS(XLink_NS, 'xlink:href', 'flower.png');
 </pre>
 <p>あなたが特定のドキュメントでそれら全ての名前空間を使用しなくても、名前空間宣言を含んで全く害はありません。 後日、未使用の名前空間の1つをコンテンツに結局加えるなら、それはいくつかの煩わしいエラーから救ってくれるかもしれません。</p>
 <h3 id=".E5.AE.8C.E5.85.A8.E3.81.AA.E4.BE.8B" name=".E5.AE.8C.E5.85.A8.E3.81.AA.E4.BE.8B">完全な例</h3>
-<p>完全な例は <a href="ja/SVG/Namespaces_Crash_Course/Example">SVG:Namespaces Crash Course:Example</a> を参照してください。</p>
+<p>完全な例は <a href="/ja/docs/Web/SVG/Namespaces_Crash_Course/Example">SVG:Namespaces Crash Course:Example</a> を参照してください。</p>

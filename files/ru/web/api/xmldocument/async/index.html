@@ -6,9 +6,9 @@ original_slug: Web/API/Document/async
 ---
 <p>{{APIRef("DOM")}}{{Deprecated_header}} {{Non-standard_header}}</p>
 
-<p><code>document.async</code> может быть установлен, для того, чтобы определить, что вызов {{domxref("document.load")}} должен быть выполнен синхронно или не синхронно. <code>true</code> - стандартное значение, определяющее, асинхронно ли должны быть загружены документы.</p>
+<p><code>document.async</code> может быть установлен, для того, чтобы определить, что вызов {{domxref("document.load")}} должен быть выполнен синхронно или не синхронно. <code>true</code> - стандартное значение, определяющее, асинхронно ли должны быть загружены документы.</p>
 
-<p>(Загружать документы синхронно стало возможно с версии 1.4 alpha.)</p>
+<p>(Загружать документы синхронно стало возможно с версии 1.4 alpha.)</p>
 
 <h2 id="Пример">Пример</h2>
 
@@ -22,7 +22,7 @@ xmlDoc.async = false;
 xmlDoc.onload = loadXMLData;
 xmlDoc.load('querydata.xml');</pre>
 
-<h2 id="Specification" name="Specification">Спецификация</h2>
+<h2 id="Specification">Спецификация</h2>
 
 <ul>
  <li><a href="http://www.w3.org/TR/DOM-Level-3-LS/load-save.html#LS-DocumentLS">DOM Level 3 Load &amp; Save module</a></li>

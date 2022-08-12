@@ -8,7 +8,7 @@ translation_of: Web/API/IDBObjectStore
 <p>{{APIRef("IndexedDB")}}</p>
 
 <div>
-<p>The <code>IDBObjectStore</code> interface of the <a href="/en/IndexedDB" title="en/IndexedDB">IndexedDB API</a> represents an <a href="/en/IndexedDB#gloss_object_store" title="en/IndexedDB#gloss object store">object store</a> in a database. Records within an object store are sorted according to their keys. This sorting enables fast insertion, look-up, and ordered retrieval.</p>
+<p>The <code>IDBObjectStore</code> interface of the <a href="/en/IndexedDB" title="en/IndexedDB">IndexedDB API</a> represents an <a href="/en/IndexedDB#gloss_object_store" title="en/IndexedDB#gloss object store">object store</a> in a database. Records within an object store are sorted according to their keys. This sorting enables fast insertion, look-up, and ordered retrieval.</p>
 </div>
 
 <h2 id="Methods">Methods</h2>
@@ -30,7 +30,7 @@ translation_of: Web/API/IDBObjectStore
  <dd>Opens an index from this object store after which it can, for example, be used to return a sequence of records sorted by that index using a cursor.</dd>
  <dt>{{domxref("IDBObjectStore.put")}}</dt>
  <dd>Returns an {{domxref("IDBRequest")}} object, and, in a separate thread, creates a <a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-dom-interfaces.html#structured-clone">structured clone</a> of the <code>value</code>, and stores the cloned value in the object store. This is for updating existing records in an object store when the transaction's mode is <code>readwrite</code>.</dd>
- <dt>{{domxref("IDBObjectStore.openCursor")}}<span style="line-height: 1.5;"> </span></dt>
+ <dt>{{domxref("IDBObjectStore.openCursor")}}<span style="line-height: 1.5;"> </span></dt>
  <dd>Returns an {{domxref("IDBRequest")}} object, and, in a separate thread, returns a new {{domxref("IDBCursorWithValue")}} object. Used for iterating through an object store by primary key with a cursor.</dd>
 </dl>
 
@@ -52,13 +52,13 @@ translation_of: Web/API/IDBObjectStore
 <h2 id="Obsolete_methods">Obsolete methods</h2>
 
 <dl>
- <dt>{{domxref("IDBObjectStore.openKeyCursor")}}<span style="line-height: 1.5;"> </span></dt>
- <dd>Returns an {{domxref("IDBRequest")}} object, and, in a separate thread, returns a new {{domxref("IDBCursorWithValue")}}. Used for iterating through an object store with a key. However, this is now handled by {{domxref("IDBObjectStore.openCursor")}}, if a value is specified.</dd>
+ <dt>{{domxref("IDBObjectStore.openKeyCursor")}}<span style="line-height: 1.5;"> </span></dt>
+ <dd>Returns an {{domxref("IDBRequest")}} object, and, in a separate thread, returns a new {{domxref("IDBCursorWithValue")}}. Used for iterating through an object store with a key. However, this is now handled by {{domxref("IDBObjectStore.openCursor")}}, if a value is specified.</dd>
 </dl>
 
 <h2 id="Example">Example</h2>
 
-<p>This example shows a variety of different uses of ObjectStores, from updating the data structure with {{domxref("IDBObjectStore.createIndex")}} inside an <code>onupgradeneeded</code> function, to adding a new item to our object store with {{domxref("IDBObjectStore.add")}}. For a full working example, see our <a href="https://github.com/mdn/to-do-notifications/" style="line-height: 1.5;">To-do Notifications</a><span style="line-height: 1.5;"> app (</span><a href="http://mdn.github.io/to-do-notifications/" style="line-height: 1.5;">view example live</a><span style="line-height: 1.5;">.)</span></p>
+<p>This example shows a variety of different uses of ObjectStores, from updating the data structure with {{domxref("IDBObjectStore.createIndex")}} inside an <code>onupgradeneeded</code> function, to adding a new item to our object store with {{domxref("IDBObjectStore.add")}}. For a full working example, see our <a href="https://github.com/mdn/to-do-notifications/" style="line-height: 1.5;">To-do Notifications</a><span style="line-height: 1.5;"> app (</span><a href="http://mdn.github.io/to-do-notifications/" style="line-height: 1.5;">view example live</a><span style="line-height: 1.5;">.)</span></p>
 
 <pre class="brush: js">// Let us open our database
 var DBOpenRequest = window.indexedDB.open("toDoList", 4);
@@ -99,7 +99,7 @@ DBOpenRequest.onupgradeneeded = function(event) {
 
 // Create a new item to add in to the object store
 var newItem = [
-  { taskTitle: "Walk dog", hours: 19, minutes: 30, day: 24, month: 'December', year: 2013, notified: "no" }
+  { taskTitle: "Walk dog", hours: 19, minutes: 30, day: 24, month: 'December', year: 2013, notified: "no" }
 ];
 
 // open a read/write db transaction, ready for adding the data
@@ -135,64 +135,14 @@ objectStoreRequest.onsuccess = function(event) {
   <tr>
    <td>{{SpecName('IndexedDB', '#idl-def-IDBObjectStore', 'IDBObjectStore')}}</td>
    <td>{{Spec2('IndexedDB')}}</td>
-   <td> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
 <h2 id="Browser_compatibility" name="Browser_compatibility">Browser compatibility</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari (WebKit)</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>23{{property_prefix("webkit")}}<br>
-    24</td>
-   <td>10 {{property_prefix("moz")}}<br>
-    {{CompatGeckoDesktop("16.0")}}</td>
-   <td>10, partial</td>
-   <td>15</td>
-   <td>7.1</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>Firefox OS</th>
-   <th>IE Phone</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>4.4</td>
-   <td>{{CompatGeckoMobile("22.0")}}</td>
-   <td>1.0.1</td>
-   <td>10</td>
-   <td>22</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
+{{Compat("api.IDBObjectStore")}}
 
 <h2 id="See_also">See also</h2>
 

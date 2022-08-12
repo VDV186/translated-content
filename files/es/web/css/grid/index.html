@@ -3,7 +3,7 @@ title: grid
 slug: Web/CSS/grid
 translation_of: Web/CSS/grid
 ---
-<p>La propiedad CSS <strong><code>grid</code></strong> es un <a href="/es/docs/Web/CSS/Shorthand_properties">shorthand</a> que permite definir todas las propiedades <em>grid</em> explícitas ({{cssxref("grid-template-rows")}}, {{cssxref("grid-template-columns")}}, y {{cssxref("grid-template-areas")}}), implícitas ({{cssxref("grid-auto-rows")}}, {{cssxref("grid-auto-columns")}}, y {{cssxref("grid-auto-flow")}}), y relativas a <em>gutter</em><em> </em>({{cssxref("grid-column-gap")}} y {{cssxref("grid-row-gap")}}) en una sola declaración.</p>
+<p>La propiedad CSS <strong><code>grid</code></strong> es un <a href="/es/docs/Web/CSS/Shorthand_properties">shorthand</a> que permite definir todas las propiedades <em>grid</em> explícitas ({{cssxref("grid-template-rows")}}, {{cssxref("grid-template-columns")}}, y {{cssxref("grid-template-areas")}}), implícitas ({{cssxref("grid-auto-rows")}}, {{cssxref("grid-auto-columns")}}, y {{cssxref("grid-auto-flow")}}), y relativas a <em>gutter</em><em> </em>({{cssxref("grid-column-gap")}} y {{cssxref("grid-row-gap")}}) en una sola declaración.</p>
 
 <pre class="brush: css no-line-numbers">/* &lt;'grid-template'&gt; values */
 grid: none;
@@ -35,7 +35,7 @@ grid: unset;
 </pre>
 
 <div class="note">
-<p><strong>Nota:</strong> Sólo se pueden especificar las propiedades explícitas <strong><em>o bien</em></strong> las propiedades implícitas en una sola declaración <code>grid</code>. Las sub-propiedades que no se especifican se definen a su valor inicial, como es normal para shorthands. También, las propiedades relativas a gutter se redefinen mediante este shorthand, incluso cuando no pueden ser definidas mediante el mismo.</p>
+<p><strong>Nota:</strong> Sólo se pueden especificar las propiedades explícitas <strong><em>o bien</em></strong> las propiedades implícitas en una sola declaración <code>grid</code>. Las sub-propiedades que no se especifican se definen a su valor inicial, como es normal para shorthands. También, las propiedades relativas a gutter se redefinen mediante este shorthand, incluso cuando no pueden ser definidas mediante el mismo.</p>
 </div>
 
 <p>{{cssinfo}}</p>
@@ -46,13 +46,13 @@ grid: unset;
 
 <dl>
  <dt><code>&lt;'grid-template'&gt;</code></dt>
- <dd>Define el {{cssxref("grid-template")}} incluyendo {{cssxref("grid-template-columns")}}, {{cssxref("grid-template-rows")}} y {{cssxref("grid-template-areas")}}.</dd>
+ <dd>Define el {{cssxref("grid-template")}} incluyendo {{cssxref("grid-template-columns")}}, {{cssxref("grid-template-rows")}} y {{cssxref("grid-template-areas")}}.</dd>
  <dt><code>&lt;'grid-template-rows'&gt; / [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;?</code></dt>
- <dd>Implementa un <em>auto-flow</em> asignando los <em>row tracks</em> explícitamente mediante {{cssxref("grid-template-rows")}} (definiendo {{cssxref("grid-template-columns")}} en <code>none</code>) y especificando como auto-repetir los <em>column tracks</em> mediante {{cssxref("grid-auto-columns")}} (definiendo {{cssxref("grid-auto-rows")}} en <code>auto</code>). {{cssxref("grid-auto-flow")}} es seteado en <code>column</code> en consecuencia, con <code>dense</code> si se especifica.<br>
- Todas las otras sub-propiedades de <code>grid</code> se redefinen a sus valores iniciales.</dd>
+ <dd>Implementa un <em>auto-flow</em> asignando los <em>row tracks</em> explícitamente mediante {{cssxref("grid-template-rows")}} (definiendo {{cssxref("grid-template-columns")}} en <code>none</code>) y especificando como auto-repetir los <em>column tracks</em> mediante {{cssxref("grid-auto-columns")}} (definiendo {{cssxref("grid-auto-rows")}} en <code>auto</code>). {{cssxref("grid-auto-flow")}} es seteado en <code>column</code> en consecuencia, con <code>dense</code> si se especifica.<br>
+ Todas las otras sub-propiedades de <code>grid</code> se redefinen a sus valores iniciales.</dd>
  <dt><code>[ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? / &lt;'grid-template-columns'&gt;</code></dt>
- <dd>Implementa un <em>auto-flow</em> asignando los <em>column tracks</em> explícitamente mediante {{cssxref("grid-template-columns")}} (definiendo {{cssxref("grid-template-rows")}} en <code>none</code>) y especificando como auto-repetir los <em>row tracks</em> mediante {{cssxref("grid-auto-rows")}} (definiendo {{cssxref("grid-auto-columns")}} en <code>auto</code>). {{cssxref("grid-auto-flow")}} es seteado en <code>row</code> en consecuencia, con <code>dense</code> si se especifica.<br>
- Todas las otras sub-propiedades de <code>grid</code> se redefinen a sus valores iniciales.</dd>
+ <dd>Implementa un <em>auto-flow</em> asignando los <em>column tracks</em> explícitamente mediante {{cssxref("grid-template-columns")}} (definiendo {{cssxref("grid-template-rows")}} en <code>none</code>) y especificando como auto-repetir los <em>row tracks</em> mediante {{cssxref("grid-auto-rows")}} (definiendo {{cssxref("grid-auto-columns")}} en <code>auto</code>). {{cssxref("grid-auto-flow")}} es seteado en <code>row</code> en consecuencia, con <code>dense</code> si se especifica.<br>
+ Todas las otras sub-propiedades de <code>grid</code> se redefinen a sus valores iniciales.</dd>
 </dl>
 
 <h3 id="Sintaxis_formal">Sintaxis formal</h3>
@@ -105,72 +105,14 @@ grid: unset;
   <tr>
    <td>{{SpecName("CSS3 Grid", "#propdef-grid", "grid")}}</td>
    <td>{{Spec2("CSS3 Grid")}}</td>
-   <td>Definición inicial</td>
+   <td>Definición inicial</td>
   </tr>
  </tbody>
 </table>
 
 <h2 id="Compatibilidad_en_navegadores">Compatibilidad en navegadores</h2>
 
-<p>{{CompatibilityTable}}</p>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Característica</th>
-   <th>Chrome</th>
-   <th>Edge</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Soporte básico</td>
-   <td>{{CompatChrome("57.0")}}<sup>[1]</sup></td>
-   <td>{{CompatNo}}<sup>[3]</sup></td>
-   <td>{{CompatGeckoDesktop("52.0")}}<sup>[2]</sup></td>
-   <td>{{CompatNo}}<sup>[3]</sup></td>
-   <td>{{CompatOpera(44)}}<sup>[4]</sup></td>
-   <td>{{CompatSafari("10.1")}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Característica</th>
-   <th>Android Webview</th>
-   <th>Chrome for Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Soporte básico</td>
-   <td>{{CompatChrome("57.0")}}<sup>[1]</sup></td>
-   <td>{{CompatChrome("57.0")}}<sup>[1]</sup></td>
-   <td>{{CompatGeckoDesktop("52.0")}}<sup>[2]</sup></td>
-   <td>{{CompatNo}}<sup>[3]</sup></td>
-   <td>{{CompatOperaMobile}}</td>
-   <td>{{CompatSafari("10.3")}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<p>[1] Implementado detrás del flag <em>experimental Web Platform features</em> en <code>chrome://flags</code> desde Chrome 29.0.</p>
-
-<p>[2] Implementado detrás de la preferencia <code>layout.css.grid.enabled</code> desde Gecko 40.0 {{geckoRelease("40.0")}}, <code>false</code> por defecto. Desde Gecko 52.0 <code>true</code> por defecto.</p>
-
-<p>[3] Internet Explorer y Edge implementan una <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">version antigua de la especificación</a>, que no define el shorthand <code>grid</code>. Ver el <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6514853-update-css-grid">pedido para actualizar la implementación</a>.</p>
-
-<p>[4] Implementado detrás del flag <em>Enable experimental Web Platform features</em> en <code>chrome://flags</code> desde Opera 28.0.</p>
+{{Compat("css.properties.grid")}}
 
 <h2 id="Ver_también">Ver también</h2>
 

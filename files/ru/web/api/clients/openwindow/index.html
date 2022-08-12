@@ -14,15 +14,15 @@ translation_of: Web/API/Clients/openWindow
 ---
 <div>{{APIRef("Service Workers API")}}</div>
 
-<p>Метод <strong><code>openWindow()</code></strong> интерфейса {{domxref("Clients")}} создаёт новый контекст просмотра верхнего уровня и загружает заданный URL. Если вызывающий скрипт не имеет разрешения на отображение всплывающих окон, <code>openWindow()</code> выдаст <code>InvalidAccessError</code>.</p>
+<p>Метод <strong><code>openWindow()</code></strong> интерфейса {{domxref("Clients")}} создаёт новый контекст просмотра верхнего уровня и загружает заданный URL. Если вызывающий скрипт не имеет разрешения на отображение всплывающих окон, <code>openWindow()</code> выдаст <code>InvalidAccessError</code>.</p>
 
-<p>В Firefox этому методу разрешено отображать всплывающие окна только при вызове события клике по уведомлению.</p>
+<p>В Firefox этому методу разрешено отображать всплывающие окна только при вызове события клике по уведомлению.</p>
 
-<p>В Chrome для Android этот метод может открыть URL-адрес в существующем контексте просмотра, предоставляемым автономным веб-приложением (<a href="/en-US/docs/Web/Progressive_web_apps">standalone web app</a>), ранее добавленным на главный экран пользователя. С недавнего времени это также работает в Chrome для Windows.</p>
+<p>В Chrome для Android этот метод может открыть URL-адрес в существующем контексте просмотра, предоставляемым автономным веб-приложением (<a href="/en-US/docs/Web/Progressive_web_apps">standalone web app</a>), ранее добавленным на главный экран пользователя. С недавнего времени это также работает в Chrome для Windows.</p>
 
 <h2 id="Синтаксис">Синтаксис</h2>
 
-<pre class="syntaxbox notranslate">self.clients.openWindow(<em>url</em>).then(function(<em>windowClient</em>) {
+<pre class="syntaxbox">self.clients.openWindow(<em>url</em>).then(function(<em>windowClient</em>) {
   // Do something with your WindowClient
 });</pre>
 
@@ -30,7 +30,7 @@ translation_of: Web/API/Clients/openWindow
 
 <dl>
  <dt><code>url</code></dt>
- <dd>{{domxref("USVString")}} - URL-адрес клиента, который вы хотите открыть. Обычно это значение должно быть URL из того же источника, что и вызывающий скрипт.</dd>
+ <dd>{{domxref("USVString")}} - URL-адрес клиента, который вы хотите открыть. Обычно это значение должно быть URL из того же источника, что и вызывающий скрипт.</dd>
 </dl>
 
 <h3 id="Возвращаемое_значение">Возвращаемое значение</h3>
@@ -41,7 +41,7 @@ translation_of: Web/API/Clients/openWindow
 
 <h2 id="Примеры">Примеры</h2>
 
-<pre class="brush: js notranslate">// Отправить уведомление в OS, если возможно
+<pre class="brush: js">// Отправить уведомление в OS, если возможно
 if (self.Notification.permission === 'granted') {
   const notificationObject = {
     body: 'Click here to view your messages.',
@@ -51,7 +51,7 @@ if (self.Notification.permission === 'granted') {
   self.registration.showNotification('You\'ve got messages!', notificationObject);
 }
 
-// Слушатель события клика по уведомлению
+// Обработчик события клика по уведомлению
 self.addEventListener('notificationclick', e =&gt; {
   // Закрываем всплывающее окно с уведомлением
   e.notification.close();
@@ -67,25 +67,12 @@ self.addEventListener('notificationclick', e =&gt; {
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Specification</th>
-   <th scope="col">Status</th>
-   <th scope="col">Comment</th>
-  </tr>
-  <tr>
-   <td>{{SpecName('Service Workers', '#clients-openwindow', 'Clients: openWindow')}}</td>
-   <td>{{Spec2('Service Workers')}}</td>
-   <td>Initial definition.</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Совместимость_с_браузером">Совместимость с браузером</h2>
 
 <div>
 
 
-<p>{{Compat("api.Clients.openWindow")}}</p>
+<p>{{Compat}}</p>
 </div>

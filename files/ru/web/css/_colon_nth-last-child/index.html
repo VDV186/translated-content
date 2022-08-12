@@ -9,9 +9,9 @@ translation_of: 'Web/CSS/:nth-last-child'
 
 <h2 id="Описание">Описание</h2>
 
-<p><a href="/ru/docs/CSS" title="CSS">CSS</a> <a href="/ru/docs/Web/CSS/Псевдо-классы" title="Pseudo-classes">псевдокласс</a> <code>:nth-last-child(an+b)</code> находит элемент, имеющий <code><em>a</em>n+<em>b</em>-1</code> потомков после данной позиции в дереве документа, значение для <code>n </code>может быть положительным или нулевым, а также имеющий родительский элемент.</p>
+<p><a href="/ru/docs/CSS" title="CSS">CSS</a> <a href="/ru/docs/Web/CSS/Псевдо-классы" title="Pseudo-classes">псевдокласс</a> <code>:nth-last-child(an+b)</code> находит элемент, имеющий <code><em>a</em>n+<em>b</em>-1</code> потомков после данной позиции в дереве документа, значение для <code>n </code>может быть положительным или нулевым, а также имеющий родительский элемент.</p>
 
-<p>В результате, он функционирует так же, как и {{Cssxref(":nth-child")}}, кроме того, что выбирает элементы, считая в обратном порядке, с <strong>конца</strong> списка потомков, не с начала.</p>
+<p>В результате, он функционирует так же, как и {{Cssxref(":nth-child")}}, кроме того, что выбирает элементы, считая в обратном порядке, с <strong>конца</strong> списка потомков, не с начала.</p>
 
 <p>Смотрите {{Cssxref(":nth-child")}} для более тщательного описания синтаксиса его аргументов.</p>
 
@@ -26,7 +26,7 @@ translation_of: 'Web/CSS/:nth-last-child'
 
 <dl>
  <dt><code>tr:nth-last-child(-n+4)</code></dt>
- <dd>Находит последние 4 строки HTML таблицы.</dd>
+ <dd>Находит последние 4 строки HTML таблицы.</dd>
  <dt><code>span:nth-last-child(even)</code></dt>
  <dd>Ищет чётные элементы в родительском элементе, начиная с последнего элемента и работая задом наперёд.</dd>
 </dl>
@@ -43,7 +43,7 @@ tr:nth-last-child(-n+3) { /* последние 3 потомка */
 }
 </pre>
 
-<p>... с этим HTML ...</p>
+<p>... с этим HTML ...</p>
 
 <pre class="brush: html">&lt;table&gt;
   &lt;tbody&gt;
@@ -66,37 +66,17 @@ tr:nth-last-child(-n+3) { /* последние 3 потомка */
 &lt;/table&gt;
 </pre>
 
-<p>... будет выглядеть, как :</p>
+<p>... будет выглядеть, как :</p>
 
 <p>{{EmbedLiveSample('Примеры', '100%', 150)}}</p>
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{SpecName('CSS4 Selectors', '#nth-last-child-pseudo', ':nth-last-child')}}</td>
-   <td>{{Spec2('CSS4 Selectors')}}</td>
-   <td>Без изменений</td>
-  </tr>
-  <tr>
-   <td>{{SpecName('CSS3 Selectors', '#nth-last-child-pseudo', ':nth-last-child')}}</td>
-   <td>{{Spec2('CSS3 Selectors')}}</td>
-   <td>Изначальное определение</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Поддержка_браузерами">Поддержка браузерами</h2>
 
-<p>{{Compat("css.selectors.nth-last-child")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 

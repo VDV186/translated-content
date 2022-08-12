@@ -5,10 +5,10 @@ translation_of: Web/CSS/overflow-block
 ---
 <div>{{CSSRef}}</div>
 
-<p><a href="/en-US/docs/Web/CSS">CSS</a> свойство <strong><code>overflow-block</code></strong> устанавливает, что будет отображаться, когда содержимое переполняет начальные и конечные края блока. Это может быть ничего, полоса прокрутки или содержимое переполнения.</p>
+<p><a href="/en-US/docs/Web/CSS">CSS</a> свойство <strong><code>overflow-block</code></strong> устанавливает, что будет отображаться, когда содержимое переполняет начальные и конечные края блока. Это может быть ничего, полоса прокрутки или содержимое переполнения.</p>
 
 <div class="note">
-<p>Свойство <code>overflow-block</code> отображается на {{Cssxref("overflow-y")}} или {{Cssxref("overflow-x")}} в зависимости от режима записи документа.</p>
+<p>Свойство <code>overflow-block</code> отображается на {{Cssxref("overflow-y")}} или {{Cssxref("overflow-x")}} в зависимости от режима записи документа.</p>
 </div>
 
 <h2 id="Синтаксис">Синтаксис</h2>
@@ -25,7 +25,7 @@ overflow-block: initial;
 overflow-block: unset;
 </pre>
 
-<p>Свойство <code>overflow-block</code> указывается как одно ключевое слово, выбранное из списка значений ниже.</p>
+<p>Свойство <code>overflow-block</code> указывается как одно ключевое слово, выбранное из списка значений ниже.</p>
 
 <h3 id="Значения">Значения</h3>
 
@@ -37,7 +37,7 @@ overflow-block: unset;
  <dt><code>scroll</code></dt>
  <dd>При необходимости содержимое обрезается, чтобы поместиться в размер блока в поле заполнения. Браузеры отображают полосы прокрутки вне зависимости от того, вырезано ли содержимое. (Это предотвращает появление или исчезновение полос прокрутки при изменении содержимого.) Принтеры могут по-прежнему печатать переполненное содержимое.</dd>
  <dt><code>auto</code></dt>
- <dd>Зависит от пользовательского агента. Если содержимое помещается в поле дополнения, оно выглядит так же, как visible, но всё же устанавливает новый контекст форматирования блока. Настольные браузеры устанавливают полосы прокрутки, если содержимое переполняется.</dd>
+ <dd>Зависит от пользовательского агента. Если содержимое помещается в поле дополнения, оно выглядит так же, как visible, но всё же устанавливает новый контекст форматирования блока. Настольные браузеры устанавливают полосы прокрутки, если содержимое переполняется.</dd>
 </dl>
 
 <h3 id="Формат_синтаксиса">Формат синтаксиса</h3>
@@ -96,34 +96,19 @@ overflow-block: unset;
 <h3 id="Результат">Результат</h3>
 
 <figure>
-<p>{{EmbedLiveSample("Examples", "100%", "780")}}</p>
+<p>{{EmbedLiveSample("Примеры", "100%", "780")}}</p>
 </figure>
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{ SpecName('CSS3 Overflow', '#propdef-overflow-block', 'overflow-block') }}</td>
-   <td>{{ Spec2('CSS3 Overflow') }}</td>
-   <td></td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <div>{{cssinfo}}</div>
 
 <h2 id="Совместимость_браузера">Совместимость браузера</h2>
-<p>{{Compat("css.properties.overflow-block")}}</p>
+<p>{{Compat}}</p>
 
-<h2 id="See_also" name="See_also">Смотрите также</h2>
+<h2 id="See_also">Смотрите также</h2>
 
 <ul>
  <li>Связанные свойства CSS: {{cssxref("text-overflow")}}, {{cssxref("white-space")}}, {{Cssxref("overflow")}}, {{Cssxref("overflow-inline")}}, {{Cssxref("overflow-x")}}, {{Cssxref("overflow-y")}}, {{Cssxref("clip")}}, {{Cssxref("display")}}</li>

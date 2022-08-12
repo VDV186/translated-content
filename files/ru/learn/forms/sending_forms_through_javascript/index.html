@@ -6,29 +6,29 @@ original_slug: Learn/HTML/Forms/Sending_forms_through_JavaScript
 ---
 <div>{{LearnSidebar}}</div>
 
-<p><span class="seoSummary">HTML формы могут декларативно отправлять <a href="/en-US/docs/HTTP">HTTP</a>-запросы. Но формы также могут подготовить HTTP-запросы для отправки с помощью JavaScript, например при помощи <code>XMLHttpRequest</code>. В этой статье исследуются подобные подходы.</span></p>
+<p><span class="seoSummary">HTML формы могут декларативно отправлять <a href="/en-US/docs/HTTP">HTTP</a>-запросы. Но формы также могут подготовить HTTP-запросы для отправки с помощью JavaScript, например при помощи <code>XMLHttpRequest</code>. В этой статье исследуются подобные подходы.</span></p>
 
 <h2 id="Формы_не_всегда_формы">Формы не всегда формы</h2>
 
-<p>В современных веб-приложениях, одностраничных приложениях и приложениях на основе фреймворков, обычно <a href="/en-US/docs/HTML/Forms">HTML-формы</a> используются для отправки данных без загрузки нового документа при получении данных ответа. В начале поговорим о том почему это требует другого подхода.</p>
+<p>В современных веб-приложениях, одностраничных приложениях и приложениях на основе фреймворков, обычно <a href="/en-US/docs/HTML/Forms">HTML-формы</a> используются для отправки данных без загрузки нового документа при получении данных ответа. В начале поговорим о том почему это требует другого подхода.</p>
 
 <h3 id="Получение_контроля_над_глобальным_интерфейсом">Получение контроля над глобальным интерфейсом</h3>
 
-<p>Отправка стандартной HTML формы, как описывалось в предыдущей статье, загружает URL-адрес, по которому были отправлены данные, это означает, что окно браузера перемещается с полной загрузкой страницы. Если избегать полную перезагрузку страницы, можно обеспечить более плавную работу, за счёт предотвращения задержек в сети и возможных визуальных проблем (например, мерцания).</p>
+<p>Отправка стандартной HTML формы, как описывалось в предыдущей статье, загружает URL-адрес, по которому были отправлены данные, это означает, что окно браузера перемещается с полной загрузкой страницы. Если избегать полную перезагрузку страницы, можно обеспечить более плавную работу, за счёт предотвращения задержек в сети и возможных визуальных проблем (например, мерцания).</p>
 
-<p>Многие современные пользовательские интерфейсы используют HTML формы только для сбора пользовательского ввода, а не для для отправки данных. Когда пользователь пытается отправить свои данные, приложение берёт контроль и асинхронно передаёт данные в фоновом режиме, обновляя только ту часть всего интерфейса пользователя, которой требуется обновление.</p>
+<p>Многие современные пользовательские интерфейсы используют HTML формы только для сбора пользовательского ввода, а не для для отправки данных. Когда пользователь пытается отправить свои данные, приложение берёт контроль и асинхронно передаёт данные в фоновом режиме, обновляя только ту часть всего интерфейса пользователя, которой требуется обновление.</p>
 
-<p>Асинхронная отправка произвольных данных обычно называется <a href="/en-US/docs/AJAX">AJAX</a>, что означает <strong>"Asynchronous JavaScript And XML" </strong>(Асинхронный JavaScript и XML).</p>
+<p>Асинхронная отправка произвольных данных обычно называется <a href="/en-US/docs/AJAX">AJAX</a>, что означает <strong>"Asynchronous JavaScript And XML" </strong>(Асинхронный JavaScript и XML).</p>
 
 <h3 id="Чем_он_отличается">Чем он отличается?</h3>
 
-<p>Объект {{domxref("XMLHttpRequest")}} (XHR) DOM может создавать HTTP-запросы, отправлять их, и получать их результат. Исторически, {{domxref("XMLHttpRequest")}} был разработан для получения и отправки <a href="/en-US/docs/XML">XML</a> в качестве формата обмена, который со временем был заменён на <a href="/en-US/docs/JSON">JSON</a>. Но ни XML, ни JSON не вписываются в кодировку запроса данных формы. Данные формы (<code>application/x-www-form-urlencoded</code>) состоят из списка пар ключ/значение в кодировке URL. Для передачи бинарных данных, HTTP-запрос преобразуется в <code>multipart/form-data</code>.</p>
+<p>Объект {{domxref("XMLHttpRequest")}} (XHR) DOM может создавать HTTP-запросы, отправлять их, и получать их результат. Исторически, {{domxref("XMLHttpRequest")}} был разработан для получения и отправки <a href="/en-US/docs/XML">XML</a> в качестве формата обмена, который со временем был заменён на <a href="/en-US/docs/JSON">JSON</a>. Но ни XML, ни JSON не вписываются в кодировку запроса данных формы. Данные формы (<code>application/x-www-form-urlencoded</code>) состоят из списка пар ключ/значение в кодировке URL. Для передачи бинарных данных, HTTP-запрос преобразуется в <code>multipart/form-data</code>.</p>
 
 <div class="blockIndicator note">
-<p><strong>Замечание</strong>: Сейчас <a href="/en-US/docs/Web/API/Fetch_API">Fetch API</a> часто используется вместо XHR — это современная, обновлённая версия XHR, которая работает в похожем стиле, но имеет несколько преимуществ. Большая часть XHR-кода, которую вы увидите в этой статье можно заменить на Fetch.</p>
+<p><strong>Замечание</strong>: Сейчас <a href="/en-US/docs/Web/API/Fetch_API">Fetch API</a> часто используется вместо XHR — это современная, обновлённая версия XHR, которая работает в похожем стиле, но имеет несколько преимуществ. Большая часть XHR-кода, которую вы увидите в этой статье можно заменить на Fetch.</p>
 </div>
 
-<p>Если вы управляете фронтендом (кодом, который выполняется в браузере) и бэкендом (кодом, который выполняется на стороне сервера), вы можете отправлять JSON/XML и обрабатывать их как хотите.</p>
+<p>Если вы управляете фронтендом (кодом, который выполняется в браузере) и бэкендом (кодом, который выполняется на стороне сервера), вы можете отправлять JSON/XML и обрабатывать их как хотите.</p>
 
 <p>Но если вы хотите использовать сторонний сервис, то вам необходимо отправлять данные в формате, который требуется сервису.</p>
 
@@ -39,24 +39,24 @@ original_slug: Learn/HTML/Forms/Sending_forms_through_JavaScript
 <p>Есть три способа отправки данных формы:</p>
 
 <ul>
- <li>Создание <code>XMLHttpRequest</code> вручную.</li>
- <li>Использование самостоятельного <code>FormData</code> объекта.</li>
- <li>Использование <code>FormData</code> связанного с <code>&lt;form&gt;</code> элементом.</li>
+ <li>Создание <code>XMLHttpRequest</code> вручную.</li>
+ <li>Использование самостоятельного <code>FormData</code> объекта.</li>
+ <li>Использование <code>FormData</code> связанного с <code>&lt;form&gt;</code> элементом.</li>
 </ul>
 
 <p>Давайте рассмотрим их подробнее:</p>
 
-<h3 id="Создание_XMLHttpRequest_вручную">Создание  XMLHttpRequest вручную</h3>
+<h3 id="Создание_XMLHttpRequest_вручную">Создание  XMLHttpRequest вручную</h3>
 
-<p>{{domxref("XMLHttpRequest")}} это самый безопасный и надёжный способ создавать HTTP-запросы. Для отправки данных формы с помощью {{domxref("XMLHttpRequest")}}, подготовьте данные с помощью URL-кодирования, и соблюдайте специфику запросов данных формы.</p>
+<p>{{domxref("XMLHttpRequest")}} это самый безопасный и надёжный способ создавать HTTP-запросы. Для отправки данных формы с помощью {{domxref("XMLHttpRequest")}}, подготовьте данные с помощью URL-кодирования, и соблюдайте специфику запросов данных формы.</p>
 
 <p>Посмотрите на пример:</p>
 
-<pre class="brush: html notranslate">&lt;button&gt;Click Me!&lt;/button&gt;</pre>
+<pre class="brush: html">&lt;button&gt;Click Me!&lt;/button&gt;</pre>
 
 <p>И на JavaScript:</p>
 
-<pre class="brush: js notranslate">const btn = document.querySelector('button');
+<pre class="brush: js">const btn = document.querySelector('button');
 
 function sendData( data ) {
   console.log( 'Sending data' );
@@ -103,7 +103,7 @@ btn.addEventListener( 'click', function() {
 
 <p>Это результат:</p>
 
-<p>{{EmbedLiveSample("Building_an_XMLHttpRequest_manually", "100%", 50)}}</p>
+<p>{{EmbedLiveSample("Создание_XMLHttpRequest_вручную", "100%", 50)}}</p>
 
 <div class="note">
 <p><strong>Note:</strong> This use of {{domxref("XMLHttpRequest")}} is subject to the {{glossary('same-origin policy')}} if you want to send data to a third party web site. For cross-origin requests, you'll need <a href="/en-US/docs/HTTP/Access_control_CORS">CORS and HTTP access control</a>.</p>
@@ -119,11 +119,11 @@ btn.addEventListener( 'click', function() {
 
 <h4 id="Using_a_standalone_FormData_object">Using a standalone FormData object</h4>
 
-<pre class="brush: html notranslate">&lt;button&gt;Click Me!&lt;/button&gt;</pre>
+<pre class="brush: html">&lt;button&gt;Click Me!&lt;/button&gt;</pre>
 
 <p>You should be familiar with that HTML sample. Now for the JavaScript:</p>
 
-<pre class="brush: js notranslate">const btn = document.querySelector('button');
+<pre class="brush: js">const btn = document.querySelector('button');
 
 function sendData( data ) {
   const XHR = new XMLHttpRequest(),
@@ -165,7 +165,7 @@ btn.addEventListener( 'click', function()
 
 <p>The HTML is typical:</p>
 
-<pre class="brush: html notranslate">&lt;form id="myForm"&gt;
+<pre class="brush: html">&lt;form id="myForm"&gt;
   &lt;label for="myName"&gt;Send me your name:&lt;/label&gt;
   &lt;input id="myName" name="name" value="John"&gt;
   &lt;input type="submit" value="Send Me!"&gt;
@@ -173,7 +173,7 @@ btn.addEventListener( 'click', function()
 
 <p>But JavaScript takes over the form:</p>
 
-<pre class="brush: js notranslate">window.addEventListener( "load", function () {
+<pre class="brush: js">window.addEventListener( "load", function () {
   function sendData() {
     const XHR = new XMLHttpRequest();
 
@@ -224,7 +224,7 @@ btn.addEventListener( 'click', function()
 
 <p>In the following example, we use the {{domxref("FileReader")}} API to access binary data and then build the multi-part form data request by hand:</p>
 
-<pre class="brush: html notranslate">&lt;form id="theForm"&gt;
+<pre class="brush: html">&lt;form id="theForm"&gt;
   &lt;p&gt;
     &lt;label for="theText"&gt;text data:&lt;/label&gt;
     &lt;input id="theText" name="myText" value="Some text data" type="text"&gt;
@@ -238,7 +238,7 @@ btn.addEventListener( 'click', function()
 
 <p>As you see, the HTML is a standard <code>&lt;form&gt;</code>. There's nothing magical going on. The "magic" is in the JavaScript:</p>
 
-<pre class="brush: js notranslate">// Because we want to access DOM nodes,
+<pre class="brush: js">// Because we want to access DOM nodes,
 // we initialize our script at page load.
 window.addEventListener( 'load', function () {
 

@@ -11,7 +11,7 @@ translation_of: Web/HTTP/Methods/TRACE
 
 <p><strong>HTTP Метод <code>TRACE</code></strong> выполняет проверку обратной связи по пути к целевому ресурсу, предоставляя полезный механизм отладки.</p>
 
-<p>Конечный получатель запроса должен отразить полученное сообщение, исключая некоторые поля описанные ниже, назад клиенту как тело сообщения с ответом 200 (<code>OK</code>) с заголовком {{httpheader("Content-Type")}} <code>message/http</code>. Конечный получатель это либо исходный сервер, либо первый сервер получивший значение {{httpheader("Max-Forwards")}} в запросе.</p>
+<p>Конечный получатель запроса должен отразить полученное сообщение, исключая некоторые поля описанные ниже, назад клиенту как тело сообщения с ответом 200 (<code>OK</code>) с заголовком {{httpheader("Content-Type")}} <code>message/http</code>. Конечный получатель это либо исходный сервер, либо первый сервер получивший значение {{httpheader("Max-Forwards")}} в запросе.</p>
 
 <table class="properties">
  <tbody>
@@ -36,7 +36,7 @@ translation_of: Web/HTTP/Methods/TRACE
    <td>Нет</td>
   </tr>
   <tr>
-   <th scope="row">Допускается в <a href="/ru/docs/Learn/HTML/Forms">HTML-формах</a></th>
+   <th scope="row">Допускается в <a href="/ru/docs/Learn/HTML/Forms">HTML-формах</a></th>
    <td>Нет</td>
   </tr>
  </tbody>
@@ -49,23 +49,10 @@ translation_of: Web/HTTP/Methods/TRACE
 
 <h2 id="Спецификация">Спецификация</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Заголовок</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{RFC("7231", "TRACE", "4.3.8")}}</td>
-   <td>Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Поддержка_браузерами">Поддержка браузерами</h2>
-<p>{{Compat("http.methods.TRACE")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 

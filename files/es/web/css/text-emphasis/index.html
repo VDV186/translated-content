@@ -4,9 +4,9 @@ slug: Web/CSS/text-emphasis
 translation_of: Web/CSS/text-emphasis
 ---
 <div>
-<p>La <strong>propiedad</strong> <strong><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></strong>  de <strong>text-emphasis</strong>, es una propiedad <em>abreviada</em> para establecer los valores de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-style">text-empahasis-style</a> y <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-color">text-emphasis-color</a>, en una sola declaración.</p>
+<p>La <strong>propiedad</strong> <strong><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></strong>  de <strong>text-emphasis</strong>, es una propiedad <em>abreviada</em> para establecer los valores de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-style">text-empahasis-style</a> y <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-emphasis-color">text-emphasis-color</a>, en una sola declaración.</p>
 
-<p>Esta <strong>propiedad</strong> aplicara el  énfasis a cada carácter especificado en el texto del elemento,  a excepción de caracteres separados como espacios y caracteres de control .</p>
+<p>Esta <strong>propiedad</strong> aplicara el  énfasis a cada carácter especificado en el texto del elemento,  a excepción de caracteres separados como espacios y caracteres de control .</p>
 </div>
 
 <pre class="brush:css no-line-numbers">/* Valor Inicial */
@@ -38,7 +38,7 @@ text-emphasis: unset;
 
 <p><a href="https://developer.mozilla.org/es/docs/Web/CSS/text-decoration">Text-decoration</a> no hereda y la decoración se aplica atreves de todo el elemento. Sin embargo, la propiedad <strong>test-emphasis</strong> si hereda, lo que significa que es posible cambiar el <strong>énfasis</strong> para los descendientes.</p>
 
-<p>The size of the emphasis symbol, like ruby symbols, is about 50% of the size of the font, and <code>text-emphasis</code> may affect line height when the current leading is not enough for the marks.</p>
+<p>The size of the emphasis symbol, like ruby symbols, is about 50% of the size of the font, and <code>text-emphasis</code> may affect line height when the current leading is not enough for the marks.</p>
 
 <div class="note">
 <p><code>text-emphasis</code> doesn't reset the value of {{cssxref("text-emphasis-position")}}. This is because if the style and the color of emphasis marks may vary in a text, it is extremely unlikely that their position will. In the very rare cases when this is needed, the property {{cssxref("text-emphasis-position")}}.</p>
@@ -118,56 +118,7 @@ text-emphasis: unset;
 
 <h2 id="Compatibilidad_del_navegador">Compatibilidad del navegador</h2>
 
-<p>{{CompatibilityTable}}</p>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Firefox (Gecko)</th>
-   <th>Chrome</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatGeckoDesktop("46")}}<sup>[1]</sup></td>
-   <td>25.0{{property_prefix("-webkit")}}</td>
-   <td>{{CompatNo()}}</td>
-   <td>15.0{{property_prefix("-webkit")}}</td>
-   <td>6.1{{property_prefix("-webkit")}}<br>
-    7.1</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>Android</th>
-   <th>IE Phone</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatGeckoDesktop("46")}}<sup>[1]</sup></td>
-   <td>4.4{{property_prefix("-webkit")}}</td>
-   <td>{{CompatNo()}}</td>
-   <td>33{{property_prefix("-webkit")}}</td>
-   <td>7.1</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<p>[1] In Firefox 45, it wasn't activated by default: in <code>about:config</code>, the user has to set the preference <code>layout.css.text-emphasis.enabled</code> to <code>true</code>. Activated by default in Firefox 46, this preference was removed in Firefox 49.</p>
+{{Compat("css.properties.text-emphasis")}}
 
 <h2 id="Ver_también">Ver también</h2>
 

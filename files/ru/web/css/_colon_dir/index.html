@@ -5,21 +5,21 @@ translation_of: 'Web/CSS/:dir'
 ---
 <div>{{CSSRef}}{{SeeCompatTable}}</div>
 
-<p><strong><code>:dir()</code></strong> — это <a href="/en-US/docs/Web/CSS/Pseudo-classes">псевдокласс</a> <a href="/en-US/docs/Web/CSS">CSS</a>, который выбирает элементы на основе направления текста в них.</p>
+<p><strong><code>:dir()</code></strong> — это <a href="/en-US/docs/Web/CSS/Pseudo-classes">псевдокласс</a> <a href="/en-US/docs/Web/CSS">CSS</a>, который выбирает элементы на основе направления текста в них.</p>
 
 <pre class="brush: css no-line-numbers">/* Выбирает все элементы с текстом справа-налево */
 :dir(rtl) {
   background-color: red;
 }</pre>
 
-<p><code>:dir()</code> учитывает только <em>семантическое </em>направление, т.е. заданное в самом документе. Он не учитывает <em>стилизованное </em>направление, т.е. заданное CSS-правилами, например {{cssxref("direction")}}.</p>
+<p><code>:dir()</code> учитывает только <em>семантическое </em>направление, т.е. заданное в самом документе. Он не учитывает <em>стилизованное </em>направление, т.е. заданное CSS-правилами, например {{cssxref("direction")}}.</p>
 
 <div class="note">
-<p><strong>Примечание:</strong>  помните о том, что псевдокласс <code>:dir()</code> <strong>не эквивалентен</strong> <a href="/ru/docs/Web/CSS/Attribute_selectors">выбору по атрибуту</a> <code>[dir=…]</code>. Последний применяется только к тем элементам HTML, у которых есть атрибут {{htmlattrxref("dir")}}, игнорируя те, у которых он не задан — даже если они унаследовали его значение. (Похожим образом <code>[dir=rtl]</code> и<code>[dir=ltr]</code> не будут включать <code>auto</code>.) <code>:dir()</code>, же, напротив, соответствует значению вычисленному {{glossary("user agent")}}, даже унаследованному.</p>
+<p><strong>Примечание:</strong>  помните о том, что псевдокласс <code>:dir()</code> <strong>не эквивалентен</strong> <a href="/ru/docs/Web/CSS/Attribute_selectors">выбору по атрибуту</a> <code>[dir=…]</code>. Последний применяется только к тем элементам HTML, у которых есть атрибут {{htmlattrxref("dir")}}, игнорируя те, у которых он не задан — даже если они унаследовали его значение. (Похожим образом <code>[dir=rtl]</code> и<code>[dir=ltr]</code> не будут включать <code>auto</code>.) <code>:dir()</code>, же, напротив, соответствует значению вычисленному {{glossary("user agent")}}, даже унаследованному.</p>
 </div>
 
 <div class="note">
-<p><strong>Примечание:</strong> В HTML, направление задаётся атрибутом {{htmlattrxref("dir")}}. В других форматах могут использоваться иные методы.</p>
+<p><strong>Примечание:</strong> В HTML, направление задаётся атрибутом {{htmlattrxref("dir")}}. В других форматах могут использоваться иные методы.</p>
 </div>
 
 <h2 id="Синтаксис">Синтаксис</h2>
@@ -63,38 +63,18 @@ translation_of: 'Web/CSS/:dir'
 
 <h3 id="Result">Result</h3>
 
-<p>{{ EmbedLiveSample('Example') }}</p>
+<p>{{ EmbedLiveSample('Пример') }}</p>
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Specification</th>
-   <th scope="col">Status</th>
-   <th scope="col">Comment</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{SpecName('HTML WHATWG', 'scripting.html#selector-ltr', ':dir(ltr)')}}</td>
-   <td>{{Spec2('HTML WHATWG')}}</td>
-   <td>No changes.</td>
-  </tr>
-  <tr>
-   <td>{{SpecName('CSS4 Selectors', '#the-dir-pseudo', ':dir()')}}</td>
-   <td>{{Spec2('CSS4 Selectors')}}</td>
-   <td>Initial definition.</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Совместимость_с_браузерами">Совместимость с браузерами</h2>
 
 <div>
 
 
-<p>{{Compat("css.selectors.dir")}}</p>
+<p>{{Compat}}</p>
 </div>
 
 <h2 id="Смотрите_также">Смотрите также</h2>

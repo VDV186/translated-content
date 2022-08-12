@@ -90,7 +90,7 @@ var a3 = a.concat(a2);
 
 <h3 id="References" name="References">リファレンス</h3>
 
-<p>ガベージコレクションアルゴリズムが依存している主な概念は、リファレンス (reference)の概念です。メモリー管理の文脈では、あるオブジェクトが別のオブジェクトに (明示的にであれ、暗黙的にであれ) アクセスできるとき、前者が後者を"参照している"と言います。例えば、JavaScript オブジェクトは自身の <a href="/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">prototype</a> (暗黙的な参照) とプロパティ値 (明示的な参照) への参照を持ちます。</p>
+<p>ガベージコレクションアルゴリズムが依存している主な概念は、リファレンス (reference)の概念です。メモリー管理の文脈では、あるオブジェクトが別のオブジェクトに (明示的にであれ、暗黙的にであれ) アクセスできるとき、前者が後者を"参照している"と言います。例えば、JavaScript オブジェクトは自身の <a href="/ja/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">prototype</a> (暗黙的な参照) とプロパティ値 (明示的な参照) への参照を持ちます。</p>
 
 <p>ここでは、"オブジェクト"の概念は通常の JavaScript オブジェクトよりも広い概念として用いられており、また、関数のスコープ (もしくは、グローバルレキシカルスコープ) を含みます。</p>
 
@@ -113,19 +113,19 @@ var a3 = a.concat(a2);
 var o2 = o; // 'o2' がオブジェクトを参照するようになったため、
             // 参照カウントは 2 になりました
 o = 1;      // 'o' はもうオブジェクトを参照していません。これで、このオブジェクトを
-            // 参照するのは 'o2' だけになりました
+            // 参照するのは 'o2' だけになりました
 
 var oa = o2.a; // プロパティ 'a' を参照しています。
-               // 参照先のオブジェクトは、この時点で 2 つの箇所から参照されています。
-               // ひとつはプロパティの値として、もうひとつは変数 'oa' の値としてです。
+               // 参照先のオブジェクトは、この時点で 2 つの箇所から参照されています。
+               // ひとつはプロパティの値として、もうひとつは変数 'oa' の値としてです。
 
 o2 = "yo"; // もともと 'o' に代入されていたオブジェクトを参照するものはいなくなりました。
-           // このため、このオブジェクトはガベージコレクトの対象となります。
-           // しかしながら、そのオブジェクトのプロパティ 'a' が指していたオブジェクトは
-           // まだ変数 'oa' に参照されているため、解放することはできません。
+           // このため、このオブジェクトはガベージコレクトの対象となります。
+           // しかしながら、そのオブジェクトのプロパティ 'a' が指していたオブジェクトは
+           // まだ変数 'oa' に参照されているため、解放することはできません。
 
 oa = null; // もともと 'o' に代入されていたオブジェクトのプロパティ 'a' が指していた
-           // オブジェクトへの参照が一つも無くなったため、ガベージコレクションの対象
+           // オブジェクトへの参照が一つも無くなったため、ガベージコレクションの対象
            // となりました。</pre>
 
 <h4 id="Limitation_cycles" name="Limitation_cycles">限界: 循環</h4>
@@ -183,5 +183,5 @@ window.onload = function(){
 <ul>
  <li><a class="external" href="http://www.ibm.com/developerworks/web/library/wa-memleak/">IBM article on "Memory leak patterns in JavaScript" (2007)</a></li>
  <li><a class="external" href="http://msdn.microsoft.com/en-us/magazine/ff728624.aspx">Kangax article on how to register event handler and avoid memory leaks (2010)</a></li>
- <li><a href="/docs/Mozilla/Performance" title="/docs/Mozilla/Performance">Performance</a></li>
+ <li><a href="/ja/docs/Mozilla/Performance" title="/docs/Mozilla/Performance">Performance</a></li>
 </ul>

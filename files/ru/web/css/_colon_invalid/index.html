@@ -11,19 +11,19 @@ translation_of: 'Web/CSS/:invalid'
 
 <p>CSS <a href="/ru/docs/Web/CSS/Псевдо-классы" title="Pseudo-classes">псевдокласс</a> <code>:invalid</code> находит любые {{ HTMLElement("input") }} или {{ HTMLElement("form") }} элементы, контент которых не проходит <a href="/ru/docs/Web/Guide/HTML/HTML5/Constraint_validation" title="en/HTML/HTML5/Constraint_validation">валидацию</a>, в соответствии с типом поля. Он позволяет вам легко менять внешний вид полей, что позволяет пользователю видеть и исправлять ошибки.</p>
 
-<p>По умолчанию, Gecko не применяет стили к псевдоклассу <code>:invalid</code>. Однако, применяет стили (красное "свечение", используя свойство {{ Cssxref("box-shadow") }}) к псевдоклассу {{ Cssxref(":-moz-ui-invalid") }}, который применяется в подгруппе случаев для <code>:invalid</code>.</p>
+<p>По умолчанию, Gecko не применяет стили к псевдоклассу <code>:invalid</code>. Однако, применяет стили (красное "свечение", используя свойство {{ Cssxref("box-shadow") }}) к псевдоклассу {{ Cssxref(":-moz-ui-invalid") }}, который применяется в подгруппе случаев для <code>:invalid</code>.</p>
 
 <p>Вы можете отключить свечение, используя следующий CSS или полностью изменить внешний вид некорректных полей.</p>
 
 <pre class="brush: css">:invalid {
-  box-shadow: none;
+  box-shadow: none;
 }
 
 :-moz-submit-invalid {
-  box-shadow: none;
+  box-shadow: none;
 }
 
-:-moz-ui-invalid {
+:-moz-ui-invalid {
   box-shadow:none;
 }
 </pre>
@@ -32,9 +32,9 @@ translation_of: 'Web/CSS/:invalid'
 
 <h4 id="Радиокнопки">Радиокнопки</h4>
 
-<p>Если любая из радиокнопок в группе (т.е., с одинаковым атрибутом <code>name</code>) имеет атрибут <code>required</code>, псевдокласс <code>:invalid</code> применяется ко всем из них, если ни одна из кнопок группы не выбрана.</p>
+<p>Если любая из радиокнопок в группе (т.е., с одинаковым атрибутом <code>name</code>) имеет атрибут <code>required</code>, псевдокласс <code>:invalid</code> применяется ко всем из них, если ни одна из кнопок группы не выбрана.</p>
 
-<h2 id="Example2" name="Example2">Пример</h2>
+<h2 id="Example2">Пример</h2>
 
 <p>Этот пример представляет собой простую форму, цвета элементов которой зелёные, когда данные корректные, и красные, когда нет.</p>
 
@@ -76,41 +76,11 @@ input:required {
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{ SpecName('HTML WHATWG', '#selector-invalid', ':invalid') }}</td>
-   <td>{{ Spec2('HTML WHATWG') }}</td>
-   <td>Без изменений.</td>
-  </tr>
-  <tr>
-   <td>{{ SpecName('HTML5 W3C', '#selector-invalid', ':invalid') }}</td>
-   <td>{{ Spec2('HTML5 W3C') }}</td>
-   <td>Определяет семантику в HTML и ограничения проверки.</td>
-  </tr>
-  <tr>
-   <td>{{ SpecName('CSS4 Selectors', '#validity-pseudos', ':invalid') }}</td>
-   <td>{{ Spec2('CSS4 Selectors') }}</td>
-   <td>Без изменений.</td>
-  </tr>
-  <tr>
-   <td>{{ SpecName('CSS3 Basic UI', '#pseudo-validity', ':invalid') }}</td>
-   <td>{{ Spec2('CSS3 Basic UI') }}</td>
-   <td>Определяет псевдокласс, но не семантику.</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Поддержка_браузерами">Поддержка браузерами</h2>
 
-<p>{{Compat("css.selectors.invalid")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 

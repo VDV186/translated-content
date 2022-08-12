@@ -13,7 +13,7 @@ translation_of: Web/API/PerformancePaintTiming
 ---
 <p>{{SeeCompatTable}}{{APIRef("Performance Timeline API")}}</p>
 
-<p><a href="/en-US/docs/Web/API/Paint Timing">Paint Timing</a> の <strong><code>PerformancePaintTiming</code></strong> インタフェースは、Web ページ構築中の "paint" ("render" とも呼ばれる) 操作に関するタイミング情報を提供します。「ペイント」とは、レンダリングツリーを画面上のピクセルに変換することです。</p>
+<p><a href="/ja/docs/Web/API/Paint Timing">Paint Timing</a> の <strong><code>PerformancePaintTiming</code></strong> インタフェースは、Web ページ構築中の "paint" ("render" とも呼ばれる) 操作に関するタイミング情報を提供します。「ペイント」とは、レンダリングツリーを画面上のピクセルに変換することです。</p>
 
 <p>アプリケーションは、"<code>paint</code>" {{domxref("PerformanceEntry","パフォーマンスエントリタイプ")}} に対して {{domxref("PerformanceObserver")}} を登録することができ、オブザーバーはペイントイベントが発生した時間を取得することができます。この情報を使用して、優れたユーザーエクスペリエンスを提供するのに時間がかかりすぎる領域を特定するのに役立ちます。</p>
 
@@ -21,7 +21,7 @@ translation_of: Web/API/PerformancePaintTiming
 
 <h2 id="プロパティ">プロパティ</h2>
 
-<p>このインタフェースにはプロパティはありませんが、次のようにプロパティを修飾および制約することで、次の {{domxref("PerformanceEntry")}} プロパティ ("<code>paint</code>"{{domxref ("PerformanceEntry.entryType","パフォーマンスエントリタイプ")}} 用) を拡張します。</p>
+<p>このインタフェースにはプロパティはありませんが、次のようにプロパティを修飾および制約することで、次の {{domxref("PerformanceEntry")}} プロパティ ("<code>paint</code>"{{domxref ("PerformanceEntry.entryType","パフォーマンスエントリタイプ")}} 用) を拡張します。</p>
 
 <dl>
  <dt>{{domxref("PerformanceEntry.entryType")}}</dt>
@@ -41,15 +41,15 @@ translation_of: Web/API/PerformancePaintTiming
 <h2 id="例">例</h2>
 
 <pre class="brush: js">function showPaintTimings() {
-  if (window.performance) {
-    let performance = window.performance;
-    let performanceEntries = performance.getEntriesByType('paint');
-    performanceEntries.forEach( (performanceEntry, i, entries) =&gt; {
-      console.log("The time to " + performanceEntry.name + " was " + performanceEntry.startTime + " milliseconds.");
-    });
-  } else {
-    console.log('Performance timing isn\'t supported.');
-  }
+  if (window.performance) {
+    let performance = window.performance;
+    let performanceEntries = performance.getEntriesByType('paint');
+    performanceEntries.forEach( (performanceEntry, i, entries) =&gt; {
+      console.log("The time to " + performanceEntry.name + " was " + performanceEntry.startTime + " milliseconds.");
+    });
+  } else {
+    console.log('Performance timing isn\'t supported.');
+  }
 }</pre>
 
 <p>上記のコードは、次のようなコンソール出力を生成します。</p>

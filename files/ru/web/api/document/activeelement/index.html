@@ -13,28 +13,28 @@ original_slug: Web/API/DocumentOrShadowRoot/activeElement
 ---
 <p>{{ ApiRef() }}</p>
 
-<h2 id="Summary" name="Summary">Аннотация</h2>
+<h2 id="Summary">Аннотация</h2>
 
 <p>Возвращает текущий сфокусированный элемент, то есть элемент, на котором будут вызываться события клавиатуры, если пользователь начнёт с неё ввод. Этот атрибут доступен только для чтения.</p>
 
-<p>Часто возвращается {{ HTMLElement("input") }} или {{ HTMLElement("textarea") }} объект, если он содержит в себе выделенный в данный момент текст. При этом вы можете получить более подробные сведения, используя свойства элемента  <code>selectionStart</code> и <code>selectionEnd</code>.  В других случаях сфокусированным элементом может быть {{ HTMLElement("select") }} элемент (меню) или {{ HTMLElement("input") }} элемент типа button, checkbox или radio.</p>
+<p>Часто возвращается {{ HTMLElement("input") }} или {{ HTMLElement("textarea") }} объект, если он содержит в себе выделенный в данный момент текст. При этом вы можете получить более подробные сведения, используя свойства элемента  <code>selectionStart</code> и <code>selectionEnd</code>.  В других случаях сфокусированным элементом может быть {{ HTMLElement("select") }} элемент (меню) или {{ HTMLElement("input") }} элемент типа button, checkbox или radio.</p>
 
 <p>{{ Note("На Mac, элементы, не являющиеся текстовыми полями, как правило, не получают фокус.") }}</p>
 
-<p>Как правило, пользователь может нажать клавишу табуляции для перемещения по фокусируемым элементам страницы, и использовать пробел для их активации (нажать кнопку button, выбрать переключатель radio).</p>
+<p>Как правило, пользователь может нажать клавишу табуляции для перемещения по фокусируемым элементам страницы, и использовать пробел для их активации (нажать кнопку button, выбрать переключатель radio).</p>
 
-<p>Не следует путать фокус с выделением документа, состоящего в основном из статических текстовых узлов. См. {{ domxref("window.getSelection()") }}. </p>
+<p>Не следует путать фокус с выделением документа, состоящего в основном из статических текстовых узлов. См. {{ domxref("window.getSelection()") }}. </p>
 
-<p>Когда выделение отсутствует, активным элементом является {{ HTMLElement("body") }} страницы или null. </p>
+<p>Когда выделение отсутствует, активным элементом является {{ HTMLElement("body") }} страницы или null. </p>
 
 <p>{{ Note("Этот атрибут является частью разрабатываемой спецификации HTML 5.") }}</p>
 
-<h2 id="Syntax" name="Syntax">Синтаксис</h2>
+<h2 id="Syntax">Синтаксис</h2>
 
 <pre class="eval">var curElement = document.activeElement;
 </pre>
 
-<h2 id="Example" name="Example">Пример</h2>
+<h2 id="Example">Пример</h2>
 
 <pre class="brush: html">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -83,9 +83,9 @@ ID активного элемента: &lt;span id="output-element"&gt;&lt;/spa
 
 <h2 id="Примечания">Примечания</h2>
 
-<p>Первоначально введённое как собственное расширение DOM в Internet Explorer 4, это свойство также поддерживается в Opera и Safari (в версии 4).</p>
+<p>Первоначально введённое как собственное расширение DOM в Internet Explorer 4, это свойство также поддерживается в Opera и Safari (в версии 4).</p>
 
-<h2 id="Specification" name="Specification">Спецификации</h2>
+<h2 id="Specification">Спецификации</h2>
 
 <table class="standard-table">
  <thead>
@@ -99,14 +99,14 @@ ID активного элемента: &lt;span id="output-element"&gt;&lt;/spa
   <tr>
    <td>{{SpecName('HTML WHATWG', 'interaction.html#dom-document-activeelement', 'activeElement')}}</td>
    <td>{{Spec2('HTML WHATWG')}}</td>
-   <td> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
 <h2 id="Совместимость_с_браузерами">Совместимость с браузерами</h2>
 
-<p>{{Compat("api.Document.activeElement")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Связанные_события">Связанные события</h2>
 

@@ -28,7 +28,7 @@ La interfaz <strong>HTMLAnchorElement</strong> representa elementos de hipervín
  {{domxref ("HTMLAnchorElement.coords")}} {{obsolete_inline}}<br>
  Es un {{domxref ("DOMString")}} que representa una lista de coordenadas separadas por comas.</p>
 
-<p> </p>
+<p> </p>
 
 <dl>
  <dt>{{domxref ("HTMLAnchorElement.download")}} {{experimental_inline}}<br>
@@ -42,7 +42,7 @@ La interfaz <strong>HTMLAnchorElement</strong> representa elementos de hipervín
  <dt><br>
  {{domxref ("HTMLHyperlinkElementUtils.hostname")}}<br>
  Es un {{domxref ("USVString")}} que representa el nombre de host en la URL referenciada.</dt>
- <dd> </dd>
+ <dd> </dd>
  <dt>{{domxref ("HTMLHyperlinkElementUtils.href")}}<br>
  Es un {{domxref ("USVString")}} que refleja el atributo HTML {{htmlattrxref ("href", "a")}}, que contiene una URL válida de un recurso vinculado.</dt>
  <dt><br>
@@ -56,7 +56,7 @@ La interfaz <strong>HTMLAnchorElement</strong> representa elementos de hipervín
  Es un {{domxref ("DOMString")}} que representa el nombre del ancla.<br>
  {{domxref ("HTMLHyperlinkElementUtils.password")}}<br>
  Es un {{domxref ("USVString")}} que contiene la contraseña especificada antes del nombre de dominio.</dt>
- <dd> </dd>
+ <dd> </dd>
  <dt>{{domxref ("HTMLHyperlinkElementUtils.origin")}} {{readonlyInline}}<br>
  Devuelve un {{domxref ("USVString")}} que contiene el origen de la URL, que es su esquema, su dominio y su puerto.</dt>
  <dt><br>
@@ -115,9 +115,9 @@ La interfaz <strong>HTMLAnchorElement</strong> representa elementos de hipervín
  Devuelve un {{domxref ("USVString")}} que contiene la URL completa. Es un sinónimo de {{domxref ("URLUtils.href")}}, aunque no se puede usar para modificar el valor.<br>
  Los métodos blur () y focus () se heredan de {{domxref ("HTMLElement")}} de HTML5 on, pero se definieron en HTMLAnchorElement en DOM Level 2 HTML y especificaciones anteriores.</p>
 
-<p> </p>
+<p> </p>
 
-<p> </p>
+<p> </p>
 
 <h2 id="Especificaciones">Especificaciones</h2>
 
@@ -154,123 +154,14 @@ La interfaz <strong>HTMLAnchorElement</strong> representa elementos de hipervín
   <tr>
    <td>{{SpecName('DOM1', 'level-one-html.html#ID-48250443', 'HTMLAnchorElement')}}</td>
    <td>{{Spec2('DOM1')}}</td>
-   <td>definicion Inicial .</td>
+   <td>definicion Inicial .</td>
   </tr>
  </tbody>
 </table>
 
 <h2 id="Browser_compatibility">Browser compatibility</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Edge</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari (WebKit)</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatGeckoDesktop(1.0)}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>download</code></td>
-   <td>{{CompatChrome(14)}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>20</td>
-   <td>{{CompatUnknown}}</td>
-   <td>15</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>username</code>, <code>password</code>, and <code>origin</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoDesktop("26.0")}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>referrerPolicy</code></td>
-   <td>{{CompatChrome(51)}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoDesktop("50")}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android Webview</th>
-   <th>Chrome for Android</th>
-   <th>Edge</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Phone</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatGeckoMobile(1.0)}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>download</code></td>
-   <td>{{CompatChrome(14)}}</td>
-   <td>{{CompatChrome(14)}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>username</code>, <code>password</code>, and <code>origin</code></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoMobile("26.0")}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>referrerPolicy</code></td>
-   <td>{{CompatChrome(51)}}</td>
-   <td>{{CompatChrome(51)}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoMobile("50")}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
+{{Compat("api.HTMLAnchorElement")}}
 
 <h2 id="Ver_tambien">Ver tambien</h2>
 

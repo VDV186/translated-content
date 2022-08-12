@@ -6,7 +6,7 @@ translation_of: Web/API/BaseAudioContext/createBiquadFilter
 <p>{{ APIRef("Web Audio API") }}</p>
 
 <div>
-<p>El metodo <code>createBiquadFilter()</code> de la interfaz {{ domxref("BaseAudioContext") }} crea un {{ domxref("BiquadFilterNode") }}, el cual representa un filtro de segundo orden configurable, asi como varios tipos de filtros comunes diferentes.</p>
+<p>El metodo <code>createBiquadFilter()</code> de la interfaz {{ domxref("BaseAudioContext") }} crea un {{ domxref("BiquadFilterNode") }}, el cual representa un filtro de segundo orden configurable, asi como varios tipos de filtros comunes diferentes.</p>
 </div>
 
 <h2 id="Sintaxis">Sintaxis</h2>
@@ -16,11 +16,11 @@ var biquadFilter = audioCtx.createBiquadFilter();</pre>
 
 <h3 id="Description" name="Description">Retorna</h3>
 
-<p>Un {{domxref("BiquadFilterNode")}}.</p>
+<p>Un {{domxref("BiquadFilterNode")}}.</p>
 
 <h2 id="Example" name="Example">Ejemplo</h2>
 
-<p>El siguiente ejemplo muestra el uso básico de un AudioContext para crear un nodo de filtro Biquad. Para ver el ejemplo trabanjando completamente, mire nuestra demostración <a href="http://mdn.github.io/voice-change-o-matic/">voice-change-o-matic</a> (mirar tambien <a href="https://github.com/mdn/voice-change-o-matic">source code</a>).</p>
+<p>El siguiente ejemplo muestra el uso básico de un AudioContext para crear un nodo de filtro Biquad. Para ver el ejemplo trabanjando completamente, mire nuestra demostración <a href="http://mdn.github.io/voice-change-o-matic/">voice-change-o-matic</a> (mirar tambien <a href="https://github.com/mdn/voice-change-o-matic">source code</a>).</p>
 
 <pre class="brush: js">var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
@@ -59,69 +59,14 @@ biquadFilter.gain.value = 25;</pre>
   <tr>
    <td>{{SpecName('Web Audio API', '#dom-baseaudiocontext-createbiquadfilter', 'createBiquadFilter()')}}</td>
    <td>{{Spec2('Web Audio API')}}</td>
-   <td> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
 <h2 id="Compatibilidad_con_el_navegador">Compatibilidad con el navegador</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Característica</th>
-   <th>Chrome</th>
-   <th>Edge</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari (WebKit)</th>
-  </tr>
-  <tr>
-   <td>Soporte básico</td>
-   <td>{{CompatChrome(10.0)}}{{property_prefix("webkit")}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatGeckoDesktop(25.0)}} </td>
-   <td>{{CompatNo}}</td>
-   <td>15.0 {{property_prefix("webkit")}}<br>
-    22</td>
-   <td>6.0{{property_prefix("webkit")}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Característica</th>
-   <th>Android</th>
-   <th>Edge</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>Firefox OS</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-   <th>Chrome for Android</th>
-  </tr>
-  <tr>
-   <td>Soporte básico</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>26.0</td>
-   <td>1.2</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>33.0</td>
-  </tr>
- </tbody>
-</table>
-</div>
+{{Compat("api.BaseAudioContext.createBiquadFilter")}}
 
 <h2 id="Ver_tambien">Ver tambien</h2>
 

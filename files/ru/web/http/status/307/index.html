@@ -9,7 +9,7 @@ translation_of: Web/HTTP/Status/307
 ---
 <div>{{HTTPSidebar}}</div>
 
-<p>{{Glossary("HTTP")}} код перенаправления  <code><strong>307</strong> Temporary Redirect</code> означает, что запрошенный ресурс был временно перемещён в URL-адрес, указанный в заголовке {{HTTPHeader("Location")}}.</p>
+<p>{{Glossary("HTTP")}} код перенаправления  <code><strong>307</strong> Temporary Redirect</code> означает, что запрошенный ресурс был временно перемещён в URL-адрес, указанный в заголовке {{HTTPHeader("Location")}}.</p>
 
 <p>Метод и тело исходного запроса повторно используются для выполнения перенаправленного запроса. Если вы хотите, чтобы используемый метод был изменён на {{HTTPMethod("GET")}}, используйте {{HTTPStatus("303", "303 See Other")}}. Это полезно, если вы хотите дать ответ на метод {{HTTPMethod("PUT")}}, который не является загруженным ресурсом, а является подтверждающим сообщением (например, «Вы успешно загрузили XYZ»).</p>
 
@@ -17,20 +17,20 @@ translation_of: Web/HTTP/Status/307
 
 <h2 id="Статус">Статус</h2>
 
-<pre class="syntaxbox notranslate">307 Temporary Redirect
+<pre class="syntaxbox">307 Temporary Redirect
 </pre>
 
 <h2 id="Пример">Пример</h2>
 
 <h3 id="Запрос_клиента">Запрос клиента</h3>
 
-<pre class="syntaxbox notranslate">DELETE /cars/oldest HTTP/1.1
+<pre class="syntaxbox">DELETE /cars/oldest HTTP/1.1
 Host: www.example.org
 </pre>
 
 <h3 id="Ответ_сервера">Ответ сервера</h3>
 
-<pre class="syntaxbox notranslate">HTTP/1.1 307 Temporary Redirect
+<pre class="syntaxbox">HTTP/1.1 307 Temporary Redirect
 Location: http://www.example.org/cars/id/123456
 </pre>
 
@@ -50,7 +50,7 @@ Location: http://www.example.org/cars/id/123456
 </table>
 
 <h2 id="Совместимость_с_браузером">Совместимость с браузером</h2>
-<p>{{Compat("http.status.307")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 

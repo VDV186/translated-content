@@ -5,7 +5,7 @@ translation_of: Web/SVG/Attribute/fill
 ---
 <div>{{SVGRef}}</div>
 
-<p><strong><code>fill</code></strong> 属性には使われ方により2つの意味があります.  1つは図形やテキストに使われた場合で，その要素を塗りつぶす色を意味します．もう1つはアニメーションに使われた場合で，そのアニメーションの最終状態を定義します．</p>
+<p><strong><code>fill</code></strong> 属性には使われ方により2つの意味があります.  1つは図形やテキストに使われた場合で，その要素を塗りつぶす色を意味します．もう1つはアニメーションに使われた場合で，そのアニメーションの最終状態を定義します．</p>
 
 <p>呈示属性(presentation attribute)として全ての要素に適用可能ですが，実際に影響があるのは次の11の要素です: {{SVGElement('altGlyph')}}, {{SVGElement('circle')}}, {{SVGElement('ellipse')}}, {{SVGElement('path')}}, {{SVGElement('polygon')}}, {{SVGElement('polyline')}}, {{SVGElement('rect')}}, {{SVGElement('text')}}, {{SVGElement('textPath')}}, {{SVGElement('tref')}}, and {{SVGElement('tspan')}}.</p>
 
@@ -17,31 +17,31 @@ translation_of: Web/SVG/Attribute/fill
 </div>
 
 <pre class="brush: html">&lt;svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg"&gt;
-  &lt;!-- Simple color fill --&gt;
-  &lt;circle cx="50" cy="50" r="40" fill="pink" /&gt;
+  &lt;!-- Simple color fill --&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="pink" /&gt;
 
 
-  &lt;!-- Fill circle with a gradient --&gt;
-  &lt;defs&gt;
-    &lt;radialGradient id="myGradient"&gt;
-      &lt;stop offset="0%"   stop-color="pink" /&gt;
-      &lt;stop offset="100%" stop-color="black" /&gt;
-    &lt;/radialGradient&gt;
-  &lt;/defs&gt;
+  &lt;!-- Fill circle with a gradient --&gt;
+  &lt;defs&gt;
+    &lt;radialGradient id="myGradient"&gt;
+      &lt;stop offset="0%"   stop-color="pink" /&gt;
+      &lt;stop offset="100%" stop-color="black" /&gt;
+    &lt;/radialGradient&gt;
+  &lt;/defs&gt;
 
-  &lt;circle cx="150" cy="50" r="40" fill="url(#myGradient)" /&gt;
+  &lt;circle cx="150" cy="50" r="40" fill="url(#myGradient)" /&gt;
 
 
-  &lt;!--
-  Keeping the final state of an animated circle
-  which is a circle with a radius of 40.
-  --&gt;
-  &lt;circle cx="250" cy="50" r="20"&gt;
-    &lt;animate attributeType="XML"
-             attributeName="r"
-             from="0" to="40" dur="5s"
-             fill="freeze" /&gt;
-  &lt;/circle&gt;
+  &lt;!--
+  Keeping the final state of an animated circle
+  which is a circle with a radius of 40.
+  --&gt;
+  &lt;circle cx="250" cy="50" r="20"&gt;
+    &lt;animate attributeType="XML"
+             attributeName="r"
+             from="0" to="40" dur="5s"
+             fill="freeze" /&gt;
+  &lt;/circle&gt;
 &lt;/svg&gt;
 </pre>
 
@@ -58,7 +58,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -167,7 +167,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -190,7 +190,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -213,7 +213,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -236,7 +236,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -259,7 +259,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -282,7 +282,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -326,7 +326,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -349,7 +349,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -374,7 +374,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>
@@ -397,7 +397,7 @@ translation_of: Web/SVG/Attribute/fill
  <tbody>
   <tr>
    <th scope="row">Value</th>
-   <td><strong><a href="/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
+   <td><strong><a href="/ja/docs/Web/SVG/Content_type#Paint">&lt;paint&gt;</a></strong></td>
   </tr>
   <tr>
    <th scope="row">Default value</th>

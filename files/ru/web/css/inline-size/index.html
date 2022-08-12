@@ -5,7 +5,7 @@ translation_of: Web/CSS/inline-size
 ---
 <div>{{CSSRef}}</div>
 
-<p>Свойство <a href="/en-US/docs/Web/CSS" title="CSS">CSS</a> <strong><code>inline-size</code></strong> определяет горизонтальные или вертикальные размеры блока в зависимости от режима написания (writing mode). Оно соответствует свойствам {{cssxref("width")}} и {{cssxref("height")}} и зависит от свойства {{cssxref("writing-mode")}}.</p>
+<p>Свойство <a href="/en-US/docs/Web/CSS" title="CSS">CSS</a> <strong><code>inline-size</code></strong> определяет горизонтальные или вертикальные размеры блока в зависимости от режима написания (writing mode). Оно соответствует свойствам {{cssxref("width")}} и {{cssxref("height")}} и зависит от свойства {{cssxref("writing-mode")}}.</p>
 
 <div>{{EmbedInteractiveExample("pages/css/inline-size.html")}}</div>
 
@@ -13,7 +13,7 @@ translation_of: Web/CSS/inline-size
 
 <h2 id="Syntax">Syntax</h2>
 
-<pre class="brush:css no-line-numbers notranslate">/* &lt;length&gt; values */
+<pre class="brush:css no-line-numbers">/* &lt;length&gt; values */
 inline-size: 300px;
 inline-size: 25em;
 
@@ -32,11 +32,11 @@ inline-size: initial;
 inline-size: unset;
 </pre>
 
-<p>Если режим написания (writing mode) — вертикальный, значение <code>inline-size</code> относится к высоте элемента; в противном случае, оно относиться к ширине элемента. Связанное свойство — {{cssxref("block-size")}}, которое определяет другие размеры элемента.</p>
+<p>Если режим написания (writing mode) — вертикальный, значение <code>inline-size</code> относится к высоте элемента; в противном случае, оно относиться к ширине элемента. Связанное свойство — {{cssxref("block-size")}}, которое определяет другие размеры элемента.</p>
 
 <h3 id="Значения">Значения</h3>
 
-<p>Свойство <code>inline-size</code> принимает те же значения, что и свойства {{cssxref("width")}} и {{cssxref("height")}}.</p>
+<p>Свойство <code>inline-size</code> принимает те же значения, что и свойства {{cssxref("width")}} и {{cssxref("height")}}.</p>
 
 <h2 id="Formal_definition">Formal definition</h2>
 
@@ -52,12 +52,12 @@ inline-size: unset;
 
 <h4 id="HTML">HTML</h4>
 
-<pre class="brush: html notranslate">&lt;p class="exampleText"&gt;Example text&lt;/p&gt;
+<pre class="brush: html">&lt;p class="exampleText"&gt;Example text&lt;/p&gt;
 </pre>
 
 <h4 id="CSS">CSS</h4>
 
-<pre class="brush: css notranslate">.exampleText {
+<pre class="brush: css">.exampleText {
   writing-mode: vertical-rl;
   background-color: yellow;
   inline-size: 110px;
@@ -86,11 +86,11 @@ inline-size: unset;
  </tbody>
 </table>
 
-<h2 id="Browser_compatibility">Browser compatibility </h2>
+<h2 id="Browser_compatibility">Browser compatibility </h2>
 
 
 
-<p>{{Compat("css.properties.inline-size")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="See_also">See also</h2>
 

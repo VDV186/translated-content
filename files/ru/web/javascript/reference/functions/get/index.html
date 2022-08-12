@@ -117,11 +117,11 @@ console.log(obj.foo); // "bar"</pre>
 
 <p>Для Firefox смотрите также модуль XPCOMUtils.jsm , который определяет функцию <code><a href="/en-US/docs/Mozilla/JavaScript_code_modules/XPCOMUtils.jsm#defineLazyGetter()">defineLazyGetter()</a></code>.</p>
 
-<h3 id="get_и_defineProperty"><code>get</code> и <code>defineProperty</code></h3>
+<h3 id="get_и_defineProperty"><code>get</code> и <code>defineProperty</code></h3>
 
-<p>Использование ключевого слова <code>get</code> и {{jsxref("Object.defineProperty()")}} даёт похожие результаты, но при использовании в {{jsxref("classes")}} между ними есть тонкая разница.</p>
+<p>Использование ключевого слова <code>get</code> и {{jsxref("Object.defineProperty()")}} даёт похожие результаты, но при использовании в {{jsxref("classes")}} между ними есть тонкая разница.</p>
 
-<p>При использовании <code>get</code> свойство будет определено в прототипе объекта, в то время, как при использовании {{jsxref ("Object.defineProperty ()")}} свойство будет определено в экземпляре, к которому применяется.</p>
+<p>При использовании <code>get</code> свойство будет определено в прототипе объекта, в то время, как при использовании {{jsxref ("Object.defineProperty ()")}} свойство будет определено в экземпляре, к которому применяется.</p>
 
 <pre class="brush: js">class Example {
   get hello() {
@@ -139,34 +139,11 @@ console.log(Object.getOwnPropertyDescriptor(Object.getPrototypeOf(obj), 'hello')
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарии</th>
-  </tr>
-  <tr>
-   <td>{{SpecName('ES5.1', '#sec-11.1.5', 'Object Initializer')}}</td>
-   <td>{{Spec2('ES5.1')}}</td>
-   <td>Первоначальное определение.</td>
-  </tr>
-  <tr>
-   <td>{{SpecName('ES6', '#sec-method-definitions', 'Method definitions')}}</td>
-   <td>{{Spec2('ES6')}}</td>
-   <td>Добавлено вычисляемое именное свойство.</td>
-  </tr>
-  <tr>
-   <td>{{SpecName('ESDraft', '#sec-method-definitions', 'Method definitions')}}</td>
-   <td>{{Spec2('ESDraft')}}</td>
-   <td></td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
-<h2 id="Browser_compatibility" name="Browser_compatibility">Совместимость с браузерами</h2>
+<h2 id="Browser_compatibility">Совместимость с браузерами</h2>
 
-<p>{{Compat("javascript.functions.get")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 

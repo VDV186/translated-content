@@ -11,33 +11,33 @@ translation_of: Web/API/CanvasRenderingContext2D/bezierCurveTo
 ---
 <div>{{APIRef}}</div>
 
-<h2 id="Summary" name="Summary">Сводка</h2>
+<h2 id="Summary">Сводка</h2>
 
-<p>Метод <code><strong>CanvasRenderingContext2D</strong></code><strong><code>.bezierCurveTo()</code></strong>, предоставляемый Canvas 2D API, добавляет кубическую кривую Безье к контуру. Для построения требуются три точки. Первые две точки являются контрольными, а третья - конечной. Начальной точкой является последняя точка в текущем контуре, и она может быть изменена методом {{domxref("CanvasRenderingContext2D.moveTo", "moveTo()")}} перед созданием кривой Безье.</p>
+<p>Метод <code><strong>CanvasRenderingContext2D</strong></code><strong><code>.bezierCurveTo()</code></strong>, предоставляемый Canvas 2D API, добавляет кубическую кривую Безье к контуру. Для построения требуются три точки. Первые две точки являются контрольными, а третья - конечной. Начальной точкой является последняя точка в текущем контуре, и она может быть изменена методом {{domxref("CanvasRenderingContext2D.moveTo", "moveTo()")}} перед созданием кривой Безье.</p>
 
-<h2 id="Syntax" name="Syntax">Синтаксис</h2>
+<h2 id="Syntax">Синтаксис</h2>
 
 <pre class="syntaxbox">void <var><em>ctx</em>.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);</var>
 </pre>
 
-<h3 id="Parameters" name="Parameters">Параметры</h3>
+<h3 id="Parameters">Параметры</h3>
 
 <dl>
  <dt><code>cp1x</code></dt>
- <dd>Координата первой контрольной точки по оси x.</dd>
+ <dd>Координата первой контрольной точки по оси x.</dd>
  <dt><code>cp1y</code></dt>
- <dd>Координата первой контрольной точки по оси y.</dd>
+ <dd>Координата первой контрольной точки по оси y.</dd>
  <dt><code>cp2x</code></dt>
  <dd>Координата второй контрольной точки по оси x.</dd>
  <dt><code>cp2y</code></dt>
  <dd>Координата второй контрольной точки по оси y.</dd>
  <dt><code>x</code></dt>
- <dd>Координата конечной точки по оси x.</dd>
+ <dd>Координата конечной точки по оси x.</dd>
  <dt><code>y</code></dt>
- <dd>Координата конечной точки по оси y.</dd>
+ <dd>Координата конечной точки по оси y.</dd>
 </dl>
 
-<h2 id="Examples" name="Examples">Примеры</h2>
+<h2 id="Examples">Примеры</h2>
 
 <h3 id="Использование_метода_bezierCurveTo">Использование метода <code>bezierCurveTo</code></h3>
 
@@ -79,8 +79,8 @@ ctx.fillRect(150, 70, 10, 10);</pre>
 <div class="hidden">
 <pre class="brush: html">&lt;canvas id="canvas" width="400" height="200" class="playable-canvas"&gt;&lt;/canvas&gt;
 &lt;div class="playable-buttons"&gt;
-  &lt;input id="edit" type="button" value="Edit" /&gt;
-  &lt;input id="reset" type="button" value="Reset" /&gt;
+  &lt;input id="edit" type="button" value="Edit" /&gt;
+  &lt;input id="reset" type="button" value="Reset" /&gt;
 &lt;/div&gt;
 &lt;textarea id="code" class="playable-code"&gt;
 ctx.beginPath();
@@ -116,28 +116,15 @@ window.addEventListener("load", drawCanvas);
 
 <p>{{ EmbedLiveSample('Практическое_применение_bezierCurveTo', 700, 360) }}</p>
 
-<h2 id="Specifications" name="Specifications">Спецификации</h2>
+<h2 id="Specifications">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарии</th>
-  </tr>
-  <tr>
-   <td>{{SpecName('HTML WHATWG', "scripting.html#dom-context-2d-beziercurveto", "CanvasRenderingContext2D.beziercurveto")}}</td>
-   <td>{{Spec2('HTML WHATWG')}}</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
-<h2 id="Browser_compatibility" name="Browser_compatibility">Совместимость с браузерами</h2>
+<h2 id="Browser_compatibility">Совместимость с браузерами</h2>
 
-<p>{{Compat("api.CanvasRenderingContext2D.bezierCurveTo")}}</p>
+<p>{{Compat}}</p>
 
-<h2 id="See_also" name="See_also">Смотрите также</h2>
+<h2 id="See_also">Смотрите также</h2>
 
 <ul>
  <li>Интерфейс, предоставляющий данный метод: {{domxref("CanvasRenderingContext2D")}}</li>

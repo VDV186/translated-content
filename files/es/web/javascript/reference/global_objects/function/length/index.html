@@ -18,13 +18,13 @@ original_slug: Web/JavaScript/Referencia/Objetos_globales/Function/length
 
 <h2 id="Description" name="Description">Descripción</h2>
 
-<p><code>length</code> es la propiedad de una función objeto, e indica el número de argumentos que una función requiere, por ejemplo, el número de parámetros formales. Este número no incluye {{jsxref("rest_parameters", "rest parameter", "", 1)}}. En cambio, {{jsxref("Functions_and_function_scope/arguments/length", "arguments.length")}} es local a una función y aporta el número de argumentos actuales pasados a una función.</p>
+<p><code>length</code> es la propiedad de una función objeto, e indica el número de argumentos que una función requiere, por ejemplo, el número de parámetros formales. Este número no incluye {{jsxref("rest_parameters", "rest parameter", "", 1)}}. En cambio, {{jsxref("Functions_and_function_scope/arguments/length", "arguments.length")}} es local a una función y aporta el número de argumentos actuales pasados a una función.</p>
 
 <h3 id="Propiedades_de_la_Función_constructora">Propiedades de la <code>Función</code> constructora</h3>
 
 <p>El {{jsxref("Global_Objects/Function", "Function")}} constructor en sí mismo es {{jsxref("Global_Objects/Function", "Function")}} un objeto. Sú <code>propiedad length</code> tiene el valor 1. Los atributos son: Grabable: <code>false</code>, Enumerable: <code>false</code>, Configurable: <code>true</code>.</p>
 
-<h3 id="Propiedad_de_la_Función_prototype_object">Propiedad de la  <code>Función</code> prototype object</h3>
+<h3 id="Propiedad_de_la_Función_prototype_object">Propiedad de la  <code>Función</code> prototype object</h3>
 
 <p>La propiedad length del {{jsxref("Global_Objects/Function", "Function")}} objeto prototype tiene el valor 0.</p>
 
@@ -78,72 +78,7 @@ console.log((function(a, b = 1, c) {}).length); /* 1, solo parámetros antes del
 
 <h2 id="Compatibilidad_con_navegadores">Compatibilidad con navegadores</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Característica</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Soporte básico</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
-  <tr>
-   <td>Configurable: true</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoDesktop(37)}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Característica</th>
-   <th>Android</th>
-   <th>Chrome for Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Soporte básico</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
-  <tr>
-   <td>Configurable: true</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoMobile(37)}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
+{{Compat("javascript.builtins.Function.length")}}
 
 <h2 id="Ver_también">Ver también</h2>
 

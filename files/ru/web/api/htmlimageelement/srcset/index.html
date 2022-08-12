@@ -5,9 +5,9 @@ translation_of: Web/API/HTMLImageElement/srcset
 ---
 <p>{{APIRef("HTML DOM")}}</p>
 
-<p><span class="seoSummary">{{domxref("HTMLImageElement")}} свойство <code><strong>srcset</strong></code> </span>это строка, которая определяет один или несколько<span class="seoSummary"> <strong>строк с источниками изображений</strong>, разделённые запятыми (<code>,</code>) и условия для их использования.</span> Каждая строка предлагаемого изображения содержит <strong>URL</strong> картинки и опциональные <strong>ширину</strong> или <strong>пиксельную плотность</strong> которые указывают при каких условия это изображение должно быть использовано вместо основной картинки обозначенной свойством {{domxref("HTMLImageElement.src", "src")}}.</p>
+<p><span class="seoSummary">{{domxref("HTMLImageElement")}} свойство <code><strong>srcset</strong></code> </span>это строка, которая определяет один или несколько<span class="seoSummary"> <strong>строк с источниками изображений</strong>, разделённые запятыми (<code>,</code>) и условия для их использования.</span> Каждая строка предлагаемого изображения содержит <strong>URL</strong> картинки и опциональные <strong>ширину</strong> или <strong>пиксельную плотность</strong> которые указывают при каких условия это изображение должно быть использовано вместо основной картинки обозначенной свойством {{domxref("HTMLImageElement.src", "src")}}.</p>
 
-<p>Свойство <code>srcset</code>, вместе с {{domxref("HTMLImageElement.sizes", "sizes")}}, критически важный атрибут при разработке адаптивных веб-сайтов, ведь они могут использоваться вместе для создания адаптивных страниц, использующих подходящие изображения при определённых условиях.</p>
+<p>Свойство <code>srcset</code>, вместе с {{domxref("HTMLImageElement.sizes", "sizes")}}, критически важный атрибут при разработке адаптивных веб-сайтов, ведь они могут использоваться вместе для создания адаптивных страниц, использующих подходящие изображения при определённых условиях.</p>
 
 <h2 id="Синтаксис">Синтаксис</h2>
 
@@ -25,7 +25,7 @@ let <em>srcset</em> = <em>htmlImageElement</em>.srcset;
 
 <ul>
  <li>To indicate that the image resource specified by the image candidate string should be used when the image is being rendered with a particular width in pixels, provide a <strong>width descriptor</strong> comprised the number giving that width in pixels followed by the lower case letter "w". For example, to provide an image resource to be used when the renderer needs a 450 pixel wide image, use the width descriptor string <code>450w</code>. The specified width must be a positive, non-zero, integer, and <em>must</em> match the intrinsic width of the referenced image.</li>
- <li>Alternatively, you can use a <strong>pixel density descriptor</strong>, which specifies the condition in which th corresponding image resource should be used as the display's pixel density. This is written by stating the pixel density as a positive, non-zero floating-point value followed by the lower-case letter "x". As an example, to state that the corresponding  image should be used when the pixel density is double the standard density, you can give the pixel density descriptor <code>2x</code> or <code>2.0x</code>.</li>
+ <li>Alternatively, you can use a <strong>pixel density descriptor</strong>, which specifies the condition in which th corresponding image resource should be used as the display's pixel density. This is written by stating the pixel density as a positive, non-zero floating-point value followed by the lower-case letter "x". As an example, to state that the corresponding  image should be used when the pixel density is double the standard density, you can give the pixel density descriptor <code>2x</code> or <code>2.0x</code>.</li>
 </ul>
 
 <p>You may mix and match the two types of descriptor. You must not, however, provide multiple image candidate strings that specify the same descriptor. All of the following are valid image candidate strings:</p>
@@ -74,7 +74,7 @@ let <em>srcset</em> = <em>htmlImageElement</em>.srcset;
 
 <h3 id="JavaScript">JavaScript</h3>
 
-<p>The following code is run within a handler for the {{domxref("Window", "window")}}'s {{domxref("Window.load_event", "load")}} event.  It uses the image's  {{domxref("HTMLImageElement.currentSrc", "currentSrc")}} property to fetch and display the URL selected by the browser from the <code>srcset</code>.</p>
+<p>The following code is run within a handler for the {{domxref("Window", "window")}}'s {{domxref("Window.load_event", "load")}} event.  It uses the image's  {{domxref("HTMLImageElement.currentSrc", "currentSrc")}} property to fetch and display the URL selected by the browser from the <code>srcset</code>.</p>
 
 <pre class="brush: js">let box = document.querySelector(".box");
 let image = box.querySelector("img");
@@ -88,34 +88,19 @@ box.appendChild(newElem);
 
 <p>In the displayed output below, the selected URL will correspond with whether your display results in selecting the 1x or the 2x version of the image. If you happen to have both standard and high density displays, try moving this window between them and reloading the page to see the results change.</p>
 
-<p>{{EmbedLiveSample("Example", 640, 320)}}</p>
+<p>{{EmbedLiveSample("Пример", 640, 320)}}</p>
 
 <p>For additional examples, see our guide to <a href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">responsive images</a>.</p>
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th scope="col">Specification</th>
-   <th scope="col">Status</th>
-   <th scope="col">Comment</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{SpecName('HTML WHATWG', '#dom-img-srcset', 'HTMLImageElement.srcset')}}</td>
-   <td>{{Spec2('HTML WHATWG')}}</td>
-   <td></td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
-<h2 id="Browser_compatibility" name="Browser_compatibility">Браузерная поддержка</h2>
+<h2 id="Browser_compatibility">Браузерная поддержка</h2>
 
 
 
-<p>{{Compat("api.HTMLImageElement.srcset")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="See_also">See also</h2>
 

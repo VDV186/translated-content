@@ -8,11 +8,11 @@ original_slug: Web/API/NonDocumentTypeChildNode/nextElementSibling
 
 <p><code><strong>NonDocumentTypeChildNode.nextElementSibling</strong></code> свойство только для чтения, возвращающее последующий элемент перед текущим, или <code>null</code>, если элемент является последним в своём родительском узле.</p>
 
-<h2 id="Syntax" name="Syntax">Синтаксис</h2>
+<h2 id="Syntax">Синтаксис</h2>
 
 <pre class="syntaxbox">var <em>nextNode</em> = elementNodeReference.nextElementSibling; </pre>
 
-<h2 id="Example" name="Example">Пример</h2>
+<h2 id="Example">Пример</h2>
 
 <pre class="brush: html">&lt;div id="div-01"&gt;Это div-01&lt;/div&gt;
 &lt;div id="div-02"&gt;Это div-02&lt;/div&gt;
@@ -39,43 +39,43 @@ SCRIPT</pre>
 
 <pre class="brush: js">// Источник: https://github.com/Alhadis/Snippets/blob/master/js/polyfills/IE8-child-elements.js
 if (!('nextElementSibling' in document.documentElement)) {
-    Object.defineProperty(Element.prototype, 'nextElementSibling', {
-        get: function() {
-            var e = this.nextSibling;
-            while (e &amp;&amp; 1 !== e.nodeType) {
-                e = e.nextSibling;
-            }
-            return e;
-        }
-    });
+    Object.defineProperty(Element.prototype, 'nextElementSibling', {
+        get: function() {
+            var e = this.nextSibling;
+            while (e &amp;&amp; 1 !== e.nodeType) {
+                e = e.nextSibling;
+            }
+            return e;
+        }
+    });
 }</pre>
 
 <h2 id="Полифил_для_IE9_и_Safari">Полифил для IE9+ и Safari</h2>
 
 <pre class="brush: js">// Источник: https://github.com/jserz/js_piece/blob/master/DOM/NonDocumentTypeChildNode/nextElementSibling/nextElementSibling.md
 (function(arr) {
-    arr.forEach(function(item) {
-        if (item.hasOwnProperty('nextElementSibling')) {
-            return;
-        }
-        Object.defineProperty(item, 'nextElementSibling', {
-            configurable: true,
-            enumerable: true,
-            get: function() {
-                var el = this;
-                while (el = el.nextSibling) {
-                    if (el.nodeType === 1) {
-                        return el;
-                    }
-                }
-                return null;
-            },
-            set: undefined
-        });
-    });
+    arr.forEach(function(item) {
+        if (item.hasOwnProperty('nextElementSibling')) {
+            return;
+        }
+        Object.defineProperty(item, 'nextElementSibling', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+                var el = this;
+                while (el = el.nextSibling) {
+                    if (el.nodeType === 1) {
+                        return el;
+                    }
+                }
+                return null;
+            },
+            set: undefined
+        });
+    });
 })([Element.prototype, CharacterData.prototype]);</pre>
 
-<h2 id="Specification" name="Specification">Спецификации</h2>
+<h2 id="Specification">Спецификации</h2>
 
 <table class="standard-table">
  <tbody>
@@ -98,13 +98,13 @@ if (!('nextElementSibling' in document.documentElement)) {
  </tbody>
 </table>
 
-<h2 id="Browser_Compatibility" name="Browser_Compatibility">Совместимость с браузерами</h2>
+<h2 id="Browser_Compatibility">Совместимость с браузерами</h2>
 
-<p>{{Compat("api.Element.nextElementSibling")}}</p>
+<p>{{Compat}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 
 <ul>
  <li>Чистый интерфейс {{domxref("ChildNode")}}.</li>
- <li>Типы объектов, реализующих этот чистый интерфейс: {{domxref("CharacterData")}}, {{domxref("Element")}}, и {{domxref("DocumentType")}}. </li>
+ <li>Типы объектов, реализующих этот чистый интерфейс: {{domxref("CharacterData")}}, {{domxref("Element")}}, и {{domxref("DocumentType")}}. </li>
 </ul>

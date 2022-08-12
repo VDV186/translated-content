@@ -7,13 +7,13 @@ translation_of: Web/CSS/flex
 
 <h2 id="Описание">Описание</h2>
 
-<p>Свойство <a href="/ru/docs/CSS" title="CSS">CSS</a> <strong><code>flex</code></strong> - это <a href="https://developer.mozilla.org/ru/docs/Web/CSS/Shorthand_properties">сокращённое свойство</a>, определяющее способность гибкого элемента растягиваться или сжиматься для заполнения собой доступного свободного пространства. Это свойство устанавливает <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow">flex-grow</a>, <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink">flex-shrink</a> и <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis"> flex-basis</a>.</p>
+<p>Свойство <a href="/ru/docs/CSS" title="CSS">CSS</a> <strong><code>flex</code></strong> - это <a href="https://developer.mozilla.org/ru/docs/Web/CSS/Shorthand_properties">сокращённое свойство</a>, определяющее способность гибкого элемента растягиваться или сжиматься для заполнения собой доступного свободного пространства. Это свойство устанавливает <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow">flex-grow</a>, <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink">flex-shrink</a> и <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis"> flex-basis</a>.</p>
 
 <p>{{cssinfo}}</p>
 
-<p>Для более полной информации читайте <a href="/ru/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" title="CSS/Using_CSS_flexible_boxes">Использование flex-контейнеров CSS</a>.</p>
+<p>Для более полной информации читайте <a href="/ru/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" title="CSS/Using_CSS_flexible_boxes">Использование flex-контейнеров CSS</a>.</p>
 
-<h2 id="Syntax" name="Syntax">Синтаксис</h2>
+<h2 id="Syntax">Синтаксис</h2>
 
 <pre class="brush:css">/* 0 0 auto */
 flex: none;
@@ -42,17 +42,17 @@ flex: initial;
 flex: unset;
 </pre>
 
-<h3 id="Values" name="Values">Значения</h3>
+<h3 id="Values">Значения</h3>
 
 <dl>
  <dt><code>&lt;'flex-grow'&gt;</code></dt>
- <dd>Определяет <code>{{cssxref("flex-grow")}}</code> для флекс элемента. Смотри {{cssxref("&lt;number&gt;")}} для большей информации. Негативные значения считаются недействительными. Значение по умолчанию  <code>0</code>, если не указано.</dd>
+ <dd>Определяет <code>{{cssxref("flex-grow")}}</code> для флекс элемента. Смотри {{cssxref("&lt;number&gt;")}} для большей информации. Негативные значения считаются недействительными. Значение по умолчанию  <code>0</code>, если не указано.</dd>
  <dt><code>&lt;'flex-shrink'&gt;</code></dt>
- <dd>Определяет <code>{{cssxref("flex-shrink")}}</code> для флекс элемента. Смотри {{cssxref("&lt;number&gt;")}} для большей информации. Негативные значения считаются недействительными. Значение по умолчанию  <code>1</code>, если не указано.</dd>
+ <dd>Определяет <code>{{cssxref("flex-shrink")}}</code> для флекс элемента. Смотри {{cssxref("&lt;number&gt;")}} для большей информации. Негативные значения считаются недействительными. Значение по умолчанию  <code>1</code>, если не указано.</dd>
  <dt><code>&lt;'flex-basis'&gt;</code></dt>
- <dd>Определяет <code>{{cssxref("flex-basis")}}</code> для флекс элемента. Любое корректное значение для высоты(height) и ширины(width) - корректно и для данного свойства. Предпочтительный размер 0 должен иметь единицу измерения, чтобы не восприниматься как гибкий. Значение по умолчанию  <code>0%</code>, если не указано.</dd>
+ <dd>Определяет <code>{{cssxref("flex-basis")}}</code> для флекс элемента. Любое корректное значение для высоты(height) и ширины(width) - корректно и для данного свойства. Предпочтительный размер 0 должен иметь единицу измерения, чтобы не восприниматься как гибкий. Значение по умолчанию  <code>0%</code>, если не указано.</dd>
  <dt><code>none</code></dt>
- <dd>Размер элемента устанавливается в соответствии с его свойствами <code>width</code> и <code>height</code>. Он полностью негибкий: не сжимается и не увеличивается по отношению к гибкому контейнеру. Эквивалентно значению "<code>flex: 0 0 auto</code>".</dd>
+ <dd>Размер элемента устанавливается в соответствии с его свойствами <code>width</code> и <code>height</code>. Он полностью негибкий: не сжимается и не увеличивается по отношению к гибкому контейнеру. Эквивалентно значению "<code>flex: 0 0 auto</code>".</dd>
  <dt>
  <h3 id="Формальный_синтаксис">Формальный синтаксис</h3>
  </dt>
@@ -80,8 +80,8 @@ flex: unset;
 </pre>
 
 <pre class="brush: html">&lt;div id="flex-container"&gt;
-    &lt;div class="flex-item" id="flex"&gt;Flex box (click to toggle raw box)&lt;/div&gt;
-    &lt;div class="raw-item" id="raw"&gt;Raw box&lt;/div&gt;
+    &lt;div class="flex-item" id="flex"&gt;Flex box (click to toggle raw box)&lt;/div&gt;
+    &lt;div class="raw-item" id="raw"&gt;Raw box&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
@@ -111,32 +111,17 @@ flex.addEventListener("click", function() {
 
 <h3 id="Результат">Результат</h3>
 
-<p>{{EmbedLiveSample('%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80','100%','60')}}</p>
+<p>{{EmbedLiveSample('Пример','100%','60')}}</p>
 
-<h2 id="Specifications" name="Specifications">Спецификации</h2>
+<h2 id="Specifications">Спецификации</h2>
 
-<table class="standard-table">
- <thead>
-  <tr>
-   <th>Спецификация</th>
-   <th>Статус</th>
-   <th>Комментарий</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>{{SpecName('CSS3 Flexbox', '#flex', 'flex')}}</td>
-   <td>{{Spec2('CSS3 Flexbox')}}</td>
-   <td>Initial definition</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Поддержка_браузерами">Поддержка браузерами</h2>
 
-<p>{{Compat("css.properties.flex")}}</p>
+<p>{{Compat}}</p>
 
-<h2 id="See_also" name="See_also">Смотрите также</h2>
+<h2 id="See_also">Смотрите также</h2>
 
 <ul>
  <li><a href="/en-US/docs/Web/Guide/CSS/Flexible_boxes" title="CSS/Using_CSS_flexible_boxes">Using CSS flexible boxes</a></li>

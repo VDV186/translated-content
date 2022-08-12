@@ -12,7 +12,7 @@ translation_of: Web/CSS/border-image
 
 <h2 id="Resumen">Resumen</h2>
 
-<p>La propiedad de CSS   <code>border-image</code> permite utilizar una imágen para definir los bordes de los elementos. Esto hace que dibujarlos sea más simple y elimina la necesidad de utilizar muchas cajas en algunos casos.</p>
+<p>La propiedad de CSS   <code>border-image</code> permite utilizar una imágen para definir los bordes de los elementos. Esto hace que dibujarlos sea más simple y elimina la necesidad de utilizar muchas cajas en algunos casos.</p>
 
 <p>La propiedad <code>border-image</code> es usada en lugar de la sentencia {{cssxref("border-style")}}. Por eso es muy importante tener en cuenta el valor dado por la sentencia {{cssxref("border-image-source")}}, que se puede establecer ya sea por la propiedad <code>border-image-source</code> o la abreviatura <code>border-image</code>, en caso de que su valor sea nulo (none), o si la imágen no se puede visualizar, se utilizarán los estilos de borde.</p>
 
@@ -88,112 +88,11 @@ translation_of: Web/CSS/border-image
   <tr>
    <td>{{SpecName('CSS3 Backgrounds', '#border-image', 'border-image')}}</td>
    <td>{{Spec2('CSS3 Backgrounds')}}</td>
-   <td> </td>
+   <td> </td>
   </tr>
  </tbody>
 </table>
 
 <h2 id="Compatibilidad_de_navegadores">Compatibilidad de navegadores</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Firefox (Gecko)</th>
-   <th>Chrome</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>
-    <p>{{CompatGeckoDesktop("1.9.1")}}{{property_prefix("-moz")}} [1]</p>
-
-    <p>Without prefix since {{CompatGeckoDesktop("15")}}</p>
-   </td>
-   <td>
-    <p>7.0{{property_prefix("-webkit")}}</p>
-
-    <p>Without prefix since 16.0</p>
-   </td>
-   <td>
-    <p><span style="line-height: 1.5;">11</span></p>
-   </td>
-   <td>
-    <p>10.5 / 11.0{{property_prefix("-o")}} [2]</p>
-
-    <p>Without prefix since 15.0</p>
-   </td>
-   <td>
-    <p>3.0{{property_prefix("-webkit")}}</p>
-
-    <p>Without prefix since 6.0</p>
-   </td>
-  </tr>
-  <tr>
-   <td>optional <code>&lt;border-image-slice&gt;</code></td>
-   <td>{{CompatGeckoDesktop("15")}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>fill</code> keyword</td>
-   <td>{{CompatGeckoDesktop("15")}}</td>
-   <td>Yes</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatNo}}</td>
-   <td>Yes (6)</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>iOS Safari</th>
-   <th>Opera Mini</th>
-   <th>Opera Mobile</th>
-   <th>Android Browser</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>
-    <p>3.2{{property_prefix("-webkit")}}</p>
-
-    <p>Without prefix since {{CompatGeckoMobile("15")}}</p>
-   </td>
-   <td>{{CompatNo}}</td>
-   <td>11.0{{property_prefix("-o")}}</td>
-   <td>2.1{{property_prefix("-webkit")}}</td>
-  </tr>
-  <tr>
-   <td>optional <code>&lt;border-image-slice&gt;</code></td>
-   <td>{{CompatGeckoMobile("15")}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
-  <tr>
-   <td><code>fill</code> keyword</td>
-   <td>{{CompatGeckoMobile("15")}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>Yes(18)</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<ul>
- <li>[1] An earlier version of the specification was implemented, prefixed, in Gecko versions prior to 15.</li>
- <li>[2] For Opera, the prefixed property was added <em>after</em> the non-prefixed.</li>
-</ul>
+{{Compat("css.properties.border-image")}}

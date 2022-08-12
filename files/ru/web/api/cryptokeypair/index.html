@@ -9,24 +9,24 @@ translation_of: Web/API/CryptoKeyPair
 ---
 <div>{{APIRef("Web Crypto API")}}</div>
 
-<p><strong><code>CryptoKeyPair</code></strong> из <a href="/en-US/docs/Web/API/Web_Crypto_API">Web Crypto API </a>представляет собой пару ключей для ассиметричных криптографических алгоритмов, также известных как алгоритмы с публичным-приватным ключом.</p>
+<p><strong><code>CryptoKeyPair</code></strong> из <a href="/en-US/docs/Web/API/Web_Crypto_API">Web Crypto API </a>представляет собой пару ключей для ассиметричных криптографических алгоритмов, также известных как алгоритмы с публичным-приватным ключом.</p>
 
-<p>Объект <code>CryptoKeyPair</code> может быть получен с помощью {{domxref("SubtleCrypto.generateKey()")}}, используя один из следующих алгоритмов: RSASSA-PKCS1-v1_5, RSA-PSS, RSA-OAEP, ECDSA, или ECDH.</p>
+<p>Объект <code>CryptoKeyPair</code> может быть получен с помощью {{domxref("SubtleCrypto.generateKey()")}}, используя один из следующих алгоритмов: RSASSA-PKCS1-v1_5, RSA-PSS, RSA-OAEP, ECDSA, или ECDH.</p>
 
-<p>У него всего два свойства, оба объекты <code><a href="/en-US/docs/Web/API/CryptoKey">CryptoKey</a></code>: свойства <code>privateKey</code>, содержащее приватный ключ, и <code>publicKey</code> с публичным ключом.</p>
+<p>У него всего два свойства, оба объекты <code><a href="/en-US/docs/Web/API/CryptoKey">CryptoKey</a></code>: свойства <code>privateKey</code>, содержащее приватный ключ, и <code>publicKey</code> с публичным ключом.</p>
 
 <h2 id="Свойства">Свойства</h2>
 
 <dl>
  <dt><code>CryptoKeyPair.privateKey</code></dt>
- <dd>Объект <code><a href="/en-US/docs/Web/API/CryptoKey">CryptoKey</a></code>, представляющее приватный ключ. В криптографических алгоритмах используется для расшифровывания и подписи.</dd>
+ <dd>Объект <code><a href="/en-US/docs/Web/API/CryptoKey">CryptoKey</a></code>, представляющее приватный ключ. В криптографических алгоритмах используется для расшифровывания и подписи.</dd>
  <dt><code>CryptoKeyPair.publicKey</code></dt>
- <dd>Объект <code><a href="/en-US/docs/Web/API/CryptoKey">CryptoKey</a></code>, представляющее публичный ключ. В криптографических алгоритмах используется для зашифровывания и проверки подлинности подписи.</dd>
+ <dd>Объект <code><a href="/en-US/docs/Web/API/CryptoKey">CryptoKey</a></code>, представляющее публичный ключ. В криптографических алгоритмах используется для зашифровывания и проверки подлинности подписи.</dd>
 </dl>
 
 <h2 id="Примеры">Примеры</h2>
 
-<p>Методы <code>SubtleCrypto</code> обычно используют объекты <code>CryptoKeyPair</code>. Примеры:</p>
+<p>Методы <code>SubtleCrypto</code> обычно используют объекты <code>CryptoKeyPair</code>. Примеры:</p>
 
 <ul>
  <li><code><a href="/en-US/docs/Web/API/SubtleCrypto/generateKey">SubtleCrypto.generateKey()</a></code></li>
@@ -43,23 +43,22 @@ translation_of: Web/API/CryptoKeyPair
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
-  <tr>
-   <td>{{ SpecName('Web Crypto API', '#dfn-CryptoKeyPair', 'CryptoKeyPair') }}</td>
-   <td>{{ Spec2('Web Crypto API') }}</td>
-   <td>Initial definition.</td>
-  </tr>
- </tbody>
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+      <th>Status</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{SpecName('Web Crypto API')}}</td>
+      <td>{{Spec2('Web Crypto API')}}</td>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
-
-<h2 id="Совместимость_с_браузерами">Совместимость с браузерами</h2>
-<p>{{Compat("api.CryptoKeyPair")}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 

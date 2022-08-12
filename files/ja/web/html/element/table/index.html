@@ -24,7 +24,7 @@ translation_of: Web/HTML/Element/table
  <tbody>
   <tr>
    <th scope="row"><a href="/ja/docs/Web/HTML/Content_categories">コンテンツカテゴリ</a></th>
-   <td><a href="/ja/docs/Web/HTML/Content_categories#Flow_content">フローコンテンツ</a></td>
+   <td><a href="/ja/docs/Web/HTML/Content_categories#フローコンテンツ">フローコンテンツ</a></td>
   </tr>
   <tr>
    <th scope="row">許可されている内容</th>
@@ -91,7 +91,7 @@ translation_of: Web/HTML/Element/table
  </dd>
  <dt>{{htmlattrdef("bgcolor")}} {{Deprecated_inline}}</dt>
  <dd>
- <p>表の背景色です。値は<a href="/ja/docs/Web/CSS/color_value#RGB_colors">6桁の16進 RGB コード</a>で、その前に「<code>#</code>」が付きます。定義済みの<a href="/en-US/docs/Web/CSS/color_value#Color_keywords">色キーワード</a>のうちの1つを使用することもできます。
+ <p>表の背景色です。値は<a href="/ja/docs/Web/CSS/color_value#RGB_colors">6桁の16進 RGB コード</a>で、その前に「<code>#</code>」が付きます。定義済みの<a href="/ja/docs/Web/CSS/color_value#Color_keywords">色キーワード</a>のうちの1つを使用することもできます。
 
  </p><p>同様の効果を得るには、 CSS の {{cssxref("background-color")}} プロパティを使用してください。
  </p></dd>
@@ -109,7 +109,7 @@ translation_of: Web/HTML/Element/table
  </p></dd>
  <dt>{{htmlattrdef("cellspacing")}} {{Deprecated_inline}}</dt>
  <dd>
- <p>この属性は、2つのセルの間の四悪の寸法を、パーセント値またはピクセル値で定義します。この属性は水平方向と垂直方向の両方に適用され、表の上端と最初の行におけるセルの間、表の左端と最初の列の間、表の右端と最後の列の間、表の荷担と最後の行の間に適用されます。</p>
+ <p>この属性は、2つのセルの間の空間の寸法を、パーセント値またはピクセル値で定義します。この属性は水平方向と垂直方向の両方に適用され、表の上端と最初の行におけるセルの間、表の左端と最初の列の間、表の右端と最後の列の間、表の下端と最後の行の間に適用されます。</p>
 
  <p>同様の効果を得るには、 {{cssxref("border-spacing")}} プロパティを <code>&lt;table&gt;</code> 要素に適用してください。 <code>border-spacing</code> は、 {{cssxref("border-collapse")}} が collapse に設定されていると何の効果もありません。
  </p></dd>
@@ -377,176 +377,176 @@ document.querySelector('table').tBodies[0].sort(function(a, b){
 
 <div class="hidden">
 <pre class="brush: html notranslate">&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;1&lt;sup&gt;3&lt;/sup&gt; equals:
-      &lt;th&gt;2&lt;sup&gt;3&lt;/sup&gt; equals:
-      &lt;th&gt;3&lt;sup&gt;3&lt;/sup&gt; equals:
-      &lt;th&gt;4&lt;sup&gt;3&lt;/sup&gt; equals:
-      &lt;th&gt;5&lt;sup&gt;3&lt;/sup&gt; equals:
-      &lt;th&gt;6&lt;sup&gt;3&lt;/sup&gt; equals:
-      &lt;th&gt;7&lt;sup&gt;3&lt;/sup&gt; equals:
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;row 1: 1
-      &lt;td&gt;row 1: 8
-      &lt;td&gt;row 1: 27
-      &lt;td&gt;row 1: 64
-      &lt;td&gt;row 1: 125
-      &lt;td&gt;row 1: 216
-      &lt;td&gt;row 1: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 2: 1
-      &lt;td&gt;row 2: 8
-      &lt;td&gt;row 2: 27
-      &lt;td&gt;row 2: 64
-      &lt;td&gt;row 2: 125
-      &lt;td&gt;row 2: 216
-      &lt;td&gt;row 2: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 3: 1
-      &lt;td&gt;row 3: 8
-      &lt;td&gt;row 3: 27
-      &lt;td&gt;row 3: 64
-      &lt;td&gt;row 3: 125
-      &lt;td&gt;row 3: 216
-      &lt;td&gt;row 3: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 4: 1
-      &lt;td&gt;row 4: 8
-      &lt;td&gt;row 4: 27
-      &lt;td&gt;row 4: 64
-      &lt;td&gt;row 4: 125
-      &lt;td&gt;row 4: 216
-      &lt;td&gt;row 4: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 5: 1
-      &lt;td&gt;row 5: 8
-      &lt;td&gt;row 5: 27
-      &lt;td&gt;row 5: 64
-      &lt;td&gt;row 5: 125
-      &lt;td&gt;row 5: 216
-      &lt;td&gt;row 5: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 6: 1
-      &lt;td&gt;row 6: 8
-      &lt;td&gt;row 6: 27
-      &lt;td&gt;row 6: 64
-      &lt;td&gt;row 6: 125
-      &lt;td&gt;row 6: 216
-      &lt;td&gt;row 6: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 7: 1
-      &lt;td&gt;row 7: 8
-      &lt;td&gt;row 7: 27
-      &lt;td&gt;row 7: 64
-      &lt;td&gt;row 7: 125
-      &lt;td&gt;row 7: 216
-      &lt;td&gt;row 7: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 8: 1
-      &lt;td&gt;row 8: 8
-      &lt;td&gt;row 8: 27
-      &lt;td&gt;row 8: 64
-      &lt;td&gt;row 8: 125
-      &lt;td&gt;row 8: 216
-      &lt;td&gt;row 8: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 9: 1
-      &lt;td&gt;row 9: 8
-      &lt;td&gt;row 9: 27
-      &lt;td&gt;row 9: 64
-      &lt;td&gt;row 9: 125
-      &lt;td&gt;row 9: 216
-      &lt;td&gt;row 9: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 10: 1
-      &lt;td&gt;row 10: 8
-      &lt;td&gt;row 10: 27
-      &lt;td&gt;row 10: 64
-      &lt;td&gt;row 10: 125
-      &lt;td&gt;row 10: 216
-      &lt;td&gt;row 10: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 11: 1
-      &lt;td&gt;row 11: 8
-      &lt;td&gt;row 11: 27
-      &lt;td&gt;row 11: 64
-      &lt;td&gt;row 11: 125
-      &lt;td&gt;row 11: 216
-      &lt;td&gt;row 11: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 12: 1
-      &lt;td&gt;row 12: 8
-      &lt;td&gt;row 12: 27
-      &lt;td&gt;row 12: 64
-      &lt;td&gt;row 12: 125
-      &lt;td&gt;row 12: 216
-      &lt;td&gt;row 12: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 13: 1
-      &lt;td&gt;row 13: 8
-      &lt;td&gt;row 13: 27
-      &lt;td&gt;row 13: 64
-      &lt;td&gt;row 13: 125
-      &lt;td&gt;row 13: 216
-      &lt;td&gt;row 13: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 14: 1
-      &lt;td&gt;row 14: 8
-      &lt;td&gt;row 14: 27
-      &lt;td&gt;row 14: 64
-      &lt;td&gt;row 14: 125
-      &lt;td&gt;row 14: 216
-      &lt;td&gt;row 14: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 15: 1
-      &lt;td&gt;row 15: 8
-      &lt;td&gt;row 15: 27
-      &lt;td&gt;row 15: 64
-      &lt;td&gt;row 15: 125
-      &lt;td&gt;row 15: 216
-      &lt;td&gt;row 15: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 16: 1
-      &lt;td&gt;row 16: 8
-      &lt;td&gt;row 16: 27
-      &lt;td&gt;row 16: 64
-      &lt;td&gt;row 16: 125
-      &lt;td&gt;row 16: 216
-      &lt;td&gt;row 16: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 17: 1
-      &lt;td&gt;row 17: 8
-      &lt;td&gt;row 17: 27
-      &lt;td&gt;row 17: 64
-      &lt;td&gt;row 17: 125
-      &lt;td&gt;row 17: 216
-      &lt;td&gt;row 17: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 18: 1
-      &lt;td&gt;row 18: 8
-      &lt;td&gt;row 18: 27
-      &lt;td&gt;row 18: 64
-      &lt;td&gt;row 18: 125
-      &lt;td&gt;row 18: 216
-      &lt;td&gt;row 18: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 19: 1
-      &lt;td&gt;row 19: 8
-      &lt;td&gt;row 19: 27
-      &lt;td&gt;row 19: 64
-      &lt;td&gt;row 19: 125
-      &lt;td&gt;row 19: 216
-      &lt;td&gt;row 19: 343
-    &lt;tr&gt;
-      &lt;td&gt;row 20: 1
-      &lt;td&gt;row 20: 8
-      &lt;td&gt;row 20: 27
-      &lt;td&gt;row 20: 64
-      &lt;td&gt;row 20: 125
-      &lt;td&gt;row 20: 216
-      &lt;td&gt;row 20: 343
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;sup&gt;3&lt;/sup&gt; equals:
+      &lt;th&gt;2&lt;sup&gt;3&lt;/sup&gt; equals:
+      &lt;th&gt;3&lt;sup&gt;3&lt;/sup&gt; equals:
+      &lt;th&gt;4&lt;sup&gt;3&lt;/sup&gt; equals:
+      &lt;th&gt;5&lt;sup&gt;3&lt;/sup&gt; equals:
+      &lt;th&gt;6&lt;sup&gt;3&lt;/sup&gt; equals:
+      &lt;th&gt;7&lt;sup&gt;3&lt;/sup&gt; equals:
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;row 1: 1
+      &lt;td&gt;row 1: 8
+      &lt;td&gt;row 1: 27
+      &lt;td&gt;row 1: 64
+      &lt;td&gt;row 1: 125
+      &lt;td&gt;row 1: 216
+      &lt;td&gt;row 1: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 2: 1
+      &lt;td&gt;row 2: 8
+      &lt;td&gt;row 2: 27
+      &lt;td&gt;row 2: 64
+      &lt;td&gt;row 2: 125
+      &lt;td&gt;row 2: 216
+      &lt;td&gt;row 2: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 3: 1
+      &lt;td&gt;row 3: 8
+      &lt;td&gt;row 3: 27
+      &lt;td&gt;row 3: 64
+      &lt;td&gt;row 3: 125
+      &lt;td&gt;row 3: 216
+      &lt;td&gt;row 3: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 4: 1
+      &lt;td&gt;row 4: 8
+      &lt;td&gt;row 4: 27
+      &lt;td&gt;row 4: 64
+      &lt;td&gt;row 4: 125
+      &lt;td&gt;row 4: 216
+      &lt;td&gt;row 4: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 5: 1
+      &lt;td&gt;row 5: 8
+      &lt;td&gt;row 5: 27
+      &lt;td&gt;row 5: 64
+      &lt;td&gt;row 5: 125
+      &lt;td&gt;row 5: 216
+      &lt;td&gt;row 5: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 6: 1
+      &lt;td&gt;row 6: 8
+      &lt;td&gt;row 6: 27
+      &lt;td&gt;row 6: 64
+      &lt;td&gt;row 6: 125
+      &lt;td&gt;row 6: 216
+      &lt;td&gt;row 6: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 7: 1
+      &lt;td&gt;row 7: 8
+      &lt;td&gt;row 7: 27
+      &lt;td&gt;row 7: 64
+      &lt;td&gt;row 7: 125
+      &lt;td&gt;row 7: 216
+      &lt;td&gt;row 7: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 8: 1
+      &lt;td&gt;row 8: 8
+      &lt;td&gt;row 8: 27
+      &lt;td&gt;row 8: 64
+      &lt;td&gt;row 8: 125
+      &lt;td&gt;row 8: 216
+      &lt;td&gt;row 8: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 9: 1
+      &lt;td&gt;row 9: 8
+      &lt;td&gt;row 9: 27
+      &lt;td&gt;row 9: 64
+      &lt;td&gt;row 9: 125
+      &lt;td&gt;row 9: 216
+      &lt;td&gt;row 9: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 10: 1
+      &lt;td&gt;row 10: 8
+      &lt;td&gt;row 10: 27
+      &lt;td&gt;row 10: 64
+      &lt;td&gt;row 10: 125
+      &lt;td&gt;row 10: 216
+      &lt;td&gt;row 10: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 11: 1
+      &lt;td&gt;row 11: 8
+      &lt;td&gt;row 11: 27
+      &lt;td&gt;row 11: 64
+      &lt;td&gt;row 11: 125
+      &lt;td&gt;row 11: 216
+      &lt;td&gt;row 11: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 12: 1
+      &lt;td&gt;row 12: 8
+      &lt;td&gt;row 12: 27
+      &lt;td&gt;row 12: 64
+      &lt;td&gt;row 12: 125
+      &lt;td&gt;row 12: 216
+      &lt;td&gt;row 12: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 13: 1
+      &lt;td&gt;row 13: 8
+      &lt;td&gt;row 13: 27
+      &lt;td&gt;row 13: 64
+      &lt;td&gt;row 13: 125
+      &lt;td&gt;row 13: 216
+      &lt;td&gt;row 13: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 14: 1
+      &lt;td&gt;row 14: 8
+      &lt;td&gt;row 14: 27
+      &lt;td&gt;row 14: 64
+      &lt;td&gt;row 14: 125
+      &lt;td&gt;row 14: 216
+      &lt;td&gt;row 14: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 15: 1
+      &lt;td&gt;row 15: 8
+      &lt;td&gt;row 15: 27
+      &lt;td&gt;row 15: 64
+      &lt;td&gt;row 15: 125
+      &lt;td&gt;row 15: 216
+      &lt;td&gt;row 15: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 16: 1
+      &lt;td&gt;row 16: 8
+      &lt;td&gt;row 16: 27
+      &lt;td&gt;row 16: 64
+      &lt;td&gt;row 16: 125
+      &lt;td&gt;row 16: 216
+      &lt;td&gt;row 16: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 17: 1
+      &lt;td&gt;row 17: 8
+      &lt;td&gt;row 17: 27
+      &lt;td&gt;row 17: 64
+      &lt;td&gt;row 17: 125
+      &lt;td&gt;row 17: 216
+      &lt;td&gt;row 17: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 18: 1
+      &lt;td&gt;row 18: 8
+      &lt;td&gt;row 18: 27
+      &lt;td&gt;row 18: 64
+      &lt;td&gt;row 18: 125
+      &lt;td&gt;row 18: 216
+      &lt;td&gt;row 18: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 19: 1
+      &lt;td&gt;row 19: 8
+      &lt;td&gt;row 19: 27
+      &lt;td&gt;row 19: 64
+      &lt;td&gt;row 19: 125
+      &lt;td&gt;row 19: 216
+      &lt;td&gt;row 19: 343
+    &lt;tr&gt;
+      &lt;td&gt;row 20: 1
+      &lt;td&gt;row 20: 8
+      &lt;td&gt;row 20: 27
+      &lt;td&gt;row 20: 64
+      &lt;td&gt;row 20: 125
+      &lt;td&gt;row 20: 216
+      &lt;td&gt;row 20: 343
 &lt;/table&gt;
 </pre>
 </div>
@@ -618,7 +618,7 @@ tr:last-child td {
 
 <h3 id="Scoping_rows_and_columns" name="Scoping_rows_and_columns">行と列のスコープ付け</h3>
 
-<p>ヘッダー要素の {{htmlattrxref("scope", "th")}} 属性は、単純な内容の場合はスコープが推測できるので冗長になります。しかし、支援技術によっては正しく推測することに失敗する事があるため、ヘッダーにスコープを設定すると使い勝手が向上する可能性ことがあります。複雑な表では、スコープを指定するとセルとヘッダーの関係に関する必要な情報を提供することができます。</p>
+<p>ヘッダー要素の {{htmlattrxref("scope", "th")}} 属性は、単純な内容の場合はスコープが推測できるので冗長になります。しかし、支援技術によっては正しく推測することに失敗する事があるため、ヘッダーにスコープを設定すると使い勝手が向上することがあります。複雑な表では、スコープを指定するとセルとヘッダーの関係に関する必要な情報を提供することができます。</p>
 
 <h4 id="Example" name="Example">例</h4>
 
@@ -658,7 +658,7 @@ tr:last-child td {
 
 <h3 id="Complicated_tables" name="Complicated_tables">複雑な表</h3>
 
-<p>読み上げソフトのような支援技術は、ヘッダーのセルを厳密に水平又は垂直濃厚に関連付けすることができない表を解析するのが困難な場合があります。これはつまり、 {{htmlattrxref("colspan", "td")}} に {{htmlattrxref("rowspan", "td")}} 属性がある場合のことです。</p>
+<p>読み上げソフトのような支援技術は、ヘッダーのセルを厳密に水平又は垂直方向に関連付けすることができない表を解析するのが困難な場合があります。これはつまり、 {{htmlattrxref("colspan", "td")}} に {{htmlattrxref("rowspan", "td")}} 属性がある場合のことです。</p>
 
 <p>できれば、テーブルの内容を表現するための別な方法、例えばより小さい表の集合に分解するなどで、 <code>colspan</code> 及び <code>rowspan</code> 属性に依存する必要がないようにすることを考慮してください。これは支援技術を使用している人が表の内容を理解しやすくするのに加えて、表のレイアウトの関連を理解することが難しい認識障碍を持った人にも利益になります。</p>
 

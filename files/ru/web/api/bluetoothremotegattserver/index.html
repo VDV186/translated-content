@@ -16,12 +16,12 @@ translation_of: Web/API/BluetoothRemoteGATTServer
 <p>Интерфейс <code><strong>BluetoothRemoteGATTServer</strong></code>, относящийся к <a href="/en-US/docs/Web/API/Web_Bluetooth_API">Web Bluetooth API</a>, представляет сервер GATT на удалённом устройстве.</p>
 
 <div class="note">
-<p>Данная страница описывает Web Bluetooth API от W3C Community Group. <a href="/en-US/docs/Archive/B2G_OS/API/BluetoothGattServer"><code>BluetoothGattServer</code> (Firefox OS)</a> - Bluetooth API в Firefox OS.</p>
+<p>Данная страница описывает Web Bluetooth API от W3C Community Group. <a href="/en-US/docs/Archive/B2G_OS/API/BluetoothGattServer"><code>BluetoothGattServer</code> (Firefox OS)</a> - Bluetooth API в Firefox OS.</p>
 </div>
 
 <h2 id="Интерфейс">Интерфейс</h2>
 
-<pre class="syntaxbox notranslate">interface BluetoothRemoteGATTServer {
+<pre class="syntaxbox">interface BluetoothRemoteGATTServer {
   readonly attribute BluetoothDevice device;
   readonly attribute boolean connected;
 
@@ -48,32 +48,19 @@ translation_of: Web/API/BluetoothRemoteGATTServer
  <dt>{{DOMxRef("BluetoothRemoteGATTServer.disconnect()")}}</dt>
  <dd>Отключение от устройства <code>this.device</code>.</dd>
  <dt>{{DOMxRef("BluetoothRemoteGATTServer.getPrimaryService()")}}</dt>
- <dd>Returns a promise to the primary {{DOMxRef("BluetoothGATTService")}} offered by the bluetooth device for a specified <code>BluetoothServiceUUID</code>.</dd>
+ <dd>Returns a promise to the primary {{DOMxRef("BluetoothGATTService")}} offered by the bluetooth device for a specified <code>BluetoothServiceUUID</code>.</dd>
  <dt>{{DOMxRef("BluetoothRemoteGATTServer.getPrimaryServices()")}}</dt>
- <dd>Returns a promise to a list of primary {{DOMxRef("BluetoothGATTService")}} objects offered by the bluetooth device for a specified <code>BluetoothServiceUUID</code>.</dd>
+ <dd>Returns a promise to a list of primary {{DOMxRef("BluetoothGATTService")}} objects offered by the bluetooth device for a specified <code>BluetoothServiceUUID</code>.</dd>
 </dl>
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
-  <tr>
-   <td>{{SpecName("Web Bluetooth", "#bluetoothremotegattserver", "BluetoothRemoteGATTServer")}}</td>
-   <td>{{Spec2("Web Bluetooth")}}</td>
-   <td>Изначальное определение.</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Совместимость">Совместимость</h2>
 
 
 
-<p>{{Compat("api.BluetoothRemoteGATTServer")}}</p>
+<p>{{Compat}}</p>
 
 <div>{{APIRef("Web Bluetooth")}}</div>

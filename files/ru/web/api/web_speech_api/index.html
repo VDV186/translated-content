@@ -6,7 +6,7 @@ translation_of: Web/API/Web_Speech_API
 <div>{{DefaultAPISidebar("Web Speech API")}}{{seecompattable}}</div>
 
 <div class="summary">
-<p>Web Speech API позволяет взаимодействовать с голосовыми интерфейсами в ваших веб приложениях. Web Speech API состоит из двух частей: SpeechSynthesis (Текст-в-Речь), и SpeechRecognition (Асинхронное распознавание речи)</p>
+<p>Web Speech API позволяет взаимодействовать с голосовыми интерфейсами в ваших веб приложениях. Web Speech API состоит из двух частей: SpeechSynthesis (Текст-в-Речь), и SpeechRecognition (Асинхронное распознавание речи)</p>
 </div>
 
 <h2 id="Концепции_и_использование_Web_Speech">Концепции и использование Web Speech</h2>
@@ -14,8 +14,8 @@ translation_of: Web/API/Web_Speech_API
 <p>Web Speech API позволяет веб приложениям управлять голосовыми данными. Существует два компонента к этому API:</p>
 
 <ul>
- <li>Распознавание голоса. Доступ обеспечивается через {{domxref("SpeechRecognition")}} интерфейс, который в свою очередь обеспечивает возможность распознавать текст из входящего аудио потока (обычно через устройство распознавания речи в устройстве по умолчанию) и отвечать соответственно. Воспользовавшись конструктором интерфейса вы можете создать новый {{domxref("SpeechRecognition")}} объект, у которого есть ряд событий для обнаружения начала речи через микрофон устройства. {{domxref("SpeechGrammar")}} интерфейс предоставляет контейнер для определённого набора грамматики, которое ваше приложение должно использовать. Грамматика определяется с помощью <a href="http://www.w3.org/TR/jsgf/">JSpeech Grammar Format</a> (<strong>JSGF</strong>.)</li>
- <li>Доступ к синтезу речи осуществляется с помощью {{domxref("SpeechSynthesis")}} интерфейса, компонент text-to-speech позволяет приложениям прочесть свой текстовый контент (обычно через дефолтный синтезатор речи устройства). В {{domxref("SpeechSynthesisVoice")}} объектах есть различные типы голоса, и различным частям текста можно назначать   {{domxref("SpeechSynthesisUtterance")}} объекты. Можно начать воспроизведение передав их методу {{domxref("SpeechSynthesis.speak()")}}.</li>
+ <li>Распознавание голоса. Доступ обеспечивается через {{domxref("SpeechRecognition")}} интерфейс, который в свою очередь обеспечивает возможность распознавать текст из входящего аудио потока (обычно через устройство распознавания речи в устройстве по умолчанию) и отвечать соответственно. Воспользовавшись конструктором интерфейса вы можете создать новый {{domxref("SpeechRecognition")}} объект, у которого есть ряд событий для обнаружения начала речи через микрофон устройства. {{domxref("SpeechGrammar")}} интерфейс предоставляет контейнер для определённого набора грамматики, которое ваше приложение должно использовать. Грамматика определяется с помощью <a href="http://www.w3.org/TR/jsgf/">JSpeech Grammar Format</a> (<strong>JSGF</strong>.)</li>
+ <li>Доступ к синтезу речи осуществляется с помощью {{domxref("SpeechSynthesis")}} интерфейса, компонент text-to-speech позволяет приложениям прочесть свой текстовый контент (обычно через дефолтный синтезатор речи устройства). В {{domxref("SpeechSynthesisVoice")}} объектах есть различные типы голоса, и различным частям текста можно назначать   {{domxref("SpeechSynthesisUtterance")}} объекты. Можно начать воспроизведение передав их методу {{domxref("SpeechSynthesis.speak()")}}.</li>
 </ul>
 
 <p>Для большей информации по использованию этих фич, смотрите <a href="/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API">Using the Web Speech API</a>.</p>
@@ -28,7 +28,7 @@ translation_of: Web/API/Web_Speech_API
  <dt>{{domxref("SpeechRecognition")}}</dt>
  <dd>The controller interface for the recognition service; this also handles the {{domxref("SpeechRecognitionEvent")}} sent from the recognition service.</dd>
  <dt>{{domxref("SpeechRecognitionAlternative")}}</dt>
- <dd>Представляет одно слово которое было распознано службой распознавания голоса.</dd>
+ <dd>Представляет одно слово которое было распознано службой распознавания голоса.</dd>
  <dt>{{domxref("SpeechRecognitionError")}}</dt>
  <dd>Представляет сообщения об ошибках из службы распознавания.</dd>
  <dt>{{domxref("SpeechRecognitionEvent")}}</dt>
@@ -69,19 +69,17 @@ translation_of: Web/API/Web_Speech_API
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
-  <tr>
-   <td>{{SpecName('Web Speech API')}}</td>
-   <td>{{Spec2('Web Speech API')}}</td>
-   <td>Initial definition</td>
-  </tr>
- </tbody>
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="">Web Speech API</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <h2 id="Browser_compatibility">Browser compatibility</h2>
@@ -98,7 +96,7 @@ translation_of: Web/API/Web_Speech_API
 
 <p>To use speech recognition in an app, you need to specify the following permissions in your <a href="/en-US/docs/Web/Apps/Build/Manifest">manifest</a>:</p>
 
-<pre class="brush: json notranslate">"permissions": {
+<pre class="brush: json">"permissions": {
   "audio-capture" : {
     "description" : "Audio capture"
   },
@@ -109,7 +107,7 @@ translation_of: Web/API/Web_Speech_API
 
 <p>You also need a privileged app, so you need to include this as well:</p>
 
-<pre class="brush: json notranslate">  "type": "privileged"</pre>
+<pre class="brush: json">  "type": "privileged"</pre>
 
 <p>Speech synthesis needs no permissions to be set.</p>
 

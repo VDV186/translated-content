@@ -20,34 +20,21 @@ translation_of: Web/API/MediaStream/active
 <p>В этом примере, стрим ведётся с пользовательского микрофона и веб-камеры, запрошенных с помощью {{domxref("MediaDevices.getUserMedia", "getUserMedia()")}}. Когда стрим становится активным (а это тогда, когда выполнен {{jsxref("Promise")}}, кнопка на странице обновляется, опираясь на состояние стрима, активен он или же нет.</p>
 
 <pre class="brush: js">var promise = navigator.mediaDevices.getUserMedia({
-  audio: true,
-  video: true
+  audio: true,
+  video: true
 });
 
 promise.then(function(stream) {
   var startBtn = document.querySelector('#startBtn');
-  startBtn.disabled = stream.active;
+  startBtn.disabled = stream.active;
 };)</pre>
 
 <h2 id="Спецификации">Спецификации</h2>
 
-<table class="standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Спецификация</th>
-   <th scope="col">Статус</th>
-   <th scope="col">Комментарий</th>
-  </tr>
-  <tr>
-   <td>{{SpecName('Media Capture', '#widl-MediaStream-active', 'active')}}</td>
-   <td>{{Spec2('Media Capture')}}</td>
-   <td>Определено.</td>
-  </tr>
- </tbody>
-</table>
+{{Specifications}}
 
 <h2 id="Совместимость_с_браузерами">Совместимость с браузерами</h2>
 
 
 
-<p>{{Compat("api.MediaStream.active")}}</p>
+<p>{{Compat}}</p>
