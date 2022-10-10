@@ -1,8 +1,8 @@
 ---
 title: AudioContext.baseLatency
 slug: Web/API/AudioContext/baseLatency
-translation_of: Web/API/AudioContext/baseLatency
 ---
+
 {{SeeCompatTable}}{{APIRef("Web Audio API")}}
 
 The **`baseLatency`** read-only property of the {{domxref("AudioContext")}} interface returns a double that represents the number of seconds of processing latency incurred by the `AudioContext` passing the audio from the {{domxref("AudioDestinationNode")}} to the audio subsystem.
@@ -37,4 +37,4 @@ console.log(audioCtx2.baseLatency);//0.02
 
 ## Browser Compatibility
 
-{{Compat("api.AudioContext.baseLatency")}}
+{{Compat}}

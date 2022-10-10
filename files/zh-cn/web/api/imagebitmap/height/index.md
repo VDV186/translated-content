@@ -1,8 +1,8 @@
 ---
 title: ImageBitmap.height
 slug: Web/API/ImageBitmap/height
-translation_of: Web/API/ImageBitmap/height
 ---
+
 {{APIRef("Canvas API")}}
 
 **`只读属性 ImageBitmap.height`** 返回 {{domxref("ImageBitmap")}} 对象的 CSS 像素高度。
@@ -13,4 +13,4 @@ translation_of: Web/API/ImageBitmap/height
 
 ## 浏览器兼容性
 
-{{Compat("api.ImageBitmap.height")}}
+{{Compat}}

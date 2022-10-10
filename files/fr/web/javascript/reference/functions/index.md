@@ -8,6 +8,7 @@ tags:
 translation_of: Web/JavaScript/Reference/Functions
 original_slug: Web/JavaScript/Reference/Fonctions
 ---
+
 {{jsSidebar("Functions")}}
 
 De manière générale, une fonction est un « sous-programme » qui peut être appelé par du code extérieur à la fonction (ou du code interne dans le cas d'une récursion). Comme le programme, une fonction est composée d'une suite d'instructions qui forment le _corps de la fonction_. Il est parfois possible de _passer_ des valeurs à une fonction et une fonction peut éventuellement _retourner_ (ou _renvoyer_) une valeur.
@@ -784,17 +785,11 @@ Il est à noter que, dans le test `if`, on utilise une référence à `noFunc` -
 
 ## Spécifications
 
-| Spécification                                                                                                    | État                     | Commentaires                                                                             |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
-| {{SpecName('ES1')}}                                                                                         | {{Spec2('ES1')}}     | Définition initiale. Implémentée avec JavaScript 1.0                                     |
-| {{SpecName('ES5.1', '#sec-13', 'Function Definition')}}                                         | {{Spec2('ES5.1')}} |                                                                                          |
-| {{SpecName('ES6', '#sec-function-definitions', 'Function definitions')}}                 | {{Spec2('ES6')}}     | Nouveautés : fonctions fléchées, générateurs, paramètres par défaut, paramètres du reste |
-| {{SpecName('ES6', '#', 'function*')}}                                                                 | {{Spec2('ES6')}}     | Définition initiale.                                                                     |
-| {{SpecName('ES6', '#sec-arrow-function-definitions', 'Arrow Function Definitions')}} | {{Spec2('ES6')}}     | Définition initiale.                                                                     |
+{{Specifications}}
 
 ## Compatibilité des navigateurs
 
-{{Compat("javascript.functions")}}
+{{Compat}}
 
 ## Voir aussi
 

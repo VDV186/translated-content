@@ -1,11 +1,11 @@
 ---
 title: MediaStreamEvent
 slug: Web/API/MediaStreamEvent
-translation_of: Web/API/MediaStreamEvent
 ---
+
 {{APIRef("WebRTC")}}{{SeeCompatTable}}
 
-**`MediaStreamEvent`** 接口表示发生在 {{domxref("MediaStream")}}中的事件。这种类型返回两个事件: {{event("addstream")}} 和 {{event("removestream")}}.
+**`MediaStreamEvent`** 接口表示发生在 {{domxref("MediaStream")}}中的事件。这种类型返回两个事件：{{event("addstream")}} 和 {{event("removestream")}}.
 
 ## Properties
 
@@ -37,5 +37,5 @@ pc.onaddstream = function( ev ) {
 
 ## See also
 
-- [WebRTC](/en-US/docs/Web/Guide/API/WebRTC)
+- [WebRTC](/zh-CN/docs/Web/Guide/API/WebRTC)
 - Its usual target: {{domxref("RTCPeerConnection")}}.

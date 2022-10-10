@@ -1,13 +1,8 @@
 ---
 title: Selection.collapse()
 slug: Web/API/Selection/collapse
-tags:
-  - API
-  - HTML Editing
-  - Method
-  - Selection
-translation_of: Web/API/Selection/collapse
 ---
+
 {{ApiRef("DOM")}}{{SeeCompatTable}}
 
 **`Selection.collapse()`** 方法可以收起当前选区到一个点。文档不会发生改变。如果选区的内容是可编辑的并且焦点落在上面，则光标会在该处闪烁。

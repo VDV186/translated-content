@@ -1,14 +1,8 @@
 ---
 title: HashChangeEvent.newURL
 slug: Web/API/HashChangeEvent/newURL
-tags:
-  - API
-  - HashChangeEvent
-  - Property
-  - Reference
-  - Web API
-translation_of: Web/API/HashChangeEvent/newURL
 ---
+
 {{APIRef("HTML DOM")}}
 
 **`newURL`** 为 {{domxref("HashChangeEvent")}} 接口的只读属性，其值为窗口导航改变后的 URL。

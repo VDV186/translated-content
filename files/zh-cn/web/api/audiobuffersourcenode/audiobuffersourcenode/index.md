@@ -1,8 +1,8 @@
 ---
 title: AudioBufferSourceNode.AudioBufferSourceNode()
 slug: Web/API/AudioBufferSourceNode/AudioBufferSourceNode
-translation_of: Web/API/AudioBufferSourceNode/AudioBufferSourceNode
 ---
+
 {{APIRef("Web Audio API")}}
 
 **`AudioBufferSourceNode()`** 构造器创建一个新的 {{domxref("AudioBufferSourceNode")}} 实例。
@@ -40,4 +40,4 @@ A new {{domxref("AudioBufferSourceNode")}} object instance.
 
 ## Browser Compatibility
 
-{{Compat("api.AudioBufferSourceNode.AudioBufferSourceNode")}}
+{{Compat}}

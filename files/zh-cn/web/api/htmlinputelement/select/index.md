@@ -1,8 +1,8 @@
 ---
 title: HTMLInputElement.select()
 slug: Web/API/HTMLInputElement/select
-translation_of: Web/API/HTMLInputElement/select
 ---
+
 {{ APIRef("HTML DOM") }}
 
 **`HTMLInputElement.select()`** 方法选中一个 {{HTMLElement("textarea")}} 元素或者一个带有 text 字段的 {{HTMLElement("input")}} 元素里的所有内容。
@@ -48,7 +48,7 @@ function selectText() {
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLInputElement.select")}}
+{{Compat}}
 
 ## 相关链接
 

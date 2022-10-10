@@ -1,17 +1,8 @@
 ---
 title: Element.prepend()
 slug: Web/API/Element/prepend
-tags:
-  - API
-  - DOM
-  - Method
-  - Node
-  - Element
-  - Reference
-  - prepend
-translation_of: Web/API/Element/prepend
-browser-compat: api.Element.prepend
 ---
+
 {{APIRef("DOM")}}
 
 **`Element.prepend`** 方法可以在父节点的第一个子节点之前插入一系列{{domxref("Node")}}对象或者{{domxref("DOMString")}}对象。{{domxref("DOMString")}}会被当作{{domxref("Text")}}节点对待（也就是说插入的不是 HTML 代码）。
@@ -111,7 +102,7 @@ with(parent) {
 
 ## 兼容性
 
-{{Compat("api.Element.prepend")}}
+{{Compat}}
 
 ## See also
 

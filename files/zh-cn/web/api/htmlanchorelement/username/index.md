@@ -1,11 +1,8 @@
 ---
 title: HTMLHyperlinkElementUtils.username
 slug: Web/API/HTMLAnchorElement/username
-tags:
-  - HTMLHyperlinkElementUtils.username
-translation_of: Web/API/HTMLHyperlinkElementUtils/username
-original_slug: Web/API/HTMLHyperlinkElementUtils/username
 ---
+
 {{ApiRef("URL API")}}
 
 **`HTMLHyperlinkElementUtils.username`** 属性是一个 {{domxref("USVString")}}包含域名前面指定的用户名。
@@ -31,7 +28,7 @@ var result = anchor.username; // Returns:'anonymous'
 
 ## Browser compatibility
 
-{{Compat("api.HTMLAnchorElement.username")}}
+{{Compat}}
 
 ## See also
 

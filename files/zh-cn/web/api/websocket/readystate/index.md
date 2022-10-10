@@ -1,11 +1,8 @@
 ---
 title: WebSocket.readyState
 slug: Web/API/WebSocket/readyState
-tags:
-  - Web API
-  - WebSocket
-translation_of: Web/API/WebSocket/readyState
 ---
+
 {{APIRef("Web Sockets API")}}
 
 ## 概要

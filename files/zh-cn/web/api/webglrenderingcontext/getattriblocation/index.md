@@ -1,8 +1,8 @@
 ---
 title: WebGLRenderingContext.getAttribLocation()
 slug: Web/API/WebGLRenderingContext/getAttribLocation
-translation_of: Web/API/WebGLRenderingContext/getAttribLocation
 ---
+
 {{APIRef("WebGL")}}
 
 **`WebGLRenderingContext.getAttribLocation()`** 方法返回了给定{{domxref("WebGLProgram")}}对象中某属性的下标指向位置。
@@ -36,7 +36,7 @@ gl.getAttribLocation(program, 'vColor');
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGLRenderingContext.getAttribLocation")}}
+{{Compat}}
 
 ## 相关资料
 

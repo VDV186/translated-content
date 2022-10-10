@@ -1,13 +1,8 @@
 ---
 title: window.applicationCache
 slug: Web/API/Window/applicationCache
-tags:
-  - HTML5
-  - HTML5.1
-  - HTML5.2
-  - REC
-translation_of: Web/API/Window/applicationCache
 ---
+
 {{APIRef}}
 
 ## 概要
@@ -30,4 +25,4 @@ cache = window.applicationCache
 
 ## 参见
 
-- [使用应用缓存](/en-US/docs/HTML/Using_the_application_cache)
+- [使用应用缓存](/zh-CN/docs/HTML/Using_the_application_cache)

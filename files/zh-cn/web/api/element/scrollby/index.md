@@ -1,14 +1,8 @@
 ---
 title: Element.scrollBy()
 slug: Web/API/Element/scrollBy
-tags:
-  - API
-  - Element
-  - Method
-  - Reference
-  - scrollBy
-translation_of: Web/API/Element/scrollBy
 ---
+
 {{ APIRef() }}
 
 **`scrollBy()`** 方法是使得元素滚动一段特定距离的 {{domxref("Element")}} 接口。
@@ -52,4 +46,4 @@ element.scrollBy({
 
 ## 浏览器兼容性
 
-{{Compat("api.Element.scrollBy")}}
+{{Compat}}

@@ -1,13 +1,8 @@
 ---
 title: RTCPeerConnection.remoteDescription
 slug: Web/API/RTCPeerConnection/remoteDescription
-tags:
-  - RTCPeerConnection
-  - WebRTC
-  - remoteDescription
-  - 中文
-translation_of: Web/API/RTCPeerConnection/remoteDescription
 ---
+
 {{APIRef("WebRTC")}}{{SeeCompatTable}}
 
 只读属性 **`RTCPeerConnection.remoteDescription`** 返回一个 {{domxref("RTCSessionDescription")}} ，它描述了和远程对端之间的会话 (包括配置和媒体信息) ，如果还没有被设置过的话，它会是 `null`.
@@ -52,4 +47,4 @@ else {
 
 - {{domxref("RTCPeerConnection.setRemoteDescription()")}}, {{domxref("RTCPeerConnection.pendingRemoteDescription")}}, {{domxref("RTCPeerConnection.currentRemoteDescription")}}
 - {{domxref("RTCPeerConnection.setLocalDescription()")}}, {{domxref("RTCPeerConnection.pendingLocalDescription")}}, {{domxref("RTCPeerConnection.currentLocalDescription")}}, {{domxref("RTCPeerConnection.localDescription")}}
-- [WebRTC](/en-US/docs/Web/Guide/API/WebRTC)
+- [WebRTC](/zh-CN/docs/Web/Guide/API/WebRTC)

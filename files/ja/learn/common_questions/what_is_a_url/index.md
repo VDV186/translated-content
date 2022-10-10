@@ -1,27 +1,21 @@
 ---
-title: URL とは何か
+title: URL とは？
 slug: Learn/Common_questions/What_is_a_URL
-tags:
-  - 初心者
-  - インフラ
-  - URL
-  - リソース
-  - urls
-translation_of: Learn/Common_questions/What_is_a_URL
 ---
+
 この記事では URL (Uniform Resource Locator) について説明し、その内容と構造を説明します。
 
-<table class="learn-box standard-table">
+<table>
   <tbody>
     <tr>
       <th scope="row">前提知識:</th>
       <td>
-        まず<a href="/ja/docs/Learn/Common_questions/How_does_the_Internet_work">インターネットの仕組み</a>、<a href="/ja/docs/Learn/Common_questions/What_is_a_web_server">ウェブサーバーとは何か</a>、<a href="/ja/docs/Learn/Common_questions/What_are_hyperlinks">ウェブ上のリンクの背後にある概念</a>を知る必要があります。
+        <a href="/ja/docs/Learn/Common_questions/How_does_the_Internet_work">インターネットはどのように動くのか</a>、<a href="/ja/docs/Learn/Common_questions/What_is_a_web_server">ウェブサーバーとは</a>、<a href="/ja/docs/Learn/Common_questions/What_are_hyperlinks">ウェブ上のリンクの背後にある概念</a>を知っておく必要があります。
       </td>
     </tr>
     <tr>
-      <th scope="row">目的:</th>
-      <td>URL の内容とウェブ上での仕組みを学習します。</td>
+      <th scope="row">目標:</th>
+      <td>URL とは何か、ウェブ上でどう働くのかについて学習します。</td>
     </tr>
   </tbody>
 </table>
@@ -30,7 +24,7 @@ translation_of: Learn/Common_questions/What_is_a_URL
 
 {{Glossary("Hypertext", "ハイパーテキスト")}}や {{Glossary("HTTP")}} とともに、 **_URL_** はウェブの重要な概念の一つです。{{Glossary("Browser", "ブラウザー")}}がウェブ上の公開されたリソースを取得するために使用する仕組みです。
 
-**URL** は _Uniform Resource Locator_ の略です。URL はウェブ上の特定の一意のリソースのアドレスにすぎません。理論的には、それぞれ有効な URL は一意のリソースを指しています。そのようなリソースは HTML ページ、 CSS 文書、画像などである可能性があります。実際には一部例外もあります。最も一般的なものは、もはや存在しないリソースや移動したリソースを指す URL です。URL で表されるリソースと URL 自体はウェブサーバーによって処理されるため、ウェブサーバーの所有者がそのリソースとその関連 URL を慎重に管理する必要があります。
+**URL** は _Uniform Resource Locator_ の略です。 URL はウェブ上の特定の一意のリソースのアドレスにすぎません。理論的には、それぞれ有効な URL は一意のリソースを指しています。そのようなリソースは HTML ページ、 CSS 文書、画像などである可能性があります。実際には一部例外もあります。最も一般的なものは、もはや存在しないリソースや移動したリソースを指す URL です。 URL で表されるリソースと URL 自体はウェブサーバーによって処理されるため、ウェブサーバーの所有者がそのリソースとその関連 URL を慎重に管理する必要があります。
 
 ## 基本: URL の解剖
 
@@ -42,15 +36,15 @@ https://developer.mozilla.org/ja/docs/Learn/
 https://developer.mozilla.org/ja/search?q=URL
 ```
 
-これらの URL のいずれかをブラウザーのアドレスバーに入力して、関連するページ (リソース) をロードするように指示することができます。
+これらの URL のいずれかをブラウザーのアドレスバーに入力して、関連するページ（リソース）をロードするように指示することができます。
 
-URL はさまざまな部分で構成されていますが、必須のものと任意のものもあります。次の URL を使用して最も重要な部分を見てみましょう。
+URL はさまざまな部分で構成されていますが、必須のものと任意のものもあります。次の URL を使用して最も重要な部分を見てみましょう（下記の節で詳細を提供しています）。
 
 ![full URL](mdn-url-all.png)
 
-> **Note:** URL を通常の郵便の住所として考えることもできます。スキーム (_scheme_) は利用したい郵便サービス、ドメイン名 (_domain name_) は市町村、ポート番号 (_port_) は郵便番号のようなもの、パス (_path_) は郵便物を届けるべき建物、引数 (_parameters_) はその建物の部屋番号など追加情報、アンカー (_anchor_) は実際の宛先人物を表します。
+> **メモ:** URL を通常の郵便の住所として考えることもできます。スキーム (_scheme_) は利用したい郵便サービス、ドメイン名 (_domain name_) は市町村、ポート番号 (_port_) は郵便番号のようなもの、パス (_path_) は郵便物を届けるべき建物、引数 (_parameters_) はその建物の部屋番号など追加情報、アンカー (_anchor_) は実際の宛先人物を表します。
 
-> **Note:** URL に関しては[いくつかの追加の部分と追加のルール](https://ja.wikipedia.org/wiki/Uniform_Resource_Locator)がありますが、これらは普通のユーザーとウェブ開発者には関係ありません。気にしないでください。これを知る必要はありませんし、 URL のすべての機能を使用する必要もありません。
+> **メモ:** URL に関しては[いくつかの追加の部分と追加のルール](https://ja.wikipedia.org/wiki/Uniform_Resource_Locator)がありますが、これらは普通のユーザーとウェブ開発者には関係ありません。気にしないでください。これを知る必要はありませんし、 URL のすべての機能を使用する必要もありません。
 
 ## スキーム
 
@@ -67,7 +61,7 @@ URL の最初の部分は**スキーム**で、ブラウザーがリソースを
 - ドメインは、どのウェブサーバーを要求しているのかを示します。通常はドメイン名ですが、 {{Glossary("IP address", "IP アドレス")}}を使うこともあります（ただし、これは利便性に欠けるので稀です）。
 - ポートは、ウェブサーバー上のリソースにアクセスするために使用される技術的な「門」 を示します。ウェブサーバーが HTTP プロトコルの標準ポート（HTTP は 80、 HTTPS は 443）を使用してリソースへのアクセスを許可している場合は、通常、この項目は省略されます。それ以外の場合は必須です。
 
-> **Note:** スキームとオーソリティの間の区切り文字は `://` です。コロンはスキームと URL の次の部分を分離し、 `//` は URL の次の部分がオーソリティであることを示します。
+> **メモ:** スキームとオーソリティの間の区切り文字は `://` です。コロンはスキームと URL の次の部分を分離し、 `//` は URL の次の部分がオーソリティであることを示します。
 >
 > オーソリティを使用しない URL の一例として、メールクライアント (`mailto:foobar`) があります。これはスキームを含んでいますが、オーソリティ部分を使用していません。したがって、コロンの後には 2 つのスラッシュがなく、スキームとメールアドレスの間の区切り文字としてのみ機能します。
 
@@ -100,7 +94,7 @@ URL の最初の部分は**スキーム**で、ブラウザーがリソースを
 - 画像（{{HTMLElement("img")}} 要素による）、動画（{{HTMLElement("video")}} 要素による）、音声と音楽（{{HTMLElement("audio")}} 要素による）などのメディアを表示する
 - {{HTMLElement("iframe")}} 要素により、他の HTML 文書を表示する
 
-> **Note:** URL を指定してページの一部としてリソースを読み込む際（`<script>`, `<audio>`, `<img>`, `<video>` を使用する場合など）は、 HTTP と HTTPS の URL のみを使用してください。いくつかの例外はあります（注目すべきは `data:` です。[データ URL](/ja/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) を参照してください）。たとえば FTP を使用しても、安全になることはなく、多くのブラウザーでは対応していません。
+> **メモ:** URL を指定してページの一部としてリソースを読み込む際（`<script>`, `<audio>`, `<img>`, `<video>` を使用する場合など）は、 HTTP と HTTPS の URL のみを使用してください。いくつかの例外はあります（注目すべきは `data:` です。[データ URL](/ja/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) を参照してください）。たとえば FTP を使用しても、安全になることはなく、多くのブラウザーでは対応していません。
 
 {{Glossary("CSS")}} や {{Glossary("JavaScript")}} などの他の技術は、URL を広範囲に使用し、真にウェブの中核です。
 
@@ -139,7 +133,7 @@ HTML ページ内など、文書内で URL が使用されている場合は状�
         <pre>/ja/docs/Learn</pre>
         <p>
           これは、 HTML 文書内の絶対 URL の最も一般的な使用例です。ブラウザーは、その URL をホストしている文書を読み込むために使用されたものと同じプロトコルおよび同じドメイン名を使用します。
-          <strong>メモ:</strong>
+          **メモ:**
           <em>
             プロトコルを省略せずにドメイン名だけ省略することはできません。
           </em>
@@ -160,7 +154,7 @@ HTML ページ内など、文書内で URL が使用されている場合は状�
       <td>
         <pre>Skills/Infrastructure/Understanding_URLs</pre>
         <p>
-          URL が <code>/</code> で始まっていないので、ブラウザーは現在のリソースを含んでいるディレクトリーのサブディレクトリーでその文書を見つけようとします。そのため、この例では本当に達したい URL である次の URL に達します。<br>
+          URL が `/` で始まっていないので、ブラウザーは現在のリソースを含んでいるディレクトリーのサブディレクトリーでその文書を見つけようとします。そのため、この例では本当に達したい URL である次の URL に達します。<br>
           https://developer.mozilla.org/ja/docs/Learn/Skills/Infrastructure/Understanding_URLs.
         </p>
       </td>
@@ -170,7 +164,7 @@ HTML ページ内など、文書内で URL が使用されている場合は状�
       <td>
         <pre>../CSS/display</pre>
         <p>
-          この場合、 UNIX ファイルシステムの世界から継承された <code>../</code> の表記規則を使用して、ブラウザーにあるディレクトリーの上に移動したいことを伝えます。つまり、次の URL にアクセスしようとします。<br>
+          この場合、 UNIX ファイルシステムの世界から継承された `../` の表記規則を使用して、ブラウザーにあるディレクトリーの上に移動したいことを伝えます。つまり、次の URL にアクセスしようとします。<br>
           https://developer.mozilla.org/ja/docs/Learn/../CSS/display<br>
           これは、次のように単純化することができます。<br>
           https://developer.mozilla.org/ja/docs/CSS/display

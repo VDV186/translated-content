@@ -1,15 +1,8 @@
 ---
 title: MessageChannel
 slug: Web/API/MessageChannel
-tags:
-  - API
-  - Channel Messaging API
-  - Interface
-  - MessageChannel
-  - Reference
-  - web messaging
-translation_of: Web/API/MessageChannel
 ---
+
 {{APIRef("HTML DOM")}}
 
 Channel Messaging API 的**`MessageChannel`** 接口允许我们创建一个新的消息通道，并通过它的两个{{domxref("MessagePort")}} 属性发送数据。
@@ -59,8 +52,8 @@ function handleMessage(e) {
 
 ## 浏览器兼容性
 
-{{Compat("api.MessageChannel")}}
+{{Compat}}
 
 ## 参见
 
-- [Using channel messaging](/en-US/docs/Web/API/Channel_Messaging_API/Using_channel_messaging)
+- [Using channel messaging](/zh-CN/docs/Web/API/Channel_Messaging_API/Using_channel_messaging)

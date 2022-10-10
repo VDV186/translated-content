@@ -1,14 +1,8 @@
 ---
 title: URL.username
 slug: Web/API/URL/username
-tags:
-  - API
-  - Property
-  - Reference
-  - URL
-  - username
-translation_of: Web/API/URL/username
 ---
+
 {{ApiRef("URL API")}}
 
 {{domxref("URL")}}接口的 username 属性是{{domxref("USVString")}} ，其中包含域名前指定的**`username`** 。
@@ -39,7 +33,7 @@ var user = url.username; // 返回：“anonymous”
 
 ## 浏览器兼容性
 
-{{Compat("api.URL.username")}}
+{{Compat}}
 
 ## 参考
 

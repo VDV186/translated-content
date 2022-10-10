@@ -1,8 +1,8 @@
 ---
 title: href
 slug: Web/API/StyleSheet/href
-translation_of: Web/API/StyleSheet/href
 ---
+
 {{APIRef("CSSOM")}}
 
 ### 概述

@@ -1,8 +1,8 @@
 ---
 title: InputEvent.isComposing
 slug: Web/API/InputEvent/isComposing
-translation_of: Web/API/InputEvent/isComposing
 ---
+
 {{APIRef("DOM Events")}}
 
 The **`InputEvent.isComposing`** read-only property returns a {{jsxref("Boolean")}} value indicating if the event is fired after {{event("compositionstart")}} and before {{event("compositionend")}}.

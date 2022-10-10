@@ -1,8 +1,8 @@
 ---
 title: SVGMatrix
 slug: Web/API/SVGMatrix
-translation_of: Web/API/SVGMatrix
 ---
+
 {{APIRef("SVG")}}{{deprecated_header}}
 
 Many of SVG's graphics operations utilize 2x3 matrices of the form:
@@ -74,4 +74,4 @@ A {{domxref("DOMException")}} with the code `NO_MODIFICATION_ALLOWED_ERR` is rai
 
 ## Browser compatibility
 
-{{Compat("api.SVGMatrix")}}
+{{Compat}}

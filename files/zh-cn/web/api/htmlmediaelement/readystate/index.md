@@ -1,8 +1,8 @@
 ---
 title: HTMLMediaElement.readyState
 slug: Web/API/HTMLMediaElement/readyState
-translation_of: Web/API/HTMLMediaElement/readyState
 ---
+
 {{APIRef("HTML DOM")}}
 
 **`HTMLMediaElement.readyState`** 属性返回音频/视频的当前就绪状态。
@@ -53,7 +53,7 @@ obj.addEventListener('loadeddata', function() {
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLMediaElement.readyState")}}
+{{Compat}}
 
 ## 你或许还可以看看
 

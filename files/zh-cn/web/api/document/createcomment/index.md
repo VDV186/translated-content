@@ -1,8 +1,8 @@
 ---
 title: document.createComment
 slug: Web/API/Document/createComment
-translation_of: Web/API/Document/createComment
 ---
+
 {{ ApiRef() }}
 
 ### 概述

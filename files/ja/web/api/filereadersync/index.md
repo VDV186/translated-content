@@ -1,20 +1,15 @@
 ---
 title: FileReaderSync
 slug: Web/API/FileReaderSync
-page-type: web-api-interface
-tags:
-  - API
-  - NeedsMarkupWork
-browser-compat: api.FileReaderSync
-translation_of: Web/API/FileReaderSync
 ---
+
 {{APIRef("File API")}}
 
 `FileReaderSync` インターフェイスで、 {{DOMxRef("File")}} または {{DOMxRef("Blob")}} オブジェクトを同期的に読み込むことができます。
 
 {{AvailableInWorkers}}
 
-> **Warning:** このインターフェイスは、ブロックが発生する可能性がある同期 I/O を使用するため、[ワーカー](/ja/docs/Web/API/Worker)**でのみ**利用できます。
+> **警告:** このインターフェイスは、ブロックが発生する可能性がある同期 I/O を使用するため、[ワーカー](/ja/docs/Web/API/Worker)**でのみ**利用できます。
 
 ## プロパティ
 

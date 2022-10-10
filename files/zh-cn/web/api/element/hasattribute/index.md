@@ -1,8 +1,8 @@
 ---
 title: Element.hasAttribute()
 slug: Web/API/Element/hasAttribute
-translation_of: Web/API/Element/hasAttribute
 ---
+
 {{APIRef}}
 
 ## 概述

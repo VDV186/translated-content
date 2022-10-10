@@ -1,20 +1,11 @@
 ---
 title: 类
 slug: Web/JavaScript/Reference/Classes
-tags:
-  - ECMAScript 2015
-  - Học
-  - JavaScript
-  - 中级
-  - 构造函数
-  - 类
-  - 继承
-  - 高阶类
-translation_of: Web/JavaScript/Reference/Classes
 ---
+
 {{JsSidebar("Classes")}}
 
-类是用于创建对象的模板。他们用代码封装数据以处理该数据。 JS 中的类建立在原型上，但也具有某些语法和语义未与 ES5 类相似语义共享。
+类是用于创建对象的模板。他们用代码封装数据以处理该数据。JS 中的类建立在原型上，但也具有某些语法和语义未与 ES5 类相似语义共享。
 
 ## 定义类
 
@@ -66,10 +57,10 @@ let Rectangle = class Rectangle2 {
   }
 };
 console.log(Rectangle.name);
-// 输出: "Rectangle2"
+// 输出："Rectangle2"
 ```
 
-> **备注：** 类**表达式**也同样受到[类声明](/zh-CN/docs/Web/JavaScript/Reference/Classes$edit#Class_declarations)部分中提到的类型提升的限制。
+> **备注：** 类**表达式**也同样受到[类声明](/zh-CN/docs/Web/JavaScript/Reference/Classes#Class_declarations)部分中提到的类型提升的限制。
 
 ## 类体和方法定义
 
@@ -77,11 +68,11 @@ console.log(Rectangle.name);
 
 ### 严格模式
 
-类声明和类表达式的主体都执行在[严格模式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)下。比如，构造函数，静态方法，原型方法，getter 和 setter 都在严格模式下执行。
+类声明和类表达式的主体都执行在[严格模式](/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)下。比如，构造函数，静态方法，原型方法，getter 和 setter 都在严格模式下执行。
 
 ### 构造函数
 
-[constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)方法是一个特殊的方法，这种方法用于创建和初始化一个由`class`创建的对象。一个类只能拥有一个名为 “constructor”的特殊方法。如果类包含多个`constructor`的方法，则将抛出 一个{{jsxref("SyntaxError")}} 。
+[constructor](/zh-CN/docs/Web/JavaScript/Reference/Classes/constructor)方法是一个特殊的方法，这种方法用于创建和初始化一个由`class`创建的对象。一个类只能拥有一个名为“constructor”的特殊方法。如果类包含多个`constructor`的方法，则将抛出 一个{{jsxref("SyntaxError")}} 。
 
 一个构造函数可以使用 `super` 关键字来调用一个父类的构造函数。
 
@@ -113,7 +104,7 @@ console.log(square.area);
 
 ### 静态方法
 
-[`static`](/zh-CN/docs/Web/JavaScript/Reference/Classes/static) 关键字用来定义一个类的一个静态方法。调用静态方法不需要[实例化](</zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#The_object_(class_instance)>)该类，但不能通过一个类实例调用静态方法。静态方法通常用于为一个应用程序创建工具函数。
+[`static`](/zh-CN/docs/Web/JavaScript/Reference/Classes/static) 关键字用来定义一个类的一个静态方法。调用静态方法不需要[实例化](</zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#The_object_(class_instance)>) 该类，但不能通过一个类实例调用静态方法。静态方法通常用于为一个应用程序创建工具函数。
 
 ```js
 class Point {
@@ -213,7 +204,7 @@ Rectangle.prototype.prototypeWidth = 25;
 
 ### 字段声明
 
-> **警告：**公共和私有字段声明是 JavaScript 标准委员会[TC39](https://tc39.es/)提出的[实验性功能（第 3 阶段）](https://github.com/tc39/proposal-class-fields)。浏览器中的支持是有限的，但是可以通过[Babel](https://babeljs.io/)等系统构建后使用此功能。
+> **警告：** 公共和私有字段声明是 JavaScript 标准委员会[TC39](https://tc39.es/)提出的[实验性功能（第 3 阶段）](https://github.com/tc39/proposal-class-fields)。浏览器中的支持是有限的，但是可以通过[Babel](https://babeljs.io/)等系统构建后使用此功能。
 
 #### 公有字段声明
 
@@ -253,11 +244,11 @@ class Rectangle {
 
 从类外部引用私有字段是错误的。它们只能在类里面中读取或写入。通过定义在类外部不可见的内容，可以确保类的用户不会依赖于内部，因为内部可能在不同版本之间发生变化。
 
-> **备注：**私有字段仅能在字段声明中预先定义。
+> **备注：** 私有字段仅能在字段声明中预先定义。
 
 私有字段不能通过在之后赋值来创建它们，这种方式只适用普通属性。
 
-更多信息，请看[class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Class_fields).
+更多信息，请看[class fields](/zh-CN/docs/Web/JavaScript/Reference/Classes/Class_fields).
 
 ## 使用 `extends` 扩展子类
 
@@ -377,7 +368,7 @@ class Lion extends Cat {
 
 ## Mix-ins / 混入
 
-抽象子类或者 mix-ins 是类的模板。 一个 ECMAScript 类只能有一个单超类，所以想要从工具类来多重继承的行为是不可能的。子类继承的只能是父类提供的功能性。因此，例如，从工具类的多重继承是不可能的。该功能必须由超类提供。
+抽象子类或者 mix-ins 是类的模板。一个 ECMAScript 类只能有一个单超类，所以想要从工具类来多重继承的行为是不可能的。子类继承的只能是父类提供的功能性。因此，例如，从工具类的多重继承是不可能的。该功能必须由超类提供。
 
 一个以超类作为输入的函数和一个继承该超类的子类作为输出可以用于在 ECMAScript 中实现混合：
 

@@ -1,9 +1,8 @@
 ---
 title: beforeprint
 slug: Web/API/Window/beforeprint_event
-translation_of: Web/API/Window/beforeprint_event
-original_slug: Web/Events/beforeprint
 ---
+
 当相关联的文档即将打印或预览以进行打印时，将触发 beforeprint 事件。
 
 ## 基本信息
@@ -58,4 +57,4 @@ window.onbeforeprint = (event) => {
 
 ## 相关事件
 
-- [afterprint](https://developer.mozilla.org/zh-CN/docs/Web/Events/afterprint)
+- [afterprint](/zh-CN/docs/Web/Events/afterprint)

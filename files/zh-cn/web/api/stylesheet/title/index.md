@@ -1,8 +1,8 @@
 ---
 title: StyleSheet.title
 slug: Web/API/StyleSheet/title
-translation_of: Web/API/StyleSheet/title
 ---
+
 {{APIRef("CSSOM")}}
 
 ## 概述
@@ -21,4 +21,4 @@ The title is often specified in the {{domxref("StyleSheet/OwnerNode", "ownerNode
 
 ## 浏览器兼容性
 
-{{Compat("api.StyleSheet.title")}}
+{{Compat}}

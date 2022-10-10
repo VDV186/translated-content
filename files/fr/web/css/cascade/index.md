@@ -6,6 +6,7 @@ spec-urls: https://drafts.csswg.org/css-cascade/
 l10n:
   sourceCommit: 193543a2af9350e76864a93bb751270979305cd0
 ---
+
 {{CSSRef}}
 
 La **cascade** est un algorithme qui définit comment les agents utilisateur combinent les valeurs des propriétés selon leurs différentes sources. La cascade définit l'origine et la couche qui l'emporte lorsque des déclarations présentes dans plusieurs [origines](#types_dorigine) ou [couches de cascade](/fr/docs/Web/CSS/@layer) définissent une valeur pour une propriété sur un élément.
@@ -469,6 +470,6 @@ Après que le contenu a fini de modifier les styles, on peut être dans une situ
     - [Calculées](/fr/docs/Web/CSS/computed_value)
     - [Utilisées](/fr/docs/Web/CSS/used_value)
     - [Effectives](/fr/docs/Web/CSS/actual_value)
- - [Syntaxe de définition des valeurs](/fr/docs/Web/CSS/Value_definition_syntax)
- - [Propriétés raccourcies](/fr/docs/Web/CSS/Shorthand_properties)
- - [Éléments remplacés](/fr/docs/Web/CSS/Replaced_element)
+- [Syntaxe de définition des valeurs](/fr/docs/Web/CSS/Value_definition_syntax)
+- [Propriétés raccourcies](/fr/docs/Web/CSS/Shorthand_properties)
+- [Éléments remplacés](/fr/docs/Web/CSS/Replaced_element)

@@ -1,19 +1,8 @@
 ---
 title: SourceBufferList
 slug: Web/API/SourceBufferList
-page-type: web-api-interface
-tags:
-  - API
-  - Audio
-  - Experimental
-  - Interface
-  - MSE
-  - Media Source Extensions
-  - Reference
-  - SourceBufferList
-  - Video
-translation_of: Web/API/SourceBufferList
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 **`SourceBufferList`** 接口表示多个 {{domxref("SourceBuffer")}} 对象的简单容器列表。

@@ -1,12 +1,11 @@
 ---
 title: URL.密码
 slug: Web/API/URL/password
-translation_of: Web/API/URL/password
-original_slug: Web/API/URL/密码
 ---
+
 {{ApiRef("URL API")}}
 
-{{domxref("URL")}}接口的**`password`**属性为{{domxref("USVString")}}，其中包含在域名之前指定的密码。
+{{domxref("URL")}}接口的 **`password`** 属性为{{domxref("USVString")}}，其中包含在域名之前指定的密码。
 
 如果在未设置[username](/zh-CN/docs/Web/API/URL/username)属性的情况下进行调用，默认失败。
 
@@ -36,7 +35,7 @@ var result = url.password; // Returns:"flabada"
 
 ## 浏览器兼容性
 
-{{Compat("api.URL.password")}}
+{{Compat}}
 
 ## 参见
 

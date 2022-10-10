@@ -1,9 +1,8 @@
 ---
 title: Element.onfullscreenerror
 slug: Web/API/Element/fullscreenerror_event
-translation_of: Web/API/Element/onfullscreenerror
-original_slug: Web/API/Element/onfullscreenerror
 ---
+
 {{ApiRef("Fullscreen API")}}
 
 {{domxref("Element")}} 接口的 **`onfullscreenerror`** 属性是在{{domxref("Element")}} 过渡到或退出全屏模式发生错误后处理事件{{event("fullscreenerror")}}的事件处理程序。
@@ -44,8 +43,8 @@ elem.requestFullscreen();
 
 ## 参见
 
-- [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API)
-- [Guide to the Fullscreen API](/en-US/docs/Web/API/Fullscreen_API/Guide)
+- [Fullscreen API](/zh-CN/docs/Web/API/Fullscreen_API)
+- [Guide to the Fullscreen API](/zh-CN/docs/Web/API/Fullscreen_API/Guide)
 - {{event("fullscreenerror")}}
 - {{domxref("Element.onfullscreenchange")}}
 - {{domxref("Document.onfullscreenerror")}}

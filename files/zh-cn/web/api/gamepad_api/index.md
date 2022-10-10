@@ -1,14 +1,8 @@
 ---
 title: Gamepad API
 slug: Web/API/Gamepad_API
-tags:
-  - 实验性
-  - 手柄
-  - 控制器
-  - 概述
-  - 游戏
-translation_of: Web/API/Gamepad_API
 ---
+
 {{DefaultAPISidebar("Gamepad API")}}{{SeeCompatTable}}
 
 **Gamepad API** 可以给予开发者一种简单、统一的方式来识别并响应游戏控制器（手柄）。其中包含了三个接口、两个事件、一个特殊函数，用来响应控制器的连接与断开、获取其他关于控制器的信息以及识别当前是哪个按键或是哪个控制器被按下了。
@@ -27,9 +21,9 @@ translation_of: Web/API/Gamepad_API
 - {{domxref("GamepadHapticActuator")}}
   - : 表示控制器中的硬件，用于向用户提供触觉反馈（如果可用）最常见的是振动硬件。
 - {{domxref("GamepadPose")}}
-  - : 表示控制器的位置方向（例如，在 3D 空间中的位置和方向）于 [WebVR](/en-US/docs/Web/API/WebVR_API) 控制器中。
+  - : 表示控制器的位置方向（例如，在 3D 空间中的位置和方向）于 [WebVR](/zh-CN/docs/Web/API/WebVR_API) 控制器中。
 
-另请参阅 [Gamepad 接口扩展](/en-US/docs/Web/API/Gamepad#Experimental_extensions_to_Gamepad)，来获取上方的功能的相关信息。
+另请参阅 [Gamepad 接口扩展](/zh-CN/docs/Web/API/Gamepad#Experimental_extensions_to_Gamepad)，来获取上方的功能的相关信息。
 
 ### 其他接口扩展
 
@@ -47,8 +41,8 @@ translation_of: Web/API/Gamepad_API
 
 ## 教程与指南
 
-- [使用 Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
-- [使用 Gamepad API 实现控制](/en-US/docs/Games/Techniques/Controls_Gamepad_API)
+- [使用 Gamepad API](/zh-CN/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+- [使用 Gamepad API 实现控制](/zh-CN/docs/Games/Techniques/Controls_Gamepad_API)
 
 ## 规范
 
@@ -56,7 +50,7 @@ translation_of: Web/API/Gamepad_API
 
 ## 浏览器兼容性
 
-{{Compat("api.Gamepad")}}
+{{Compat}}
 
 ## 另请参阅
 

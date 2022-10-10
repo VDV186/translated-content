@@ -1,8 +1,8 @@
 ---
 title: HTMLTemplateElement
 slug: Web/API/HTMLTemplateElement
-translation_of: Web/API/HTMLTemplateElement
 ---
+
 {{APIRef("Web Components")}}
 
 可以使用**`HTMLTemplateElement`** 接口来访问 HTML {{HTMLElement("template")}}元素的内容。
@@ -26,4 +26,4 @@ _这个接口继承了 {{domxref("HTMLElement")}}的方法。_
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLTemplateElement")}}
+{{Compat}}

@@ -1,15 +1,15 @@
 ---
 title: Console.warn()
 slug: Web/API/Console/warn
-translation_of: Web/API/Console/warn
 ---
+
 {{APIRef("Console API")}}
 
 向 Web 控制台输出一条警告信息。
 
 {{AvailableInWorkers}}
 
-> **备注：**在火狐浏览器里，警告会有一个小感叹号图标在 Web 控制台信息前面。
+> **备注：** 在火狐浏览器里，警告会有一个小感叹号图标在 Web 控制台信息前面。
 
 ## 语法
 
@@ -35,7 +35,7 @@ console.warn(msg [, subst1, ..., substN]);
 
 ## 浏览器兼容
 
-{{Compat("api.console.warn")}}
+{{Compat}}
 
 ## 相关链接
 

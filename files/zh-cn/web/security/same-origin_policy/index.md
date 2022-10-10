@@ -1,20 +1,13 @@
 ---
 title: 浏览器的同源策略
 slug: Web/Security/Same-origin_policy
-tags:
-  - AJAX
-  - CORS
-  - JavaScript
-  - Same-origin policy
-  - Security
-  - 同源策略
-translation_of: Web/Security/Same-origin_policy
 ---
+
 **同源策略**是一个重要的安全策略，它用于限制一个{{Glossary("origin")}}的文档或者它加载的脚本如何能与另一个源的资源进行交互。它能帮助阻隔恶意文档，减少可能被攻击的媒介。
 
 ## 同源的定义
 
-如果两个 URL 的 {{Glossary("protocol")}}、{{Glossary("port")}} (如果有指定的话) 和 {{Glossary("host")}} 都相同的话，则这两个 URL 是*同源*。这个方案也被称为“协议/主机/端口元组”，或者直接是 “元组”。（“元组” 是指一组项目构成的整体，双重/三重/四重/五重/等的通用形式）。
+如果两个 URL 的 {{Glossary("protocol")}}、{{Glossary("port")}} (如果有指定的话) 和 {{Glossary("host")}} 都相同的话，则这两个 URL 是*同源*。这个方案也被称为“协议/主机/端口元组”，或者直接是“元组”。（“元组”是指一组项目构成的整体，双重/三重/四重/五重/等的通用形式）。
 
 下表给出了与 URL `http://store.company.com/dir/page.html` 的源进行对比的示例：
 
@@ -32,7 +25,7 @@ translation_of: Web/Security/Same-origin_policy
 
 > **备注：** 例如，`about:blank` 通常作为父脚本写入内容的新的空白弹出窗口的 URL（例如，通过 [Window.open()](/zh-CN/docs/Web/API/Window/open)）。如果此弹出窗口也包含 JavaScript，则该脚本将从创建它的脚本那里继承对应的源。
 
-> **备注：** 注意：在{{Gecko("6.0")}}之前，如果用户在位置栏中输入 `data` URLs，`data` URLs 将继承当前浏览器窗口中网页的安全上下文。
+> **备注：** 在{{Gecko("6.0")}}之前，如果用户在位置栏中输入 `data` URLs，`data` URLs 将继承当前浏览器窗口中网页的安全上下文。
 
 > **警告：** `data`：URLs 获得一个新的，空的安全上下文。
 
@@ -49,7 +42,7 @@ Internet Explorer 的同源策略有两个主要的差异点：
 
 满足某些限制条件的情况下，页面是可以修改它的源。脚本可以将 {{domxref("document.domain")}} 的值设置为其当前域或其当前域的父域。如果将其设置为其当前域的父域，则这个较短的父域将用于后续源检查。
 
-例如：假设 http\://store.company.com/dir/other.html 文档中的一个脚本执行以下语句：
+例如：假设 `http://store.company.com/dir/other.html` 文档中的一个脚本执行以下语句：
 
 ```plain
 document.domain = "company.com";
@@ -59,7 +52,7 @@ document.domain = "company.com";
 
 端口号是由浏览器另行检查的。任何对 document.domain 的赋值操作，包括 `document.domain = document.domain` 都会导致端口号被重写为 `null` 。因此 `company.com:8080` **不能**仅通过设置 `document.domain = "company.com"` 来与`company.com` 通信。必须在他们双方中都进行赋值，以确保端口号都为 `null` 。
 
-> **备注：** 注意：使用 `document.domain` 来允许子域安全访问其父域时，您需要在父域和子域中设置 document.domain 为相同的值。这是必要的，即使这样做只是将父域设置回其原始值。不这样做可能会导致权限错误。
+> **备注：** 使用 `document.domain` 来允许子域安全访问其父域时，您需要在父域和子域中设置 document.domain 为相同的值。这是必要的，即使这样做只是将父域设置回其原始值。不这样做可能会导致权限错误。
 
 ## 跨源网络访问
 
@@ -87,7 +80,7 @@ document.domain = "company.com";
 
 - 阻止跨源写操作，只要检测请求中的一个不可推测的标记 (CSRF token) 即可，这个标记被称为 [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf) 标记。你必须使用这个标记来阻止页面的跨源读操作。
 - 阻止资源的跨源读取，需要保证该资源是不可嵌入的。阻止嵌入行为是必须的，因为嵌入资源通常向其暴露信息。
-- 阻止跨源嵌入，需要确保你的资源不能通过以上列出的可嵌入资源格式使用。浏览器可能不会遵守 `Content-Type` 头部定义的类型。例如，如果您在 HTML 文档中指定 `<script>` 标记，则浏览器将尝试将标签内部的 HTML 解析为 JavaScript。 当您的资源不是您网站的入口点时，您还可以使用 CSRF 令牌来防止嵌入。
+- 阻止跨源嵌入，需要确保你的资源不能通过以上列出的可嵌入资源格式使用。浏览器可能不会遵守 `Content-Type` 头部定义的类型。例如，如果您在 HTML 文档中指定 `<script>` 标记，则浏览器将尝试将标签内部的 HTML 解析为 JavaScript。当您的资源不是您网站的入口点时，您还可以使用 CSRF 令牌来防止嵌入。
 
 ## 跨源脚本 API 访问
 
@@ -95,7 +88,7 @@ JavaScript 的 API 中，如 [`iframe.contentWindow`](/zh-CN/docs/DOM/HTMLIFrame
 
 为了能让不同源中文档进行交流，可以使用 {{domxref("window.postMessage")}}。
 
-规范: [HTML Living Standard § Cross-origin objects](https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-objects) 。
+规范：[HTML Living Standard § Cross-origin objects](https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-objects) 。
 
 ### Window
 
@@ -140,7 +133,7 @@ JavaScript 的 API 中，如 [`iframe.contentWindow`](/zh-CN/docs/DOM/HTMLIFrame
 
 访问存储在浏览器中的数据，如 [localStorage](/zh-CN/docs/Web/API/Window/localStorage) 和 [IndexedDB](/zh-CN/docs/Web/API/IndexedDB_API)，是以源进行分割。每个源都拥有自己单独的存储空间，一个源中的 JavaScript 脚本不能对属于其它源的数据进行读写操作。
 
-{{glossary("Cookie", "Cookies")}} 使用不同的源定义方式。一个页面可以为本域和其父域设置 cookie，只要是父域不是公共后缀（public suffix）即可。Firefox 和 Chrome 使用 [Public Suffix List](http://publicsuffix.org/) 检测一个域是否是公共后缀（public suffix）。Internet Explorer 使用其内部的方法来检测域是否是公共后缀。不管使用哪个协议（HTTP/HTTPS）或端口号，浏览器都允许给定的域以及其任何子域名 (sub-domains) 访问 cookie。当你设置 cookie 时，你可以使用 `Domain`、`Path`、`Secure`、和 `HttpOnly` 标记来限定其可访问性。当你读取 cookie 时，你无法知道它是在哪里被设置的。 即使您只使用安全的 https 连接，您看到的任何 cookie 都有可能是使用不安全的连接进行设置的。
+{{glossary("Cookie", "Cookies")}} 使用不同的源定义方式。一个页面可以为本域和其父域设置 cookie，只要是父域不是公共后缀（public suffix）即可。Firefox 和 Chrome 使用 [Public Suffix List](http://publicsuffix.org/) 检测一个域是否是公共后缀（public suffix）。Internet Explorer 使用其内部的方法来检测域是否是公共后缀。不管使用哪个协议（HTTP/HTTPS）或端口号，浏览器都允许给定的域以及其任何子域名 (sub-domains) 访问 cookie。当你设置 cookie 时，你可以使用 `Domain`、`Path`、`Secure`、和 `HttpOnly` 标记来限定其无障碍。当你读取 cookie 时，你无法知道它是在哪里被设置的。即使您只使用安全的 https 连接，您看到的任何 cookie 都有可能是使用不安全的连接进行设置的。
 
 ## 参见
 

@@ -1,17 +1,8 @@
 ---
 title: CSSStyleDeclaration.getPropertyValue()
 slug: Web/API/CSSStyleDeclaration/getPropertyValue
-tags:
-  - CSSOM
-  - Reference
-  - getComputedStyle
-  - getPropertyValue
-  - setProperty
-  - 参考
-  - 方法
-  - 标签
-translation_of: Web/API/CSSStyleDeclaration/getPropertyValue
 ---
+
 {{ APIRef("CSSOM") }}
 
 **CSSStyleDeclaration.getPropertyValue()** 接口返回一个 {{domxref('DOMString')}} ，其中包含请求的 CSS 属性的值。

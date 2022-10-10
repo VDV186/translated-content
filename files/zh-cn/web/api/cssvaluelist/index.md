@@ -1,14 +1,8 @@
 ---
 title: CSSValueList
 slug: Web/API/CSSValueList
-tags:
-  - API
-  - CSS
-  - DOM
-  - 参考
-  - 接口
-translation_of: Web/API/CSSValueList
 ---
+
 {{APIRef("CSSOM")}}{{Deprecated_header}}
 
 The **`CSSValueList`** 接口继承自 {{domxref("CSSValue")}} 接口，提供一个经过排序的 CSS 值的抽象集合。

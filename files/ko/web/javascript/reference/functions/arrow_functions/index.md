@@ -231,15 +231,15 @@ This code sample using Chrome 81 demonstrates that arrow functions allow the cre
 
 f2 illustrates that when explicitly setting the arrow function to apply strict mode, it does throw an error when attempting to assign an undeclared variable.
 
-https\://www\.ecma-international.org/ecma-262/10.0/index.html#sec-strict-mode-code
+<https://www.ecma-international.org/ecma-262/10.0/index.html#sec-strict-mode-code>
 
-https\://www\.ecma-international.org/ecma-262/10.0/index.html#sec-arrow-function-definitions-runtime-semantics-evaluation
+<https://www.ecma-international.org/ecma-262/10.0/index.html#sec-arrow-function-definitions-runtime-semantics-evaluation>
 
 **CORRECTION: END**
 
 #### call 또는 apply를 통한 피호출
 
-화살표 함수에서는 `this가 `바인딩되지 않았기 때문에, `call()` 또는 `apply()` 메서드는 인자만 전달 할 수 있습니다. this는 무시됩니다.
+화살표 함수에서는 `this` 가 바인딩되지 않았기 때문에, `call()` 또는 `apply()` 메서드는 인자만 전달 할 수 있습니다. this는 무시됩니다.
 
 ```js
 var adder = {

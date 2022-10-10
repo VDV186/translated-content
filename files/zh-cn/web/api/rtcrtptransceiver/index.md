@@ -1,21 +1,8 @@
 ---
 title: RTCRtpTransceiver
 slug: Web/API/RTCRtpTransceiver
-tags:
-  - API
-  - Interface
-  - Media
-  - MediaStreamTrack
-  - NeedsTranslation
-  - RTCRtpTransceiver
-  - RTP
-  - Reference
-  - SDP
-  - TopicStub
-  - Transceiver
-  - WebRTC
-translation_of: Web/API/RTCRtpTransceiver
 ---
+
 {{APIRef("WebRTC")}}
 
 The WebRTC interface **`RTCRtpTransceiver`** describes a permanent pairing of an {{domxref("RTCRtpSender")}} and an {{domxref("RTCRtpReceiver")}}, along with some shared state.
@@ -52,11 +39,11 @@ A transceiver is uniquely identified using its {{domxref("RTCRtpTransceiver.mid"
 
 ## Browser compatibility
 
-{{Compat("api.RTCRtpTransceiver")}}
+{{Compat}}
 
 ## See also
 
-- [WebRTC API](/en-US/docs/Web/API/WebRTC_API)
-- [Introduction to the Real-time Transport Protocol (RTP)](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
+- [WebRTC API](/zh-CN/docs/Web/API/WebRTC_API)
+- [Introduction to the Real-time Transport Protocol (RTP)](/zh-CN/docs/Web/API/WebRTC_API/Intro_to_RTP)
 - {{domxref("RTCPeerConnection.addTrack()")}} and {{domxref("RTCPeerConnection.addTransceiver()")}} both create transceivers
 - {{domxref("RTCRtpReceiver")}} and {{domxref("RTCRtpSender")}}

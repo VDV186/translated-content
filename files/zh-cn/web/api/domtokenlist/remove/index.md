@@ -1,8 +1,8 @@
 ---
 title: DOMTokenList.remove()
 slug: Web/API/DOMTokenList/remove
-translation_of: Web/API/DOMTokenList/remove
 ---
+
 {{APIRef("DOM")}}
 
 **`remove()`** 方法从 {{domxref("DOMTokenList")}} 中移除指定标记。
@@ -61,4 +61,4 @@ span.textContent = classes;
 
 ## 浏览器兼容性
 
-{{Compat("api.DOMTokenList.remove")}}
+{{Compat}}

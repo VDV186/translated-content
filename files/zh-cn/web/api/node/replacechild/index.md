@@ -1,14 +1,8 @@
 ---
 title: Node.replaceChild()
 slug: Web/API/Node/replaceChild
-tags:
-  - API
-  - DOM
-  - Node
-  - 参考
-  - 方法
-translation_of: Web/API/Node/replaceChild
 ---
+
 {{APIRef("DOM")}}
 
 **`Node.replaceChild()`** 方法用指定的节点替换当前节点的一个子节点，并返回被替换掉的节点。
@@ -45,7 +39,7 @@ var sp1 = document.createElement("span");
 sp1.setAttribute("id", "newSpan");
 
 // 创建一个文本节点
-var sp1_content = document.createTextNode("新的 span 元素的内容.");
+var sp1_content = document.createTextNode("新的 span 元素的内容。");
 
 // 将文本节点插入到 span 元素中
 sp1.appendChild(sp1_content);
@@ -69,7 +63,7 @@ parentDiv.replaceChild(sp1, sp2);
 
 ## 浏览器兼容性
 
-{{Compat("api.Node.replaceChild")}}
+{{Compat}}
 
 ## 参见
 

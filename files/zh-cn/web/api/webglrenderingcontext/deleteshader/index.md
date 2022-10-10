@@ -1,8 +1,8 @@
 ---
 title: WebGLRenderingContext.deleteShader()
 slug: Web/API/WebGLRenderingContext/deleteShader
-translation_of: Web/API/WebGLRenderingContext/deleteShader
 ---
+
 {{APIRef("WebGL")}}**`WebGLRenderingContext.deleteShader()`** 用于删除一个参数提供的 {{domxref("WebGLShader")}}对象。如果该{{domxref("WebGLShader")}}对象已经被删除，该方法不会有任何作用。
 
 ## Syntax
@@ -34,7 +34,7 @@ gl.deleteShader(shader);
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGLRenderingContext.deleteShader")}}
+{{Compat}}
 
 ## 其他相关
 

@@ -1,18 +1,11 @@
 ---
 title: Window.scrollMaxY
 slug: Web/API/Window/scrollMaxY
-tags:
-  - API
-  - DOM_0
-  - HTML DOM
-  - 参考
-  - 属性
-  - 非标准
-translation_of: Web/API/Window/scrollMaxY
 ---
+
 {{APIRef}} {{Non-standard_header}}
 
-只读属性**`Window.scrollMaxY`**返回`document`可以纵向滚动的最大像素数目
+只读属性 **`Window.scrollMaxY`** 返回`document`可以纵向滚动的最大像素数目
 
 ## 语法
 
@@ -43,4 +36,4 @@ window.scrollTo(0, maxY);
 
 ## 浏览器兼容性
 
-{{Compat("api.Window.scrollMaxY")}}
+{{Compat}}

@@ -1,13 +1,8 @@
 ---
 title: ProgressEvent
 slug: Web/API/ProgressEvent
-tags:
-  - API
-  - 参考
-  - 接口
-  - 进度事件
-translation_of: Web/API/ProgressEvent
 ---
+
 {{APIRef("DOM Events")}}
 
 **`ProgressEvent`** 接口是测量如 HTTP 请求（一个`XMLHttpRequest`，或者一个 {{HTMLElement("img")}}，{{HTMLElement("audio")}}，{{HTMLElement("video")}}，{{HTMLElement("style")}} 或 {{HTMLElement("link")}} 等底层资源的加载）等底层流程进度的事件。
@@ -63,7 +58,7 @@ client.send()
 
 ## 浏览器兼容性
 
-{{Compat("api.ProgressEvent")}}
+{{Compat}}
 
 ## 相关链接
 

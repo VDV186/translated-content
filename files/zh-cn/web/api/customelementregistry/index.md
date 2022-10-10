@@ -1,13 +1,8 @@
 ---
 title: CustomElementRegistry
 slug: Web/API/CustomElementRegistry
-tags:
-  - API
-  - CustomElementRegistry
-  - Interface
-  - Web Components
-translation_of: Web/API/CustomElementRegistry
 ---
+
 {{DefaultAPISidebar("Web Components")}}
 
 **`CustomElementRegistry`**接口提供注册自定义元素和查询已注册元素的方法。要获取它的实例，请使用 {{domxref("window.customElements")}}属性。
@@ -74,4 +69,4 @@ customElements.define('word-count', WordCount, { extends: 'p' });
 
 ## 浏览器兼容性
 
-{{Compat("api.CustomElementRegistry")}}
+{{Compat}}

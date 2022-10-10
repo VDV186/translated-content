@@ -1,11 +1,8 @@
 ---
 title: Notification.onerror
 slug: Web/API/Notification/error_event
-tags:
-  - Notification.onerror
-translation_of: Web/API/Notification/onerror
-original_slug: Web/API/notification/onerror
 ---
+
 {{APIRef("Web Notifications")}}
 
 ## Summary
@@ -35,4 +32,4 @@ A {{jsxref("function")}} which serves as the event handler for the {{event("erro
 ## See also
 
 - {{domxref("Notification")}}
-- [Using the Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
+- [Using the Notifications API](/zh-CN/docs/Web/API/Notifications_API/Using_the_Notifications_API)

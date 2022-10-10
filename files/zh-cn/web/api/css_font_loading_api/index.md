@@ -1,13 +1,8 @@
 ---
 title: CSS Font Loading API
 slug: Web/API/CSS_Font_Loading_API
-tags:
-  - API
-  - Fonts
-  - Reference
-  - 字体
-translation_of: Web/API/CSS_Font_Loading_API
 ---
+
 {{APIRef("CSS Font Loading API")}}{{SeeCompatTable}}
 
 CSS 字体加载 API 为您提供了动态加载字体资源时的 events 和 interfaces。
@@ -29,4 +24,4 @@ CSS 字体加载 API 为您提供了动态加载字体资源时的 events 和 in
 
 ## 浏览器兼容性
 
-{{Compat("api.FontFace")}}
+{{Compat}}

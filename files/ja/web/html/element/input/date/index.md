@@ -1,19 +1,6 @@
 ---
 title: <input type="date">
 slug: Web/HTML/Element/input/date
-tags:
-  - 日付
-  - 日付選択
-  - 要素
-  - フォーム入力
-  - HTML
-  - HTML フォーム
-  - Input
-  - 入力要素
-  - 入力型
-  - リファレンス
-browser-compat: html.elements.input.input-date
-translation_of: Web/HTML/Element/input/date
 ---
 
 {{HTMLRef}}
@@ -79,7 +66,7 @@ translation_of: Web/HTML/Element/input/date
 
 {{EmbedLiveSample('Value', 600, 40)}}
 
-> **Note:** 表示される日付の書式は実際の `value` とは異なります。 — 表示される日付はユーザーのブラウザーに設定されたロケールに基づいた書式になりますが、解釈される `value` は常に `yyyy-mm-dd` の書式です。
+> **メモ:** 表示される日付の書式は実際の `value` とは異なります。 — 表示される日付はユーザーのブラウザーに設定されたロケールに基づいた書式になりますが、解釈される `value` は常に `yyyy-mm-dd` の書式です。
 
 JavaScript での日付値を取得したり設定したりするには、次のように {{domxref("HTMLInputElement")}} の `value` および `valueAsNumber` プロパティで行うことができます。
 
@@ -114,11 +101,11 @@ console.log(dateControl.valueAsNumber); // 1496275200000 と JavaScript タイ�
 
 文字列値の `any` は刻みがなく、どの値でも許可されることを意味します（[`min`](#min) や [`max`](#max) など、他の制約に制限されます）。
 
-> **Note:** ユーザーがデータを入力したときには刻みの設定には吸着せず、{{Glossary("user agent", "ユーザーエージェント")}}は直近の妥当な値、同じ距離の値の選択肢が 2 つあった場合は、正の方向の推奨値に丸められます。
+> **メモ:** ユーザーがデータを入力したときには刻みの設定には吸着せず、{{Glossary("user agent", "ユーザーエージェント")}}は直近の妥当な値、同じ距離の値の選択肢が 2 つあった場合は、正の方向の推奨値に丸められます。
 
 `date` 入力欄では、 `step` の値は日単位で指定します。また、 86,400,000 に `step` を乗じた値に等しいミリ秒数として扱われます（数値はミリ秒単位であるため）。 `step` の既定値は `1` であり、 1 日を表します。
 
-> **Note:** `any` を `step` 属性の値として指定すると、 `1` を `date` 入力欄に設定したのと同じ効果になります。
+> **メモ:** `any` を `step` 属性の値として指定すると、 `1` を `date` 入力欄に設定したのと同じ効果になります。
 
 ## date 入力欄の使用
 
@@ -126,7 +113,7 @@ console.log(dateControl.valueAsNumber); // 1496275200000 と JavaScript タイ�
 
 この節では、 `<input type="date">` の基本的な使い方と少し複雑な使い方を見てみてから、その後でブラウザーの互換性の問題を緩和するアドバイスを提供しましょう ([ブラウザーの互換性の扱い](#ブラウザーの互換性の扱い) を参照してください)。
 
-> **Note:** 今後ブラウザーの互換性がもっと普遍的になり、この問題が消滅することを願います。
+> **メモ:** 今後ブラウザーの互換性がもっと普遍的になり、この問題が消滅することを願います。
 
 ## 日付入力の基本的な使用
 
@@ -163,7 +150,7 @@ console.log(dateControl.valueAsNumber); // 1496275200000 と JavaScript タイ�
 
 この結果は、 2017 年の 4 月の日付のみが選択できるようになります。 — テキストボックスの年と月の部分が編集できなくなり、日付選択ウィジェットで 4 月以外にスクロールすることができなくなります。
 
-> **Note:** {{htmlattrxref("step", "input")}} 属性を使用すると、日付が加算するたびに飛ばす日数を設定できるはずです（例えば、土曜日のみを選択できるようにしたい場合など）。しかし、執筆時点でどの実装も正しく動作していないようです。
+> **メモ:** {{htmlattrxref("step", "input")}} 属性を使用すると、日付が加算するたびに飛ばす日数を設定できるはずです（例えば、土曜日のみを選択できるようにしたい場合など）。しかし、執筆時点でどの実装も正しく動作していないようです。
 
 ### 入力欄の寸法の制御
 
@@ -218,9 +205,9 @@ input:valid+span::after {
 }
 ```
 
-> **Warning:** クライアント側のフォーム検証は、サーバー上の検証の代用にはなりません。誰かが HTML を改変したり、 HTML を完全にバイパスしてサーバーに直接データを送信したりすることは簡単です。サーバーが受信したデータの検証に失敗した場合、不適切な形式のデータ、大きすぎるデータ、誤った種類のデータなどに遭遇すると、障害が発生するおそれがあります。
+> **警告:** クライアント側のフォーム検証は、サーバー上の検証の代用にはなりません。誰かが HTML を改変したり、 HTML を完全にバイパスしてサーバーに直接データを送信したりすることは簡単です。サーバーが受信したデータの検証に失敗した場合、不適切な形式のデータ、大きすぎるデータ、誤った種類のデータなどに遭遇すると、障害が発生するおそれがあります。
 
-## ブラウザーの対応の扱い
+## ブラウザーの互換性の扱い
 
 前述のように、現時点で日付入力を書く上で一番の問題は[ブラウザーの互換性](#ブラウザーの互換性)です。
 
@@ -385,7 +372,7 @@ if(test.type === 'text') {
 }
 
 function populateDays(month) {
-  // delete the current set of &lt;option&gt; elements out of the
+  // delete the current set of <option> elements out of the
   // day <select>, ready for the next set to be injected
   while(daySelect.firstChild){
     daySelect.removeChild(daySelect.firstChild);
@@ -406,8 +393,8 @@ function populateDays(month) {
   isLeap ? dayNum = 29 : dayNum = 28;
   }
 
-  // <select> に正しい数の新しい &lt;option&gt; 要素を挿入
-  for(i = 1; i &lt;= dayNum; i++) {
+  // <select> に正しい数の新しい <option> 要素を挿入
+  for(i = 1; i <= dayNum; i++) {
     var option = document.createElement('option');
     option.textContent = i;
     daySelect.appendChild(option);
@@ -443,7 +430,7 @@ function populateYears() {
   var year = date.getFullYear();
 
   // 今年から 100 年前までの年が <select> で選択できるようにする
-  for(var i = 0; i &lt;= 100; i++) {
+  for(var i = 0; i <= 100; i++) {
     var option = document.createElement('option');
     option.textContent = year-i;
     yearSelect.appendChild(option);
@@ -470,7 +457,7 @@ daySelect.onchange = function() {
 }
 ```
 
-> **Note:** 53 週ある年もあることを忘れないでください（[年あたりの週数](https://en.wikipedia.org/wiki/ISO_week_date#Weeks_per_year)を参照）。商品のアプリを開発するときはこれを念頭に置いておく必要があります。
+> **メモ:** 53 週ある年もあることを忘れないでください（[年あたりの週数](https://en.wikipedia.org/wiki/ISO_week_date#Weeks_per_year)を参照）。商品のアプリを開発するときはこれを念頭に置いておく必要があります。
 </div>
 
 ## 仕様書

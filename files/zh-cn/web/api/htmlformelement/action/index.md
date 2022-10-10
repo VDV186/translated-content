@@ -1,13 +1,8 @@
 ---
 title: HTMLFormElement.action
 slug: Web/API/HTMLFormElement/action
-tags:
-  - API
-  - DOM 节点
-  - HTML 表单元素
-  - 表单
-translation_of: Web/API/HTMLFormElement/action
 ---
+
 {{APIRef("HTML DOM")}}
 
 **`HTMLFormElement.action`** 这个 js 语句能够定义一个{{HTMLElement("form")}}元素中的 action 属性

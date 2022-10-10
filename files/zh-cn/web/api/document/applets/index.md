@@ -1,8 +1,8 @@
 ---
 title: document.applets
 slug: Web/API/Document/applets
-translation_of: Web/API/Document/applets
 ---
+
 {{ ApiRef() }}
 
 ### 概述

@@ -1,8 +1,8 @@
 ---
 title: TextMetrics
 slug: Web/API/TextMetrics
-translation_of: Web/API/TextMetrics
 ---
+
 {{APIRef("Canvas API")}}
 
 `在 canvas 中，TextMetrics` 接口表示文本的尺寸，通过 {{domxref("CanvasRenderingContext2D.measureText()")}} 方法创建。
@@ -40,7 +40,7 @@ translation_of: Web/API/TextMetrics
 
 ## 浏览器兼容性
 
-{{Compat("api.TextMetrics")}}
+{{Compat}}
 
 ## 参见
 

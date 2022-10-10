@@ -1,8 +1,8 @@
 ---
 title: window.length
 slug: Web/API/Window/length
-translation_of: Web/API/Window/length
 ---
+
 {{ApiRef}}
 
 ## 概述

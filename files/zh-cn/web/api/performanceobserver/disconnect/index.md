@@ -1,18 +1,8 @@
 ---
 title: PerformanceObserver.disconnect()
 slug: Web/API/PerformanceObserver/disconnect
-page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Performance Observer API
-  - PerformanceObserver
-  - Reference
-  - Web Performance
-  - disconnect()
-  - observers
-translation_of: Web/API/PerformanceObserver/disconnect
 ---
+
 {{APIRef("Performance Timeline API")}}
 
 {{domxref('PerformanceObserver')}} 接口的 **`disconnect()`** 方法用于阻止性能观察者接收任何 {{domxref("PerformanceEntry","性能条目", '', 'true')}} 事件。

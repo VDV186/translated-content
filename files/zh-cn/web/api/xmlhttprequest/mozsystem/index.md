@@ -1,8 +1,8 @@
 ---
 title: XMLHttpRequest.mozSystem
 slug: Web/API/XMLHttpRequest/mozSystem
-translation_of: Web/API/XMLHttpRequest/mozSystem
 ---
+
 {{APIRef('XMLHttpRequest')}}
 
 **`mozSystem`** is a boolean. If true, the same origin policy is not enforced on the request.

@@ -1,13 +1,13 @@
 ---
 title: SVGUseElement
 slug: Web/API/SVGUseElement
-translation_of: Web/API/SVGUseElement
 ---
+
 {{APIRef("SVG")}}
 
 ## SVG 使用 DOM 接口
 
-该**`SVGUseElement`**接口对应于{{SVGElement("use")}}元素。
+该 **`SVGUseElement`** 接口对应于{{SVGElement("use")}}元素。
 
 {{InheritanceDiagram(600, 140)}}
 
@@ -38,7 +38,7 @@ _This interface doesn't implement any specific methods, but inherits methods fro
 
 ## 浏览器兼容性
 
-{{Compat("api.SVGUseElement")}}
+{{Compat}}
 
 ## 参见
 

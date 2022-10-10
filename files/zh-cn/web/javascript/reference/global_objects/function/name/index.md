@@ -1,24 +1,38 @@
 ---
 title: Function.name
 slug: Web/JavaScript/Reference/Global_Objects/Function/name
-tags:
-  - ECMAScript 2015
-  - Function
-  - JavaScript
-  - Property
-translation_of: Web/JavaScript/Reference/Global_Objects/Function/name
 ---
+
 {{JSRef("Global_Objects", "Function")}}`function.name` 属性返回函数实例的名称。
+
+{{EmbedInteractiveExample("pages/js/function-name.html")}}
 
 {{js_property_attributes(0,0,1)}}
 
-> **备注：**在非标准的 ES2015 之前的实现中，`configurable`属性也是`false` 。
+> **备注：** 在非标准的 ES2015 之前的实现中，`configurable` 属性也是 `false`。
+
+## 描述
+
+函数的 `name` 属性可用于在调试工具或错误消息中标识该函数。它对语言本身没有任何意义。
+
+`name` 属性是只读的，不能用赋值操作符修改：
+
+```js
+function someFunction() {}
+
+someFunction.name = 'otherFunction';
+console.log(someFunction.name); // someFunction
+```
+
+想要改变它，请使用 {{jsxref("Object.defineProperty()")}}.
+
+`name` 属性通常是从函数的定义方式推断出来的。在下面的部分中，我们将描述推断它的各种方法。
 
 ## 示例
 
 ### 函数声明的名称
 
-`name` 属性返回一个函数声明的名称。
+`name` 属性会返回函数的名称。
 
 ```js
 function doSomething() { }
@@ -118,7 +132,7 @@ var fooInstance = new Foo();
 console.log(fooInstance.constructor.name); // logs "Foo"
 ```
 
-> **警告：**脚本解释器只有在函数没有名为 name 的属性时才会设置内置的`Function.name`属性（参见 [9.2.11 of the ECMAScript2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-setfunctionname)）。但是，ES2015 规定由关键字*static*修饰的静态方法也会被认为是类的属性（ECMAScript2015, [14.5.14.21.b](https://www.ecma-international.org/ecma-262/6.0/#sec-runtime-semantics-classdefinitionevaluation) + [12.2.6.9](https://www.ecma-international.org/ecma-262/6.0/#sec-object-initializer-runtime-semantics-propertydefinitionevaluation)）。
+> **警告：** 脚本解释器只有在函数没有名为 name 的属性时才会设置内置的`Function.name`属性（参见 [9.2.11 of the ECMAScript2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-setfunctionname)）。但是，ES2015 规定由关键字*static*修饰的静态方法也会被认为是类的属性（ECMAScript2015, [14.5.14.21.b](https://www.ecma-international.org/ecma-262/6.0/#sec-runtime-semantics-classdefinitionevaluation) + [12.2.6.9](https://www.ecma-international.org/ecma-262/6.0/#sec-object-initializer-runtime-semantics-propertydefinitionevaluation)）。
 
 因此，我们无法获取具有静态方法属性`name()`的几乎任何类的类名称：
 
@@ -129,7 +143,7 @@ class Foo {
 }
 ```
 
-使用`static name()`方法`Foo.name`不再保存实际的类名称，而是引用`name()`函数对象。 ES2015 语法中的上述类定义将在 Chrome 或 Firefox 中运行，类似于 ES5 语法中的以下代码段：
+使用`static name()`方法`Foo.name`不再保存实际的类名称，而是引用`name()`函数对象。ES2015 语法中的上述类定义将在 Chrome 或 Firefox 中运行，类似于 ES5 语法中的以下代码段：
 
 ```js
 function Foo() {}
@@ -137,7 +151,7 @@ Object.defineProperty(Foo, 'name', { writable: true });
 Foo.name = function() {};
 ```
 
-通过`fooInstance.constructor.name`获取`fooInstance`类不会给我们所有的类名，而是静态类方法的引用。 例如：
+通过`fooInstance.constructor.name`获取`fooInstance`类不会给我们所有的类名，而是静态类方法的引用。例如：
 
 ```js
 var fooInstance = new Foo();
@@ -172,7 +186,7 @@ o[sym2].name; // ""
 
 ## JavaScript 压缩和 minifiers
 
-> **警告：**当使用`Function.name`和那些 JavaScript 压缩器（minifiers）或混淆器进行源码转换时要小心。这些工具通常用作 JavaScript 构建管道的一部分，以在程序部署到生产之前减少程序的大小。但这种转换通常会在构建时更改函数的名称。
+> **警告：** 当使用`Function.name`和那些 JavaScript 压缩器（minifiers）或混淆器进行源码转换时要小心。这些工具通常用作 JavaScript 构建管道的一部分，以在程序部署到生产之前减少程序的大小。但这种转换通常会在构建时更改函数的名称。
 
 例如下面的代码：
 
@@ -199,7 +213,7 @@ if (b.constructor.name === 'Foo') {
 }
 ```
 
-在未压缩版本中，程序运行到真实分支并打印`'foo' is an instance of 'Foo'`。 而在压缩版本中，它的行为不同，并且进入 else 分支。如果您依赖于`Function.name`，就像上面的示例一样，确保您的构建管道不会更改函数名称，也不要假定函数具有特定的名称。
+在未压缩版本中，程序运行到真实分支并打印`'foo' is an instance of 'Foo'`。而在压缩版本中，它的行为不同，并且进入 else 分支。如果您依赖于`Function.name`，就像上面的示例一样，确保您的构建管道不会更改函数名称，也不要假定函数具有特定的名称。
 
 ## 规范
 

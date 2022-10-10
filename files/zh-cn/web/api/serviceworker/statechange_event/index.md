@@ -1,9 +1,8 @@
 ---
 title: ServiceWorker.onstatechange
 slug: Web/API/ServiceWorker/statechange_event
-translation_of: Web/API/ServiceWorker/onstatechange
-original_slug: Web/API/ServiceWorker/onstatechange
 ---
+
 {{SeeCompatTable}}{{APIRef("Service Workers API")}}
 
 一个 {{domxref("EventListener")}} 联动的属性，其会被任何 stagechange 类型事件抛出时联动; 它也基本上能在任何时候{{domxref("ServiceWorker.state")}} 改变时被抛出。
@@ -60,4 +59,4 @@ navigator.serviceWorker.register(..).then(function(swr) {
 
 ## 浏览器兼容性
 
-{{Compat("api.ServiceWorker.onstatechange")}}
+{{Compat}}

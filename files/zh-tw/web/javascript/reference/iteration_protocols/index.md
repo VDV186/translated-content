@@ -1,13 +1,8 @@
 ---
 title: 迭代協議
 slug: Web/JavaScript/Reference/Iteration_protocols
-tags:
-  - ECMAScript 2015
-  - Intermediate
-  - Iterator
-  - JavaScript
-translation_of: Web/JavaScript/Reference/Iteration_protocols
 ---
+
 {{jsSidebar("More")}}
 
 為 ECMAScript 2015 中的一些補充內容，並非新的內建物件或語法，而是協議。這些協議可被任何遵守特定協定的物件所實作。
@@ -73,16 +68,15 @@ translation_of: Web/JavaScript/Reference/Iteration_protocols
   </tbody>
 </table>
 
-> **備註：** 我們無法反射性的一眼看出一個特定的物件是否實作了迭代器協議，然而要建立一個同時滿足迭代器及可迭代協議的物件卻是相當容易（如下例所示）。範例的做法允許一個迭代器被各個預期其可迭代行為的語法所消費。因此很少有需要實作迭代器協議而沒有實作可迭代協議的情況。```js
+> **備註：** 我們無法反射性的一眼看出一個特定的物件是否實作了迭代器協議，然而要建立一個同時滿足迭代器及可迭代協議的物件卻是相當容易（如下例所示）。範例的做法允許一個迭代器被各個預期其可迭代行為的語法所消費。因此很少有需要實作迭代器協議而沒有實作可迭代協議的情況。
+>
+> ```js
 > var myIterator = {
-> next: function() {
-> // ...
-> },
-> [Symbol.iterator]: function() { return this }
+>   next: function() {
+>     // ...
+>   },
+>   [Symbol.iterator]: function() { return this }
 > };
->
-> ```
->
 > ```
 
 ## 迭代協議使用範例

@@ -1,11 +1,8 @@
 ---
 title: Window.pageYOffset
 slug: Web/API/Window/pageYOffset
-tags:
-  - API
-  - CSSOM
-translation_of: Web/API/Window/pageYOffset
 ---
+
 {{ APIRef("CSSOM View") }}
 
 只读属性`pageYOffset`是 `scrollY` 的别名。
@@ -20,4 +17,4 @@ translation_of: Web/API/Window/pageYOffset
 
 ## 相关链接
 
-- [`window.pageXOffset`](/en-US/docs/Web/API/Window/pageXOffset)
+- [`window.pageXOffset`](/zh-CN/docs/Web/API/Window/pageXOffset)

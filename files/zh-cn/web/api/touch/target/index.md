@@ -1,17 +1,8 @@
 ---
 title: Touch.target
 slug: Web/API/Touch/target
-tags:
-  - API
-  - DOM
-  - EventTarget
-  - TouchEvent
-  - touch
-  - 属性
-  - 移动设备
-  - 触摸
-translation_of: Web/API/Touch/target
 ---
+
 {{ APIRef("Touch Events") }}
 
 ## 概述
@@ -53,4 +44,4 @@ src.addEventListener('touchstart', function(e) {
 
 ## 浏览器兼容性
 
-{{Compat("api.Touch.target")}}
+{{Compat}}

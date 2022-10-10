@@ -1,8 +1,8 @@
 ---
 title: Window.screenY
 slug: Web/API/Window/screenY
-translation_of: Web/API/Window/screenY
 ---
+
 {{APIRef}}
 
 ## 概述

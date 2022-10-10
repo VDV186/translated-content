@@ -1,11 +1,11 @@
 ---
 title: WebGLRenderingContext.createProgram()
 slug: Web/API/WebGLRenderingContext/createProgram
-translation_of: Web/API/WebGLRenderingContext/createProgram
 ---
+
 {{APIRef("WebGL")}}
 
-[WebGL API](/en-US/docs/Web/API/WebGL_API) 的 **`WebGLRenderingContext.createProgram()`** 方法用于创建和初始化一个 {{domxref("WebGLProgram")}} 对象。
+[WebGL API](/zh-CN/docs/Web/API/WebGL_API) 的 **`WebGLRenderingContext.createProgram()`** 方法用于创建和初始化一个 {{domxref("WebGLProgram")}} 对象。
 
 ## 语法
 
@@ -48,7 +48,7 @@ if ( !gl.getProgramParameter( program, gl.LINK_STATUS) ) {
 
 ## 浏览器兼容性
 
-{{Compat("api/WebGLRenderingContext", "WebGLRenderingContext.createProgram")}}
+{{Compat}}
 
 ## 相关资料
 

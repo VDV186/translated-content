@@ -1,8 +1,8 @@
 ---
 title: PerformanceTiming.domainLookupEnd
 slug: Web/API/PerformanceTiming/domainLookupEnd
-translation_of: Web/API/PerformanceTiming/domainLookupEnd
 ---
+
 {{APIRef("Navigation Timing")}}
 
 ## 概要

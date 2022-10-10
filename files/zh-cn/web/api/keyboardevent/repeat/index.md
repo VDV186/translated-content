@@ -1,10 +1,8 @@
 ---
 title: KeyboardEvent.repeat
 slug: Web/API/KeyboardEvent/repeat
-tags:
-  - KeyboardEvent
-translation_of: Web/API/KeyboardEvent/repeat
 ---
+
 {{APIRef("DOM Events")}}
 
 **`KeyboardEvent.repeat`**是一个只读属性，返回一个布尔值{{jsxref("Boolean")}}，如果按键被一直按住，返回值为`true`。
@@ -21,4 +19,4 @@ var repeat = event.repeat;
 
 ## 浏览器兼容性
 
-{{Compat("api.KeyboardEvent.repeat")}}
+{{Compat}}

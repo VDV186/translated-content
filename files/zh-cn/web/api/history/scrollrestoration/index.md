@@ -1,15 +1,8 @@
 ---
 title: History.scrollRestoration
 slug: Web/API/History/scrollRestoration
-tags:
-  - API
-  - HTML DOM
-  - History
-  - History API
-  - Property
-  - Reference
-translation_of: Web/API/History/scrollRestoration
 ---
+
 {{APIRef("History API")}}
 
 {{DOMxRef("History")}} 的接口——**`滚动恢复属性`**允许 web 应用程序在历史导航上显式地设置默认滚动恢复行为
@@ -52,4 +45,4 @@ if (history.scrollRestoration) {
 
 ## 浏览器兼容性
 
-{{Compat("api.History.scrollRestoration")}}
+{{Compat}}

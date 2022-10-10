@@ -1,8 +1,8 @@
 ---
 title: element.setCapture
 slug: Web/API/Element/setCapture
-translation_of: Web/API/Element/setCapture
 ---
+
 {{ ApiRef() }}
 
 ### 概要
@@ -53,7 +53,7 @@ element.setCapture(retargetToElement);
 
     function mouseMoved(e) {
       var output = document.getElementById("output");
-      output.innerHTML = "鼠标的当前位置: " + e.clientX + ", " + e.clientY;
+      output.innerHTML = "鼠标的当前位置：" + e.clientX + ", " + e.clientY;
     }
   </script>
 </head>

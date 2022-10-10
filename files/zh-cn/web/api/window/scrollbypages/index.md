@@ -1,8 +1,8 @@
 ---
 title: window.scrollByPages
 slug: Web/API/Window/scrollByPages
-translation_of: Web/API/Window/scrollByPages
 ---
+
 {{ ApiRef() }}
 
 ### 概述

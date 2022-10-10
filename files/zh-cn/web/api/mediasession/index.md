@@ -1,20 +1,11 @@
 ---
 title: MediaSession
 slug: Web/API/MediaSession
-tags:
-  - API
-  - Media Session API
-  - MediaSession
-  - 媒体
-  - 引用
-  - 接口
-  - 视频
-  - 音频
-translation_of: Web/API/MediaSession
 ---
+
 {{SeeCompatTable}}{{APIRef("Media Session API")}}
 
-[Media Session API](/en-US/docs/Web/API/Media_Session_API) 的 **`MediaSession`** 接口允许页面为标准媒体交互提供自定义行为。
+[Media Session API](/zh-CN/docs/Web/API/Media_Session_API) 的 **`MediaSession`** 接口允许页面为标准媒体交互提供自定义行为。
 
 ## 属性
 
@@ -75,4 +66,4 @@ function pause() {
 
 ## 浏览器兼容性
 
-{{Compat("api.MediaSession")}}
+{{Compat}}

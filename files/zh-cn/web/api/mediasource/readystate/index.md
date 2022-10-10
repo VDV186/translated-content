@@ -1,20 +1,8 @@
 ---
 title: MediaSource.readyState
 slug: Web/API/MediaSource/readyState
-page-type: web-api-instance-property
-tags:
-  - API
-  - Audio
-  - Experimental
-  - MSE
-  - Media Source Extensions
-  - MediaSource
-  - Property
-  - Reference
-  - Video
-  - readyState
-translation_of: Web/API/MediaSource/readyState
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 **`readyState`**是 {{domxref("MediaSource")}} 接口的一个只读属性。它返回一个集合表明当前 `MediaSource` 的状态。它有三种可能的返回值：

@@ -1,8 +1,8 @@
 ---
 title: HTMLCanvasElement.width
 slug: Web/API/HTMLCanvasElement/width
-translation_of: Web/API/HTMLCanvasElement/width
 ---
+
 {{APIRef("Canvas API")}}
 
 **`HTMLCanvasElement.width`** 属性是一个对应 {{HTMLElement("canvas")}} 元素 CSS 像素 {{htmlattrxref("width", "canvas")}} 的正整数。当这个属性没有指定时，或者被赋予一个不合法的值，比如一个负值，默认使用 300.
@@ -37,7 +37,7 @@ console.log(canvas.width); // 300
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLCanvasElement.width")}}
+{{Compat}}
 
 ## 查看更多
 

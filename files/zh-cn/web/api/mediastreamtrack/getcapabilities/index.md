@@ -1,15 +1,8 @@
 ---
 title: MediaStreamTrack.getCapabilities()
 slug: Web/API/MediaStreamTrack/getCapabilities
-tags:
-  - API
-  - Media Capture and Streams API
-  - Media Streams API
-  - MediaStreamTrack
-  - getCapabilities
-  - 媒体 API
-translation_of: Web/API/MediaStreamTrack/getCapabilities
 ---
+
 {{APIRef("Media Capture and Streams")}}
 
 {{domxref("MediaStreamTrack")}} 接口的 **`getCapabilities()`** 方法返回一个 {{domxref('MediaTrackCapabilities')}} 对象，此对象表示每个可调节属性的值或者范围，该特性依赖于平台和{{Glossary("user agent")}}.
@@ -36,4 +29,4 @@ A {{domxref('MediaTrackCapabilities')}} object which specifies the value or rang
 
 ## 浏览器兼容性
 
-{{Compat("api.MediaStreamTrack.getCapabilities")}}
+{{Compat}}

@@ -1,8 +1,8 @@
 ---
 title: Symbol.keyFor()
 slug: Web/JavaScript/Reference/Global_Objects/Symbol/keyFor
-translation_of: Web/JavaScript/Reference/Global_Objects/Symbol/keyFor
 ---
+
 {{JSRef("Global_Objects", "Symbol")}}
 
 ## 概述
@@ -18,7 +18,7 @@ Symbol.keyFor(sym);
 ### 参数
 
 - sym
-  - : 必选参数，需要查找键值的某个 Symbol 。
+  - : 必选参数，需要查找键值的某个 Symbol。
 
 ### 返回值
 

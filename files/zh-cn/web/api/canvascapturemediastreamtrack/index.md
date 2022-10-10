@@ -1,9 +1,8 @@
 ---
 title: CanvasCaptureMediaStream
 slug: Web/API/CanvasCaptureMediaStreamTrack
-translation_of: Web/API/CanvasCaptureMediaStreamTrack
-original_slug: Web/API/CanvasCaptureMediaStream
 ---
+
 {{APIRef}}{{SeeCompatTable}}
 
 **`CanvasCaptureMediaStream`** 接口表示 {{domxref("MediaStream")}} 对 {{domxref("HTMLCanvasElement")}} 元素进行实时画面捕捉的内容。
@@ -20,7 +19,7 @@ _此接口继承了其父类 {{domxref("MediaStream")}} 与 {{domxref("EventTarg
 _此接口继承了其父类 {{domxref("MediaStream")}} 与 {{domxref("EventTarget")}} 的方法。_
 
 - {{domxref("CanvasCaptureMediaStream.requestFrame()")}}
-  - : 手动获取媒体流的一帧。 可以捕捉部分渲染帧画面。
+  - : 手动获取媒体流的一帧。可以捕捉部分渲染帧画面。
 
 ## 说明
 
@@ -28,7 +27,7 @@ _此接口继承了其父类 {{domxref("MediaStream")}} 与 {{domxref("EventTarg
 
 ## 浏览器兼容性
 
-{{Compat("api.CanvasCaptureMediaStreamTrack")}}
+{{Compat}}
 
 ## 其他参考资料
 

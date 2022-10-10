@@ -1,17 +1,8 @@
 ---
 title: SVGGeometryElement
 slug: Web/API/SVGGeometryElement
-tags:
-  - API
-  - DOM
-  - NeedsExample
-  - NeedsTranslation
-  - Reference
-  - SVG
-  - SVG DOM
-  - TopicStub
-translation_of: Web/API/SVGGeometryElement
 ---
+
 {{APIRef("SVG")}}
 
 The `SVGGeometryElement` interface represents SVG elements whose rendering is defined by geometry with an equivalent path, and which can be filled and stroked. This includes paths and the basic shapes.
@@ -46,4 +37,4 @@ _This interface also inherits methods from its parent, {{domxref("SVGGraphicsEle
 
 ## Browser compatibility
 
-{{Compat("api.SVGGeometryElement")}}
+{{Compat}}

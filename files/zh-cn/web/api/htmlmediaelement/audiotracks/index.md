@@ -1,8 +1,8 @@
 ---
 title: HTMLMediaElement.audioTracks
 slug: Web/API/HTMLMediaElement/audioTracks
-translation_of: Web/API/HTMLMediaElement/audioTracks
 ---
+
 {{APIRef("HTML DOM")}}
 
 **`HTMLMediaElement.audioTracks`** 获得可用音频轨道的数量
@@ -38,7 +38,7 @@ alert(myVid.audioTracks.length);
 
 ## 浏览器支持
 
-{{Compat("api.HTMLMediaElement.audioTracks")}}
+{{Compat}}
 
 ## 还可以看看
 

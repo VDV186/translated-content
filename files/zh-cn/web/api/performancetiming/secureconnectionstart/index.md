@@ -1,8 +1,8 @@
 ---
 title: PerformanceTiming.secureConnectionStart
 slug: Web/API/PerformanceTiming/secureConnectionStart
-translation_of: Web/API/PerformanceTiming/secureConnectionStart
 ---
+
 {{APIRef("Navigation Timing")}}
 
 ## 概要

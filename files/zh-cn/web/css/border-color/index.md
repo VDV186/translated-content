@@ -1,13 +1,13 @@
 ---
 title: border-color
 slug: Web/CSS/border-color
-translation_of: Web/CSS/border-color
 ---
+
 {{CSSRef}}
 
 ## 概括
 
-`CSS属性` **`border-color`** 是一个用于设置元素四个边框颜色的快捷属性： {{cssxref("border-top-color")}}, {{cssxref("border-right-color")}}, {{cssxref("border-bottom-color")}}, {{cssxref("border-left-color")}}
+CSS 属性 **`border-color`** 是一个用于设置元素四个边框颜色的快捷属性： {{cssxref("border-top-color")}}、{{cssxref("border-right-color")}}、{{cssxref("border-bottom-color")}}、{{cssxref("border-left-color")}}。
 
 {{cssinfo}}
 

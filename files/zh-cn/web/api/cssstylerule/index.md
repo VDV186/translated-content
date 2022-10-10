@@ -1,13 +1,8 @@
 ---
 title: CSSStyleRule
 slug: Web/API/CSSStyleRule
-tags:
-  - API
-  - CSSOM
-  - 参考
-  - 接口
-translation_of: Web/API/CSSStyleRule
 ---
+
 {{ APIRef("CSSOM") }}
 
 **`CSSStyleRule`** 表示一条 CSS 样式规则。它实现了 {{domxref("CSSRule")}} 接口，类型的值为 `1`（`CSSRule.STYLE_RULE`）。
@@ -27,4 +22,4 @@ translation_of: Web/API/CSSStyleRule
 
 ## 浏览器兼容性
 
-{{Compat("api.CSSStyleRule")}}
+{{Compat}}

@@ -1,8 +1,8 @@
 ---
 title: VRDisplay.requestAnimationFrame()
 slug: Web/API/VRDisplay/requestAnimationFrame
-translation_of: Web/API/VRDisplay/requestAnimationFrame
 ---
+
 {{APIRef("WebVR API")}}{{SeeCompatTable}}
 
 The **`requestAnimationFrame()`** method of the {{domxref("VRDisplay")}} interface is a special implementation of {{domxref("Window.requestAnimationFrame")}} containing a callback function that will be called every time a new frame of the `VRDisplay` presentation is rendered:
@@ -39,9 +39,9 @@ TBD.
 
 ## Browser compatibility
 
-{{Compat("api.VRDisplay.requestAnimationFrame")}}
+{{Compat}}
 
 ## See also
 
-- [WebVR API homepage](/en-US/docs/Web/API/WebVR_API).
+- [WebVR API homepage](/zh-CN/docs/Web/API/WebVR_API).
 - [MozVr.com](http://mozvr.com/) — demos, downloads, and other resources from the Mozilla VR team.

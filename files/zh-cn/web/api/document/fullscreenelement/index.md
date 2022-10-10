@@ -1,9 +1,8 @@
 ---
 title: document.mozFullScreenElement
 slug: Web/API/Document/fullscreenElement
-translation_of: Web/API/DocumentOrShadowRoot/fullscreenElement
-original_slug: Web/API/DocumentOrShadowRoot/fullscreenElement
 ---
+
 {{ ApiRef() }}
 
 ### 概述
@@ -32,4 +31,4 @@ function isVideoInFullsreen() {
 
 ### 浏览器兼容性
 
-{{Compat("api.Document.fullscreenElement")}}
+{{Compat}}

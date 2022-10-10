@@ -1,9 +1,8 @@
 ---
 title: GlobalEventHandlers.onpointerdown
 slug: Web/API/Element/pointerdown_event
-translation_of: Web/API/GlobalEventHandlers/onpointerdown
-original_slug: Web/API/GlobalEventHandlers/onpointerdown
 ---
+
 {{ApiRef("HTML DOM")}}
 
 {{event("pointerdown")}} 事件的 {{domxref("GlobalEventHandlers","全局事件处理程序")}}
@@ -47,7 +46,7 @@ function init() {
 
 ## 浏览器支持
 
-{{Compat("api.GlobalEventHandlers.onpointerdown")}}
+{{Compat}}
 
 ## 参阅
 

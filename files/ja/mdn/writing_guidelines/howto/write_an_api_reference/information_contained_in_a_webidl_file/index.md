@@ -1,17 +1,9 @@
 ---
 title: WebIDL ファイルに含まれる情報
-slug: >-
-  MDN/Writing_guidelines/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file
-tags:
-  - Howto
-  - MDN Meta
-  - Reference
-  - WebIDL
-translation_of: >-
-  MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file
-original_slug: >-
-  MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file
+slug: MDN/Writing_guidelines/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file
+original_slug: MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file
 ---
+
 {{MDNSidebar}}
 
 API についての記事を書くとき、情報源はたくさんあります。仕様書にはモデルと同様に何が実装されるべきかが記述され、実装には実際にブラウザーに置かれたものが記述されています。 WebIDL ファイルは、 API に関する情報のすべてではありませんが、多くの情報を提供する非常に凝縮された方法です。この記事では、 WebIDL 構文を理解するためのリファレンスを提供します。
@@ -22,7 +14,8 @@ IDL は **_Interface Definition Language_** の略で、 API を記述するた�
 
 WebIDL は複数の場所で見つけることができます。
 
--それぞれの仕様書には、本文の中に WebIDL が含まれています：これは、正確な定義を伝えるのにとても便利な方法です。これらは、API の構文を記述しています。正規のリファレンスではありますが、実際の実装とは異なる可能性があることを念頭に置いておく必要があります。 MDN では、実用的でありたいと考えており、ウェブプラットフォームが実際にどうであるか、理想的にどうあるべきかを文書化するものではありません。ですから、そこにあるものを実装でダブルチェックしてください（そして、矛盾を発見したら遠慮なくバグを報告してください）。
+- それぞれの仕様書には、本文の中に WebIDL が含まれています：これは、正確な定義を伝えるのにとても便利な方法です。これらは、API の構文を記述しています。正規のリファレンスではありますが、実際の実装とは異なる可能性があることを念頭に置いておく必要があります。 MDN では、実用的でありたいと考えており、ウェブプラットフォームが実際にどうであるか、理想的にどうあるべきかを文書化するものではありません。ですから、そこにあるものを実装でダブルチェックしてください（そして、矛盾を発見したら遠慮なくバグを報告してください）。
+
 - 3 つのブラウザーエンジンが、ツールチェーンの一部として（修正された） WebIDL を使用しています。 Gecko、Chromium/Blink、そして WebCore/WebKit です。 Chromium 以前の Edge では内部的に WebIDL を使用していましたが、残念ながらこれらは公開されていません。
 
   - Gecko では、すべての WebIDL ファイルは 1 つのディレクトリー <https://dxr.mozilla.org/mozilla-central/source/dom/webidl/> にまとめられています。拡張子は `.webidl` です。Gecko のソースツリーには他にも `*.idl` ファイルがありますが、それらは WebIDL ではないので無視してかまいません。古いバージョンの Gecko には WebIDL が散在しており、 WebIDL の代わりに Mozilla の IDL を使ってウェブインターフェイスを記述しているものもありますが、最近の Gecko のコードでは問題ありません。
@@ -37,7 +30,7 @@ WebIDL は[その仕様書](https://heycam.github.io/webidl/)で定義されて�
 - Chromium については、 Google もその拡張機能を説明する[ドキュメント](https://www.chromium.org/blink/webidl/)を作成しました。
 - WebCore については、Apple もその方言に関する[ページ](https://trac.webkit.org/wiki/WebKitIDL)を公開しています。
 
-> **Note:** ここでは、記事を書くときに最も役に立つ WebIDL のサブセットのみを説明します。実装者にとって便利なアノテーションは他にもたくさんあります。完全な概要を知るには、上記のリンク先の 4 つの記事を参照してください。
+> **メモ:** ここでは、記事を書くときに最も役に立つ WebIDL のサブセットのみを説明します。実装者にとって便利なアノテーションは他にもたくさんあります。完全な概要を知るには、上記のリンク先の 4 つの記事を参照してください。
 
 ## インターフェイス
 
@@ -177,7 +170,7 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {…}
 
 ### 設定
 
-> **Note:** この情報は Gecko 固有のものであり、ブラウザー互換性 の節でのみ使用されるべきものです。
+> **メモ:** この情報は Gecko 固有のものであり、ブラウザー互換性 の節でのみ使用されるべきものです。
 
 Gecko では、コンストラクター、プロパティ、メソッドを含む部分インターフェイスの可用性は、プリファレンス（通常 "pref" と呼ばれます）によって制御されることがあります。これは WebIDL でもマークされています。
 
@@ -238,7 +231,7 @@ readonly attribute MediaError? error;
 - 自身のページに `Read-only` タグを追加してください。
 - インターフェイスページの説明を _...を返します_ で始めてください。
 
-> **Note:** 値を「返す」と表現できるのは、読み取り専用のプロパティのみです。読み取り専用でないプロパティは、値を設定するために使用することもできます。
+> **メモ:** 値を「返す」と表現できるのは、読み取り専用のプロパティのみです。読み取り専用でないプロパティは、値を設定するために使用することもできます。
 
 ### 例外の発生
 
@@ -287,7 +280,7 @@ _このプロパティは読み取り専用ですが、変更されても（厳�
 
 インターフェイスオブジェクトの場合、既定では、内部オブジェクトへの参照を返すことになっています。このことは、インターフェイスページの短い説明と、特定のサブページの説明の両方で言及しなければなりません。
 
-> **Note:** オブジェクトを返すプロパティで使われるキーワード `readonly` は、参照に適用されるものです（内部のオブジェクトは変更できません）。返されたオブジェクトのプロパティは、関連するインターフェイスで読み取り専用とされていても、変更することができます。
+> **メモ:** オブジェクトを返すプロパティで使われるキーワード `readonly` は、参照に適用されるものです（内部のオブジェクトは変更できません）。返されたオブジェクトのプロパティは、関連するインターフェイスで読み取り専用とされていても、変更することができます。
 
 API は時として、*新しい*オブジェクト、あるいは内部のオブジェクトの*コピー*を返さなければなりません。このような場合、 WebIDL では `[NewObject]` 注釈を使用します。
 
@@ -297,7 +290,6 @@ API は時として、*新しい*オブジェクト、あるいは内部のオ�
 ```
 
 この場合、 `buffered` を呼び出すたびに異なるオブジェクトが返されます。これを変更しても内部の値は変化せず、内部の値が変化しても各オブジェクトのインスタンスには影響がありません。ドキュメントでは、オブジェクトの隣に*新しい*という形容詞を使ってマークすることにします。
-
 
 _**`HTMLMediaElement.buffered`** プロパティは読み取り専用で、新しい \\{{domxref("TimeRanges")}} オブジェクトを返します…_
 
@@ -321,7 +313,7 @@ _**`HTMLMediaElement.buffered`** プロパティは読み取り専用で、新�
 
 ### 環境設定
 
-> **Note:** この情報は Gecko 固有のものであり、ブラウザー互換性の節でのみ使用すべきものです。
+> **メモ:** この情報は Gecko 固有のものであり、ブラウザー互換性の節でのみ使用すべきものです。
 
 Gecko では、いくつかのプロパティの使用可否は、環境設定によって制御されている場合があります。これは WebIDL でもマークされています。
 
@@ -332,7 +324,7 @@ Gecko では、いくつかのプロパティの使用可否は、環境設定�
 
 ここで `media.webvtt.enabled` は `textTracks` プロパティを制御します。
 
-> **Note:** 環境設定の既定値は、 WebIDL では直接利用できません（Gecko を使用する製品ごとに異なる場合があります）。
+> **メモ:** 環境設定の既定値は、 WebIDL では直接利用できません（Gecko を使用する製品ごとに異なる場合があります）。
 
 ## メソッド
 
@@ -387,7 +379,7 @@ DOMString canPlayType(DOMString type);
 
 ### 環境設定
 
-> **Note:** この情報は Gecko 固有のものであり、ブラウザーの互換性の節でのみ使用するようにしてください。
+> **メモ:** この情報は Gecko 固有のものであり、ブラウザーの互換性の節でのみ使用するようにしてください。
 
 Gecko では、いくつかのプロパティの利用可否は環境設定によって制御される場合があります。これは WebIDL でもマークされています。
 
@@ -400,7 +392,7 @@ Gecko では、いくつかのプロパティの利用可否は環境設定に�
 
 ここでは `media.webvtt.enabled` が `addTextTrack()` メソッドを制御しています。
 
-> **Note:** 環境設定の既定値は、WebIDL では直接利用できません（Gecko を使用する製品ごとに異なる場合があります）。
+> **メモ:** 環境設定の既定値は、WebIDL では直接利用できません（Gecko を使用する製品ごとに異なる場合があります）。
 
 ## 特殊なメソッド
 
@@ -425,7 +417,7 @@ serializer; // 標準版
 
 `toJSON()` メソッドは他のインターフェイスのメソッドと同様に掲載され、独自のサブページがあります（例: {{domxref("Performance.toJSON()") }}）。
 
-> **Note:** WebIDL 仕様では、`jsonifier` の代わりに `serializer` を使用しています。これは Gecko では使われていません。非標準的な、おそらく初期の提案である `jsonifier` だけが mozilla-central で見つかりました。
+> **メモ:** WebIDL 仕様では、`jsonifier` の代わりに `serializer` を使用しています。これは Gecko では使われていません。非標準的な、おそらく初期の提案である `jsonifier` だけが mozilla-central で見つかりました。
 
 ### 反復子風のメソッド
 
@@ -448,7 +440,7 @@ iterable<valueType>
 
 このような反復子は，`for (var p in object)` という構文を `for (var p in object.entries())` の省略形として使うことを可能にします。インターフェイスの説明の中に、このことに関する文を追加しています。
 
-> **Note:** 以下の場合、反復処理する値の組は 2 つの異なる方法で定義することができます。
+> **メモ:** 以下の場合、反復処理する値の組は 2 つの異なる方法で定義することができます。
 >
 > 1. webidl ファイルの外側で、それに付随する散文で。このような散文は仕様書にあり、通常、次のように始まります。_"[反復処理する値](https://heycam.github.io/webidl/#dfn-values-to-iterate-over)..."_.
 > 2. webidl ファイルでは、インターフェイスがインデックス付きプロパティに対応している場合、つまり、インターフェイスが `unsigned long` 型の引数を持つ `getter` メソッドを持つ場合、暗黙のうちに、インデックス付きプロパティに対応するようにします。
@@ -468,9 +460,9 @@ iterable<keyType, valueType>
 
 このようなイテレータを使うと，`for (var p in object)` という構文を， `for (var p in object.entries())` の省略形として使うことができます．インターフェイスの説明の中に、それに関する文を追加します。例: {{domxref('FormData')}}.
 
-> **Note:** 繰り返す値の組は、 webidl ファイルではなく、それに付随する散文で定義されます。そのような散文は仕様書にあり、通常、次のように始まります。_"The [value pairs to iterate over](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)..."_ で始まります。
+> **メモ:** 繰り返す値の組は、 webidl ファイルではなく、それに付随する散文で定義されます。そのような散文は仕様書にあり、通常、次のように始まります。_"The [value pairs to iterate over](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)..."_ で始まります。
 >
-> 例えば、{{domxref('FormData')}}の場合、仕様書の中に次のように書かれています。_"The [value pairs to iterate over](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over) are the [entries](https://xhr.spec.whatwg.org/#concept-formdata-entry "concept-FormData-entry") with the key is the [name](https://xhr.spec.whatwg.org/#concept-formdata-entry-name "concept-FormData-entry-name") and the value the [value](https://xhr.spec.whatwg.org/#concept-formdata-entry-value "concept-FormData-entry-value"). "_
+> 例えば、{{domxref('FormData')}}の場合、仕様書の中に次のように書かれています。_"The [value pairs to iterate over](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over) are the [entries](https://xhr.spec.whatwg.org/#concept-formdata-entry) with the key is the [name](https://xhr.spec.whatwg.org/#concept-formdata-entry-name) and the value the [value](https://xhr.spec.whatwg.org/#concept-formdata-entry-value). "_
 
 ### 集合風メソッド
 

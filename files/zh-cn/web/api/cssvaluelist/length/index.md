@@ -1,12 +1,8 @@
 ---
 title: CSSValueList.length
 slug: Web/API/CSSValueList/length
-tags:
-  - API
-  - CSS
-  - CSSValueList
-translation_of: Web/API/CSSValueList/length
 ---
+
 {{APIRef("CSSOM")}}{{Deprecated_header}}
 
 {{domxref("CSSValueList")}} 接口的只读属性 **`length`** 表示列表中的 {{domxref("CSSValue")}} 数量。有效的索引区间为 `0` 到 `length-1`。

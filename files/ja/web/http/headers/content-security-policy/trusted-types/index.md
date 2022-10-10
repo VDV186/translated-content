@@ -1,14 +1,8 @@
 ---
 title: 'CSP: trusted-types'
 slug: Web/HTTP/Headers/Content-Security-Policy/trusted-types
-tags:
-  - CSP
-  - Directive
-  - HTTP
-  - Security
-browser-compat: http.headers.Content-Security-Policy.trusted-types
-translation_of: Web/HTTP/Headers/Content-Security-Policy/trusted-types
 ---
+
 {{HTTPSidebar}}
 
 HTTP の {{HTTPHeader("Content-Security-Policy")}} (CSP) の **`trusted-types`** {{experimental_inline}} ディレクティブは、既知の DOM XSS シンクの使用を、文字列の代わりにスプーフィング不可能な型付きの値のみを受け入れる定義済みの関数のセットに制限するようにユーザエージェントに指示します。
@@ -27,7 +21,7 @@ Content-Security-Policy: trusted-types <policyName> <policyName> 'allow-duplicat
 - \<policyName>
   - : 有効なポリシー名は英数字、または "`-#=_/@.%`" のうちのいずれかのみからなります。ポリシー名に星印 (`*`) を使用すると、ユーザーエージェントは任意の一意なポリシー名を許可するようになります（'`allow-duplicates`' はそれをさらに緩和することができます）。
 - `'none'`
-  - : Trusted Type ポリシーを作成しない（_<policyName>_を指定しないのと同じ）。
+  - : Trusted Type ポリシーを作成しない（_\<policyName>_を指定しないのと同じ）。
 - `'allow-duplicates'`
   - : 既に使用されている名前でポリシーを作成することを可能にします。
 

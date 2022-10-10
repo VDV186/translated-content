@@ -1,9 +1,8 @@
 ---
 title: GlobalEventHandlers.ongotpointercapture
 slug: Web/API/Element/gotpointercapture_event
-translation_of: Web/API/GlobalEventHandlers/ongotpointercapture
-original_slug: Web/API/GlobalEventHandlers/ongotpointercapture
 ---
+
 {{ApiRef("HTML DOM")}}
 
 **`ongotpointercapture`** 事件是 GlobalEventHandlers 的属性，这个事件返回 gotpointercapture 类型的事件操作。
@@ -40,7 +39,7 @@ function init() {
 
 ## Browser compatibility
 
-{{Compat("api.GlobalEventHandlers.ongotpointercapture")}}
+{{Compat}}
 
 ## See also
 

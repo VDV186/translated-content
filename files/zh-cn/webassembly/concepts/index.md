@@ -1,17 +1,8 @@
 ---
 title: WebAssembly 概念
 slug: WebAssembly/Concepts
-tags:
-  - C
-  - C++
-  - Emscripten
-  - JavaScript
-  - WebAssembly
-  - 文本格式
-  - 概念
-  - 网络平台
-translation_of: WebAssembly/Concepts
 ---
+
 {{WebAssemblySidebar}}
 
 本文解释了 WebAssembly 如何工作的概念，包括它的目标、它解决的问题以及它是如何在网络浏览器的渲染引擎中运行的。

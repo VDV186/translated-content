@@ -1,8 +1,8 @@
 ---
 title: window.opener
 slug: Web/API/Window/opener
-translation_of: Web/API/Window/opener
 ---
+
 {{ ApiRef() }}
 
 ### 概述

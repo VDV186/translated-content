@@ -1,8 +1,8 @@
 ---
 title: window.content
 slug: Web/API/Window/content
-translation_of: Web/API/Window/content
 ---
+
 {{ ApiRef() }}
 
 ### 概述

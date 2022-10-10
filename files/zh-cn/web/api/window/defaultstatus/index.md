@@ -1,11 +1,8 @@
 ---
 title: Window.defaultStatus
 slug: Web/API/Window/defaultStatus
-tags:
-  - HTML DOM 对象
-  - 接口
-translation_of: Web/API/Window/defaultStatus
 ---
+
 {{deprecated_header}}
 
 {{ APIRef() }}
@@ -37,7 +34,7 @@ window.defaultStatus = sMsg;
 
 ## Notes
 
-页面 HTML 加载完成后要设置状态栏内容可以使用 [window.status](/en/Gecko_DOM_Reference/window/status).
+页面 HTML 加载完成后要设置状态栏内容可以使用 [window.status](/zh-CN/Gecko_DOM_Reference/window/status).
 
 ## Specification
 

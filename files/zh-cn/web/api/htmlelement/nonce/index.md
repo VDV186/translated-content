@@ -1,18 +1,8 @@
 ---
 title: HTMLElement.nonce
 slug: Web/API/HTMLElement/nonce
-tags:
-  - API
-  - Content Security Policy
-  - Experimental
-  - HTML DOM
-  - HTMLElement
-  - Property
-  - Reference
-  - nonce
-translation_of: Web/API/HTMLElement/nonce
-browser-compat: api.HTMLElement.nonce
 ---
+
 {{SeeCompatTable}}{{APIRef("HTML DOM")}}
 
 {{domxref("HTMLElement")}} 接口的 **`nonce`** 属性返回只使用一次的加密数字，被内容安全政策用来决定这次请求是否被允许处理。
@@ -50,4 +40,4 @@ script[nonce~=whatever] {
 
 ## 支持的浏览器
 
-{{Compat("api.HTMLElement.nonce")}}
+{{Compat}}

@@ -1,12 +1,8 @@
 ---
 title: MouseEvent.offsetY
 slug: Web/API/MouseEvent/offsetY
-tags:
-  - API
-  - 只读属性
-  - 鼠标事件
-translation_of: Web/API/MouseEvent/offsetY
 ---
+
 {{APIRef("DOM Events")}}{{SeeCompatTable}}
 
 MouseEvent 接口的只读属性 **offsetY** 规定了事件对象与目标节点的内填充边（padding edge）在 Y 轴方向上的偏移量。
@@ -27,7 +23,7 @@ var yOffset = instanceOfMouseEvent.offsetY;
 
 ## 浏览器兼容性
 
-{{Compat("api.MouseEvent.offsetY")}}
+{{Compat}}
 
 ## 相关内容
 

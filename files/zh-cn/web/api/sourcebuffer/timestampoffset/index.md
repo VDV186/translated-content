@@ -1,20 +1,8 @@
 ---
 title: SourceBuffer.timestampOffset
 slug: Web/API/SourceBuffer/timestampOffset
-page-type: web-api-instance-property
-tags:
-  - API
-  - Audio
-  - Experimental
-  - MSE
-  - Media Source Extensions
-  - Property
-  - Reference
-  - SourceBuffer
-  - Video
-  - timestampOffset
-translation_of: Web/API/SourceBuffer/timestampOffset
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 {{domxref("SourceBuffer")}} 接口的 **`timestampOffset`** 属性控制应用于随后附加到 SourceBuffer 的媒体片段内的时间戳偏移量。

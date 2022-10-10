@@ -1,8 +1,8 @@
 ---
 title: Document.dir
 slug: Web/API/Document/dir
-translation_of: Web/API/Document/dir
 ---
+
 {{ApiRef("")}}
 
 Document.dir 的本质是 DOMString，代表了文档的文字朝向，是从左到右 (默认) 还是从右到左。
@@ -27,7 +27,7 @@ document.dir = dirStr;
 
 ## 浏览器兼容性
 
-{{Compat("api.Document.dir")}}
+{{Compat}}
 
 ## 参见
 

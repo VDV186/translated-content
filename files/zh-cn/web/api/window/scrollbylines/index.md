@@ -1,16 +1,8 @@
 ---
 title: Window.scrollByLines()
 slug: Web/API/Window/scrollByLines
-tags:
-  - API
-  - DOM
-  - Method
-  - Non-standard
-  - Window
-  - 方法
-  - 非标准
-translation_of: Web/API/Window/scrollByLines
 ---
+
 {{ ApiRef() }}
 
 {{Non-standard_header}}

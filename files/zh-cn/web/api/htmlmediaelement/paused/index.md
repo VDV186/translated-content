@@ -1,8 +1,8 @@
 ---
 title: HTMLMediaElement.paused
 slug: Web/API/HTMLMediaElement/paused
-translation_of: Web/API/HTMLMediaElement/paused
 ---
+
 {{APIRef("HTML DOM")}}
 
 `属性 (只读)HTMLMediaElement.paused` 告诉视频是否正在暂停
@@ -32,7 +32,7 @@ console.log(obj.paused); // true
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLMediaElement.paused")}}
+{{Compat}}
 
 ## 参考文档
 

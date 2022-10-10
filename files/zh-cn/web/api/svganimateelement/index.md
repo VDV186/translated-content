@@ -1,8 +1,8 @@
 ---
 title: SVGAnimateElement
 slug: Web/API/SVGAnimateElement
-translation_of: Web/API/SVGAnimateElement
 ---
+
 {{APIRef("SVG")}}
 
 **`SVGAnimateElement`** 接口对应于 {{SVGElement("animate")}} 元素。
@@ -27,4 +27,4 @@ _{{domxref("SVGAnimationElement")}}._
 
 ## 浏览器兼容性
 
-{{Compat("api.SVGAnimateElement")}}
+{{Compat}}

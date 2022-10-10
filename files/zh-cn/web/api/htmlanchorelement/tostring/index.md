@@ -1,12 +1,8 @@
 ---
 title: HTMLHyperlinkElementUtils.toString()
 slug: Web/API/HTMLAnchorElement/toString
-tags:
-  - HTMLHyperlinkElementUtils.toString()
-  - URL API
-translation_of: Web/API/HTMLHyperlinkElementUtils/toString
-original_slug: Web/API/HTMLHyperlinkElementUtils/toString
 ---
+
 {{ApiRef("URL API")}}
 
 **`HTMLHyperlinkElementUtils.toString()`** 方法返回一个包含整个 URL 的 {{domxref("USVString")}} 。它是{{domxref("HTMLHyperlinkElementUtils.href")}} 的一个只读版本。
@@ -36,7 +32,7 @@ var result = anchor.toString();
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLAnchorElement.toString")}}
+{{Compat}}
 
 ## 也可以看看
 

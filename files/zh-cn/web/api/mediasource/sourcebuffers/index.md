@@ -1,20 +1,8 @@
 ---
 title: MediaSource.sourceBuffers
 slug: Web/API/MediaSource/sourceBuffers
-page-type: web-api-instance-property
-tags:
-  - API
-  - Audio
-  - Experimental
-  - MSE
-  - Media Source Extensions
-  - MediaSource
-  - Property
-  - Reference
-  - Video
-  - sourceBuffers
-translation_of: Web/API/MediaSource/sourceBuffers
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 {{domxref("MediaSource")}} 接口的只读属性 **`sourceBuffers`** 返回一个 {{domxref("SourceBufferList")}} 对象，该对象包含着与 `MediaSource` 关联的 {{domxref("SourceBuffer")}} 对象列表。

@@ -1,16 +1,11 @@
 ---
 title: MIDIAccess
 slug: Web/API/MIDIAccess
-tags:
-  - API
-  - Web MIDI API
-  - 引用
-  - 接口
-translation_of: Web/API/MIDIAccess
 ---
+
 {{SeeCompatTable}}{{APIRef("Web MIDI API")}}
 
-[Web MIDI API](/en-US/docs/Web/API/Web_MIDI_API) 的 **`MIDIAccess`** 接口提供查询 MIDI 输入和输出设备的列表以及获取这些设备的使用权限。
+[Web MIDI API](/zh-CN/docs/Web/API/Web_MIDI_API) 的 **`MIDIAccess`** 接口提供查询 MIDI 输入和输出设备的列表以及获取这些设备的使用权限。
 
 ## 属性
 
@@ -34,4 +29,4 @@ translation_of: Web/API/MIDIAccess
 
 ## 浏览器兼容性
 
-{{Compat("api.MIDIAccess")}}
+{{Compat}}

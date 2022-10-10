@@ -1,17 +1,8 @@
 ---
 title: document.embeds
 slug: Web/API/Document/embeds
-tags:
-  - API
-  - Document
-  - HTML DOM
-  - NeedsContent
-  - NeedsExample
-  - NeedsMarkupWork
-  - NeedsSpecTable
-  - Property
-translation_of: Web/API/Document/embeds
 ---
+
 {{ ApiRef() }}
 
 {{domxref("Document")}}接口的只读属性`embeds` 返回当前文档内的\<embed>**HTML** {{htmlelement("object")}}元素列表
@@ -32,4 +23,4 @@ nodeList = document.embeds
 
 ## 浏览器兼容性
 
-{{Compat("api.Document.embeds")}}
+{{Compat}}

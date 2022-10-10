@@ -1,12 +1,8 @@
 ---
 title: Window.onbeforeinstallprompt
 slug: Web/API/Window/beforeinstallprompt_event
-tags:
-  - Window.onbeforeinstallprompt
-  - beforeinstallprompt
-translation_of: Web/API/Window/onbeforeinstallprompt
-original_slug: Web/API/Window/onbeforeinstallprompt
 ---
+
 {{ ApiRef() }}
 
 **`Window.onbeforeinstallprompt`** 属性是一个事件处理程序，用于处理一个{{event("beforeinstallprompt")}}, 当一个 Web 清单存在时，它将在移动设备上发送，但是在提示用户将网站保存到主屏幕之前。

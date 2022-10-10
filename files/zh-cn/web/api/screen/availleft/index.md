@@ -1,8 +1,8 @@
 ---
 title: Screen.availLeft
 slug: Web/API/Screen/availLeft
-translation_of: Web/API/Screen/availLeft
 ---
+
 {{ ApiRef() }}
 
 ### 概述

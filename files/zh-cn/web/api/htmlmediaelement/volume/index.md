@@ -1,8 +1,8 @@
 ---
 title: HTMLMediaElement.volume
 slug: Web/API/HTMLMediaElement/volume
-translation_of: Web/API/HTMLMediaElement/volume
 ---
+
 {{APIRef("HTML DOM")}}
 
 **`HTMLMediaElement.volume`** 属性可设置媒体播放时的音量。
@@ -31,7 +31,7 @@ obj.volume = 0.75;
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLMediaElement.volume")}}
+{{Compat}}
 
 ## 更多
 

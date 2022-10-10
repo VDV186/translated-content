@@ -1,16 +1,9 @@
 ---
 title: 让我们开始 CSS 的学习之旅
 slug: Learn/CSS/First_steps/Getting_started
-tags:
-  - CSS
-  - 元素
-  - 初学者
-  - 学习
-  - 类
-  - 选择器
-translation_of: Learn/CSS/First_steps/Getting_started
 original_slug: Learn/CSS/First_steps/开始
 ---
+
 {{LearnSidebar}}
 
 {{PreviousMenuNext("Learn/CSS/First_steps/What_is_CSS", "Learn/CSS/First_steps/How_CSS_is_structured", "Learn/CSS/First_steps")}}
@@ -49,7 +42,7 @@ original_slug: Learn/CSS/First_steps/开始
     <p>这是一个段落文本。在文本中有一个 <span>span element</span>
 并且还有一个 <a href="http://example.com">链接</a>.</p>
 
-    <p>这是第二段。包含了一个 <em>强调</em> 元素.</p>
+    <p>这是第二段。包含了一个 <em>强调</em> 元素。</p>
 
     <ul>
         <li>项目 1</li>
@@ -76,7 +69,7 @@ original_slug: Learn/CSS/First_steps/开始
 <link rel="stylesheet" href="styles.css">
 ```
 
-{{htmlelement("link")}} 语句块里面，我们用属性 `rel`，让浏览器知道有 CSS 文档存在（所以需要遵守 CSS 样式的规定），并利用属性 `href` 指定，寻找 CSS 文件的位置。 你可以做测试来验证 CSS 是否有效：在 `styles.css` 里面加上 CSS 样式并观察显示的结果。下面，用你的编辑器打出下面的代码。
+{{htmlelement("link")}} 语句块里面，我们用属性 `rel`，让浏览器知道有 CSS 文档存在（所以需要遵守 CSS 样式的规定），并利用属性 `href` 指定，寻找 CSS 文件的位置。你可以做测试来验证 CSS 是否有效：在 `styles.css` 里面加上 CSS 样式并观察显示的结果。下面，用你的编辑器打出下面的代码。
 
 ```css
 h1 {
@@ -238,7 +231,7 @@ a:hover {
 >
 > 你的访客可能在一台使用鼠标和键盘操作的计算机前，也可能正在使用带有触摸屏的手机，或者正在使用屏幕阅读软件读出文档内容，或者他们需要使用更大的字体，或者仅仅使用键盘浏览站点。
 >
-> 一个朴素的 HTML 文档一般来说对任何人都是可以无障碍访问的，当你开始为它添加样式，记得不要破坏这种可访问性。
+> 一个朴素的 HTML 文档一般来说对任何人都是可以无障碍访问的，当你开始为它添加样式，记得不要破坏这种无障碍。
 
 ## 同时使用选择器和选择符
 

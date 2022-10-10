@@ -1,8 +1,8 @@
 ---
 title: String.prototype.lastIndexOf()
 slug: Web/JavaScript/Reference/Global_Objects/String/lastIndexOf
-translation_of: Web/JavaScript/Reference/Global_Objects/String/lastIndexOf
 ---
+
 {{JSRef}}
 
 **`lastIndexOf()`** 方法返回调用{{jsxref("String")}} 对象的指定值最后一次出现的索引，在一个字符串中的指定位置 `fromIndex`处从后向前搜索。如果没找到这个特定值则返回-1 。
@@ -33,15 +33,15 @@ str.lastIndexOf(searchValue[, fromIndex])
 ```plain
 'canal'.lastIndexOf('a');     // returns 3（没有指明 fromIndex 则从末尾 l 处开始反向检索到的第一个 a 出现在 l 的后面，即 index 为 3 的位置）
 'canal'.lastIndexOf('a', 2);  // returns 1（指明 fromIndex 为 2 则从 n 处反向向回检索到其后面就是 a，即 index 为 1 的位置）
-'canal'.lastIndexOf('a', 0);  // returns -1(指明 fromIndex 为 0 则从 c 处向左回向检索 a 发现没有，故返回-1)
+'canal'.lastIndexOf('a', 0);  // returns -1(指明 fromIndex 为 0 则从 c 处向左回向检索 a 发现没有，故返回 -1)
 'canal'.lastIndexOf('x');     // returns -1
-'canal'.lastIndexOf('c', -5); // returns 0（指明 fromIndex 为-5 则视同 0，从 c 处向左回向查找发现自己就是，故返回 0）
+'canal'.lastIndexOf('c', -5); // returns 0（指明 fromIndex 为 -5 则视同 0，从 c 处向左回向查找发现自己就是，故返回 0）
 'canal'.lastIndexOf('c', 0);  // returns 0（指明 fromIndex 为 0 则从 c 处向左回向查找 c 发现自己就是，故返回自己的索引 0）
 'canal'.lastIndexOf('');      // returns 5
 'canal'.lastIndexOf('', 2);   // returns 2
 ```
 
-> **备注：**`'abab'.lastIndexOf('ab', 2)` 将返回 2 而不是 0，因为 fromIndex 只限制待匹配字符串的开头。
+> **备注：** `'abab'.lastIndexOf('ab', 2)` 将返回 2 而不是 0，因为 fromIndex 只限制待匹配字符串的开头。
 
 (例如'abadefgabm'.lastIndexOf('ab', 7) 返回 7，虽然查找的'ab'中的 b 已经在 index=8 的位置了从 index=7 的 a 处向左查找仍是能找到自身 a 加上其后连成 ab，因为 fromIndex 指的是待匹配字符串的开头那一个)
 

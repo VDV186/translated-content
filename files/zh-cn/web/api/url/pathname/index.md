@@ -1,15 +1,11 @@
 ---
 title: URL.pathname
 slug: Web/API/URL/pathname
-tags:
-  - API
-  - URL
-  - pathname
-translation_of: Web/API/URL/pathname
 ---
+
 {{ApiRef("URL API")}}
 
-{{domxref("URL")}}接口的**`pathname`**属性是一个{{domxref("USVString")}}，包含一个初始 `'/'` 和 URL 的路径 (如果没有路径，则为空字符串)
+{{domxref("URL")}}接口的 **`pathname`** 属性是一个{{domxref("USVString")}}，包含一个初始 `'/'` 和 URL 的路径 (如果没有路径，则为空字符串)
 
 {{AvailableInWorkers}}
 
@@ -37,7 +33,7 @@ var result = url.pathname; // Returns:"/en-US/docs/Web/API/URL/pathname"
 
 ## 浏览器兼容性
 
-{{Compat("api.URL.pathname")}}
+{{Compat}}
 
 ## 参考
 

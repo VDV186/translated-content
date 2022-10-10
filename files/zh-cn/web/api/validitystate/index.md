@@ -1,14 +1,8 @@
 ---
 title: ValidityState
 slug: Web/API/ValidityState
-tags:
-  - API
-  - HTML DOM
-  - 接口
-  - 表单
-  - 输入
-translation_of: Web/API/ValidityState
 ---
+
 {{APIRef("HTML DOM")}}
 
 DOM 接口 `ValidityState` 代表一个元素可有的有效性状态（_validity states_），其与约束验证（constraint validation）相关。这些状态一起解释了当元素值无效时，它的值为什么不能通过验证。
@@ -46,7 +40,7 @@ DOM 接口 `ValidityState` 代表一个元素可有的有效性状态（_validit
 
 ## 浏览器兼容性
 
-{{Compat("api.ValidityState")}}
+{{Compat}}
 
 ## 参见
 

@@ -1,16 +1,8 @@
 ---
 title: EventTarget
 slug: Web/API/EventTarget
-tags:
-  - API
-  - DOM
-  - DOM Events
-  - Interface
-  - NeedsTranslation
-  - TopicStub
-  - 待翻譯
-translation_of: Web/API/EventTarget
 ---
+
 {{ ApiRef("DOM Events") }}
 
 **`EventTarget`** 介面定義了其實作的物件具有接收事件的能力，也可能擁有處理事件的監聽器。
@@ -32,7 +24,7 @@ translation_of: Web/API/EventTarget
 
 ### Mozilla chrome code 的額外方法
 
-Mozilla extensions for use by JS-implemented event targets to implement on\* properties. See also [WebIDL bindings](/docs/Mozilla/WebIDL_bindings).
+Mozilla extensions for use by JS-implemented event targets to implement on properties. See also [WebIDL bindings](/docs/Mozilla/WebIDL_bindings).
 
 - void **setEventHandler**(DOMString type, EventHandler handler) {{non-standard_inline}}
 - EventHandler **getEventHandler**(DOMString type) {{non-standard_inline}}
@@ -88,7 +80,7 @@ EventTarget.prototype.dispatchEvent = function(event) {
 
 ## 瀏覽器相容性
 
-{{Compat("api.EventTarget")}}
+{{Compat}}
 
 ## 參見
 

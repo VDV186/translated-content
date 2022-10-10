@@ -1,17 +1,8 @@
 ---
 title: PerformanceObserver.takeRecords()
 slug: Web/API/PerformanceObserver/takeRecords
-page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Performance Observer API
-  - PerformanceObserver
-  - Reference
-  - observers
-  - takeRecords()
-translation_of: Web/API/PerformanceObserver/takeRecords
 ---
+
 {{APIRef("Performance Timeline API")}}
 
 {{domxref('PerformanceObserver')}} 接口的 **`takeRecords()`** 方法返回当前存储在性能观察器中的{{domxref("PerformanceEntry","性能条目")}}列表，并将其清空。

@@ -1,15 +1,8 @@
 ---
 title: Element.scrollHeight
 slug: Web/API/Element/scrollHeight
-tags:
-  - API
-  - CSSOM View
-  - NeedsDHTMLRemovalInExample
-  - Property
-  - Reference
-browser-compat: api.Element.scrollHeight
-translation_of: Web/API/Element/scrollHeight
 ---
+
 {{APIRef("DOM")}}
 
 **`Element.scrollHeight`** 这个只读属性是一个元素内容高度的度量，包括由于溢出导致的视图中不可见内容。

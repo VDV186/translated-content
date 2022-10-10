@@ -1,20 +1,8 @@
 ---
 title: XPathEvaluator
 slug: Web/API/XPathEvaluator
-tags:
-  - API
-  - DOM
-  - DOM XPath API
-  - Document
-  - Interface
-  - NeedsTranslation
-  - Reference
-  - TopicStub
-  - XML
-  - XPath
-  - XPathEvaluator
-translation_of: Web/API/XPathEvaluator
 ---
+
 {{APIRef("DOM XPath")}}
 
 `XPathEvaluator` 接口能够对 {{Glossary("XPath")}} 表达式进行编译和求值。
@@ -61,7 +49,7 @@ document.querySelector("output").textContent = result.snapshotLength;
 
 ## 浏览器兼容性
 
-{{Compat("api.XPathEvaluator")}}
+{{Compat}}
 
 ## 相关链接
 

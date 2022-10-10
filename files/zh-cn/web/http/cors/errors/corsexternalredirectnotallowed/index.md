@@ -1,14 +1,14 @@
 ---
 title: 'Reason: CORS request external redirect not allowed'
 slug: Web/HTTP/CORS/Errors/CORSExternalRedirectNotAllowed
-translation_of: Web/HTTP/CORS/Errors/CORSExternalRedirectNotAllowed
 ---
+
 {{HTTPSidebar}}
 
 ## 原因
 
 ```plain
-原因： CORS 不允许请求外部重定向
+原因：CORS 不允许请求外部重定向
 ```
 
 ## 哪里错了？
@@ -21,6 +21,6 @@ translation_of: Web/HTTP/CORS/Errors/CORSExternalRedirectNotAllowed
 
 ## 参见
 
-- [HTTP 访问控制（CORS）错误](/zh-cn/docs/Web/HTTP/CORS/Errors)
+- [HTTP 访问控制（CORS）错误](/zh-CN/docs/Web/HTTP/CORS/Errors)
 - Glossary: {{Glossary("CORS")}}
 - [HTTP 访问控制（CORS）](/zh-CN/docs/Web/HTTP/Access_control_CORS)

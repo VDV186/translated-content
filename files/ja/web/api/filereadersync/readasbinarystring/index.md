@@ -1,16 +1,11 @@
 ---
 title: FileReaderSync.readAsBinaryString()
 slug: Web/API/FileReaderSync/readAsBinaryString
-page-type: web-api-instance-method
-tags:
-  - Reference
-  - Deprecated
-browser-compat: api.FileReaderSync.readAsBinaryString
-translation_of: Web/API/FileReaderSync/readAsBinaryString
 ---
+
 {{APIRef("File API")}}{{deprecated_header}}
 
-> **Note:** このメソッドは非推奨であり、 {{DOMxRef("FileReaderSync.readAsArrayBuffer", "readAsArrayBuffer()")}} に取って代わられました。
+> **メモ:** このメソッドは非推奨であり、 {{DOMxRef("FileReaderSync.readAsArrayBuffer", "readAsArrayBuffer()")}} に取って代わられました。
 
 `readAsBinaryString()` は {{DOMxRef("FileReaderSync")}} インターフェイスのメソッドで、 {{DOMxRef("File")}} または {{DOMxRef("Blob")}} オブジェクトを同期的に文字列に読み込むことを可能にします。このインターフェイスは、ブロックが発生する可能性のある同期 I/O を可能にするため、[ワーカー](/ja/docs/Web/API/Worker)で[のみ利用可能](/ja/docs/Web/API/Web_Workers_API/Functions_and_classes_available_to_workers)です。
 

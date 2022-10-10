@@ -1,8 +1,8 @@
 ---
 title: String.prototype.small()
 slug: Web/JavaScript/Reference/Global_Objects/String/small
-translation_of: Web/JavaScript/Reference/Global_Objects/String/small
 ---
+
 {{JSRef}} {{deprecated_header}}
 
 **`small()`** 方法的作用是创建一个使字符串显示小号字体的 {{HTMLElement("small")}} 标签。
@@ -19,7 +19,7 @@ str.small()
 
 ## 描述
 
-`small()` 方法会 将一个字符串嵌入到`<small>` 标签中： `"<small>str</small>"。`
+`small()` 方法会 将一个字符串嵌入到`<small>` 标签中： `"<small>str</small>"`。
 
 ## 示例
 

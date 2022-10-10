@@ -1,8 +1,8 @@
 ---
 title: DOMStringList
 slug: Web/API/DOMStringList
-translation_of: Web/API/DOMStringList
 ---
+
 {{APIRef("DOM")}}
 
 某些 API 会返回的包含一列[DOMString](/En/DOM/DOMString)的一种类型

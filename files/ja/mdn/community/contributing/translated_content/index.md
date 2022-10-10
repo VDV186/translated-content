@@ -1,22 +1,20 @@
 ---
-title: MDN のローカライズ
+title: MDN Web Docs のローカライズ
 slug: MDN/Community/Contributing/Translated_content
-tags:
-  - Localization
-  - MDN Meta
-  - l10n
-translation_of: MDN/Contribute/Localize
 original_slug: MDN/Contribute/Localize
+l10n:
+  sourceCommit: 73dd350fd93be16bee3b9a6b860757265209b4b7
 ---
+
 {{MDNSidebar}}
 
-2020 年 12 月 14 日より、MDN は GitHub ベースの新しい [Yari プラットフォーム](https://github.com/mdn/yari)で運用しています。これは MDN にとって多くの利点がありますが、ローカライズを扱う方法を大幅に変更する必要がありました。というのも、アメリカ英語以外のロケールでは、保守されていない古いコンテンツが多く存在しているため、今後はそれらをより適切に管理していきたいと考えているからです。</p>
+2020 年 12 月 14 日より、MDN は GitHub ベースの新しい [Yari プラットフォーム](https://github.com/mdn/yari)で運用しています。これは MDN にとって多くの利点がありますが、ローカライズを扱う方法を大幅に変更する必要がありました。というのも、アメリカ英語以外のロケールでは、保守されていない古いコンテンツが多く存在しているため、今後はそれらをより適切に管理していきたいと考えているからです。
 
 以下のロケールを除き、ローカライズされたすべてのコンテンツを凍結しました (つまり、編集を受け付けず、読み取り専用としました)。これらのロケールには、保守作業を担当している専門のチームがあります。
 
 ## アクティブなロケール
 
-> **Note:** 既存のアクティブなロケールに協力したい場合や、現在凍結されているロケールの凍結解除について相談したい場合は、下記のアクティブなメンバーに連絡を取るか、[私たちに連絡する](/ja/docs/MDN/Contribute/Getting_started#step_4_ask_for_help)かしてください。
+> **メモ:** 既存のアクティブなロケールに協力したい場合や、現在凍結されているロケールの凍結解除について相談したい場合は、下記のアクティブなメンバーに連絡を取るか、[私たちに連絡する](/ja/docs/MDN/Community/Contributing/Getting_started#step_4_ask_for_help)かしてください。
 
 ### ブラジルのポルトガル語 (pt-BR)
 
@@ -30,8 +28,8 @@ original_slug: MDN/Contribute/Localize
 
 ### フランス語 (fr)
 
-- Discussions : [Matrix (#l10n-fr channel)](https://chat.mozilla.org/#/room/#l10n-fr:mozilla.org)
-- 現在の貢献者: [cw118](https://github.com/cw118), [Jb Audras](https://github.com/audrasjb), [SphinxKnight](https://github.com/SphinxKnight), [tristantheb](https://github.com/tristantheb)
+- ディスカッション: [Matrix (#l10n-fr channel)](https://chat.mozilla.org/#/room/#l10n-fr:mozilla.org)
+- 現在の貢献者: [cw118](https://github.com/cw118), [SphinxKnight](https://github.com/SphinxKnight), [tristantheb](https://github.com/tristantheb)
 
 ### 日本語 (ja)
 
@@ -53,7 +51,7 @@ original_slug: MDN/Contribute/Localize
 - ディスカッション: [Matrix (#mdn-l10n-es channel)](https://chat.mozilla.org/#/room/#mdn-l10n-es:mozilla.org)
 - 現在の管理者: [JuanVqz](https://github.com/JuanVqz), [davbrito](https://github.com/davbrito), [Graywolf9](https://github.com/Graywolf9), [Vallejoanderson](https://github.com/Vallejoanderson), [marcelozarate](https://github.com/marcelozarate), [Jalkhov](https://github.com/Jalkhov)
 
-> **Note:** 現在凍結されているロケールを解除するための議論をしたい場合は、[必要なガイドラインはこちらで得られます](https://github.com/mdn/translated-content/blob/main/PEERS_GUIDELINES.md#activating-a-locale)。
+> **メモ:** 現在凍結されているロケールを解除するための議論をしたい場合は、[必要なガイドラインはこちらで得られます](https://github.com/mdn/translated-content/blob/main/PEERS_GUIDELINES.md#activating-a-locale)。
 
 ## 関連情報
 

@@ -1,8 +1,8 @@
 ---
 title: console.log
 slug: Web/API/Console/log
-translation_of: Web/API/Console/log
 ---
+
 {{ ApiRef() }}
 
 ## 概述
@@ -31,7 +31,7 @@ console.log(`temp 的值为：${temp}`)
 
 ## 浏览器兼容性
 
-{{Compat("api.console.log")}}
+{{Compat}}
 
 ## 规范
 

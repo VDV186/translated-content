@@ -1,20 +1,8 @@
 ---
 title: SourceBuffer.mode
 slug: Web/API/SourceBuffer/mode
-page-type: web-api-instance-property
-tags:
-  - API
-  - Audio
-  - Experimental
-  - MSE
-  - Media Source Extensions
-  - Property
-  - Reference
-  - SourceBuffer
-  - Video
-  - mode
-translation_of: Web/API/SourceBuffer/mode
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 {{domxref("SourceBuffer")}} 接口的 **`mode`** 属性用来控制媒体片段添加到 `SourceBuffer` 时的顺序是可以任意的还是有严格顺序的。

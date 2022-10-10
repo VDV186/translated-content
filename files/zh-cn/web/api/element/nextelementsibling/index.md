@@ -1,14 +1,13 @@
 ---
 title: NonDocumentTypeChildNode.nextElementSibling
 slug: Web/API/Element/nextElementSibling
-translation_of: Web/API/NonDocumentTypeChildNode/nextElementSibling
-original_slug: Web/API/NonDocumentTypeChildNode/nextElementSibling
 ---
+
 {{ ApiRef() }}
 
 ## 概述
 
-**nextElementSibling** 返回当前元素在其父元素的子元素节点中的后一个元素节点，如果该元素已经是最后一个元素节点，则返回`null,`该属性是只读的。
+**`nextElementSibling`** 返回当前元素在其父元素的子元素节点中的后一个元素节点，如果该元素已经是最后一个元素节点，则返回 `null`, 该属性是只读的。
 
 ## 语法
 
@@ -95,13 +94,13 @@ if(!("nextElementSibling" in document.documentElement)){
 
 ## 浏览器兼容性
 
-{{Compat("api.Element.nextElementSibling")}}
+{{Compat}}
 
 ## 相关链接
 
-- [`nextSibling`](/zh-cn/DOM/Node.nextSibling)
-- [`childElementCount`](/zh-cn/DOM/Element.childElementCount)
-- [`children`](/zh-cn/DOM/Element.children)
-- [`firstElementChild`](/zh-cn/DOM/Element.firstElementChild)
-- [`lastElementChild`](/zh-cn/DOM/Element.lastElementChild)
-- [`previousElementSibling`](/zh-cn/DOM/Element.previousElementSibling)
+- [`nextSibling`](/zh-CN/DOM/Node.nextSibling)
+- [`childElementCount`](/zh-CN/DOM/Element.childElementCount)
+- [`children`](/zh-CN/DOM/Element.children)
+- [`firstElementChild`](/zh-CN/DOM/Element.firstElementChild)
+- [`lastElementChild`](/zh-CN/DOM/Element.lastElementChild)
+- [`previousElementSibling`](/zh-CN/DOM/Element.previousElementSibling)

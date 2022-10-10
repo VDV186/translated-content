@@ -1,13 +1,8 @@
 ---
 title: RTCPeerConnection.getReceivers()
 slug: Web/API/RTCPeerConnection/getReceivers
-tags:
-  - Media
-  - RTCPeerConnection
-  - WebRTC
-  - getReceivers
-translation_of: Web/API/RTCPeerConnection/getReceivers
 ---
+
 {{APIRef("WebRTC")}}{{SeeCompatTable}}
 
 **`RTCPeerConnection.getReceivers()`** 方法返回一个 {{domxref("RTCRtpReceiver")}} 对象的数组，每个 RTCRtpReceiver 对象代表了一个 RTP receiver。每个 RTP receiver 管理在一个 {{domxref("RTCPeerConnection")}} 上的 {{domxref("MediaStreamTrack")}} 的数据的接收与解码。
@@ -38,5 +33,5 @@ var receivers = rtcPeerConnection.getReceivers();
 
 ## 参阅
 
-- [WebRTC](/en-US/docs/Web/Guide/API/WebRTC_API)
+- [WebRTC](/zh-CN/docs/Web/Guide/API/WebRTC_API)
 - {{domxref("RTCRtpSender")}}

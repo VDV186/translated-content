@@ -1,21 +1,15 @@
 ---
 title: Promise.prototype.then()
 slug: Web/JavaScript/Reference/Global_Objects/Promise/then
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Promise
-  - Prototype
-  - 方法
-translation_of: Web/JavaScript/Reference/Global_Objects/Promise/then
 ---
+
 {{JSRef}}
 
 **`then()`** 方法返回一个 {{domxref("Promise")}}。它最多需要有两个参数：Promise 的成功和失败情况的回调函数。
 
 {{EmbedInteractiveExample("pages/js/promise-then.html")}}
 
-> **备注：**如果忽略针对某个状态的回调函数参数，或者提供非函数 (nonfunction) 参数，那么 `then` 方法将会丢失关于该状态的回调函数信息，但是并不会产生错误。如果调用 `then` 的 `Promise` 的状态（fulfillment 或 rejection）发生改变，但是 `then` 中并没有关于这种状态的回调函数，那么 `then` 将创建一个没有经过回调函数处理的新 `Promise` 对象，这个新 `Promise` 只是简单地接受调用这个 `then` 的原 `Promise` 的终态作为它的终态。
+> **备注：** 如果忽略针对某个状态的回调函数参数，或者提供非函数 (nonfunction) 参数，那么 `then` 方法将会丢失关于该状态的回调函数信息，但是并不会产生错误。如果调用 `then` 的 `Promise` 的状态（fulfillment 或 rejection）发生改变，但是 `then` 中并没有关于这种状态的回调函数，那么 `then` 将创建一个没有经过回调函数处理的新 `Promise` 对象，这个新 `Promise` 只是简单地接受调用这个 `then` 的原 `Promise` 的终态作为它的终态。
 
 ## 语法
 
@@ -34,7 +28,7 @@ p.then(value => {
 - `onFulfilled` {{optional_inline}}
   - : 当 Promise 变成接受状态（fulfilled）时调用的{{jsxref("Function", "函数")}}。该函数有一个参数，即接受的最终结果（the fulfillment value）。如果该参数不是函数，则会在内部被替换为 `(x) => x`，即原样返回 promise 最终结果的函数
 - `onRejected` {{optional_inline}}
-  - : 当 Promise 变成拒绝状态（rejected）时调用的{{jsxref("Function", "函数")}}。该函数有一个参数，即拒绝的原因（`rejection reason`）。 如果该参数不是函数，则会在内部被替换为一个 "Thrower" 函数 (it throws an error it received as argument)。
+  - : 当 Promise 变成拒绝状态（rejected）时调用的{{jsxref("Function", "函数")}}。该函数有一个参数，即拒绝的原因（`rejection reason`）。如果该参数不是函数，则会在内部被替换为一个 "Thrower" 函数 (it throws an error it received as argument)。
 
 ### 返回值
 
@@ -75,7 +69,7 @@ setTimeout(() => {
 
 ## 描述
 
-由于 `then` 和 {{jsxref("Promise.prototype.catch()")}} 方法都会返回 promise，它们可以被[链式调用](/zh-CN/docs/Web/JavaScript/Guide/Using_promises#Chaining)——这同时也是一种被称为**复合**（ _composition）_ 的操作。
+由于 `then` 和 {{jsxref("Promise.prototype.catch()")}} 方法都会返回 promise，它们可以被[链式调用](/zh-CN/docs/Web/JavaScript/Guide/Using_promises#Chaining)——这同时也是一种被称为**复合**（_composition）_ 的操作。
 
 ## 示例
 

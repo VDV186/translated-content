@@ -1,21 +1,8 @@
 ---
 title: setInterval()
 slug: Web/API/setInterval
-tags:
-  - API
-  - Gecko
-  - HTML DOM
-  - Intervals
-  - JavaScript timers
-  - MakeBrowserAgnostic
-  - Method
-  - NeedsMarkupWork
-  - Timers
-  - setInterval
-  - Polyfill
-translation_of: Web/API/setInterval
-original_slug: Web/API/WindowOrWorkerGlobalScope/setInterval
 ---
+
 {{ApiRef("HTML DOM")}}
 
 {{domxref("Window")}} 和 {{domxref("Worker")}} 接口提供的 **`setInterval()`** 方法重复调用一个函数或执行一个代码片段，在每次调用之间具有固定的时间间隔。

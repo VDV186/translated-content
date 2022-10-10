@@ -1,8 +1,8 @@
 ---
 title: Window.locationbar
 slug: Web/API/Window/locationbar
-translation_of: Web/API/Window/locationbar
 ---
+
 {{APIRef}}
 
 ## 概要

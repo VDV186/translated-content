@@ -1,8 +1,8 @@
 ---
 title: PerformanceTiming.fetchStart
 slug: Web/API/PerformanceTiming/fetchStart
-translation_of: Web/API/PerformanceTiming/fetchStart
 ---
+
 {{APIRef("Navigation Timing")}}
 
 ## 概要

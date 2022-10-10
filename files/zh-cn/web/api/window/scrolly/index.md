@@ -1,13 +1,8 @@
 ---
 title: Window.scrollY
 slug: Web/API/Window/scrollY
-tags:
-  - API
-  - Reference
-  - 参考
-  - 属性
-translation_of: Web/API/Window/scrollY
 ---
+
 {{APIRef}}
 
 ## 概述

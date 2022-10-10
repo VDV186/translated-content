@@ -1,13 +1,8 @@
 ---
 title: Date
 slug: Web/JavaScript/Reference/Global_Objects/Date
-tags:
-  - Date
-  - JavaScript
-  - 日期
-  - 时间
-translation_of: Web/JavaScript/Reference/Global_Objects/Date
 ---
+
 {{JSRef}}
 
 创建一个 JavaScript `Date` 实例，该实例呈现时间中的某个时刻。`Date` 对象则基于 [Unix Time Stamp](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_16)，即自 1970 年 1 月 1 日（UTC）起经过的毫秒数。
@@ -23,7 +18,7 @@ new Date(dateString);
 new Date(year, monthIndex [, day [, hours [, minutes [, seconds [, milliseconds]]]]]);
 ```
 
-> **备注：**创建一个新`Date`对象的唯一方法是通过{{jsxref("Operators/new", "new")}} 操作符，例如：`let now = new Date();`
+> **备注：** 创建一个新`Date`对象的唯一方法是通过{{jsxref("Operators/new", "new")}} 操作符，例如：`let now = new Date();`
 > 若将它作为常规函数调用（即不加 {{jsxref("Operators/new", "new")}} 操作符），将返回一个字符串，而非 `Date` 对象。
 
 ### 参数
@@ -42,14 +37,14 @@ new Date(year, monthIndex [, day [, hours [, minutes [, seconds [, milliseconds]
 
   - : 表示日期的字符串值。该字符串应该能被 {{jsxref("Date.parse()")}} 正确方法识别（即符合 [IETF-compliant RFC 2822 timestamps](http://tools.ietf.org/html/rfc2822#page-14) 或 [version of ISO8601](http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15)）。
 
-    > **备注：**由于浏览器之间的差异与不一致性，强烈不推荐使用`Date`构造函数来解析日期字符串 (或使用与其等价的`Date.parse`)。对 RFC 2822 格式的日期仅有约定俗成的支持。 对 ISO 8601 格式的支持中，仅有日期的串 (例如 "1970-01-01") 会被处理为 UTC 而不是本地时间，与其他格式的串的处理不同。
+    > **备注：** 由于浏览器之间的差异与不一致性，强烈不推荐使用`Date`构造函数来解析日期字符串 (或使用与其等价的`Date.parse`)。对 RFC 2822 格式的日期仅有约定俗成的支持。对 ISO 8601 格式的支持中，仅有日期的串 (例如 "1970-01-01") 会被处理为 UTC 而不是本地时间，与其他格式的串的处理不同。
 
 #### 分别提供日期与时间的每一个成员
 
 当至少提供了年份与月份时，这一形式的 `Date()` 返回的 `Date` 对象中的每一个成员都来自下列参数。没有提供的成员将使用最小可能值（对日期为`1`，其他为`0`）。
 
 - `year`
-  - : 表示年份的整数值。 0 到 99 会被映射至 1900 年至 1999 年，其它值代表实际年份。参见 [示例](#例子：将两位数年份映射为_1900_-_1999_年)。
+  - : 表示年份的整数值。0 到 99 会被映射至 1900 年至 1999 年，其它值代表实际年份。参见 [示例](#例子：将两位数年份映射为_1900_-_1999_年)。
 - `monthIndex`
   - : 表示月份的整数值，从 0（1 月）到 11（12 月）。
 - date{{optional_inline}}
@@ -65,11 +60,11 @@ new Date(year, monthIndex [, day [, hours [, minutes [, seconds [, milliseconds]
 
 ## 使用注释
 
-> **备注：**参数`monthIndex` 是从“0”开始计算的，这就意味着一月份为“0”，十二月份为“11”。
+> **备注：** 参数`monthIndex` 是从“0”开始计算的，这就意味着一月份为“0”，十二月份为“11”。
 
-> **备注：**当 Date 作为构造函数调用并传入多个参数时，如果数值大于合理范围时（如月份为 13 或者分钟数为 70），相邻的数值会被调整。比如 new Date(2013, 13, 1) 等于 new Date(2014, 1, 1)，它们都表示日期 2014-02-01（注意月份是从 0 开始的）。其他数值也是类似，new Date(2013, 2, 1, 0, 70) 等于 new Date(2013, 2, 1, 1, 10)，都表示同一个时间：`2013-03-01T01:10:00`。
+> **备注：** 当 Date 作为构造函数调用并传入多个参数时，如果数值大于合理范围时（如月份为 13 或者分钟数为 70），相邻的数值会被调整。比如 new Date(2013, 13, 1) 等于 new Date(2014, 1, 1)，它们都表示日期 2014-02-01（注意月份是从 0 开始的）。其他数值也是类似，new Date(2013, 2, 1, 0, 70) 等于 new Date(2013, 2, 1, 1, 10)，都表示同一个时间：`2013-03-01T01:10:00`。
 
-> **备注：**当 Date 作为构造函数调用并传入多个参数时，所定义参数代表的是当地时间。如果需要使用世界协调时 UTC，使用 `new Date({{jsxref("Date.UTC()", "Date.UTC(...)")}})` 和相同参数。
+> **备注：** 当 Date 作为构造函数调用并传入多个参数时，所定义参数代表的是当地时间。如果需要使用世界协调时 UTC，使用 `new Date({{jsxref("Date.UTC()", "Date.UTC(...)")}})` 和相同参数。
 
 ## 简介
 
@@ -271,7 +266,7 @@ function printElapsedTime (fTest) {
 yourFunctionReturn = printElapsedTime(yourFunction);
 ```
 
-> **备注：**在支持 {{domxref("window.performance", "Web Performance API")}} 的高精细度（high-resolution）时间功能的浏览器中，{{domxref("Performance.now()")}} 提供的所经过的时间比 {{jsxref("Date.now()")}} 更加可靠、精确。
+> **备注：** 在支持 {{domxref("window.performance", "Web Performance API")}} 的高精细度（high-resolution）时间功能的浏览器中，{{domxref("Performance.now()")}} 提供的所经过的时间比 {{jsxref("Date.now()")}} 更加可靠、精确。
 
 ### 获取自 Unix 起始时间以来经过的秒数
 
@@ -279,7 +274,7 @@ yourFunctionReturn = printElapsedTime(yourFunction);
 var seconds = Math.floor(Date.now() / 1000);
 ```
 
-注意此处需要返回一个整数 （仅做除法得到的不是整数），并且需要返回实际已经经过的秒数（所以这里使用了{{jsxref("Math.floor()")}}而不是{{jsxref("Math.round()")}}).
+注意此处需要返回一个整数（仅做除法得到的不是整数），并且需要返回实际已经经过的秒数（所以这里使用了{{jsxref("Math.floor()")}}而不是{{jsxref("Math.round()")}}).
 
 ## 规范
 

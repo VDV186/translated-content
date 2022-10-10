@@ -1,8 +1,8 @@
 ---
 title: load()
 slug: Web/API/MediaKeySession/load
-translation_of: Web/API/MediaKeySession/load
 ---
+
 {{APIRef("EncryptedMediaExtensions")}} {{SeeCompatTable}}
 
 该`MediaKeySession.load()`方法返回一个{{jsxref("Promise")}}，它在加载指定的会话对象的数据后解析为一个布尔值。
@@ -28,4 +28,4 @@ mediaKeySession .load(sessionId).then(function(booleanValue){...});
 
 ## 浏览器兼容性
 
-{{Compat("api.MediaKeySession.load")}}
+{{Compat}}

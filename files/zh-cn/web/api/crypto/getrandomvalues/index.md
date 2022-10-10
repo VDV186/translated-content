@@ -1,16 +1,8 @@
 ---
 title: Crypto.getRandomValues()
 slug: Web/API/Crypto/getRandomValues
-tags:
-  - API
-  - 加密
-  - 参考
-  - 安全
-  - 密码学
-  - 方法
-translation_of: Web/API/Crypto/getRandomValues
-original_slug: Web/API/RandomSource/getRandomValues
 ---
+
 {{APIRef("Web Crypto API")}}
 
 **`Crypto.getRandomValues()`** 方法让你可以获取符合密码学要求的安全的随机值。传入参数的数组被随机值填充（在加密意义上的随机）。
@@ -53,7 +45,7 @@ for (var i = 0; i < array.length; i++) {
 
 ## 浏览器兼容性
 
-{{Compat("api.Crypto.getRandomValues")}}
+{{Compat}}
 
 ## 参见
 

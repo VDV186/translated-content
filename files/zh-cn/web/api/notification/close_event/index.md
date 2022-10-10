@@ -1,11 +1,8 @@
 ---
 title: Notification.onclose
 slug: Web/API/Notification/close_event
-tags:
-  - Notification.onclose
-translation_of: Web/API/Notification/onclose
-original_slug: Web/API/notification/onclose
 ---
+
 {{APIRef("Web Notifications")}}
 
 ## Summary
@@ -27,4 +24,4 @@ Notification.onclose = function() { ... };
 ## See also
 
 - {{domxref("Notification")}}
-- [Using the Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
+- [Using the Notifications API](/zh-CN/docs/Web/API/Notifications_API/Using_the_Notifications_API)

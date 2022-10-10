@@ -1,8 +1,8 @@
 ---
 title: AmbientLightSensor.AmbientLightSensor()
 slug: Web/API/AmbientLightSensor/AmbientLightSensor
-translation_of: Web/API/AmbientLightSensor/AmbientLightSensor
 ---
+
 {{APIRef("Ambient Light Sensor API")}}{{Non-standard_header}}
 
 通过 **`AmbinentLightSensor()`** 构造函数可以创建一个 {{domxref("AmbientLightSensor")}} 的实例。
@@ -27,4 +27,4 @@ var ambientLightSensor = new AmbientLightSensor(options)
 
 ## 浏览器兼容性
 
-{{Compat("api.AmbientLightSensor.AmbientLightSensor")}}
+{{Compat}}

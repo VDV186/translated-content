@@ -1,19 +1,11 @@
 ---
 title: 解构赋值
 slug: Web/JavaScript/Reference/Operators/Destructuring_assignment
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - 对象
-  - 操作符
-  - 数组
-  - 结构
-  - 赋值
-translation_of: Web/JavaScript/Reference/Operators/Destructuring_assignment
 ---
+
 {{jsSidebar("Operators")}}
 
-**解构赋值**语法是一种 Javascript 表达式。通过**解构赋值，**可以将属性/值从对象/数组中取出，赋值给其他变量。
+**解构赋值**语法是一种 Javascript 表达式。通过**解构赋值**，可以将属性/值从对象/数组中取出，赋值给其他变量。
 
 {{EmbedInteractiveExample("pages/js/expressions-destructuringassignment.html")}}
 
@@ -208,7 +200,7 @@ var a, b;
 ({a, b} = {a: 1, b: 2});
 ```
 
-> **备注：**赋值语句周围的圆括号 `( ... )` 在使用对象字面量无声明解构赋值时是必须的。
+> **备注：** 赋值语句周围的圆括号 `( ... )` 在使用对象字面量无声明解构赋值时是必须的。
 >
 > `{a, b} = {a: 1, b: 2}` 不是有效的独立语法，因为左边的 `{a, b}` 被认为是一个块而不是对象字面量。
 >
@@ -285,7 +277,7 @@ drawES2015Chart({
 });
 ```
 
-> **备注：**在上面的 **`drawES2015Chart`** 的函数签名中，解构的左手边被分配给右手边的空对象字面值：`{size = 'big', cords = {x: 0, y: 0}, radius = 25} = {}`。你也可以在没有右侧分配的情况下编写函数。但是，如果你忽略了右边的赋值，那么函数会在被调用的时候查找至少一个被提供的参数，而在当前的形式下，你可以直接调用 **`drawES2015Chart()`** 而不提供任何参数。如果你希望能够在不提供任何参数的情况下调用该函数，则当前的设计非常有用，而另一种方法在您确保将对象传递给函数时非常有用。
+> **备注：** 在上面的 **`drawES2015Chart`** 的函数签名中，解构的左手边被分配给右手边的空对象字面值：`{size = 'big', cords = {x: 0, y: 0}, radius = 25} = {}`。你也可以在没有右侧分配的情况下编写函数。但是，如果你忽略了右边的赋值，那么函数会在被调用的时候查找至少一个被提供的参数，而在当前的形式下，你可以直接调用 **`drawES2015Chart()`** 而不提供任何参数。如果你希望能够在不提供任何参数的情况下调用该函数，则当前的设计非常有用，而另一种方法在您确保将对象传递给函数时非常有用。
 
 ### 解构嵌套对象和数组
 
@@ -373,11 +365,11 @@ console.log("userId: " + userId(user)); // "userId: 42"
 whois(user); // "jdoe is John"
 ```
 
-这段代码从 user 对象中提取并输出` id、``displayName ` 和 `firstName`。
+这段代码从 user 对象中提取并输出 `id`、`displayName` 和 `firstName`。
 
 ### 对象属性计算名和解构
 
-计算属性名，如 [object literals](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)，可以被解构。
+计算属性名，如 [object literals](/zh-CN/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)，可以被解构。
 
 ```js
 let key = "z";
@@ -431,7 +423,7 @@ const {self, prot} = obj;
 
 ## 相关链接
 
-- [赋值操作符](/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+- [赋值操作符](/zh-CN/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 - ["ES6 in Depth: Destructuring" on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 
 ### 译者注：关于 42

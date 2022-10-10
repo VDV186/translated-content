@@ -1,18 +1,11 @@
 ---
 title: WebGLRenderingContext.drawingBufferWidth
 slug: Web/API/WebGLRenderingContext/drawingBufferWidth
-tags:
-  - API
-  - WebGL
-  - WebGLRenderingContext
-  - 参考
-  - 只读
-  - 属性
-translation_of: Web/API/WebGLRenderingContext/drawingBufferWidth
 ---
+
 {{APIRef("WebGL")}}
 
-**`WebGLRenderingContext.drawingBufferWidth`** 只读属性， 指示当前绘图缓冲区的实际宽度。它应当匹配与绘图上下文相关联的 {{HTMLElement("canvas")}} 元素的宽度属性。如果实现未能提供所要求的宽度，值将有所不同。
+**`WebGLRenderingContext.drawingBufferWidth`** 只读属性，指示当前绘图缓冲区的实际宽度。它应当匹配与绘图上下文相关联的 {{HTMLElement("canvas")}} 元素的宽度属性。如果实现未能提供所要求的宽度，值将有所不同。
 
 ## 语法
 
@@ -42,7 +35,7 @@ gl.drawingBufferWidth; // 300
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGLRenderingContext.drawingBufferWidth")}}
+{{Compat}}
 
 ## 相关链接
 

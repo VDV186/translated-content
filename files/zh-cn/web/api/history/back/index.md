@@ -1,11 +1,8 @@
 ---
 title: back()
 slug: Web/API/History/back
-tags:
-  - HTML5
-  - History
-translation_of: Web/API/History/back
 ---
+
 {{APIRef("DOM")}}
 
 `back()`方法会在会话历史记录中向后移动一页。如果没有上一页，则此方法调用不执行任何操作。
@@ -42,4 +39,4 @@ window.onload = function(e) {
 
 ## 浏览器兼容性
 
-{{Compat("api.History.back")}}
+{{Compat}}

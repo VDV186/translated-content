@@ -1,8 +1,8 @@
 ---
 title: Force Touch events
 slug: Web/API/Force_Touch_events
-translation_of: Web/API/Force_Touch_events
 ---
+
 {{DefaultAPISidebar("Force Touch events")}}
 
 {{Non-standard_header()}}

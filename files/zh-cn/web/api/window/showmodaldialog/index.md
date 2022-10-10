@@ -1,8 +1,8 @@
 ---
 title: Window.showModalDialog()
 slug: Web/API/Window/showModalDialog
-translation_of: Web/API/Window/showModalDialog
 ---
+
 {{ deprecated_header() }}{{APIRef}}
 
 **`Window.showModalDialog()`** 用于创建和展示一个指向特定网页的模态对话框。
@@ -17,7 +17,7 @@ returnVal = window.showModalDialog(uri[, arguments][, options]);
 
 - `returnVal` 集合类型 (Set) 返回值。由`uri`指定的页面返回。
 - `uri` 要在模态对话框中打开的页面 URI。
-- `arguments` 可选变量。可以通过该参数将需要的值传入对话框; 参数可以通过 [`window`](/en-US/docs/DOM/window) 对象的[`window.dialogArguments`](/en-US/docs/DOM/window.dialogArguments) 属性获取。
+- `arguments` 可选变量。可以通过该参数将需要的值传入对话框。
 - `options` 可选字符串参数。用于设置对话框打开的样式，使用一个或多个逗号分隔。
 
 | Syntax                                           | Description                                                                                                                                          |
@@ -30,7 +30,7 @@ returnVal = window.showModalDialog(uri[, arguments][, options]);
 | `resizable: {on \| off \| yes \| no \| 1 \| 0 }` | If this argument's value is `on`, `yes`, or 1, the dialog window can be resized by the user; otherwise its size is fixed. The default value is `no`. |
 | `scroll: {on \| off \| yes \| no \| 1 \| 0 }`    | If this argument's value is `on`, `yes`, or 1, the dialog window has scroll bars; otherwise its size is fixed. The default value is `no`.            |
 
-> **备注：**Firefox does not implement the `dialogHide`, `edge`, `status`, or `unadorned` arguments.
+> **备注：** Firefox does not implement the `dialogHide`, `edge`, `status`, or `unadorned` arguments.
 
 ## Compatibility
 

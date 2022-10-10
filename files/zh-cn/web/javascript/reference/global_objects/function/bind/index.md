@@ -1,15 +1,8 @@
 ---
 title: Function.prototype.bind()
 slug: Web/JavaScript/Reference/Global_Objects/Function/bind
-tags:
-  - ECMAScript 2015
-  - ECMAScript 5
-  - Function
-  - JavaScript
-  - Method
-  - polyfill
-translation_of: Web/JavaScript/Reference/Global_Objects/Function/bind
 ---
+
 {{JSRef}}
 
 **`bind()`** 方法创建一个新的函数，在 `bind()` 被调用时，这个新函数的 `this` 被指定为 `bind()` 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
@@ -25,7 +18,7 @@ function.bind(thisArg[, arg1[, arg2[, ...]]])
 ### 参数
 
 - `thisArg`
-  - : 调用绑定函数时作为 `this` 参数传递给目标函数的值。 如果使用{{jsxref("Operators/new", "new")}}运算符构造绑定函数，则忽略该值。当使用 `bind` 在 `setTimeout` 中创建一个函数（作为回调提供）时，作为 `thisArg` 传递的任何原始值都将转换为 `object`。如果 `bind` 函数的参数列表为空，或者`thisArg`是`null`或`undefined`，执行作用域的 `this` 将被视为新函数的 `thisArg`。
+  - : 调用绑定函数时作为 `this` 参数传递给目标函数的值。如果使用{{jsxref("Operators/new", "new")}}运算符构造绑定函数，则忽略该值。当使用 `bind` 在 `setTimeout` 中创建一个函数（作为回调提供）时，作为 `thisArg` 传递的任何原始值都将转换为 `object`。如果 `bind` 函数的参数列表为空，或者`thisArg`是`null`或`undefined`，执行作用域的 `this` 将被视为新函数的 `thisArg`。
 - `arg1, arg2, ...`
   - : 当目标函数被调用时，被预置入绑定函数的参数列表中的参数。
 
@@ -105,7 +98,7 @@ var result2 = addThirtySeven(5);
 // 37 + 5 = 42
 
 var result3 = addThirtySeven(5, 10);
-// 37 + 5 = 42 ，第二个参数被忽略
+// 37 + 5 = 42，第二个参数被忽略
 ```
 
 ### 配合 `setTimeout`
@@ -133,7 +126,7 @@ flower.bloom();  // 一秒钟后，调用 'declare' 方法
 
 ### 作为构造函数使用的绑定函数
 
-> **警告：**这部分演示了 JavaScript 的能力并且记录了 `bind()` 的超前用法。以下展示的方法并不是最佳的解决方案，且可能不应该用在任何生产环境中。
+> **警告：** 这部分演示了 JavaScript 的能力并且记录了 `bind()` 的超前用法。以下展示的方法并不是最佳的解决方案，且可能不应该用在任何生产环境中。
 
 绑定函数自动适应于使用 {{jsxref("Operators/new", "new")}} 操作符去构造一个由目标函数创建的新实例。当一个绑定函数是用来构建一个值的，原来提供的 `this` 就会被忽略。不过提供的参数列表仍然会插入到构造函数调用时的参数列表之前。
 

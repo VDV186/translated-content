@@ -1,13 +1,8 @@
 ---
 title: WebGLRenderingContext.canvas
 slug: Web/API/WebGLRenderingContext/canvas
-tags:
-  - WebGL
-  - WebGLRenderingContext
-  - 只读
-  - 属性
-translation_of: Web/API/WebGLRenderingContext/canvas
 ---
+
 {{APIRef("WebGL")}}
 
 **`WebGLRenderingContext.canvas`** 只读属性，对 {{domxref("HTMLCanvasElement")}} 和 {{domxref("OffscreenCanvas")}} 对象的引用。如果绘图上下文没有相关联的 {{HTMLElement("canvas")}} 元素或 {{domxref("OffscreenCanvas")}} 对象，值为 {{jsxref("null")}}。
@@ -56,7 +51,7 @@ gl.canvas; // OffscreenCanvas
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGLRenderingContext.canvas")}}
+{{Compat}}
 
 ## 相关链接
 

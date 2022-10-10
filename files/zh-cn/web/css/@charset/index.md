@@ -1,14 +1,8 @@
 ---
 title: '@charset'
 slug: Web/CSS/@charset
-tags:
-  - At-rule
-  - CSS
-  - Layout
-  - Reference
-  - Web
-translation_of: Web/CSS/@charset
 ---
+
 {{ CSSRef }}
 
 ## 概述
@@ -21,7 +15,7 @@ translation_of: Web/CSS/@charset
 
 1. 文件的开头的 [Unicode byte-order](https://zh.wikipedia.org/wiki/字节顺序标记) 字符值。
 2. 由 Content-Type：HTTP header 中的 charset 属性给出的值或用于提供样式表的协议中的等效值。
-3. `CSS` [@规则](https://developer.mozilla.org/zh-CN/docs/CSS/At-rule) `@charset`。
+3. `CSS` [@规则](/zh-CN/docs/CSS/At-rule) `@charset`。
 4. 使用参考文档定义的字符编码：{{ HTMLElement("link") }} 元素的 charset 属性。该方法在 HTML5 标准中已废除，无法使用。
 5. 假设文档是 UTF-8。
 
@@ -39,7 +33,7 @@ translation_of: Web/CSS/@charset
 ```
 
 - _charset_
-  - : 它是一个 {{cssxref("&lt;string&gt;")}} 表示字符编码被使用。它必须是在被 [IANA-registry](http://www.iana.org/assignments/character-sets) 声明过的 web-safe 字符编码中的一个，还必须被双引号包围，遵循一个空格字符 (U+0020)，并且立即以分号结束。 如果有多个相关的编码名字，只有被标记为 *preferred* 的那个才会被使用。
+  - : 它是一个 {{cssxref("&lt;string&gt;")}} 表示字符编码被使用。它必须是在被 [IANA-registry](http://www.iana.org/assignments/character-sets) 声明过的 web-safe 字符编码中的一个，还必须被双引号包围，遵循一个空格字符 (U+0020)，并且立即以分号结束。如果有多个相关的编码名字，只有被标记为 *preferred* 的那个才会被使用。
 
 ## 例子
 

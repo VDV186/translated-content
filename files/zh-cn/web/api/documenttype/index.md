@@ -1,14 +1,8 @@
 ---
 title: DocumentType
 slug: Web/API/DocumentType
-tags:
-  - API
-  - DOM
-  - DocumentType
-  - Interface
-  - 接口
-translation_of: Web/API/DocumentType
 ---
+
 {{APIRef("DOM")}}
 
 **`DocumentType`** 接口表示了一个包含文档类型的节点 {{domxref("Node")}} .
@@ -45,7 +39,7 @@ _继承方法自父节点，{{domxref("Node")}}, 并实现了 {{domxref("ChildNo
 
 ## 浏览器兼容性
 
-{{Compat("api.DocumentType")}}
+{{Compat}}
 
 ## 参见
 

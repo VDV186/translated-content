@@ -1,18 +1,11 @@
 ---
 title: WebGL2RenderingContext.beginTransformFeedback()
 slug: Web/API/WebGL2RenderingContext/beginTransformFeedback
-tags:
-  - API
-  - WebGL
-  - WebGL2
-  - 参考
-  - 实验性
-  - 方法
-translation_of: Web/API/WebGL2RenderingContext/beginTransformFeedback
 ---
+
 {{APIRef("WebGL")}} {{SeeCompatTable}}
 
-[WebGL 2 API](/en-US/docs/Web/API/WebGL_API) 的 **`WebGL2RenderingContext.beginTransformFeedback()`** 方法开始一个变换回传（Transform Feedback）操作。
+[WebGL 2 API](/zh-CN/docs/Web/API/WebGL_API) 的 **`WebGL2RenderingContext.beginTransformFeedback()`** 方法开始一个变换回传（Transform Feedback）操作。
 
 ## 语法
 
@@ -49,7 +42,7 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGL2RenderingContext.beginTransformFeedback")}}
+{{Compat}}
 
 ## 相关链接
 

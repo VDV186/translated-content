@@ -1,15 +1,8 @@
 ---
 title: XMLHttpRequest()
 slug: Web/API/XMLHttpRequest/XMLHttpRequest
-tags:
-  - API
-  - XHR
-  - XMLHttpRequest
-  - 参考
-  - 构造函数
-  - 构造器
-translation_of: Web/API/XMLHttpRequest/XMLHttpRequest
 ---
+
 {{APIRef('XMLHttpRequest')}}
 
 The **`XMLHttpRequest()`** 构造器初始化一个新的 {{domxref("XMLHttpRequest")}} 对象。

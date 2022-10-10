@@ -1,13 +1,8 @@
 ---
 title: origin
 slug: Web/API/origin
-tags:
-  - global scope
-  - origin
-  - serialized
-translation_of: Web/API/origin
-original_slug: Web/API/WindowOrWorkerGlobalScope/origin
 ---
+
 {{APIRef()}}{{SeeCompatTable}}
 
 `WindowOrWorkerGlobalScope` 接口的 **`origin`** 只读属性返回全局范围的 **origin**, 序列化为一个字符串。
@@ -40,4 +35,4 @@ If the origin is not a scheme/host/port tuple (say you are trying to run it loca
 
 ## Browser compatibility
 
-{{Compat("api.origin")}}
+{{Compat}}

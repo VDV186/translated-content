@@ -1,15 +1,11 @@
 ---
 title: clearTimeout()
 slug: Web/API/clearTimeout
-tags:
-  - API
-  - clearTimeout
-translation_of: Web/API/clearTimeout
-original_slug: Web/API/WindowOrWorkerGlobalScope/clearTimeout
 ---
+
 {{APIRef("HTML DOM")}}
 
-`WindowOrWorkerGlobalScope` 内置的**`clearTimeout()`**方法取消了先前通过调用{{domxref("setTimeout()")}}建立的定时器。
+`WindowOrWorkerGlobalScope` 内置的 **`clearTimeout()`** 方法取消了先前通过调用{{domxref("setTimeout()")}}建立的定时器。
 
 ## 语法
 
@@ -61,7 +57,7 @@ window.onclick = function() { alarm.setup() };
 
 ## 浏览器兼容
 
-{{Compat("api.clearTimeout")}}
+{{Compat}}
 
 ## 更多
 
@@ -69,4 +65,4 @@ window.onclick = function() { alarm.setup() };
 - {{domxref("WindowTimers.setInterval()")}}
 - {{domxref("WindowTimers.clearInterval()")}}
 - {{domxref("Window.requestAnimationFrame()")}}
-- [_Daemons_ management](/en-US/docs/JavaScript/Timers/Daemons)
+- [_Daemons_ management](/zh-CN/docs/JavaScript/Timers/Daemons)

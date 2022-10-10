@@ -1,8 +1,8 @@
 ---
 title: Window.outerWidth
 slug: Web/API/Window/outerWidth
-translation_of: Web/API/Window/outerWidth
 ---
+
 {{APIRef}}
 
 ## 概述
@@ -27,7 +27,7 @@ outWindowWidth = window.outerWidth;
 
 ## 浏览器兼容性
 
-{{Compat("api.Window.outerWidth")}}
+{{Compat}}
 
 ## 规范
 

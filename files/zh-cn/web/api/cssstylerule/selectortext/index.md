@@ -1,13 +1,13 @@
 ---
 title: CSSStyleRule.selectorText
 slug: Web/API/CSSStyleRule/selectorText
-translation_of: Web/API/CSSStyleRule/selectorText
 ---
+
 {{APIRef("CSSOM") }}
 
 ## 概述
 
-**`CSSRule.selectorText`** 属性返回 CSS 规则的选择符文本，只读。动态设置 CSS 规则，请看 [Using dynamic styling information](/en-US/docs/DOM/Using_dynamic_styling_information).
+**`CSSRule.selectorText`** 属性返回 CSS 规则的选择符文本，只读。动态设置 CSS 规则，请看 [Using dynamic styling information](/zh-CN/docs/DOM/Using_dynamic_styling_information).
 
 ## 语法
 

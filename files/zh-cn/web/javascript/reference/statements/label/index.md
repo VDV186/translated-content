@@ -1,19 +1,15 @@
 ---
 title: label
 slug: Web/JavaScript/Reference/Statements/label
-tags:
-  - JavaScript
-  - Statement
-  - 语句
-translation_of: Web/JavaScript/Reference/Statements/label
 ---
+
 {{jsSidebar("Statements")}}
 
 **标记语句**可以和 {{jsxref("Statements/break", "break")}} 或 {{jsxref("Statements/continue", "continue")}} 语句一起使用。标记就是在一条语句前面加个可以引用的标识符（identifier）。
 
 {{EmbedInteractiveExample("pages/js/statement-label.html")}}
 
-> **备注：**使用标记的循环或语句块非常罕见。通常情况下，可以使用函数调用而不是（基于标记的）循环跳转。
+> **备注：** 使用标记的循环或语句块非常罕见。通常情况下，可以使用函数调用而不是（基于标记的）循环跳转。
 
 ## 语法
 
@@ -33,7 +29,7 @@ label :
 
 需要注意的是，JavaScript 没有 `goto` 语句，标记只能和 `break` 或 `continue` 一起使用。
 
-在[严格模式](/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)中，你不能使用 “`let`” 作为标签名称。它会抛出一个 {{jsxref("SyntaxError")}}（因为 let 是一个保留的标识符）。
+在[严格模式](/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)中，你不能使用“`let`”作为标签名称。它会抛出一个 {{jsxref("SyntaxError")}}（因为 let 是一个保留的标识符）。
 
 ## 示例
 

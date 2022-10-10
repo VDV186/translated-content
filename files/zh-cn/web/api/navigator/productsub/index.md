@@ -1,13 +1,8 @@
 ---
 title: Navigator.productSub
 slug: Web/API/Navigator/productSub
-tags:
-  - API
-  - DOM
-  - 只读
-  - 属性
-translation_of: Web/API/Navigator/productSub
 ---
+
 {{ ApiRef("HTML DOM") }}
 
 **`Navigator.productSub`** 只读属性返回当前浏览器的编译版本号。
@@ -46,4 +41,4 @@ function prodsub() {
 
 ## 浏览器兼容性
 
-{{Compat("api.Navigator.productSub")}}
+{{Compat}}

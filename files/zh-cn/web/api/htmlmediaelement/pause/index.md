@@ -1,12 +1,8 @@
 ---
 title: HTMLMediaElement.pause()
 slug: Web/API/HTMLMediaElement/pause
-tags:
-  - 媒体
-  - 视频
-  - 音频
-translation_of: Web/API/HTMLMediaElement/pause
 ---
+
 {{APIRef("HTML DOM")}}
 
 **`HTMLMediaElement.pause()`** 方法可用来暂停媒体的播放，如果媒体已经处于暂停状态，该方法没有效果。
@@ -35,4 +31,4 @@ HTMLMediaElement.pause()
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLMediaElement.pause")}}
+{{Compat}}

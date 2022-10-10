@@ -1,8 +1,8 @@
 ---
 title: Storage.clear()
 slug: Web/API/Storage/clear
-translation_of: Web/API/Storage/clear
 ---
+
 {{APIRef("Web Storage API")}}
 
 `clear()` 是 {{domxref("Storage")}} 接口的一个方法，调用它可以清空存储对象里所有的键值。
@@ -35,7 +35,7 @@ function populateStorage() {
 }
 ```
 
-> **备注：**一个实际的例子 [Web Storage Demo](https://github.com/mdn/web-storage-demo)。
+> **备注：** 一个实际的例子 [Web Storage Demo](https://github.com/mdn/web-storage-demo)。
 
 ## 规范
 
@@ -43,7 +43,7 @@ function populateStorage() {
 
 ## 浏览器兼容性
 
-{{Compat("api.Storage.clear")}}
+{{Compat}}
 
 ## 相关链接
 

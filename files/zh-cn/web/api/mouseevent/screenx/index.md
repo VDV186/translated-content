@@ -1,18 +1,8 @@
 ---
 title: MouseEvent.screenX
 slug: Web/API/MouseEvent/screenX
-tags:
-  - API
-  - MouseEvent
-  - Property
-  - events
-  - 事件
-  - 参考
-  - 属性
-  - 鼠标
-  - 鼠标事件
-translation_of: Web/API/MouseEvent/screenX
 ---
+
 {{APIRef("DOM Events")}}
 
 **`screenX`** 是 {{domxref("MouseEvent")}} 的只读属性，提供鼠标在全局（屏幕）中的水平坐标（偏移量）。

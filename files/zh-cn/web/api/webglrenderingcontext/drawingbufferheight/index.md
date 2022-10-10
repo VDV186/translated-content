@@ -1,18 +1,11 @@
 ---
 title: WebGLRenderingContext.drawingBufferHeight
 slug: Web/API/WebGLRenderingContext/drawingBufferHeight
-tags:
-  - API
-  - WebGL
-  - WebGLRenderingContext
-  - 参考
-  - 只读
-  - 属性
-translation_of: Web/API/WebGLRenderingContext/drawingBufferHeight
 ---
+
 {{APIRef("WebGL")}}
 
-**`WebGLRenderingContext.drawingBufferHeight`** 只读属性，指示当前绘图缓冲区的实际高度。它应当匹配与绘图上下文相关联的 {{HTMLElement("canvas")}} 元素的高度属性， 如果实现未能提供所要求的高度，其值将有所不同。
+**`WebGLRenderingContext.drawingBufferHeight`** 只读属性，指示当前绘图缓冲区的实际高度。它应当匹配与绘图上下文相关联的 {{HTMLElement("canvas")}} 元素的高度属性，如果实现未能提供所要求的高度，其值将有所不同。
 
 ## 语法
 
@@ -42,7 +35,7 @@ gl.drawingBufferHeight; // 150
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGLRenderingContext.drawingBufferHeight")}}
+{{Compat}}
 
 ## 相关链接
 

@@ -1,8 +1,8 @@
 ---
 title: Selection.isCollapsed
 slug: Web/API/Selection/isCollapsed
-translation_of: Web/API/Selection/isCollapsed
 ---
+
 {{ ApiRef() }}
 
 ### 概述

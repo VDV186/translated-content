@@ -1,20 +1,8 @@
 ---
 title: SourceBuffer.updating
 slug: Web/API/SourceBuffer/updating
-page-type: web-api-instance-property
-tags:
-  - API
-  - Audio
-  - Experimental
-  - MSE
-  - Media Source Extensions
-  - Property
-  - Reference
-  - SourceBuffer
-  - Updating
-  - Video
-translation_of: Web/API/SourceBuffer/updating
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 {{domxref("SourceBuffer")}} 接口的只读属性 **`updating`** 表示 `SourceBuffer` 目前是否正在更新——即当前是否有 {{domxref("SourceBuffer.appendBuffer()")}}、{{domxref("SourceBuffer.appendStream()")}} 或 {{domxref("SourceBuffer.remove()")}} 操作正在进行。

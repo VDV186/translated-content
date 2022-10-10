@@ -1,8 +1,8 @@
 ---
 title: Document.queryCommandState()
 slug: Web/API/Document/queryCommandState
-translation_of: Web/API/Document/queryCommandState
 ---
+
 {{ApiRef("DOM")}}{{deprecated_header}}
 
 ## 语法
@@ -27,5 +27,5 @@ Object.queryCommandState(String command)
 
 - {{domxref("document.contentEditable")}}
 - {{domxref("document.designMode")}}
-- [Rich-Text Editing in Mozilla](/en-US/docs/Rich-Text_Editing_in_Mozilla)
+- [Rich-Text Editing in Mozilla](/zh-CN/docs/Rich-Text_Editing_in_Mozilla)
 - Browser bugs related to `queryCommandState()`: [Scribe's "Browser Inconsistencies" documentation](https://github.com/guardian/scribe/blob/master/BROWSERINCONSISTENCIES.md#documentquerycommandstate)

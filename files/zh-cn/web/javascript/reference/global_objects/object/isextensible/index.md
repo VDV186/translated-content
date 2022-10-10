@@ -1,8 +1,8 @@
 ---
 title: Object.isExtensible()
 slug: Web/JavaScript/Reference/Global_Objects/Object/isExtensible
-translation_of: Web/JavaScript/Reference/Global_Objects/Object/isExtensible
 ---
+
 {{JSRef("Global_Objects", "Object")}}
 
 ## 概述
@@ -22,7 +22,7 @@ Object.isExtensible(obj)
 
 ### 返回值
 
-表示给定对象是否可扩展的一个[`Boolean`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Boolean) 。
+表示给定对象是否可扩展的一个 [`Boolean`](/zh-CN/docs/Web/JavaScript/Reference/Boolean)。
 
 ## 描述
 
@@ -50,7 +50,7 @@ Object.isExtensible(frozen); // === false
 
 ## 注意
 
-在 ES5 中，如果参数不是一个对象类型，将抛出一个 {{jsxref("TypeError")}} 异常。在 ES6 中， non-object 参数将被视为一个不可扩展的普通对象，因此会返回 false 。
+在 ES5 中，如果参数不是一个对象类型，将抛出一个 {{jsxref("TypeError")}} 异常。在 ES6 中，non-object 参数将被视为一个不可扩展的普通对象，因此会返回 false。
 
 ```plain
 Object.isExtensible(1);

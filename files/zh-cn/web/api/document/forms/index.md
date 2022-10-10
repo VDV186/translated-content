@@ -1,10 +1,8 @@
 ---
 title: Document.forms
 slug: Web/API/Document/forms
-tags:
-  - Document.forms
-translation_of: Web/API/Document/forms
 ---
+
 {{APIRef("DOM")}}
 
 **`forms`** 返回当前文档中的 {{HTMLElement("form")}}元素的一个集合 (一个 {{domxref("HTMLCollection")}})。
@@ -57,4 +55,4 @@ var selectFormElement = document.forms[index].elements[index];
 
 ## 相关链接
 
-- [DOM:form](/zh-cn/DOM/HTMLFormElement)
+- [DOM:form](/zh-CN/DOM/HTMLFormElement)

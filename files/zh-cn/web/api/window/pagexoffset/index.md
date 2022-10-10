@@ -1,11 +1,8 @@
 ---
 title: Window.pageXOffset
 slug: Web/API/Window/pageXOffset
-tags:
-  - API
-  - CSSOM
-translation_of: Web/API/Window/pageXOffset
 ---
+
 {{ APIRef() }}
 
 这是 `scrollX 的别名`
@@ -20,4 +17,4 @@ translation_of: Web/API/Window/pageXOffset
 
 ## 相关链接
 
-- [`window.pageYOffset`](/en-US/docs/Web/API/Window/pageYOffset)
+- [`window.pageYOffset`](/zh-CN/docs/Web/API/Window/pageYOffset)

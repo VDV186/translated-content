@@ -1,8 +1,8 @@
 ---
 title: MediaSource.endOfStream()
 slug: Web/API/MediaSource/endOfStream
-translation_of: Web/API/MediaSource/endOfStream
 ---
+
 {{APIRef("Media Source Extensions")}}{{SeeCompatTable}}
 
 {{domxref("MediaSource")}} 接口的 **`endOfStream()`** 方法意味着流的结束。

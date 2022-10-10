@@ -1,8 +1,8 @@
 ---
 title: Window
 slug: Web/API/Window
-translation_of: Web/API/Window
 ---
+
 {{APIRef}}
 
 `window` 物件代表了一個包含 DOM 文件的視窗，其中的 `document` 屬性指向了視窗中載入的 {{domxref("Document")}} 物件。而使用 `document` 的 {{Domxref("Document.defaultView", "defaultView")}} 屬性，則可取得該 Document 物件所在的視窗 `window` 物件。
@@ -27,7 +27,7 @@ _This interface inherits properties from the {{domxref("EventTarget")}} interfac
   - : The entry point to many [XPCOM](/zh-TW/docs/XPCOM) features. Some properties, e.g. [classes](/zh-TW/docs/Components.classes), are only available to sufficiently privileged code. **Web code should not use this property.**
 - {{domxref("Window.console")}} {{ReadOnlyInline}}
   - : Returns a reference to the console object which provides access to the browser's debugging console.
-- {{domxref("Window.content")}} and Window\.\_content {{Non-standard_inline}} {{Deprecated_Inline}}{{ReadOnlyInline}}
+- {{domxref("Window.content")}} and Window.content {{Non-standard_inline}} {{Deprecated_Inline}}{{ReadOnlyInline}}
   - : Returns a reference to the content element in the current window. The obsolete variant with underscore is no longer available from Web content.
 - {{domxref("Window.controllers")}}{{non-standard_inline}}{{ReadOnlyInline}}
   - : Returns the XUL controller objects for the current chrome window.

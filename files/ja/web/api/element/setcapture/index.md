@@ -1,23 +1,13 @@
 ---
 title: Element.setCapture()
 slug: Web/API/Element/setCapture
-page-type: web-api-instance-method
-tags:
-  - API
-  - DOM
-  - Element
-  - Method
-  - Non-standard
-  - Reference
-  - Deprecated
-browser-compat: api.Element.setCapture
-translation_of: Web/API/Element/setCapture
 ---
+
 {{Deprecated_Header}}{{non-standard_header}}{{ APIRef("DOM") }}
 
 mousedown イベントの処理中にこのメソッドを呼び出すと、マウスボタンが離されるか {{domxref("document.releaseCapture()")}} が呼び出されるまで、この要素にすべてのマウスイベントを捕捉します。
 
-> **Warning:** このインターフェイスにはブラウザー間の対応がほとんどありませんでした。おそらくお探しのものは {{domxref("element.setPointerCapture")}}  （ポインターイベント API）でしょう。
+> **警告:** このインターフェイスにはブラウザー間の対応がほとんどありませんでした。おそらくお探しのものは {{domxref("element.setPointerCapture")}}  （ポインターイベント API）でしょう。
 
 ## 構文
 

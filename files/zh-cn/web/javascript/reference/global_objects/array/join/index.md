@@ -1,13 +1,8 @@
 ---
 title: Array.prototype.join()
 slug: Web/JavaScript/Reference/Global_Objects/Array/join
-tags:
-  - Array
-  - Array.prototype.join()
-  - join()
-  - separator
-translation_of: Web/JavaScript/Reference/Global_Objects/Array/join
 ---
+
 {{JSRef}}
 
 **`join()`** 方法将一个数组（或一个[类数组对象](/zh-CN/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects)）的所有元素连接成一个字符串并返回这个字符串。如果数组只有一个项目，那么将返回该项目而不使用分隔符。
@@ -16,8 +11,9 @@ translation_of: Web/JavaScript/Reference/Global_Objects/Array/join
 
 ## 语法
 
-```plain
-arr.join([separator])
+```js
+join()
+join(separator)
 ```
 
 ### 参数
@@ -33,7 +29,7 @@ arr.join([separator])
 
 所有的数组元素被转换成字符串，再用一个分隔符将这些字符串连接起来。
 
-> **警告：**如果一个元素为 `undefined` 或 `null`，它会被转换为空字符串。
+> **警告：** 如果一个元素为 `undefined` 或 `null`，它会被转换为空字符串。
 
 ## 示例
 
@@ -69,7 +65,7 @@ f(1, 'a', true);
 
 {{Compat}}
 
-## 相关链接
+## 参见
 
 - {{jsxref("String.prototype.split()")}}
 - {{jsxref("Array.prototype.toString()")}}

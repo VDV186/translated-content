@@ -1,10 +1,8 @@
 ---
 title: Window.focus()
 slug: Web/API/Window/focus
-tags:
-  - API
-translation_of: Web/API/Window/focus
 ---
+
 {{APIRef}}
 
 ## 概述

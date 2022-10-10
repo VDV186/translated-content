@@ -1,8 +1,8 @@
 ---
 title: BroadcastChannel：message 事件
 slug: Web/API/BroadcastChannel/message_event
-translation_of: Web/API/BroadcastChannel/message_event
 ---
+
 {{APIRef}}
 
 当频道收到一条消息时，会在关联的 {{domxref('BroadcastChannel')}} 对象上触发 `message` 事件。

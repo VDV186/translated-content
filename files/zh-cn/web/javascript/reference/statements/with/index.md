@@ -1,13 +1,9 @@
 ---
 title: with
 slug: Web/JavaScript/Reference/Statements/with
-tags:
-  - Deprecated
-  - JavaScript
-  - Statement
-translation_of: Web/JavaScript/Reference/Statements/with
 ---
-> **警告：**不建议使用`with`语句，因为它可能是混淆错误和兼容性问题的根源。有关详细信息，请参阅下面“描述”一节中的“语意不明的弊端”部分。
+
+> **警告：** 不建议使用`with`语句，因为它可能是混淆错误和兼容性问题的根源。有关详细信息，请参阅下面“描述”一节中的“语意不明的弊端”部分。
 
 {{jsSidebar("Statements")}}**with 语句** 扩展一个语句的作用域链。
 
@@ -28,7 +24,7 @@ with (expression) {
 
 JavaScript 查找某个未使用命名空间的变量时，会通过作用域链来查找，作用域链是跟执行代码的 context 或者包含这个变量的函数有关。'with'语句将某个对象添加到作用域链的顶部，如果在 statement 中有某个未使用命名空间的变量，跟作用域链中的某个属性同名，则这个变量将指向这个属性值。如果沒有同名的属性，则将拋出{{jsxref("ReferenceError")}}异常。
 
-> **备注：**不推荐使用`with`，在 ECMAScript 5 [严格模式](/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)中该标签已被禁止。推荐的替代方案是声明一个临时变量来承载你所需要的属性。
+> **备注：** 不推荐使用`with`，在 ECMAScript 5 [严格模式](/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)中该标签已被禁止。推荐的替代方案是声明一个临时变量来承载你所需要的属性。
 
 ### 性能方面的利与弊
 
@@ -65,7 +61,7 @@ function f(foo, values) {
 
 ### Example: Using `with`
 
-下面的`with`语句指定[`Math`](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math)对象作为默认对象。`with`语句里面的变量，分別指向`Math`对象的[`PI`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI) 、`cos和`[`sin`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin)函数，不用在前面添加命名空间。后续所有引用都指向`Math`对象。
+下面的`with`语句指定[`Math`](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math)对象作为默认对象。`with`语句里面的变量，分別指向`Math`对象的[`PI`](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/PI) 、`cos` 和 [`sin`](/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/sin) 函数，不用在前面添加命名空间。后续所有引用都指向`Math`对象。
 
 ```js
 var a, x, y;
@@ -89,6 +85,6 @@ with (Math) {
 ## 相关链接
 
 - {{jsxref("Statements/block", "block")}}
-- [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+- [Strict mode](/zh-CN/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
 - {{jsxref("Symbol.unscopables")}}
 - {{jsxref("Array.@@unscopables", "Array.prototype[@@unscopables]")}}

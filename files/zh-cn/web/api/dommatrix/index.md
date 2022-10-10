@@ -1,13 +1,13 @@
 ---
 title: DOMMatrix
 slug: Web/API/DOMMatrix
-translation_of: Web/API/DOMMatrix
 ---
+
 {{APIRef("Geometry Interfaces")}}{{SeeCompatTable}}
 
 **`DOMMatrix`**接口代表 4x4 矩阵，适合 2D 和 3D 操作。
 
-一个 4x4 矩阵适于描绘任何 3D 的旋转（rotation ）和过渡（translation）。
+一个 4x4 矩阵适于描绘任何 3D 的旋转（rotation）和过渡（translation）。
 
 此接口在 Web workers 里应该是可用的，虽然某些实现现在还不允许。
 
@@ -67,10 +67,9 @@ _此接口从{{domxref("DOMMatrixReadOnly")}}继承方法。_
 
 ## 浏览器兼容性
 
-{{Compat("api.DOMMatrix")}}
-{{Compat("api.WebKitCSSMatrix")}}
+{{Compat}}
 
-## 相关链接
+## 参见
 
 - 它的不可修改部分， {{domxref("DOMMatrixReadOnly")}}
 - {{domxref("SVGMatrix")}}，SVG 矩阵计划被{{domxref("DOMMatrix")}}替代

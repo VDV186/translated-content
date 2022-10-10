@@ -1,13 +1,8 @@
 ---
 title: Navigator.cookieEnabled
 slug: Web/API/Navigator/cookieEnabled
-tags:
-  - API
-  - DOM
-  - cookie
-  - 属性
-translation_of: Web/API/Navigator/cookieEnabled
 ---
+
 {{ ApiRef("HTML DOM") }}
 
 `navigator.cookieEnabled` 返回一个布尔值，来表示当前页面是否启用了 cookie。本属性为只读属性。
@@ -34,4 +29,4 @@ if (!navigator.cookieEnabled) {
 
 ## 浏览器兼容性
 
-{{Compat("api.Navigator.cookieEnabled")}}
+{{Compat}}

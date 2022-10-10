@@ -124,7 +124,7 @@ input, textarea, select, button {
 }
 ```
 
-En la captura de pantalla a continuación, la columna de la izquierda muestra la representación predeterminada de los controles de entrada `<input type="radio">`, `<input type="checkbox">`, `<input type="range">`, `<input type="text">`, `<input type="date">`, {{htmlelement('select')}}, {{htmlelement('textarea')}},`<input type="submit" >`, y {{htmlelement('button')}}. La columna de la derecha, por otro lado, muestra los mismos elementos con nuestra regla anterior aplicada a ellos. Observe cómo esto nos permite asegurarnos de que todos los elementos ocupen la misma cantidad de espacio, a pesar de las reglas predeterminadas de la plataforma para cada tipo de control.
+En la captura de pantalla a continuación, la columna de la izquierda muestra la representación predeterminada de los controles de entrada `<input type="radio">`, `<input type="checkbox">`, `<input type="range">`, `<input type="text">`, `<input type="date">`, {{htmlelement('select')}}, {{htmlelement('textarea')}}, `<input type="submit">`, y {{htmlelement('button')}}. La columna de la derecha, por otro lado, muestra los mismos elementos con nuestra regla anterior aplicada a ellos. Observe cómo esto nos permite asegurarnos de que todos los elementos ocupen la misma cantidad de espacio, a pesar de las reglas predeterminadas de la plataforma para cada tipo de control.
 
 ![Las propiedades del modelo de caja afectan a la mayoría de los tipos de entrada.](boxmodel_formcontrols1.png)
 
@@ -199,7 +199,7 @@ Agregue el código anterior en el cuerpo de su HTML.
 
 ¡Aquí es donde la diversión comienza! Antes de iniciar a codificar, necesitamos tres recursos adicionales:
 
-1. [El fondo de la postal](/en-US/docs/Learn/Forms/Styling_web_forms/background.jpg): Descargue esta imagen y guárdela en el mismo directorio que su archivo HTML de trabajo.
+1. [El fondo de la postal](/es/docs/Learn/Forms/Styling_web_forms/background.jpg): Descargue esta imagen y guárdela en el mismo directorio que su archivo HTML de trabajo.
 2. Una fuente de máquina de escribir: [La fuente "Secret Typewriter" de fontsquirrel.com](https://www.fontsquirrel.com/fonts/Secret-Typewriter): descargue el archivo TTF en el mismo directorio que el anterior.
 3. Una fuente dibujada a mano: [La fuente "Journal" de fontsquirrel.com](https://www.fontsquirrel.com/fonts/Journal): Descargue el archivo TTF en el mismo directorio que el anterior.
 

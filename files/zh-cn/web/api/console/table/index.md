@@ -1,14 +1,8 @@
 ---
 title: Console.table()
 slug: Web/API/Console/table
-tags:
-  - API
-  - Web 开发
-  - 控制台
-  - 方法
-  - 调试
-translation_of: Web/API/Console/table
 ---
+
 {{APIRef("Console API")}}
 
 将数据以表格的形式显示。

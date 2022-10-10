@@ -1,14 +1,8 @@
 ---
 title: Array
 slug: Web/JavaScript/Reference/Global_Objects/Array
-tags:
-  - Array
-  - JavaScript
-  - NeedsTranslation
-  - TopicStub
-  - 陣列
-translation_of: Web/JavaScript/Reference/Global_Objects/Array
 ---
+
 {{JSRef}}
 
 JavaScript 中的 **`Array`** 全域物件被用於建構陣列；陣列為高階（high-level）、似列表（list-like）的物件。陣列在 Javascript 裡面並沒有固定的長度與型別。由於陣列的長度可以隨時被改變，所以並不能保證陣列的密度。這取決於開發者如何使用陣列。一般來說，這是個非常方便的特性，但如果這並不適用於你的開發工作，你也許會考慮使用型別陣列。
@@ -287,7 +281,7 @@ var myArray = myRe.exec('cdbBdbsbz');
 
 ## `Array` 泛型方法
 
-> **警告：**泛型陣列並非標準且已被棄用，將會在不久之後被去除。
+> **警告：** 泛型陣列並非標準且已被棄用，將會在不久之後被去除。
 
 有時你想將陣列方法用於字串或其他類陣列物件（像是函數 {{jsxref("Functions/arguments", "arguments", "", 1)}}）。藉此操作，你將此字串視為由字元組成的陣列（反之為將其他非陣列視為物件）。如範例，若要確認字串中的每個字元是不是字母，你可能會這樣寫：
 
@@ -416,7 +410,7 @@ console.table(values)
 
 ## 瀏覽器相容性
 
-{{Compat("javascript.builtins.Array")}}
+{{Compat}}
 
 ## 參見
 

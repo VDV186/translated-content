@@ -1,14 +1,8 @@
 ---
 title: Node.nodeType
 slug: Web/API/Node/nodeType
-tags:
-  - API
-  - DOM
-  - Gecko
-  - Property
-  - Reference
-translation_of: Web/API/Node/nodeType
 ---
+
 {{APIRef("DOM")}}
 
 只读属性 **`Node.nodeType`** 表示的是该节点的类型。

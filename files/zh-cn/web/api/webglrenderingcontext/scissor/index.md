@@ -1,10 +1,8 @@
 ---
 title: WebGLRenderingContext.scissor()
 slug: Web/API/WebGLRenderingContext/scissor
-tags:
-  - WebGL
-translation_of: Web/API/WebGLRenderingContext/scissor
 ---
+
 {{APIRef("WebGL")}}
 
 **`WebGLRenderingContext.scissor()`** 方法指定了一个裁剪区域，用来将绘图区域限制在其限定的盒形区域内。
@@ -65,7 +63,7 @@ gl.getParameter(gl.SCISSOR_BOX);
 
 ## 浏览器兼容性
 
-{{Compat("api.WebGLRenderingContext.scissor")}}
+{{Compat}}
 
 ## 参见
 

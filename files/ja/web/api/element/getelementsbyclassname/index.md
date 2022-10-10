@@ -1,16 +1,8 @@
 ---
 title: Element.getElementsByClassName()
 slug: Web/API/Element/getElementsByClassName
-tags:
-  - API
-  - クラス
-  - Element
-  - メソッド
-  - リファレンス
-  - getElementsByClassName
-browser-compat: api.Element.getElementsByClassName
-translation_of: Web/API/Element/getElementsByClassName
 ---
+
 {{APIRef("DOM")}}
 
 {{domxref("Element")}} の **`getElementsByClassName()`** メソッドは、引数で与えられたクラス名を含むすべての子要素を、生きた {{domxref("HTMLCollection")}} で返します。
@@ -38,7 +30,7 @@ var elements = element.getElementsByClassName(names);
 
 逆もしかりです。 `names` に一致しなくなったりツリーから外された要素は、すぐにコレクションから除外されます。
 
-> **Note:** クラス名は[後方互換モード](/ja/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)では大文字・小文字が区別されず、それ以外では区別されます。
+> **メモ:** クラス名は[後方互換モード](/ja/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)では大文字・小文字が区別されず、それ以外では区別されます。
 
 ## 例
 

@@ -1,15 +1,8 @@
 ---
 title: WebSocket.binaryType
 slug: Web/API/WebSocket/binaryType
-tags:
-  - 参考
-  - 属性
-  - 应用编程接口
-  - 网页套接字
-  - 网页接口
-translation_of: Web/API/WebSocket/binaryType
-original_slug: Web/API/WebSocket/二进制类型
 ---
+
 {{APIRef("Web Sockets API")}}
 
 **`WebSocket.binaryType`** 返回 websocket 连接所传输二进制数据的类型。
@@ -35,4 +28,4 @@ var binaryType = aWebSocket.binaryType;
 
 ## 浏览器兼容性
 
-{{Compat("api.WebSocket.binaryType")}}
+{{Compat}}

@@ -1,16 +1,8 @@
 ---
 title: MutationObserver
 slug: Web/API/MutationObserver
-tags:
-  - API
-  - Advanced
-  - DOM
-  - DOM Reference
-  - MutationObserver
-  - requestAnimationFrame
-  - resize
-translation_of: Web/API/MutationObserver
 ---
+
 {{APIRef("DOM WHATWG")}}
 
 {{domxref("MutationObserver")}} 接口提供了监视对 DOM 树所做更改的能力。它被设计为旧的 Mutation Events 功能的替代品，该功能是 DOM3 Events 规范的一部分。
@@ -73,7 +65,7 @@ observer.disconnect();
 
 ## 浏览器兼容
 
-{{Compat("api.MutationObserver")}}
+{{Compat}}
 
 ## 参见
 

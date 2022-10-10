@@ -1,17 +1,8 @@
 ---
 title: SpeechGrammar.SpeechGrammar()
 slug: Web/API/SpeechGrammar/SpeechGrammar
-tags:
-  - API
-  - SpeechGrammar
-  - Web
-  - Web Speech API
-  - 实验性
-  - 引用
-  - 构造函数
-  - 语音识别
-translation_of: Web/API/SpeechGrammar/SpeechGrammar
 ---
+
 {{APIRef("Web Speech API")}}{{SeeCompatTable}}
 
 **`SpeechGrammar`** 是 {{domxref("SpeechGrammar")}} 接口的构造函数，创建一个新的 `SpeechGrammar` 对象实例。
@@ -50,4 +41,4 @@ speechRecognitionList[1] = newGrammar; // 将 SpeechGrammar 对象添加到列�
 
 ## 相关链接
 
-- [Web Speech API](/en-US/docs/Web/API/Web_Speech_API)
+- [Web Speech API](/zh-CN/docs/Web/API/Web_Speech_API)

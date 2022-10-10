@@ -1,8 +1,8 @@
 ---
 title: Touch.radiusY
 slug: Web/API/Touch/radiusY
-translation_of: Web/API/Touch/radiusY
 ---
+
 {{ ApiRef() }}
 
 ### 概述

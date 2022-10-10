@@ -1,8 +1,8 @@
 ---
 title: Window.frames
 slug: Web/API/Window/frames
-translation_of: Web/API/Window/frames
 ---
+
 {{ApiRef("Window")}}
 
 ## 概要

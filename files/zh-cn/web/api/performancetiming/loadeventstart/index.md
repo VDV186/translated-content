@@ -1,13 +1,13 @@
 ---
 title: PerformanceTiming.loadEventStart
 slug: Web/API/PerformanceTiming/loadEventStart
-translation_of: Web/API/PerformanceTiming/loadEventStart
 ---
+
 {{APIRef("Navigation Timing")}}
 
 ## 概要
 
-**`PerformanceTiming.loadEventStart`** 是一个返回代表一个时刻的 `unsigned long long` 型只读属性，为 {{event("load")}} 事件被现在的文档触发之时的 Unix 时间戳。如果这个事件没有被触发，则他返回 `0。`
+**`PerformanceTiming.loadEventStart`** 是一个返回代表一个时刻的 `unsigned long long` 型只读属性，为 {{event("load")}} 事件被现在的文档触发之时的 Unix 时间戳。如果这个事件没有被触发，则他返回 `0`。
 
 ## 语法
 

@@ -1,8 +1,8 @@
 ---
 title: Element.requestPointerLock()
 slug: Web/API/Element/requestPointerLock
-translation_of: Web/API/Element/requestPointerLock
 ---
+
 {{ APIRef("DOM") }}{{ seeCompatTable }}
 
 **`Element.requestPointerLock()`** 方法允许您异步地请求将鼠标指针锁定在指定元素上。
@@ -21,7 +21,7 @@ instanceOfElement.requestPointerLock();
 
 ## 浏览器兼容性
 
-{{Compat("api.Element.requestPointerLock")}}
+{{Compat}}
 
 ## 相关链接
 

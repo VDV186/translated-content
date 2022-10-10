@@ -1,16 +1,8 @@
 ---
 title: Element.before()
 slug: Web/API/Element/before
-tags:
-  - API
-  - DOM
-  - Method
-  - Node
-  - Reference
-translation_of: Web/API/Element/before
-original_slug: Web/API/ChildNode/before
-browser-compat: api.Element.before
 ---
+
 {{APIRef("DOM")}} {{SeeCompatTable}}
 
 **`ChildNode.before`** 方法可以在`ChildNode` 这个节点的父节点中插入一些列的 {{domxref("Node")}} 或者 {{domxref("DOMString")}} 对象，位置就是在`ChildNode` 节点的前面，{{domxref("DOMString")}} 对象其实和 {{domxref("Text")}} 节点一样的方式来完成插入的。
@@ -122,7 +114,7 @@ with(node) {
 
 ## Browser compatibility
 
-{{Compat("api.Element.before")}}
+{{Compat}}
 
 ## See also
 

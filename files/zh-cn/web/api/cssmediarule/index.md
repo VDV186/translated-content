@@ -1,13 +1,8 @@
 ---
 title: CSSMediaRule
 slug: Web/API/CSSMediaRule
-tags:
-  - API
-  - CSSOM
-  - 参考
-  - 接口
-translation_of: Web/API/CSSMediaRule
 ---
+
 {{ APIRef("CSSOM") }}
 
 **`CSSMediaRule`** 是一个表示单个 CSS {{cssxref("@media")}} 规则的接口。它实现了 {{domxref("CSSConditionRule")}} 接口，因此也是 {{domxref("CSSGroupingRule")}}，也相当于{{domxref("CSSRule")}}中类型值为 `4` 的规则类型（即`CSSRule.MEDIA_RULE`）。
@@ -39,4 +34,4 @@ interface CSSMediaRule : CSSConditionRule {
 
 ## 浏览器兼容性
 
-{{Compat("api.CSSMediaRule")}}
+{{Compat}}

@@ -1,22 +1,15 @@
 ---
 title: 使用对象
 slug: Web/JavaScript/Guide/Working_with_Objects
-tags:
-  - JavaScript
-  - 初学者
-  - 基本语法
-  - 教程
-  - 文档
-  - 比较对象
-translation_of: Web/JavaScript/Guide/Working_with_Objects
 ---
+
 {{jsSidebar("JavaScript Guide")}} {{PreviousNext("Web/JavaScript/Guide/Text_formatting", "Web/JavaScript/Guide/Details_of_the_Object_Model")}}
 
 JavaScript 的设计是一个简单的基于对象的范式。一个对象就是一系列属性的集合，一个属性包含一个名和一个值。一个属性的值可以是函数，这种情况下属性也被称为*方法*。除了浏览器里面预定义的那些对象之外，你也可以定义你自己的对象。本章节讲述了怎么使用对象、属性、函数和方法，怎样实现自定义对象。
 
 ## 对象概述
 
-javascript 中的对象 (物体)，和其它编程语言中的对象一样，可以比照现实生活中的对象 (物体) 来理解它。 javascript 中对象 (物体) 的概念可以比照着现实生活中实实在在的物体来理解。
+javascript 中的对象 (物体)，和其它编程语言中的对象一样，可以比照现实生活中的对象 (物体) 来理解它。javascript 中对象 (物体) 的概念可以比照着现实生活中实实在在的物体来理解。
 
 在 javascript 中，一个对象可以是一个单独的拥有属性和类型的实体。我们拿它和一个杯子做下类比。一个杯子是一个对象 (物体)，拥有属性。杯子有颜色，图案，重量，由什么材质构成等等。同样，javascript 对象也有属性来定义它的特征。
 
@@ -43,7 +36,7 @@ myCar.year = 1969;
 myCar.noProperty; // undefined
 ```
 
-JavaScript 对象的属性也可以通过方括号访问或者设置（更多信息查看 [property accessors](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Property_Accessors)）. 对象有时也被叫作关联数组，因为每个属性都有一个用于访问它的字符串值。例如，你可以按如下方式访问 `myCar` 对象的属性：
+JavaScript 对象的属性也可以通过方括号访问或者设置（更多信息查看 [property accessors](/zh-CN/docs/Web/JavaScript/Reference/Operators/Property_Accessors)）. 对象有时也被叫作关联数组，因为每个属性都有一个用于访问它的字符串值。例如，你可以按如下方式访问 `myCar` 对象的属性：
 
 ```js
 myCar["make"] = "Ford";
@@ -70,7 +63,7 @@ myObj[""]               = "Even an empty string";
 console.log(myObj);
 ```
 
-请注意，方括号中的所有键都将转换为字符串类型，因为 JavaScript 中的对象只能使用 String 类型作为键类型。 例如，在上面的代码中，当将键 obj 添加到 myObj 时，JavaScript 将调用 obj.toString() 方法，并将此结果字符串用作新键。
+请注意，方括号中的所有键都将转换为字符串类型，因为 JavaScript 中的对象只能使用 String 类型作为键类型。例如，在上面的代码中，当将键 obj 添加到 myObj 时，JavaScript 将调用 obj.toString() 方法，并将此结果字符串用作新键。
 
 你也可以通过存储在变量中的字符串来访问属性：
 
@@ -120,18 +113,18 @@ myCar.year = 1969
 
 ```js
 function listAllProperties(o){
-	var objectToInspect;
-	var result = [];
+  var objectToInspect;
+  var result = [];
 
-	for(objectToInspect = o; objectToInspect !== null; objectToInspect = Object.getPrototypeOf(objectToInspect)){
-		result = result.concat(Object.getOwnPropertyNames(objectToInspect));
-	}
+  for(objectToInspect = o; objectToInspect !== null; objectToInspect = Object.getPrototypeOf(objectToInspect)){
+    result = result.concat(Object.getOwnPropertyNames(objectToInspect));
+  }
 
-	return result;
+  return result;
 }
 ```
 
-这在展示 “隐藏”（在原型中的不能通过对象访问的属性，因为另一个同名的属性存在于原型链的早期）的属性时很有用。如果只想列出可访问的属性，那么只需要去除数组中的重复元素即可。
+这在展示“隐藏”（在原型中的不能通过对象访问的属性，因为另一个同名的属性存在于原型链的早期）的属性时很有用。如果只想列出可访问的属性，那么只需要去除数组中的重复元素即可。
 
 ## 创建新对象
 
@@ -279,7 +272,7 @@ fish.displayType(); // Output:Fishes
 
 ## **继承**
 
-所有的 JavaScript 对象至少继承于一个对象。被继承的对象被称作原型，并且继承的属性可通过构造函数的 `prototype` 对象找到。查看更多详细 [Inheritance and the prototype chain](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+所有的 JavaScript 对象至少继承于一个对象。被继承的对象被称作原型，并且继承的属性可通过构造函数的 `prototype` 对象找到。查看更多详细 [Inheritance and the prototype chain](/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 ## **对象属性索引**
 
@@ -287,7 +280,7 @@ fish.displayType(); // Output:Fishes
 
 这个限制发生在你通过构造函数创建一个对象和它的属性（就象我们之前通过 `Car` 对象类型所做的那样）并且显式地定义了单独的属性（如 `m`yCar.color = "red"）之时。如果你最初使用索引定义了一个对象属性，例如 `myCar[5] = "25"`，则你只可能通过 `myCar[5]` 引用它。
 
-这条规则的例外是从与 HTML 对应的对象，例如 `forms` 数组。对于这些数组的元素，你总是既可以通过其序号（依据其在文档中出现的顺序），也可以按照其名称（如果有的话）访问它。举例而言，如果文档中的第二个 `<form>` 标签有一个 `NAME` 属性且值为 `"myForm"`，访问该 `form` 的方式可以是 `document.forms[1]`，`document.forms["myForm"]` 或 document.myForm。`
+这条规则的例外是从与 HTML 对应的对象，例如 `forms` 数组。对于这些数组的元素，你总是既可以通过其序号（依据其在文档中出现的顺序），也可以按照其名称（如果有的话）访问它。举例而言，如果文档中的第二个 `<form>` 标签有一个 `NAME` 属性且值为 `"myForm"`，访问该 `form` 的方式可以是 `document.forms[1]`，`document.forms["myForm"]` 或 `document.myForm`。
 
 为对象类型定义属性
 
@@ -302,7 +295,7 @@ car1.color = "black";
 
 ## 定义方法
 
-一个*方法* 是关联到某个对象的函数，或者简单地说，一个方法是一个值为某个函数的对象属性。定义方法就像定义普通的函数，除了它们必须被赋给对象的某个属性。查看 [method definitions](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Method_definitions)了解更多详情例如：
+一个*方法* 是关联到某个对象的函数，或者简单地说，一个方法是一个值为某个函数的对象属性。定义方法就像定义普通的函数，除了它们必须被赋给对象的某个属性。查看 [method definitions](/zh-CN/docs/Web/JavaScript/Reference/Functions/Method_definitions)了解更多详情例如：
 
 ```js
 objectName.methodname = function_name;
@@ -398,7 +391,7 @@ function validate(obj, lowval, hival) {
 
 ## **定义 getters 与 setters**
 
-一个 [getter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get) 是一个获取某个特定属性的值的方法。一个 [setter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/set) 是一个设定某个属性的值的方法。你可以为预定义的或用户定义的对象定义 getter 和 setter 以支持新增的属性。定义 getter 和 setter 的语法采用对象字面量语法。
+一个 [getter](/zh-CN/docs/Web/JavaScript/Reference/Functions/get) 是一个获取某个特定属性的值的方法。一个 [setter](/zh-CN/docs/Web/JavaScript/Reference/Functions/set) 是一个设定某个属性的值的方法。你可以为预定义的或用户定义的对象定义 getter 和 setter 以支持新增的属性。定义 getter 和 setter 的语法采用对象字面量语法。
 
 下面例子描述了 getters 和 setters 是如何为用户定义的对象 `o` 工作的。
 
@@ -514,23 +507,23 @@ fruit == fruitbear // return false
 fruit === fruitbear // return false
 ```
 
-> **备注：** "===" 运算符用来检查数值是否相等: 1 === "1"返回 false，而 1 == "1" 返回 true
+> **备注：** "===" 运算符用来检查数值是否相等：1 === "1"返回 false，而 1 == "1" 返回 true
 
 ```js
 // 两个变量，同一个对象
 var fruit = {name: "apple"};
-var fruitbear = fruit;  // 将 fruit 的对象引用(reference) 赋值给 fruitbear
+var fruitbear = fruit;  // 将 fruit 的对象引用 (reference) 赋值给 fruitbear
                         // 也称为将 fruitbear“指向”fruit 对象
 // fruit 与 fruitbear 都指向同样的对象
 fruit == fruitbear // return true
 fruit === fruitbear // return true
 ```
 
-了解更多关于比较操作符的用法，查看 [Comparison operators](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Comparison_Operators).
+了解更多关于比较操作符的用法，查看 [Comparison operators](/zh-CN/docs/Web/JavaScript/Reference/Operators/Comparison_Operators).
 
 ## 附加参考
 
-- 想要深入了解，请阅读[details of javaScript's objects model](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)。
-- 想要学习 ECMAScript 2015 中类（一种创建对象的新方式），请阅读 [JavaScript classes](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes) 章节。
+- 想要深入了解，请阅读[details of javaScript's objects model](/zh-CN/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)。
+- 想要学习 ECMAScript 2015 中类（一种创建对象的新方式），请阅读 [JavaScript classes](/zh-CN/docs/Web/JavaScript/Reference/Classes) 章节。
 
 {{PreviousNext("Web/JavaScript/Guide/Regular_Expressions", "Web/JavaScript/Guide/Details_of_the_Object_Model")}}

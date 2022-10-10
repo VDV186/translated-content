@@ -1,15 +1,8 @@
 ---
 title: Storage
 slug: Web/API/Storage
-tags:
-  - API
-  - Interface
-  - Reference
-  - Storage
-  - Web Storage
-  - data
-translation_of: Web/API/Storage
 ---
+
 {{APIRef("Web Storage API")}}
 
 作为 Web Storage API 的接口，**`Storage` **提供了访问特定域名下的会话存储或本地存储的功能，例如，可以添加、修改或删除存储的数据项。
@@ -68,7 +61,7 @@ function setStyles() {
 }
 ```
 
-> **备注：**要运行完整的例子，可查看 [Web Storage Demo](https://mdn.github.io/dom-examples/web-storage/)。
+> **备注：** 要运行完整的例子，可查看 [Web Storage Demo](https://mdn.github.io/dom-examples/web-storage/)。
 
 ## 规范
 
@@ -76,7 +69,7 @@ function setStyles() {
 
 ## 浏览器兼容性
 
-{{Compat("api.Storage")}}
+{{Compat}}
 
 ## 相关链接
 

@@ -1,8 +1,8 @@
 ---
 title: HTMLElement.lang
 slug: Web/API/HTMLElement/lang
-translation_of: Web/API/HTMLElement/lang
 ---
+
 {{ APIRef() }}
 
 **`HTMLElement.lang`** 属性用来获取或设置元素属性值或文本内容的基语言（base language）。

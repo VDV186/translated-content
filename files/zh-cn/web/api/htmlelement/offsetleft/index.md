@@ -1,14 +1,8 @@
 ---
 title: HTMLElement.offsetLeft
 slug: Web/API/HTMLElement/offsetLeft
-tags:
-  - API
-  - CSSOM
-  - 参考
-  - 只读
-  - 属性
-translation_of: Web/API/HTMLElement/offsetLeft
 ---
+
 {{ APIRef("HTML DOM") }}
 
 **`HTMLElement.offsetLeft`** 是一个只读属性，返回当前元素*左上角*相对于 {{domxref("HTMLElement.offsetParent")}} 节点的左边界偏移的像素值。
@@ -72,7 +66,7 @@ if (tOLeft > 5) {
 
 ## 浏览器兼容性
 
-{{Compat("api.HTMLElement.offsetLeft")}}
+{{Compat}}
 
 ## 相关链接
 

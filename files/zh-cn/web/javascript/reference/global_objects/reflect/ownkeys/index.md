@@ -1,10 +1,8 @@
 ---
 title: Reflect.ownKeys()
 slug: Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys
-tags:
-  - Reflect
-translation_of: Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys
 ---
+
 {{JSRef}}
 
 静态方法 **`Reflect.ownKeys()`** 返回一个由目标对象自身的属性键组成的数组。
@@ -32,7 +30,7 @@ Reflect.ownKeys(target)
 
 ## 描述
 
-`Reflect.ownKeys` 方法返回一个由目标对象自身的属性键组成的数组。它的返回值等同于`{{jsxref("Object.getOwnPropertyNames")}}(target).concat({{jsxref("Object.getOwnPropertySymbols")}}(target))。`
+`Reflect.ownKeys` 方法返回一个由目标对象自身的属性键组成的数组。它的返回值等同于 `{{jsxref("Object.getOwnPropertyNames")}}(target).concat({{jsxref("Object.getOwnPropertySymbols")}}(target))`。
 
 ## 示例
 

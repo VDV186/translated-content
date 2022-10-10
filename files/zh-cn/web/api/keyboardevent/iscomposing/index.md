@@ -1,14 +1,8 @@
 ---
 title: KeyboardEvent.isComposing
 slug: Web/API/KeyboardEvent/isComposing
-tags:
-  - API
-  - DOM
-  - KeyboardEvent
-  - events
-  - 键盘事件
-translation_of: Web/API/KeyboardEvent/isComposing
 ---
+
 {{APIRef("DOM Events")}}
 
 **`KeyboardEvent.isComposing`** 只读属性，返回一个 {{jsxref("Boolean")}} 值，表示该事件是否在 {{event("compositionstart")}} 之后和 {{event("compositionend")}} 之前被触发。

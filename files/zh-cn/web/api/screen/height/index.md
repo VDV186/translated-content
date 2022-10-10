@@ -1,8 +1,8 @@
 ---
 title: Screen.height
 slug: Web/API/Screen/height
-translation_of: Web/API/Screen/height
 ---
+
 {{APIRef}}
 
 ## 概述

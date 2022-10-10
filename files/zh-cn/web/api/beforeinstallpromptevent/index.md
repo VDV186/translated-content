@@ -1,13 +1,8 @@
 ---
 title: BeforeInstallPrompt
 slug: Web/API/BeforeInstallPromptEvent
-tags:
-  - PWA
-  - beforeinstallprompt
-  - 添加到主屏幕
-  - 添加快捷方式
-translation_of: Web/API/BeforeInstallPromptEvent
 ---
+
 {{ ApiRef() }} {{ Non-standard_header }}
 
 在一个用户被提示”安装“一个网站到移动设备的一个主屏幕之前，**`BeforeInstallPromptEvent`** 被 {{domxref("Window.onbeforeinstallprompt")}} 处理程序触发。
@@ -49,4 +44,4 @@ window.addEventListener("beforeinstallprompt", function(e) {
 
 ## 浏览器兼容性
 
-{{Compat("api.BeforeInstallPromptEvent")}}
+{{Compat}}

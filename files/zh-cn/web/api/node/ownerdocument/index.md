@@ -1,14 +1,8 @@
 ---
 title: Node.ownerDocument
 slug: Web/API/Node/ownerDocument
-tags:
-  - API
-  - DOM
-  - Gecko
-  - Property
-  - 属性
-translation_of: Web/API/Node/ownerDocument
 ---
+
 {{ APIRef("DOM")}}
 
 **Node.ownerDocument** 只读属性会返回当前节点的顶层的 document 对象。
@@ -19,7 +13,7 @@ translation_of: Web/API/Node/ownerDocument
 document = node.ownerDocument
 ```
 
-- `document` 是当前元素的 [`document`](https://developer.mozilla.org/zh-CN/docs/DOM/document) 对象，其是当前元素的祖先。
+- `document` 是当前元素的 [`document`](/zh-CN/docs/DOM/document) 对象，其是当前元素的祖先。
 
 ## 例子
 
@@ -39,4 +33,4 @@ html = d.documentElement;
 
 ## 浏览器兼容性
 
-{{Compat("api.Node.ownerDocument")}}
+{{Compat}}

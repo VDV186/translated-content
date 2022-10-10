@@ -1,17 +1,11 @@
 ---
 title: WebGLRenderingContext.bindRenderbuffer()
 slug: Web/API/WebGLRenderingContext/bindRenderbuffer
-tags:
-  - API
-  - Method
-  - Reference
-  - WebGL
-  - WebGLRenderingContext
-translation_of: Web/API/WebGLRenderingContext/bindRenderbuffer
 ---
+
 {{APIRef("WebGL")}}
 
-[WebGL API](/en-US/docs/Web/API/WebGL_API) 的 **`WebGLRenderingContext.bindRenderbuffer()`** 方法将给定的 {{domxref("WebGLRenderbuffer")}} 绑定到一个目标，它必须是 gl.RENDERBUFFER 。
+[WebGL API](/zh-CN/docs/Web/API/WebGL_API) 的 **`WebGLRenderingContext.bindRenderbuffer()`** 方法将给定的 {{domxref("WebGLRenderbuffer")}} 绑定到一个目标，它必须是 gl.RENDERBUFFER。
 
 ## 语法
 
@@ -23,7 +17,7 @@ void gl.bindRenderbuffer(target, renderbuffer);
 
 - target
 
-  - : {{domxref("GLenum")}} 指定绑定点（目标）。 可能的值：
+  - : {{domxref("GLenum")}} 指定绑定点（目标）。可能的值：
 
     - `gl.RENDERBUFFER`: 以可渲染的内部格式对单个图像进行缓冲数据存储。
 
@@ -64,7 +58,7 @@ gl.getParameter(gl.RENDERBUFFER_BINDING);
 
 ## 浏览器兼容性
 
-{{Compat("api/WebGLRenderingContext", "WebGLRenderingContext.bindRenderbuffer")}}
+{{Compat}}
 
 ## 另见
 

@@ -1,19 +1,11 @@
 ---
 title: Element.replaceWith()
 slug: Web/API/Element/replaceWith
-tags:
-  - API
-  - DOM
-  - Method
-  - Element
-  - Reference
-translation_of: Web/API/Element/replaceWith
-original_slug: Web/API/ChildNode/replaceWith
-browser-compat: api.Element.replaceWith
 ---
+
 {{APIRef("DOM")}} {{SeeCompatTable}}
 
-**`ChildNode.replaceWith()`** 的方法用一套 {{domxref("Node")}} 对象或者 {{domxref("DOMString")}} 对象，替换了该节点父节点下的子节点 。{{domxref("DOMString")}} 对象被当做等效的{{domxref("Text")}} 节点插入。
+**`ChildNode.replaceWith()`** 的方法用一套 {{domxref("Node")}} 对象或者 {{domxref("DOMString")}} 对象，替换了该节点父节点下的子节点。{{domxref("DOMString")}} 对象被当做等效的{{domxref("Text")}} 节点插入。
 
 ## 语法
 
